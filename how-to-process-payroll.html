@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrismHR — How to process a payroll</title>
+<meta name="description" content="PrismHR Process Payroll form: enter time, calculate, finalize, validate, and print vouchers.">
+<style>
+body{font-family:Segoe UI,Calibri,Arial,sans-serif;max-width:860px;margin:24px auto;padding:0 16px 64px;line-height:1.45;color:#1b1b1b}
+h1{color:#1f3a5f} h2{color:#1f3a5f;margin-top:1.6rem}
+table{border-collapse:collapse;width:100%;margin:12px 0}
+th,td{border:1px solid #ccc;padding:6px 8px;vertical-align:top;text-align:left}
+th{background:#1f3a5f;color:#fff}
+.note{background:#f3f6fb;border-left:4px solid #1f3a5f;padding:10px 12px}
+</style>
+</head>
+<body>
+<p class="note">Official PrismHR help excerpt for Microsoft Copilot. Source: tech-docs.prismhr.com. Small page on purpose so Copilot fetch tools can read it.</p>
+<h1>Processing Payroll</h1>
+
+<p>Source: https://tech-docs.prismhr.com/SP_help/Content/PD/Payroll/Action/Process_Payroll.htm</p>
+<p>Path: `PD/Payroll/Action/Process_Payroll.htm`</p>
+
+<h1>Processing Payroll</h1>
+
+<p>Use the Process Payroll form to enter time sheet information, calculate the payroll, finalize the payroll, run the *Payroll Validation Report* and the *Payroll Audit Report*, update employee and payroll records, review/download errors and warnings, and print the vouchers. For example:</p>
+
+<p>[Image: screenshot]</p>
+
+<p>**Important!** The output recorded in the *Payroll Audit Report* is generated using artificial intelligence (AI), so please review all output for accuracy, completeness, and appropriateness before using it.</p>
+
+<h2>Using the Processing Payroll Panels</h2>
+
+<p>The Process Payroll form displays four distinct panels:</p>
+
+<table>
+<tr><th>Panel</th><th>Description</th></tr>
+<tr><td>Selected Payroll</td><td>Includes additional information about the payroll and related available actions. In addition, you can do the following: - Select Payroll Validation Report to generate a listing of validation errors for the selected payroll number. (See [Generating the Payroll Validation Report](../Reports/Payroll_Validation_Report_Entry.htm).) - Select Payroll Audit Report to review a payroll before it is finalized and posted. (See [Payroll Audit Report](../Reports/Payroll_Audit_Report.htm).) - Select the Payroll Maintenance menu to access quick links to other forms, such as the Payroll Control form, for the selected payroll. Select the Payroll Maintenance menu to access the following options and their associated forms: - Bill Pending: Opens the Bill Pending form, where you can add billing items to a payroll - Payroll Approval: Opens the Payroll Approval form, where you can review and approve the selected payroll - Payroll Control: Opens the Payroll Control form, where you can establish essential information for processing payroll - Tax Calculation Overrides: Opens the Tax Calculation Overrides form, where you can temporarily override how the system calculates taxes for an employee - Payroll Variance Analysis: Opens the Payroll Variance Analysis dashboard, where you can review relevant payroll information and compare two payrolls on a single dashboard to simplify the review process. **Note**: Any updates you save in other forms immediately display when you return to the Process Payroll form. &gt; **Note:** Note the following: - If you are processing a Pay On-Demand payroll for an employee, all HSA and HSA matches are *suppressed*. Also, the system ignores any entries in the Minimum ACH Window field on the System Parameters form. - The system displays the table header &quot;Employees&quot; for manual payroll types. If the payroll type is not manual, it displays &quot;Pay Groups&quot; as the table header. - The Payroll Maintenance menu *does not* display if the user has no access to all the forms available as quick links. - If a user&#x27;s role is set to Inquiry for the forms available as quick links, that user can click these links but is unable to make updates in the forms. - If a user&#x27;s role is set to Deny for the forms available as quick links, these links do not display.</td></tr>
+</table>
+<li>Select Payroll Validation Report to generate a listing of validation errors for the selected payroll number. (See [Generating the Payroll Validation Report](../Reports/Payroll_Validation_Report_Entry.htm).)</li>
+<li>Select Payroll Audit Report to review a payroll before it is finalized and posted. (See [Payroll Audit Report](../Reports/Payroll_Audit_Report.htm).)</li>
+<li>Select the Payroll Maintenance menu to access quick links to other forms, such as the Payroll Control form, for the selected payroll.</li>
+<li>Bill Pending: Opens the Bill Pending form, where you can add billing items to a payroll</li>
+<li>Payroll Approval: Opens the Payroll Approval form, where you can review and approve the selected payroll</li>
+<li>Payroll Control: Opens the Payroll Control form, where you can establish essential information for processing payroll</li>
+<li>Tax Calculation Overrides: Opens the Tax Calculation Overrides form, where you can temporarily override how the system calculates taxes for an employee</li>
+<li>Payroll Variance Analysis: Opens the Payroll Variance Analysis dashboard, where you can review relevant payroll information and compare two payrolls on a single dashboard to simplify the review process.</li>
+<li>If you are processing a Pay On-Demand payroll for an employee, all HSA and HSA matches are *suppressed*. Also, the system ignores any entries in the Minimum ACH Window field on the System Parameters form.</li>
+<li>The system displays the table header &quot;Employees&quot; for manual payroll types. If the payroll type is not manual, it displays &quot;Pay Groups&quot; as the table header.</li>
+<li>The Payroll Maintenance menu *does not* display if the user has no access to all the forms available as quick links.</li>
+<li>If a user&#x27;s role is set to Inquiry for the forms available as quick links, that user can click these links but is unable to make updates in the forms.</li>
+<li>If a user&#x27;s role is set to Deny for the forms available as quick links, these links do not display.</li>
+<table>
+<tr><th>Processing Steps</th><th>Guides you through the payroll process by displaying which parts of the process are complete. (Click the icon next to an uncompleted step to proceed.) After you click an icon, the associated form or processing dialog displays where you can update or view information to complete the step. For example, when you click the Time Sheet icon ( [Image: screenshot] ) the Time Sheet Entry form displays, where you can finalize this step. (**Note**: Click Return to return to the Process Payroll form.) After you successfully complete a step and return to the Process Payroll form, the system dims the step and displays &quot;Complete.&quot; The system highlights the next step, so you can continue the process. In addition, if there are any pending approvals for the payroll you can select Pending Actions to view pending approvals for you, pending approvals for others, and pending backdated leave requests. (Backdated leave requests are those whose dates occur *before* the current timesheet&#x27;s pay period start date.) **Note**: The system uses Restartable Payroll as the default payroll process, which replaced the *Legacy* Payroll process. The Restartable Payroll process picks up the calculation process when the last successful employee is calculated. (The Legacy Payroll process is still available, if you need to resolve payroll issues. However, if you need to use the Legacy Payroll process, you must enable the LEGACY-PAYROLL-GLOBAL custom feature code on the System Parameters form.) In addition, when processing payrolls where the Maximum ACH Amount is set on the Control tab in the Client Details form, the Restartable Payroll and Legacy Payroll features prevent submitted payrolls (those whose status is set to INITPEND), that exceed a set ACH amount, from processing until they are approved by a Billing Representative. These submitted payrolls are those where the payroll processor clicks Yes when the &quot;You cannot make any changes once you submit payroll for processing. Are you sure you want to submit?&quot; message displays. (Note that this message does not display when payrolls are submitted in SuperBatch.)</th></tr>
+<tr><td>Payroll Overview</td><td>Displays multiple views and filtering options to filter the employee table, which provides a high-level view of the selected payroll. To complement the data tables, charts display to help visualize the data. You can filter both the charts and the tables by using the drop-down menus, or by clicking the bars in the chart. In addition, you can search for employees and select an option on the Actions menu to update employee records directly from this panel. **Note**: Each time you select a different filter, the system refreshes the information that displays in the chart and the employee table. Use the following options to filter information in the Payroll Overview panel: - View: Select the view to display in the first menu. For example, select Employees in Payroll (default) to view the employees in the selected payroll. Selecting Payroll Summary displays the employee vouchers associated with the selected payroll. **Note**: You can only use Employee search to search for information that displays in the table. - Categories: In the second menu, select the category to display (default is Status/Type for Employees in Payroll and Check/Deposit for Payroll Summary). For example, select Locations for the Employees in Payroll category to filter employees by their locations. - Filter: In the third menu, All (default) displays all the items that pertain to the selected category. For example, if you select Locations in the category menu and All as the filter, all the employee locations display. **Note**: The Variable Salary filter option only displays if the VARSALMETHOD custom feature code is enabled on the System Parameters form. - Review: Select the review type, which opens the associated form. For example, if you select Payroll Vouchers, the Payroll Summary form opens for the selected payroll. - Charts: Select a bar in the chart to display the employees in the table below that pertain to that category. (The system dims the other bars.) To remove a bar from the chart display, select that bar in the legend. (The system dims it in the legend.) To redisplay it, simply click the dimmed item in the legend. (**Note**: Selecting items in the legend only affects the display in the chart and does not affect the table data.) - Employee search box: To perform a search, enter the employee name or ID, then press Enter or Tab, or click the search icon ( [Image: screenshot] ). The results display in the table below the search box, including the employee name and ID, status/type, and pay group. **Note**: If you select Payroll Summary in the first View drop-down menu and then perform a search, the system updates the totals count and gross pay in the results. - Actions: Select an option to update employee records, which opens the associated form. The Actions menu displays while Employees in Payroll is selected in the Payroll Overview panel. For example, if you select Pay Rate Change, the Pay Rate Change form opens for the selected employee. &gt; **Note:** Note the following: - If a user&#x27;s role is set to Deny for *both* the Pay Rate Change form and the Employee Termination form, when they click the Actions menu a message displays, &quot;No actions available. Contact your administrator.&quot; - If a user&#x27;s role is set to Deny for either form, then that option does not display on the Actions menu.</td></tr>
+</table>
+<li>View: Select the view to display in the first menu. For example, select Employees in Payroll (default) to view the employees in the selected payroll. Selecting Payroll Summary displays the employee vouchers associated with the selected payroll.</li>
+<li>Categories: In the second menu, select the category to display (default is Status/Type for Employees in Payroll and Check/Deposit for Payroll Summary). For example, select Locations for the Employees in Payroll category to filter employees by their locations.</li>
+<li>Filter: In the third menu, All (default) displays all the items that pertain to the selected category. For example, if you select Locations in the category menu and All as the filter, all the employee locations display.</li>
+<li>Review: Select the review type, which opens the associated form. For example, if you select Payroll Vouchers, the Payroll Summary form opens for the selected payroll.</li>
+<li>Charts: Select a bar in the chart to display the employees in the table below that pertain to that category. (The system dims the other bars.) To remove a bar from the chart display, select that bar in the legend. (The system dims it in the legend.) To redisplay it, simply click the dimmed item in the legend. (**Note**: Selecting items in the legend only affects the display in the chart and does not affect the table data.)</li>
+<li>Employee search box: To perform a search, enter the employee name or ID, then press Enter or Tab, or click the search icon ( [Image: screenshot] ). The results display in the table below the search box, including the employee name and ID, status/type, and pay group.</li>
+<li>Actions: Select an option to update employee records, which opens the associated form. The Actions menu displays while Employees in Payroll is selected in the Payroll Overview panel. For example, if you select Pay Rate Change, the Pay Rate Change form opens for the selected employee.</li>
+<li>If a user&#x27;s role is set to Deny for *both* the Pay Rate Change form and the Employee Termination form, when they click the Actions menu a message displays, &quot;No actions available. Contact your administrator.&quot;</li>
+<li>If a user&#x27;s role is set to Deny for either form, then that option does not display on the Actions menu.</li>
+<table>
+<tr><th>Errors and Warnings</th><th>Displays errors and warnings, which helps you address issues that prevent payroll processing from completing. Click the download icon ( [Image: screenshot] ) to download these messages to a .CSV file. For example, a warning message displays when calculating payroll if an employee has a gross pay greater than zero but has zero net pay, &quot;Warning: Employee &lt;*Employee ID*&gt; Voucher &lt;*number*&gt; has gross pay with zero net pay.&quot; &gt; **Note:** Note the following: - All errors and warnings that occur during and after payroll process calculation display the employee&#x27;s *last name, preferred name* instead of their *last name, first name*, if applicable. (If the employee does not have a preferred name, then their last name, first name displays.) - You cannot process a payroll that contains a *deidentified* employee. An error message displays, &quot;Employee: &lt;*employee ID*&gt; can not be paid as they are de-identified.&quot; Remove the deidentified employee and process the payroll again.</th></tr>
+</table>
+<li>All errors and warnings that occur during and after payroll process calculation display the employee&#x27;s *last name, preferred name* instead of their *last name, first name*, if applicable. (If the employee does not have a preferred name, then their last name, first name displays.)</li>
+<li>You cannot process a payroll that contains a *deidentified* employee. An error message displays, &quot;Employee: &lt;*employee ID*&gt; can not be paid as they are de-identified.&quot; Remove the deidentified employee and process the payroll again.</li>
+<h2>Processing a Payroll</h2>
+
+<p>The steps involved in processing a payroll are:</p>
+
+<p>1. [Entering Time Sheets](SB_PP_Entering_Time_Sheets.htm)2. [Calculating Payroll Vouchers](PP_Calculate_Payroll_Vouchers.htm)</p>
+
+<p>3. [Reviewing Payroll Reports](PP_Review_Payroll_Reports.htm)</p>
+
+<p>4. [Finalizing the Payroll](PP_Finalize_Payroll.htm)</p>
+
+<p>5. [Generating Payroll Reports](PP_Print_Mail.htm)</p>
+
+<h2>Payroll Calculation Logic</h2>
+
+<p>The payroll calculation process includes the gross wages and calculates the employee contribution based on the Benefit Rules and value assigned to the Benefit Plan for Gross % of Wages.</p>
+
+<p>On the Benefit Rules form, if a benefit plan uses the Percent of Gross Wages value, then while calculating the contribution towards the Employee portion of premium, if Max Contribution has been defined for any Benefit Rule, then it will ignore the Max Contribution value. You must also set The Contribution rule amounts made by Company or Employee field to Employee for the payroll process to include gross wages.</p>
+
+<p>The logic to determine the Percent of Gross Wages being used is as follows:</p>
+
+<li>If the Employee Benefit Rule Overrides form uses the Percent of Gross Wages value, then:</li>
+
+<li>the value in the Percent of Gross Wages field on the Employee Benefit Rule Overrides form will be used to calculate the Percent of Gross Wages or else it will use the value assigned on the Group Benefit Plans form to calculate Percent of Gross Wages.</li>
+
+<li>If the Employee Benefit Rule Overrides form does not use the Percent of Gross Wages value, then:</li>
+
+<li>the value in the Percent of Gross Wages field on the Benefit Rules form will be used to calculate the Percent of Gross Wages or else it will use the value assigned on the Group Benefit Plans form to calculate Percent of Gross Wages.</li>
+
+<p>The payroll calculation is as below:</p>
+
+<li>Once the Percent of Gross Wages value has been determined, this value is used to calculate the Contribution Amount for the Employee portion of the premium.</li>
+
+<li>If the Percent of Gross Wages value is not being considered, then the Contribution Amount is calculated for the Employee portion of the premium based on the Benefit Rule grid.</li>
+
+<li>If the Percent of Gross Wages value is less than the Calculated Contribution from the Benefit Rule grid, then the Percent of Gross Wages is used as the contribution towards the Employee portion of premium. The dependent premium is calculated in full by the benefit rule.</li>
+
+<li>If the Percent of Gross Wages value is greater than the Calculated Contribution from the Benefit Rule grid, then the Calculated Contribution is used from the Benefit Rule grid as the contribution towards the Employee portion of premium.</li>
+
+<h2>Understanding the Security Dialog</h2>
+
+<p>The Security Notification dialog warns clients of changes made to sensitive employee information prior to calculating payroll. This dialog displays when you:</p>
+
+<p>1. Edit employee information, such as:</p>
+
+<li>Email address</li>
+
+<li>Direct deposit</li>
+
+<li>Mobile phone</li>
+
+<li>Employee name</li>
+
+<p>&gt; **Note:** **Note:** This dialog displays updates made to an employee&#x27;s mobile phone number as listed on the HR|Change|Employee Details form&#x27;s Address tab.</p>
+
+<p>2. Navigate to Payroll|Action|Process Payroll. Click the Calculate icon ( [Image: screenshot] ). The Security Notification dialog displays.</p>
+
+<p>[Image: screenshot]</p>
+
+<p>3. Click View Report. The Security Changes Report displays, which provides a listing of changes to employees&#x27; employment status and includes changes made to any new or existing employee records.</p>
+
+<p>**Note:** To ensure &quot;self-service payroll&quot; Worksite Managers and Worksite Trusted Advisors have access to the Security Notification dialog, set up the following qualifications on these forms:</p>
+
+<li>Client|Change|Client Payroll form: Enable the Self-Service Payroll field on this form&#x27;s Payroll tab to set the client to self-service mode</li>
+
+<li>System|Change|Users form: Enable the user as a Payroll Processor in the Human Resource Roles panel, in addition to having access to process payroll in self-service mode</li>
+
+<h2>Payroll Warning for Flat Amount Creditor Garnishment</h2>
+
+<p>When you process a manual or a special payroll where any employee has a flat amount as a garnishment which is not for child support, a warning indicating the Employee ID and the docket number displays, so you can review and make adjustments as needed. For example:</p>
+
+<p>[Image: Payroll Warning for flat amount creditor garnishment]</p>
+
+<p>&gt; **Note:** **Note:** This will work only if the Enhanced Garnishment Capping field in the System Parameters form is checked.</p>
+
+<h2>Payroll Warning for Pay Code Included in Timesheet Entry with Zero Dollar Rate</h2>
+
+<p>When you process a payroll where a timesheet entry contains hours greater than zero (0) and a 0.0000 unit rate, which results in $0.00 being paid for the time sheet entry, a calculation warning displays in the Process Payroll and SuperBatch forms. For example:</p>
+
+<p>[Image: screenshot]</p>
+
+<p>&gt; **Note:** Note the following:</p>
+
+<li>This warning does not stop the payroll from processing.</li>
+
+<li>This warning is visible to all user types using either the Restartable Payroll feature or the Legacy Payroll feature.</li>
+
+<h2>Payroll Warning for Retirement Plan that has one or more Deduction Types flagged as Prohibited</h2>
+
+<p>When an employee is enrolled in a Retirement Plan that has one or more Deduction Types flagged as Prohibited on the Retirement Plans form and an employee’s existing elections in that plan reflect a deferral of the prohibited Deduction Type, then while initializing a payroll for that employee, a warning message, &quot;&lt;Employee name&gt; has retirement elections in &lt;Plan ID&gt; prohibited by the plan setup. Deductions will not be taken.&quot; displays. For example:</p>
+
+<p>[Image: screenshot]</p>
+
+<p>&gt; **Note:** **Note:** On the System Parameters form, under the Global Codes Setup section, if the Employer Match Billing Code is configured and at the same time a Retirement Plan is configured for the Employer Match Bill Code with the Prohibit Billing checkbox selected, then the payroll process ignores the global bill code and does not produce any employer match billing for the plan in the payroll.</p>
+<hr>
+<h1>Calculating Payroll Vouchers</h1>
+
+<p>Source: https://tech-docs.prismhr.com/SP_help/Content/PD/Payroll/Action/PP_Calculate_Payroll_Vouchers.htm</p>
+<p>Path: `PD/Payroll/Action/PP_Calculate_Payroll_Vouchers.htm`</p>
+
+<h1>Calculating Payroll Vouchers</h1>
+
+<p>To begin the payroll calculation process, click the Calculate icon (</p>
+
+<p>[Image: screenshot]</p>
+
+<p>) for the payroll. (**Note**: The time sheet entry must be complete to enable payroll calculation.)</p>
+
+<p>&gt; **Note:** **Note:** The Security Notification dialog displays if you have made changes to sensitive employee information prior to calculating payroll.</p>
+
+<p>During the payroll calculation process, PrismHR creates a payroll voucher for each employee to be paid in the current payroll as follows:</p>
+
+<li>Calculates full gross-to-net earnings</li>
+
+<li>Posts any other earnings combined with selected time sheet earnings to one of up to twelve payroll vouchers that could be created for an individual employee</li>
+
+<li>Calculates and processes scheduled deductions</li>
+
+<li>Calculates and takes payroll taxes</li>
+
+<li>Processes any active tax calculation overrides or deduction overrides</li>
+
+<li>Creates billing vouchers</li>
+
+<li>Calculates accounting</li>
+
+<li>Calculates benefits and benefit deductions</li>
+
+<li>Accrues paid time off registers, if any</li>
+
+<li>Applies FLSA ruleset, if applicable</li>
+
+<p>&gt; **Note:** **Note:** If the pay date is on or before today’s date, you might be prompted to enter an authorization code; [see Authorization Code for Backdated Payroll](Backdate_Authorization_Code.htm).</p>
+
+<p>When the calculation begins, the Calculating Payroll form opens. When the Close button is enabled, the calculation is complete. You can close the form and return to the Process Payroll form.</p>
+
+<p>&gt; **Note:** **Note:** All dates and times in PrismHR are Central Time.</p>
+
+<p>[Image: screenshot]</p>
+
+<p>**Note**: When your client is set up for Worksite Payroll Approval and Self Service, the Self Service Restrictions are set to either Print or Select/Null, and the ACH status on the Billing tab on the Client Details form is not set to Wire Transfer Client, the following message displays for worksite managers and worksite trusted advisors who are calculating payroll:</p>
+
+<p>To move into the payroll approval status and generate the approval email, click Yes.</p>
+
+<p>To bypass the payroll approval step and move the payroll to the next step, click No.</p>
+
+<p>In addition, this message displays for all users calculating payroll when the client has enabled payroll approval and the ACH status is not set to Wire Transfer Client.</p>
+
+<p>If there were any errors, they display at the bottom of the Process Payroll form in the Errors and Warnings panel. You must resolve these errors before you can proceed to the next step.</p>
+
+<p>If warning messages display, payroll calculation does not fail but *not* resolving them could cause accounting issues. For example, if the employee&#x27;s recorded timesheet hours are incorrect, warning messages similar to the following would display:</p>
+
+<p>[Image: screenshot]</p>
+
+<p>**Note**: If you enabled the Enable payroll live check calculation warning field on the System Parameters form and the system will create live checks during payroll processing, a warning message displays during payroll calculation, &quot;Warning: there are &lt;*X*&gt; live checks.&quot;</p>
+
+<p>In addition, helpful messages display in this panel that clearly define what needs to be fixed to successfully process a payroll. For example:</p>
+
+<p>[Image: screenshot]</p>
+
+<p>**Note**: You can download the errors, warnings, and messages that display in this panel to an Excel spreadsheet by clicking the Errors and Warnings Download icon (</p>
+
+<p>[Image: screenshot]</p>
+
+<p>).</p>
+
+<p>After calculating a payroll, the following dialog displays: &quot;Do you want to send the payroll approval to the client?&quot; Click one of the following options:</p>
+
+<li>Click Yes to send the approval notification email to the client.</li>
+
+<li>Click No to disregard sending the approval notification, which closes the dialog.</li>
+
+<p>The payroll&#x27;s batch status then updates to Calculation Complete and allows users to post the payroll or recalculate and submit it for approval.</p>
+
+<p>Related Topics</p>
+
+<p>[Processing Payroll](Process_Payroll.htm)</p>
+
+<p>[Calculation Errors](../Error_Messages/Calculation_Errors.htm)</p>
+<hr>
+<h1>Finalizing the Payroll</h1>
+
+<p>Source: https://tech-docs.prismhr.com/SP_help/Content/PD/Payroll/Action/PP_Finalize_Payroll.htm</p>
+<p>Path: `PD/Payroll/Action/PP_Finalize_Payroll.htm`</p>
+
+<h1>Finalizing the Payroll</h1>
+
+<p>When you are sure all the information for the payroll batch is complete and accurate, finalize the payroll by clicking the Finalize icon (</p>
+
+<p>[Image: screenshot]</p>
+
+<p>).</p>
+
+<p>During the Finalization process, PrismHR gathers the data from the vouchers created during the calculation of the payroll and finalizes each item to the appropriate register. The system creates a permanent record of the payroll within its files.</p>
+
+<p>Once the payroll is finalized, PrismHR considers it to be complete and creates another payroll for this client and pay group. The system cannot calculate or finalize more than one payroll for the same client at the same time.</p>
+
+<p>Reports and invoices designated to be printed at the completion of the payroll print immediately to your designated printer. The system sends checks and direct deposit advices, as well as any garnishment checks, to a print file.</p>
+
+<p>&gt; **Note:** Note the following:</p>
+
+<li>If you pass the ACH threshold limit during payroll processing a message displays in the job progress window on the Process Payroll form. In addition, the following warning displays in the Errors and Warnings panel after payroll calculation finishes, &quot;The payroll is over the ACH threshold limit. You must clear the ACH hold before payroll displays in the ACH file. Delaying this action could delay releasing funds to employees.&quot; (If the ACH threshold limit is null, the message and warning do not display. However, if the ACH threshold limit is set to at least zero (0), the message and warning do display if the payroll is over the limit.)</li>
+
+<li>If you have a payroll where all employees receive live checks but the client is paying their invoice using ACH and that invoice exceeds the ACH threshold limit, the system displays a warning during calculation and finalization. At that time, the funds for the client are put on hold if the fees to be taken from the client are over the threshold limit.</li>
+
+<h2>Finalizing Payroll for Self-Service Worksite Managers and Worksite Trusted Advisors</h2>
+
+<p>Self-service worksite managers and worksite trusted advisors who are restricted from finalizing and printing payroll can indicate that they are ready to send the payroll to a service provider for finalization when they finish reviewing the payroll.</p>
+
+<p>After self-service worksite managers and worksite trusted advisors successfully calculate a payroll (the payroll must be in INITWARN or INITOK status) the following message displays, &quot;Are you sure you want to submit the payroll for processing?&quot; Make either of the following selections to continue:</p>
+
+<li>Yes: The system moves the payroll to the next status and becomes visible to service providers in SuperBatch. In addition, making this selection dims/locks the Time Sheet Entry and Payroll Calculation icons and updates the Payroll Calculation icon&#x27;s text for all user types depending on the payroll status:</li>
+
+<li>INITWARN: *Payroll Calculation: Complete with Warnings, Submitted*</li>
+
+<li>INITOK: *Payroll Calculation: Complete, Submitted*</li>
+
+<p>**Note**: Selecting Yes does not allow self-service worksite managers and worksite trusted advisors to edit the payroll any further without a service provider resetting it back to them to any status before payroll calculation. After a service provider changes the payroll status back to any status with &quot;TS,&quot; the Time Sheet Entry icon becomes available to worksite managers and worksite trusted advisors once again. In addition, if the status is set to TSOKCOMP, the Payroll Calculation icon becomes available.</p>
+
+<li>No: The system moves the payroll to the next status and is not visible to service providers in SuperBatch. In addition, making this selection updates the Payroll Calculation icon&#x27;s text for all user types depending on the payroll status:</li>
+
+<li>INITWARN: *Payroll Calculation: Complete with Warnings, Not submitted*</li>
+
+<li>INITOK: *Payroll Calculation: Complete, Not submitted*</li>
+
+<p>**Note**: Selecting No requires recalculation to submit the payroll for processing.</p>
+
+<p>Once the payroll is ready for finalization after making a response from the list above, the following occurs for service providers:</p>
+
+<li>Yes: The system automatically *updates* SuperBatch, so service providers can post the payroll.</li>
+
+<li>No: The system *does not* update SuperBatch, so service providers cannot post the payroll.</li>
+
+<p>Related Topics</p>
+
+<p>[Processing Payroll](Process_Payroll.htm)</p>
+
+<p>[Posting Errors](../Error_Messages/Posting_Errors.htm)</p>
+<hr>
+<h1>Entering Time Sheets</h1>
+
+<p>Source: https://tech-docs.prismhr.com/SP_help/Content/PD/Payroll/Action/SB_PP_Entering_Time_Sheets.htm</p>
+<p>Path: `PD/Payroll/Action/SB_PP_Entering_Time_Sheets.htm`</p>
+
+<h1>Entering Time Sheets</h1>
+
+<p>Use the Summary Time Sheet Entry form to enter, edit, and accept employee time sheet information in the payroll batch. You can also enter information in the Detail Time Sheet Entry form.</p>
+
+<p>If this is a regularly scheduled payroll (automatically created by PrismHR), the employees scheduled to be paid in this payroll are listed in alphabetical order. If this is not an automatically created payroll, you must manually add each employee using Payroll Control.</p>
+
+<p>Related Topics</p>
+
+<p>[Processing Payroll](Process_Payroll.htm)</p>
+
+<p>[Using SuperBatch](SuperBatch_Next_Generation.htm)</p>
+
+<p>[Establishing Information for Processing Payrolls](../Change/Payroll_Control.htm)</p>
+
+<p>[Time Sheet Errors](../Error_Messages/Time_Sheet_Errors.htm)</p>
+<hr>
+<h1>Establishing Information for Processing Payrolls</h1>
+
+<p>Source: https://tech-docs.prismhr.com/SP_help/Content/PD/Payroll/Change/Payroll_Control.htm</p>
+<p>Path: `PD/Payroll/Change/Payroll_Control.htm`</p>
+
+<h1>Establishing Information for Processing Payrolls</h1>
+
+<p>You can use the Payroll Control form to establish essential information for processing payroll in PrismHR. There are three types of payrolls that users can process: regularly scheduled, manual, and special/unscheduled batches. You determine the payroll type using the Payroll Type field.</p>
+
+<p>PrismHR uses the parameters defined in the Payroll Control form to automatically schedule the next batch.</p>
+
+<li>Regularly Scheduled: Following the successful completion of a payroll, PrismHR automatically creates a new Payroll Control record for the next regularly scheduled payroll. The regularly scheduled payroll includes time sheets for each employee scheduled to be paid in the payroll. Payroll processors can add or delete time sheets as necessary.</li>
+
+<p>&gt; **Note:** **Note:** When deleting a payroll, Full access users have the option of copying saved entries, which can be applied to a new payroll without having to re-import or re-enter the data. After clicking Yes in the first two confirmation dialogs that display when you click Delete in the Payroll Control form, a third confirmation dialog displays, &quot;Do you want to keep the keyed entries and apply them to the new payroll?&quot; Click Yes to copy all saved entries and charge dates (including entries in the deduction columns) into a new payroll batch. Clicking No produces a blank timesheet. (Previously accepted Pay Rates and Leave Requests remain unchanged.)</p>
+
+<p>In addition, if you try to delete a payroll where a reverse wire transfer journal exists an error displays, &quot;Payroll &lt;*XXX*&gt; can not be deleted as the ACH journals have already been created.&quot;</p>
+
+<li>Special/Unscheduled: Enter a payroll for specific pay groups.</li>
+
+<li>Manual: Enter a supplemental or unscheduled payroll for one or more employees.</li>
+
+<p>&gt; **Note:** **Note:** You can also use the form to view in progress or past payrolls. However, you cannot edit posted payrolls, and you cannot create regularly scheduled payrolls.</p>
+
+<p>You can access other information using the Actions menu:</p>
+
+<li>[Viewing the Audit Log](../../Maintenance/System/Audit.htm)</li>
+
+<li>[Setting Special Processing Options](Payroll_Control_Options.htm)</li>
+
+<li>[Setting Up Pay Group Accruals](2020/Setting_Up_Pay_Group_Accruals.htm)</li>
+
+<li>[Processing History](Payroll_Control_Processing_History.htm)</li>
+
+<li>[Adding Employees to a Payroll](Add_Employees_to_Payroll.htm)</li>
+
+<h2>Identifying the Payroll and Type</h2>
+
+<p>You can identify the payroll and type in the Payroll Control panel. This panel also displays the current status. For example:</p>
+
+<p>[Image: screenshot]</p>
+
+<p>To identify the payroll and type:</p>
+
+<p>1. If necessary, select the Calendar Year in which the payroll batch occurs. The default is the current year.</p>
+
+<p>2. Select an existing payroll or create a new one:</p>
+
+<li>Click New Payroll to create the new payroll. The system automatically generates a payroll number.</li>
+
+<li>Click Payroll Number and then select the payroll you want to edit. The Payroll Control form populates with the information for that payroll. If the payroll is not finalized, you can make edits as needed.</li>
+
+<p>3. The Payroll Type indicates the type of payroll.</p>
+
+<li>If you are creating a new payroll, select either Manual or Special.</li>
+
+<li>If you are editing an existing payroll, you cannot change the type.</li>
+
+<p>4. If you select Manual as the Payroll Type, select the Reason, so you can track the reason why the client is processing manual payrolls. (This field only displays if you select Manual as the Payroll Type.)</p>
+
+<p>**Note**: The Reason field is *required* if the Require Manual Payroll Reason field on the System Parameters form is enabled.</p>
+
+<p>5. If appropriate, enter a Description that identifies this payroll.</p>
+
+<p>&gt; **Note:** Note the following:</p>
+
+<li>When administering payrolls, you cannot enter or select any International Employees (set on the Address tab in the Employee Details form, see [Establishing and Maintaining Employee Address Information](../../HR/Change/Employee_Address.htm)) in the Employee panel.</li>
+
+<li>For completed regular payrolls, you can click View Timesheet to see the time sheet information. (This link is not available for incomplete payrolls.)</li>
+
+<li>For payrolls in the Wire Transfer Pending status, you can click the Reset Wire Transfer link to set the payroll back to Payroll Pending Review status. [See Processing Payroll: Wire Transfer Pending Status](../../../Task Sheets/PD/Payroll_Proc_WTP_Status.htm).</li>
+
+<li>Select the Pay Group link in the Related Actions section to access the Pay Groups form, where you can set up a group of employees who are all paid on the same day.</li>
+
+<h2>Identifying Payroll Processing Information</h2>
+
+<p>You can identify the payroll processor and establish the payroll date and time information in the Payroll Processor panel. For example:</p>
+
+<p>[Image: screenshot]</p>
+
+<p>1. If available, enter the user ID of the Payroll Processor for this payroll. The system defaults to the processor specified in the Account tab of Client Details. [See Maintaining Client Contact and Account Assignment Information](../../Company/Change/Client_Account.htm).</p>
+
+<p>2. Enter the Pay Date on which to process the payroll. The Quarter End Date, Year End Date, and G/L Period for the payroll display.</p>
+
+<p>**Note**: When you set a *manual* payroll to Pay On-Demand on the Payroll Options form and configure that payroll on the Payroll Control form, the system automatically sets the Pay Date to the current date since the employee will be paid today (instant payment).</p>
+
+<p>The following happens:</p>
+
+<li>If you try to change that automated Pay Date the system displays a warning, &quot;This is a Pay On-Demand payroll so the Pay Date must be the current date.&quot; (Click OK to continue.)</li>
+
+<li>If you enter or select a Pay Date that is *not* the current date and then select the Pay On-Demand field on the Payroll Options form the system displays a warning, &quot;Pay On-Demand payroll must be paid using the current date. By selecting this option the pay date is updated to today.&quot; (Click OK to continue.)</li>
+
+<p>After you click Accept and return to the Payroll Control form, the system automatically changes the Pay Date to the current date.</p>
+
+<p>3. Enter the Remote Cutoff Date by which the client must report time data.</p>
+
+<p>**Note**: The Remote Cutoff Date and Remote Cutoff Time fields only apply if the client enters their own time sheets; this is indicated on the Client Details Control tab.</p>
+
+<p>4. Enter the Remote Cutoff Time.</p>
+
+<p>5. Enter the Delivery Date on which the payroll checks should be delivered.</p>
+
+<p>6. If you are entering a Manual payroll, you can select the Override Pay Period to use as an alternate period to the one defined for the pay group.</p>
+
+<h2>Reviewing Shipping Information</h2>
+
+<p>Once the posting is complete and the payroll is marked as &quot;Mailed,&quot; the Shipping Information displays. These fields are informational only and cannot be edited. For example:</p>
+
+<p>[Image: screenshot]</p>
+
+<h2>Identifying Pay Groups or Employees</h2>
+
+<p>Use the third panel to identify who is associated with the payroll, either Pay Groups or Employees. For example:</p>
+
+<li>Pay Groups: Regularly Scheduled or Special payrolls. For example:</li>
+
+<p>[Image: screenshot]</p>
+
+<table>
+<tr><th>a.</th><th>Enter the Pay Group associated with this payroll. The Description displays.</th></tr>
+</table>
+<p>b. — Enter the Period Start date, which must be the first day of the payroll period for this payroll. The system uses this to select the time sheets to pay; the system selects only time sheets with a charge date within the period entered here.</p>
+
+<p>c. — Enter the Period End date, which must be the last day of the payroll period for this payroll. The system uses this date to select the time sheets.</p>
+
+<p>d. — Enter the number of Weeks Worked during the period, which the system uses to produce the Weeks Worked amount on the Quarterly FUTA/SUTA reports.</p>
+
+<p>e. — Enter the Deduction Period on which the pay date falls. The system uses this during payroll processing to take the appropriate standard payroll deductions for the employees in this pay group. The system takes only the deductions defined for this deduction period.</p>
+
+<table>
+<tr><th>f.</th><th>Enter the Pay Period number. The default populates based on the Period Start date.</th></tr>
+</table>
+<p>g. — Select the Alt Pay Period to use for this pay group. This overrides the period assigned to the pay group; for example, you can use the Annually option to calculate taxes on an annual basis for all wages paid to employees on the payroll, overriding the employee&#x27;s regular taxation basis as set by their pay group.</p>
+
+<table>
+<tr><th>h.</th><th>If appropriate, enter the Payroll Option Template for the pay group.</th></tr>
+</table>
+<p>If a template was specified, you can click Show Template to see the options specified in that template.</p>
+
+<li>Employees: Manual payrolls. For example:</li>
+
+<p>[Image: screenshot]</p>
+
+<p>&gt; **Note:** Note the following when using the Pay On-Demand feature:</p>
+
+<li>When a manual payroll is set to Pay On-Demand, only employees with an active pay on-demand account display in the list when you *select* an Employee. (This also applies when selecting employees using the Quick Load option.) If you *enter* an Employee who does not have an active pay on-demand account an error message displays, &quot;Employee &lt;*xxxxx*&gt; must have an active Pay On-Demand account to be added to a Pay On-Demand payroll.&quot;</li>
+
+<li>When you&#x27;re ready to set up a manual payroll as Pay On-Demand, it&#x27;s important to note that if you enter employees who do not have a pay on-demand account in their employee record *before* setting the payroll to Pay On-Demand on the Payroll Options form and click Save, the following error message displays:</li>
+
+<p>[Image: screenshot]</p>
+
+<p>In this situation, make a selection as follows:</p>
+
+<li>Yes: Employees without an active pay on-demand account are removed from the payroll, then you can click Save again and the payroll will save.</li>
+
+<li>No: Employees without an active pay on-demand account are *not* removed, but you cannot save the payroll. At this point, you must either disable Pay On-Demand or manually remove these employees from the payroll.</li>
+
+<li>If you try to disable the Pay On-Demand field on the Payroll Options form *after* payroll calculation completes, this field is dimmed and you cannot make this change.</li>
+
+<li>To add many employees to the payroll at once:</li>
+
+<p>a. — You can click Quick Load to open the Payroll Control Quick Load form and easily select the employees to include in the payroll.</p>
+
+<li>To enter or edit information for each employee:</li>
+
+<p>b. — Enter the Employee IDs to include in the manual payroll. You can only add employees who have completed the onboarding process; this ensures that the tax information is complete before they are included in a payroll.</p>
+
+<p>c. — Enter the Period Start date, which must be the first day of the payroll period for this payroll. The system uses this to select the time sheets to pay; the system selects only time sheets with a charge date within the period entered here.</p>
+
+<p>d. — Enter the Period End date, which must be the last day of the payroll period for this payroll. The system uses this date to select the time sheets.</p>
+
+<p>e. — Enter the number of Weeks Worked during the period, which the system uses to produce the Weeks Worked amount on the Quarterly FUTA/SUTA reports.</p>
+
+<p>f. — Enter the Deduction Period on which the pay date falls. The system uses this during payroll processing to take the appropriate standard payroll deductions for the employee. The system takes only the deductions defined for this deduction period.</p>
+
+<table>
+<tr><th>g.</th><th>If appropriate, enter the Payroll Option Template for the employee.</th></tr>
+</table>
+<p>&gt; **Note:** Note the following:</p>
+
+<li>If a template was specified, you can click Show Template to see the options specified in that template.</li>
+
+<li>If you apply a Payroll Option Template that is set to ACH to a manual Pay On-Demand payroll and click Save, the following error message displays:</li>
+
+<p>[Image: screenshot]</p>
+
+<p>Click OK to continue, then select a non-ACH Payroll Option Template.</p>
+
+<h2>Adding a Memo to Payroll Check Stubs</h2>
+
+<p>You can use the Memo panel to enter a memo that will display on all payroll check stubs included in this payroll. For example:</p>
+
+<p>[Image: screenshot]</p>
+
+<p>As a service provider user managing client check configuration, you can use substitution variables in client check messages, so that paychecks can display contextual employee and work-assignment information in the check message on a client-by-client basis.</p>
+
+<p>You can enter the following substitution variables either in the *Message Text* section on the Check Massages form or in the *Memo* section on the Payroll Control form:</p>
+
+<li>Worksite Location - {{HOME.LOCATION}}</li>
+
+<li>Position - {{HOME.POSITION}}</li>
+
+<li>Division - {{HOME.DIVISION}}</li>
+
+<li>Department - {{HOME.DEPARTMENT}}</li>
+
+<li>Work Shift - {{HOME.WORK.SHIFT}}</li>
+
+<li>Project - {{HOME.PROJECT}}</li>
+
+<li>Work Group - {{HOME.WORK.GROUP}}</li>
+
+<li>Client Name - {{CLIENT.LEGAL.NAME}}</li>
+
+<p>&gt; **Note:** **Note:** The Client Name comes from the Client Details form, while the other variables come from the Employee Details form.</p>
+
+<p>1. Enter up to four Memo lines.</p>
+
+<p>2. Click Save.</p>
+
+<p>Related Topics</p>
+
+<p>[Applying Payroll Option Template in Payroll Control](Payroll_Control_Payroll_Option_Template.htm)</p>
+
+<p>[Cloning Previous Payrolls](Payroll_Control_Clone_Last_Batch.htm)</p>
+
+<p>[Setting Special Processing Options](Payroll_Control_Options.htm)</p>
+
+<p>[Using Payroll Control Quick Load](Payroll_Control_Quick_Load.htm)</p>
+
+<p>[Using Regular Payroll Control Quick Load](Regular_Payroll_Control_Quick_Load.htm)</p>
+
+<p>[Adding Employees to a Payroll](Add_Employees_to_Payroll.htm)</p>
+
+<p>[Processing History](Payroll_Control_Processing_History.htm)</p>
+</body>
+</html>
