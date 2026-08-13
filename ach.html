@@ -1,0 +1,2826 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PrismHR Help — ACH</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<p><a href="index.html">PrismHR Help</a> · Public documentation for Microsoft 365 Copilot</p>
+<nav>
+<a href="index.html">Home</a>
+<a href="payroll.html">Payroll</a>
+<a href="benefits.html">Benefits</a>
+<a href="system-admin.html">System Admin</a>
+<a href="human-resources.html">HR</a>
+<a href="compliance.html">Compliance</a>
+<a href="task-sheets.html">Task Sheets</a>
+<a href="release-notes.html">Release Notes</a>
+</nav>
+</header>
+<header id="title-block-header">
+<h1 class="title">PrismHR Help — ACH</h1>
+</header>
+<h1 id="ach">ACH</h1>
+<p>This file is a combined export of PrismHR help topics in
+<strong>ACH</strong>. Source help system:
+https://tech-docs.prismhr.com/SP_help/Default.htm Each topic is
+separated by a heading and includes its original URL.</p>
+<p>========================================================================</p>
+<h1 id="clearing-the-lock-on-ach-processing-features">Clearing the Lock
+on ACH Processing Features</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/ACH_Clear_Lock.htm
+Path: <code>PD/ACH/Admin/ACH_Clear_Lock.htm</code></p>
+<h1 id="clearing-the-lock-on-ach-processing-features-1">Clearing the
+Lock on ACH Processing Features</h1>
+<p>Do not clear the lock on ACH processing features until you have
+verified that no one at your organization is engaged in processing any
+ACH files. If they are, do not use the ACH Clear Lock feature.</p>
+<p>To clear the lock:</p>
+<ol type="1">
+<li><p>After ensuring that no users are actively working in any ACH
+forms, click Clear Lock.</p></li>
+<li><p>Click Yes to confirm that you want to clear the lock.</p></li>
+<li><p>Click OK.</p></li>
+</ol>
+<p>Related Topics</p>
+<p><a href="../Reference/ACH_Lock_Errors_PHR.htm">ACH Lock
+Errors</a></p>
+<p><a href="../FrontMatter/ACH_UG_Chapter_File_Tasks.htm">File Tasks and
+ACH Processing</a></p>
+<p>========================================================================</p>
+<h1 id="processing-ach-for-external-payroll">Processing ACH for External
+Payroll</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/ACH_File_for_External_Payroll.htm
+Path: <code>PD/ACH/Admin/ACH_File_for_External_Payroll.htm</code></p>
+<h1 id="processing-ach-for-external-payroll-1">Processing ACH for
+External Payroll</h1>
+<p>Processing ACH for external payroll (your organization’s clients)
+involves two forms:</p>
+<ul>
+<li><p>ACH Processing: View a summary of ACH transactions ready to send
+to the bank and create or process batches of transactions.</p></li>
+<li><p>ACH Batch Control: Complete processing for the selected
+batch.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> The first time you open
+the form each day, you might see a warning message. Click Continue to
+proceed.</p>
+</blockquote>
+<h2 id="ach-processing">ACH Processing</h2>
+<p>The ACH Processing form lists all unposted batches (unless you use
+the filters at the top).</p>
+<ul>
+<li>The first column indicates the Actions you can take, either to start
+or finish processing the ACH.</li>
+</ul>
+<p><strong>Note</strong>: To process <em>multiple</em> ACH files, select
+the checkboxes that only display for the following actions:</p>
+<ul>
+<li><p>Start ACH Process</p></li>
+<li><p>Finish ACH Process</p></li>
+<li><p>Retry ACH Process</p></li>
+</ul>
+<p>When you select at least one action checkbox for processing, Build
+File displays and the Actions links are disabled. (Click Select All to
+select <em>all</em> files for processing.)</p>
+<p><strong>Important!</strong> During multiple file ACH processing, the
+system locks the ACH forms and displays one of the following warnings
+when users try to access them:</p>
+<ul>
+<li>If accessing locked files using the ACH Clear Lock form:</li>
+</ul>
+<p>[Image: screenshot]</p>
+<p>Click OK to continue, then after <em>one hour</em> users can try
+accessing the ACH Clear Lock form again to unlock the forms. However, if
+the system has not finished processing the files another warning
+displays, “Multi-File ACH has not completed processing. If you clear the
+lock you could interrupt the creation of ACH files. Are you sure you
+want to clear the lock?” Click Yes to clear the lock.</p>
+<ul>
+<li>If accessing locked files using the ACH Processing form:</li>
+</ul>
+<p>[Image: screenshot]</p>
+<p>Click OK to continue and try again later.</p>
+<p><strong>Note</strong>: See <a
+href="../../../Task%20Sheets/PD/Multiple_ACH_Processing.htm">Performing
+Multiple ACH Processing</a> for detailed information.</p>
+<ul>
+<li><p>The Status indicates whether the files are available or if the
+batch is in process.</p></li>
+<li><p>The other columns display the ACH Originator Names, the ACH Batch
+ID (if the batch is in progress), the total number of journals included
+in that batch, and other relevant totals.</p></li>
+<li><p>If you do not assign an ACH Originator to a bank account and
+transactions are processed through that bank account, a message displays
+at the bottom of this form for each missing ACH Originator. For
+example:</p></li>
+</ul>
+<p>[Image: screenshot]</p>
+<p>These messages list the number of journals that <em>would be</em>
+available for processing, if the ACH Originator was assigned in the Bank
+Accounts form.</p>
+<p>Clicking the ACH Originator Missing link opens the Bank Accounts form
+where you can add the ACH Originator for the bank account in the ACH
+Processor ID field on the ACH Setup panel.</p>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>Once a user creates a batch, you can process the transactions
+included in the batch into a file and send it to the financial
+institution.</p></li>
+<li><p>Creating the batch locks the transactions in the batch; any new
+transactions created when users post payrolls will not be added to the
+ACH batch, which allows payroll processors to continue working while you
+work on the ACH batch. Those new transactions wait for a future ACH
+batch.</p></li>
+</ul>
+<p>The buttons at the top right are available to users who can access
+the associated forms.</p>
+<ul>
+<li><p>Completed ACH Transactions is for reprinting reports, downloading
+the original ACH file, or reopening the ACH batch to rebuild the file;
+<a href="Completed_ACH_Transx_External.htm">see Viewing and Rebuilding
+Files for External Payroll ACH Batch</a>.</p></li>
+<li><p>Hold Management enables you to place direct deposits on hold
+before sending them to the financial institution, or to release direct
+deposits from hold so they can then be sent; <a
+href="ACH_Hold_Management_External.htm">see Holding/Releasing Direct
+Deposits (External Payroll)</a>.</p></li>
+</ul>
+<p>To process ACH for external payroll:</p>
+<ol type="1">
+<li>Specify which transactions to include in the ACH file build using
+the following filters:</li>
+</ol>
+<ol type="a">
+<li>— Use the File Type Limiter to indicate whether you want to build
+the ACH file with Debits and Credits, Debits Only, or Credits Only. The
+default is to include both debits and credits.</li>
+</ol>
+<p><strong>Note</strong>: If your organization has specified an offset
+account on any of the bank accounts included in the ACH batch, the
+system creates the offset entry regardless of the selection in the File
+Type Limiter drop-down. If your bank requires strict credit-only or
+debit-only files (files with no offsetting entries), then you must
+ensure that there are no offset entries defined for those accounts.</p>
+<ol start="2" type="a">
+<li><p>— Use the Child Support Filter to indicate whether you want to
+build the ACH file with Child Support and Other, Child Support Only, or
+Not Child Support transactions. The default is to include all
+transactions.</p></li>
+<li><p>— Click Refresh to filter the list to show only the selected
+transactions. It might take a brief moment for the list to update. For
+example:</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="2" type="1">
+<li>Click the Action link or the checkboxes (for multiple ACH file
+processing) on the left for the originator and ACH transactions you need
+to process.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>When you click Start ACH Process, the system creates an ACH batch
+and assigns the journals to that batch. The ACH Batch Control form then
+opens.</p></li>
+<li><p>When you click Retry ACH Process or Finish ACH Process, the ACH
+Batch Control form opens.</p></li>
+<li><p>If the batch was put on hold, you can click Review Holds to
+manage the hold (<a href="ACH_Hold_Management_External.htm">see
+Holding/Releasing Direct Deposits (External Payroll)</a>).</p></li>
+<li><p>To start the multiple ACH process, select your files and click
+Build File, which locks the files. The following message displays, “The
+Multi-File ACH process will now start. You will receive an email when
+the process has been completed. Do you want to continue?” Click Yes to
+run the ACH process. (The ACH Processing form closes.)</p></li>
+<li><p>PrismHR is responsible for defining and setting up the SFTP
+server for clients when processing multiple ACH files.</p></li>
+</ul>
+<h2 id="ach-batch-control">ACH Batch Control</h2>
+<p>The ACH Batch Control form summarizes the transactions included in
+the batch.</p>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li>Click the appropriate button to proceed as needed:</li>
+</ol>
+<ul>
+<li>Build Review Reports: When you click this button, the system
+generates the report(s) that you use to review the ACH information for
+the batch. Once they are ready, you can click the link(s) to view,
+print, or export the report(s).</li>
+</ul>
+<p>The reports are available only while you remain in the ACH Batch
+Control form. If you exit the batch after running the reports and then
+you return to it later, you must regenerate the reports to see the
+output. The data in the reports will not change because the transaction
+list is locked once you create the batch.</p>
+<ul>
+<li>Build ACH File: After you build the report(s) and then review them
+to confirm that the information is correct, click this button to build
+the ACH files. The system generates the ACH Build Detail Report, any
+other reports as appropriate for the batch, and the text file(s) for you
+to download. After a batch posts, the total number of detail lines in
+the ACH file displays, along with the total number of debits and
+credits.</li>
+</ul>
+<p><strong>Note</strong>: There is at least one text file; there may be
+more depending on the format and the transactions. Send all text files
+to your financial institution.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Text files can have
+either the .txt or .csv extension, depending on their format.</p>
+</blockquote>
+<ul>
+<li><p>Reset Batch: This button is available until you build the ACH
+file. Click this button if there is an issue with the ACH batch and you
+want to delete it. The transactions in the original batch are released
+and made available for inclusion in a new batch.</p></li>
+<li><p>Close: Click this button to close the ACH Batch Control and
+return to the Pending ACH Transactions form.</p></li>
+<li><p>Exit ACH Processing: Click this button to close both of the
+windows.</p></li>
+</ul>
+<p>Related Topic</p>
+<p><a href="../FrontMatter/External_Payrolls.htm">External
+Payrolls</a></p>
+<p>========================================================================</p>
+<h1 id="processing-ach-for-internal-payroll">Processing ACH for Internal
+Payroll</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/ACH_File_for_Internal_Payroll.htm
+Path: <code>PD/ACH/Admin/ACH_File_for_Internal_Payroll.htm</code></p>
+<h1 id="processing-ach-for-internal-payroll-1">Processing ACH for
+Internal Payroll</h1>
+<p>Processing ACH for internal payroll involves two forms:</p>
+<ul>
+<li><p>ACH Processing (Internal Payroll): View a summary of ACH
+transactions ready to send to the bank and create or process batches of
+transactions.</p></li>
+<li><p>ACH Batch Control: Complete processing for the selected
+batch.</p></li>
+</ul>
+<h2 id="ach-processing-internal-payroll">ACH Processing (Internal
+Payroll)</h2>
+<p>The ACH Processing (Internal Payroll) form lists all unposted batches
+(unless you use the filters at the top).</p>
+<ul>
+<li>The first column indicates the Actions you can take, either to start
+or finish processing the ACH for internal clients.</li>
+</ul>
+<p><strong>Note</strong>: To process <em>multiple</em> ACH files, select
+the checkboxes that only display for the following actions:</p>
+<ul>
+<li><p>Start ACH Process</p></li>
+<li><p>Finish ACH Process</p></li>
+<li><p>Retry ACH Process</p></li>
+</ul>
+<p>When you select at least one action checkbox for processing, Build
+File displays and the Actions links are disabled. (Click Select All to
+select <em>all</em> files for processing.)</p>
+<p><strong>Important!</strong> During multiple file ACH processing, the
+system locks the ACH forms and displays one of the following warnings
+when users try to access them:</p>
+<ul>
+<li>If accessing locked files using the ACH Clear Lock form:</li>
+</ul>
+<p>[Image: screenshot]</p>
+<p>Click OK to continue, then after <em>one hour</em> users can try
+accessing the ACH Clear Lock form again to unlock the forms. However, if
+the system has not finished processing the files another warning
+displays, “Multi-File ACH has not completed processing. If you clear the
+lock you could interrupt the creation of ACH files. Are you sure you
+want to clear the lock?” Click Yes to clear the lock.</p>
+<ul>
+<li>If accessing locked files using the ACH Processing form:</li>
+</ul>
+<p>[Image: screenshot]</p>
+<p>Click OK to continue and try again later.</p>
+<p><strong>Note</strong>: See <a
+href="../../../Task%20Sheets/PD/Multiple_ACH_Processing.htm">Performing
+Multiple ACH Processing</a> for detailed information.</p>
+<ul>
+<li><p>The Status indicates whether the files are available or if the
+batch is in process.</p></li>
+<li><p>The other columns display the ACH Originator Names, the ACH Batch
+ID (if the batch is in progress), the total number of journals included
+in that batch, and other relevant totals.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>Once a user has created an internal payroll batch, you can
+process the transactions included in the batch into a file and send it
+to the financial institution.</p></li>
+<li><p>Creating the internal payroll batch locks the transactions in the
+batch; any new transactions created when users post payrolls will not be
+added to the ACH batch, which allows payroll processors to continue
+working while you work on the ACH batch. Those new transactions wait for
+a future ACH batch.</p></li>
+</ul>
+<p>The buttons at the top right are available to users who can access
+the associated forms.</p>
+<ul>
+<li><p>Completed ACH Transactions is for reprinting reports, downloading
+the original ACH file, or reopening the ACH batch to rebuild the file
+for internal payroll; <a href="Completed_ACH_Transx_Internal.htm">see
+Viewing and Rebuilding Files for Internal Payroll ACH
+Batch</a>.</p></li>
+<li><p>Hold Management enables you to place direct deposits for internal
+payroll on hold before sending them to the financial institution, or to
+release direct deposits from hold so they can then be sent; <a
+href="ACH_Hold_Management_Internal.htm">see Holding/Releasing Direct
+Deposits (Internal Payroll)</a>.</p></li>
+</ul>
+<p>To process ACH for internal payroll:</p>
+<ol type="1">
+<li>The filters allow you to specify which transactions to include in
+the ACH file build.</li>
+</ol>
+<ol type="a">
+<li>— Use the File Type Limiter to indicate whether you want to build
+the ACH file with Debits and Credits, Debits Only, or Credits Only. The
+default is to include both debits and credits.</li>
+</ol>
+<p><strong>Note</strong>: If your organization has specified an offset
+account on any of the bank accounts included in the ACH batch, then the
+system creates the offset entry regardless of the selection in the File
+Type Limiter drop-down. If your bank requires strict credit-only or
+debit-only files (files with no offsetting entries), then you must
+ensure that there are no offset entries defined for those accounts.</p>
+<ol start="2" type="a">
+<li><p>— Use the Child Support Filter to indicate whether you want to
+build the ACH file with Child Support and Other, Child Support Only, or
+Not Child Support transactions. The default is to include all
+transactions.</p></li>
+<li><p>— Click Refresh to filter the list to show only the selected
+transactions. It might take a brief moment for the list to update. For
+example:</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="2" type="1">
+<li>Click the Action link or the checkboxes (for multiple ACH file
+processing) on the left for the originator and ACH transactions you need
+to process for your internal clients.</li>
+</ol>
+<ul>
+<li><p>When you click Start ACH Process, the system creates an ACH batch
+and assigns the journals to that batch. The ACH Batch Control form then
+opens.</p></li>
+<li><p>When you click Retry ACH Process or Finish ACH Process, the ACH
+Batch Control form opens.</p></li>
+<li><p>If the batch was put on hold, you can click Review Holds to
+manage the hold; <a href="ACH_Hold_Management_Internal.htm">see
+Holding/Releasing Direct Deposits (Internal Payroll)</a>.</p></li>
+<li><p>To start the multiple ACH process, select your files and click
+Build File, which locks the files. The following message displays, “The
+Multi-File ACH process will now start. You will receive an email when
+the process has been completed. Do you want to continue?” Click Yes to
+run the ACH process. (The ACH Processing form closes.)</p></li>
+<li><p>PrismHR is responsible for defining and setting up the SFTP
+server for clients when processing multiple ACH files.</p></li>
+</ul>
+<h2 id="ach-batch-control-1">ACH Batch Control</h2>
+<p>The ACH Batch Control form summarizes the transactions included in
+the internal payroll ACH batch.</p>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li>Click the appropriate button to proceed with the internal payroll
+ACH as needed:</li>
+</ol>
+<ul>
+<li>Build Review Reports: When you click this button, the system
+generates the report(s) that you use to review the ACH information for
+the internal payroll batch. Once they are ready, you can click the
+link(s) to view, print, or export the report(s).</li>
+</ul>
+<p>The reports are available only while you remain in the ACH Batch
+Control form. If you exit the batch after running the reports and then
+you return to it later, you must regenerate the reports to see the
+output. The data in the reports will not change because the transaction
+list is locked once you create the batch.</p>
+<ul>
+<li>Build ACH File: After you build the report(s) and then review them
+to confirm that the information is correct for the internal payroll,
+click this button to build the ACH files. The system generates the
+<em>ACH Build Detail Report</em>, any other reports as appropriate for
+the batch, and the text file(s) for you to download.</li>
+</ul>
+<p>There is at least one text file; there may be more depending on the
+format and the transactions. Send all text files to your financial
+institution.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Text files can have
+either the .txt or .csv extension, depending on their format.</p>
+</blockquote>
+<ul>
+<li><p>Reset Batch: This button is available until you build the ACH
+file. Click this button if there is an issue with this internal ACH
+batch and you want to delete it. The transactions in the original batch
+are released and made available for inclusion in a new batch.</p></li>
+<li><p>Close: Click this button to close the ACH Batch Control and
+return to the ACH Processing (Internal Payroll) form.</p></li>
+<li><p>Exit ACH Processing: Click this button to close both of the
+windows.</p></li>
+</ul>
+<p>Related Topic</p>
+<p><a href="../FrontMatter/Internal_Payrolls.htm">Internal
+Payrolls</a></p>
+<p>========================================================================</p>
+<h1
+id="holdingreleasing-direct-deposits-external-payroll">Holding/Releasing
+Direct Deposits (External Payroll)</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/ACH_Hold_Management_External.htm
+Path: <code>PD/ACH/Admin/ACH_Hold_Management_External.htm</code></p>
+<h1
+id="holdingreleasing-direct-deposits-external-payroll-1">Holding/Releasing
+Direct Deposits (External Payroll)</h1>
+<p>Use the ACH Hold Review and Maintenance form to place direct deposits
+on hold before sending them to the bank, or to release direct deposits
+from hold so they can then be sent to the bank.</p>
+<p>After selecting the filter settings and then selecting Find Journals,
+the form displays direct deposits that are already on hold, not on hold,
+or both, according to the selected filter settings. You can also filter
+your view to debit or credit transactions only, or filter to view
+records for a specific client, bank ID, batch, pay date, or
+employee.</p>
+<p>To place direct deposits on hold:</p>
+<ol type="1">
+<li>Set the filter options to see the transactions you need:</li>
+</ol>
+<ul>
+<li><p>On Hold Status: Select the status you want to view from the
+drop-down (Yes, No, Both). The default is Yes.</p></li>
+<li><p>Pay Date: Select a date to see transactions from that pay
+day.</p></li>
+<li><p>Client: Select one client to see transactions associated with
+that client.</p></li>
+<li><p>Employee ID: Enter an employee’s ID to see transactions
+associated with person.</p></li>
+<li><p>Payroll Batch: Select a payroll batch ID to see transactions from
+that payroll.</p></li>
+<li><p>Bank Account: Select a bank account ID/name to see transactions
+originating from that financial institution.</p></li>
+<li><p>Debit/Credit: Select which transactions you want to see from the
+drop-down (Debit, Credit, Both).</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Select Find Journals.</li>
+</ol>
+<p>The list populates with transactions that match your filter settings,
+displaying the following information:</p>
+<ul>
+<li><p>Hold: The hold status for the transaction. If selected, the
+transaction is on hold.</p></li>
+<li><p>Journal ID: The ACH journal for the transaction.</p></li>
+<li><p>Bank Account: The bank account ID where the money will be either
+debited or credited.</p></li>
+<li><p>Type: The account type (checking or savings).</p></li>
+<li><p>Company: The client ID associated with the transaction.</p></li>
+<li><p>Payroll: The payroll ID for the payroll that included the
+transaction.</p></li>
+<li><p>Pay Date: The date of the payroll that included the
+transaction.</p></li>
+<li><p>Employee ID: The employee ID, if any.</p></li>
+<li><p>Name: The employee name, if any.</p></li>
+<li><p>DB/CR: Specifies whether the transaction was a debit or a
+credit.</p></li>
+<li><p>Routing: The ABA routing number (also called a transit number)
+for the checking account where the money will be either debited or
+credited.</p></li>
+<li><p>Amount: The amount of the transaction.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>You can change the Hold status for individual transactions as needed
+by selecting or deselecting the Hold setting. You can also:</li>
+</ol>
+<ul>
+<li><p>Click All On Hold to place all transactions in the list on
+hold.</p></li>
+<li><p>Click All Off Hold to remove the hold status from all
+transactions in the list.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> You cannot place a
+transaction on hold if it is in an ACH batch.</p>
+</blockquote>
+<ol start="4" type="1">
+<li><p>Click Save to save any changes, then click OK in the confirmation
+message that notifies you of the number of records that
+changed.</p></li>
+<li><p>When you are finished, click the Close button or [Image:
+screenshot] to exit the form and clear the ACH Lock.</p></li>
+</ol>
+<h2 id="deleting-a-hold">Deleting a Hold</h2>
+<p>You can remove holds on direct deposits in the system.</p>
+<p><strong>Note</strong>: The Delete button only displays when the On
+Hold Status is set to Yes.</p>
+<p>To remove a hold from the system:</p>
+<ol type="1">
+<li><p>Set the On Hold Status to Yes, then select Find Journals. The
+list of journals on hold displays.</p></li>
+<li><p>Select a journal that displays in the list.</p></li>
+<li><p>Click Delete. A warning displays:</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="4" type="1">
+<li>Select Yes to remove the hold on the selected journal.</li>
+</ol>
+<p>Related Topics</p>
+<p><a href="ACH_File_for_External_Payroll.htm">Processing ACH for
+External Payroll</a></p>
+<p><a href="../FrontMatter/External_Payrolls.htm">External
+Payrolls</a></p>
+<p>========================================================================</p>
+<h1
+id="holdingreleasing-direct-deposits-internal-payroll">Holding/Releasing
+Direct Deposits (Internal Payroll)</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/ACH_Hold_Management_Internal.htm
+Path: <code>PD/ACH/Admin/ACH_Hold_Management_Internal.htm</code></p>
+<h1
+id="holdingreleasing-direct-deposits-internal-payroll-1">Holding/Releasing
+Direct Deposits (Internal Payroll)</h1>
+<p>Use the ACH Hold Management form to place direct deposits for
+internal payroll on hold before sending them to the bank, or to release
+direct deposits from hold so they can then be sent to the bank.</p>
+<p>After selecting the filter settings and then selecting Find Journals,
+the form displays direct deposits that are already on hold, not on hold,
+or both, according to the selected filter settings. You can also filter
+your view to debit or credit transactions only, or filter to view
+records for a specific client, bank ID, batch, pay date, or
+employee.</p>
+<ol type="1">
+<li>Set the filter options to see the transactions that you need:</li>
+</ol>
+<ul>
+<li><p>On Hold Status: Select the status you want to view from the
+drop-down (Yes, No, Both). The default is Yes.</p></li>
+<li><p>Pay Date: Select a date to see transactions from that pay
+day.</p></li>
+<li><p>Company: Select one internal client to see transactions
+associated with that client.</p></li>
+<li><p>Employee ID: Enter an employee’s ID to see transactions
+associated with person.</p></li>
+<li><p>Bank Account: Select a bank account ID/name to see transactions
+originating from that financial institution.</p></li>
+<li><p>Debit/Credit: Select which transactions you want to see from the
+drop-down (Debit, Credit, Both).</p></li>
+<li><p>Payroll Batch: Select a payroll batch ID to see transactions from
+that payroll.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Select Find Journals.</li>
+</ol>
+<p>The list populates with transactions that match your filter settings,
+displaying the following information:</p>
+<ul>
+<li><p>Hold: The hold status for the transaction. If selected, the
+transaction is on hold.</p></li>
+<li><p>Journal ID: The ACH journal for the transaction.</p></li>
+<li><p>Bank Account: The bank account ID where the money will be either
+debited or credited.</p></li>
+<li><p>Type: The account type (checking or savings).</p></li>
+<li><p>Company: The client ID associated with the transaction.</p></li>
+<li><p>Payroll: The payroll ID for the payroll that included the
+transaction.</p></li>
+<li><p>Pay Date: The date of the payroll that included the
+transaction.</p></li>
+<li><p>Employee ID: The employee ID, if any.</p></li>
+<li><p>Name: The employee name, if any.</p></li>
+<li><p>DB/CR: Specifies whether the transaction was a debit or a
+credit.</p></li>
+<li><p>Routing: The ABA routing number (also called a transit number)
+for the checking account where the money will be either debited or
+credited.</p></li>
+<li><p>Amount: The amount of the transaction.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>You can change the Hold status for individual transactions as needed
+by selecting or deselecting the Hold setting. You can also:</li>
+</ol>
+<ul>
+<li><p>Click All On Hold to place all transactions in the list on
+hold.</p></li>
+<li><p>Click All Off Hold to remove the hold status from all
+transactions in the list.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> You cannot place a
+journal on hold if it is in an ACH batch.</p>
+</blockquote>
+<ol start="4" type="1">
+<li><p>Click Save to save any changes, then click OK in the confirmation
+message that notifies you of the number of records that
+changed.</p></li>
+<li><p>When you are finished, click the Close button or [Image:
+screenshot] to exit the form and clear the ACH Lock.</p></li>
+</ol>
+<h2 id="deleting-a-hold-1">Deleting a Hold</h2>
+<p>You can remove holds on direct deposits in the system.</p>
+<p><strong>Note</strong>: The Delete button only displays when the On
+Hold Status is set to Yes.</p>
+<p>To remove a hold from the system:</p>
+<ol type="1">
+<li><p>Set the On Hold Status to Yes, then select Find Journals. The
+list of journals on hold displays.</p></li>
+<li><p>Select a journal that displays in the list.</p></li>
+<li><p>Click Delete. A warning displays:</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="4" type="1">
+<li>Select Yes to remove the hold on the selected journal.</li>
+</ol>
+<p>Related Topics</p>
+<p><a href="ACH_File_for_Internal_Payroll.htm">Processing ACH for
+Internal Payroll</a></p>
+<p><a href="../FrontMatter/Internal_Payrolls.htm">Internal
+Payrolls</a></p>
+<p>========================================================================</p>
+<h1 id="creating-or-modifying-an-ach-journal">Creating or Modifying an
+ACH Journal</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/ACH_Journal_Edit_and_Entry.htm
+Path: <code>PD/ACH/Admin/ACH_Journal_Edit_and_Entry.htm</code></p>
+<h1 id="creating-or-modifying-an-ach-journal-1">Creating or Modifying an
+ACH Journal</h1>
+<p>Use the ACH Journal Edit/Entry form to enter a new ACH journal or
+modify or delete an existing ACH journal.</p>
+<p>[Image: screenshot]</p>
+<p>To enter a new ACH journal or modify an existing ACH journal:</p>
+<ol type="1">
+<li>Enter the Company ID of the client that the ACH journal will debit
+or credit. The Journal field and the Create New Journal option both
+activate.</li>
+</ol>
+<ul>
+<li><p>Enter a Journal ID if you want to modify an existing ACH journal.
+The ACH journal information populates the form.</p></li>
+<li><p>Click Create New Journal if you want to create a new ACH
+journal.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>If you are creating an ACH journal for a specific employee, enter or
+select the Employee ID. Leave this field blank if the ACH journal is for
+a client. (<strong>Note</strong>: If you do not enter or select an
+employee, the HSA options in the Checking/Savings/HSA field (see step
+7.) do not display for client-only transactions.)</li>
+</ol>
+<p><strong>Note</strong>: After entering or selecting the Employee ID,
+if you try to change it a message displays, “Please cancel and start new
+entry to change Employee.” Click Cancel and re-enter the ACH journal
+information.</p>
+<ol start="3" type="1">
+<li><p>Enter the Effective Date for the journal, which is the date the
+account should be debited or credited.</p></li>
+<li><p>Enter the ID of the payroll Checking Account where the debited
+funds will be deposited or the credited funds withdrawn.</p></li>
+<li><p>From the Debit/Credit drop-down, indicate whether the journal is
+debit or credit:</p></li>
+</ol>
+<ul>
+<li><p>Debit: The transaction will draw funds from the client or
+employee’s account.</p></li>
+<li><p>Credit: The transaction will deposit funds into the client or
+employee’s account.</p></li>
+</ul>
+<ol start="6" type="1">
+<li><p>Enter the Amount to debit or credit. To create a prenote
+transaction, enter 0.</p></li>
+<li><p>From the Checking/Savings/HSA drop-down, indicate the receiver’s
+account type:</p></li>
+</ol>
+<ul>
+<li><p>Checking</p></li>
+<li><p>Savings</p></li>
+<li><p>Employee HSA to Savings or Employee HSA to Checking, depending on
+whether the employee’s direct deposit accounts are set to Savings or
+Checking, respectively</p></li>
+<li><p>Company HSA to Savings or Company HSA to Checking, depending on
+whether the employee’s direct deposit accounts are set to Savings or
+Checking, respectively</p></li>
+</ul>
+<p>After selecting one of these options, the system automatically
+populates the account information and the account type.</p>
+<p><strong>Note</strong>: The HSA options only display in the
+Checking/Savings/HSA field if the selected employee has HSA set up in
+their Deposit information on the Employee Details form.</p>
+<p>After making a selection, if you’re doing a client-only transaction
+the Default Checking Account Transit and Account Numbers panel
+displays.</p>
+<p>[Image: screenshot]</p>
+<p><strong>Note</strong>: This panel also displays for employee
+transactions, but only if the employee does <em>not</em> have direct
+deposit setup in the system.</p>
+<ol start="8" type="1">
+<li>Enter one of the following appropriate values:</li>
+</ol>
+<ul>
+<li><p>ID of the account in the From Checking Account field</p></li>
+<li><p>Client ID in the From Company field</p></li>
+<li><p>Client location in the From Location field</p></li>
+</ul>
+<p>The default ABA Transit Number and the DFI Account Number populate
+for the value that you entered.</p>
+<ol start="9" type="1">
+<li><p>If the selected employee or client has a checking or savings
+account, the system automatically populates that account number in the
+Transit Number and DFI Account Number fields.</p></li>
+<li><p>If the ACH journal pays an invoice, enter the Invoice
+Number.</p></li>
+<li><p>Select ACH on Hold if you want to place the journal on
+hold.</p></li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Note the following when working with journals
+on hold:</p>
+</blockquote>
+<ul>
+<li><p>If you place one or more journals from a <em>reopened</em> batch
+on hold, the system removes those journals from the original ACH batch
+and places them in a new batch.</p></li>
+<li><p>Any consolidation of amounts with other journals in the original
+batch will be undone.</p></li>
+<li><p>If you choose to remove the journals from hold and process the
+new batch, the system does not apply a duplicate payment to the client
+invoice. (The system assumes that the invoice was updated when the first
+ACH file was built, but for some reason the funds were not actually
+received.)</p></li>
+</ul>
+<p><strong>Important!</strong> It is the user’s responsibility to ensure
+that the system did not process a debit or credit in the original file
+before reopening an ACH batch and building a new file with any of the
+original journals. Any duplicates that were already paid in the original
+file will be paid again.</p>
+<ol start="12" type="1">
+<li><p>Select Suppress Cash Accounting if you want to suppress
+generating the accounting journal for this transaction.</p></li>
+<li><p>You can enter Change Comments as needed if you are modifying an
+existing ACH journal.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+<p><strong>Note</strong>: Before saving a new ACH journal, if you
+defined a Miscellaneous Item of ACHSUSP (ACH On Hold/Charge Suspense
+account) on the G/L Setup form, you must define a G/L account associated
+with that item. Otherwise, the system displays the following error
+message when you try to save the journal, “The ACH Suspense Account must
+be defined at System / Change / G/L Setup to save this record.”</p>
+<p>To view audit logs:</p>
+<ol type="1">
+<li><p>Enter or select the Company ID.</p></li>
+<li><p>Enter or select the Journal.</p></li>
+<li><p>Select Audit Logs. The File Audit form displays.</p></li>
+</ol>
+<p><strong>Note</strong>: The Audit Logs link does not display if you do
+not have access to the File Audit form. To gain access, you must
+manually add this form to your user role.</p>
+<p>To delete an existing ACH journal:</p>
+<ol type="1">
+<li><p>Select the Company, then select the Journal for deletion. The
+journal’s information displays.</p></li>
+<li><p>Click Delete. A warning displays:</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li><p>Select Yes to permanently erase the record from the
+system.</p></li>
+<li><p>Click Close. The system releases the ACH lock.</p></li>
+</ol>
+<p>Related Topic</p>
+<p><a href="../FrontMatter/ACH_UG_Chapter_File_Tasks.htm">File Tasks and
+ACH Processing</a></p>
+<p>========================================================================</p>
+<h1 id="adjust-client-ach-bill-day">Adjust Client ACH Bill Day</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/Adjust%20Client%20ACH%20Bill%20Day.htm
+Path: <code>PD/ACH/Admin/Adjust Client ACH Bill Day.htm</code></p>
+<h1 id="adjust-client-ach-bill-day-1">Adjust Client ACH Bill Day</h1>
+<p>Use this form to change the day of the ACH for client billing. This
+ACH day is used when the ACH files are generated.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> <strong>Client Access
+Group Security is enabled on this form.</strong></p>
+</blockquote>
+<p>To access the form, click the Back Office menu. Under
+Operations|Change, click Adjust Client ACH Bill Day.</p>
+<p>To adjust the ACH bill day for a client, complete the following:</p>
+<ol type="1">
+<li><p>Under Client ID, enter the Client ID of the client whose ACH bill
+day needs to be adjusted.</p></li>
+<li><p>Under Number of Days to Adjust ACH Transactions by, enter the
+number of days (which may be negative) by which to adjust the processing
+of the ACH. Please note that this will only avoid weekends, but not bank
+holidays.</p></li>
+<li><p>Click Save to save the changes.</p></li>
+</ol>
+<p>========================================================================</p>
+<h1 id="changing-ach-billing-day">Changing ACH Billing Day</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/Changing_ACH_Billing_Day.htm
+Path: <code>PD/ACH/Admin/Changing_ACH_Billing_Day.htm</code></p>
+<h1 id="changing-ach-billing-day-1">Changing ACH Billing Day</h1>
+<p>This setting allows your organization to adjust the pay date for
+employees ACH pay dates that differ from the pay date of the payroll
+batch if it falls on a holiday or a weekend. Access this feature by
+selecting Client &gt; Client|Change &gt; Client Details and then click
+the Payroll tab.</p>
+<p>See “Setting Alternate Pay Dates” in the Client Administration User
+Guide for more information.</p>
+<p>========================================================================</p>
+<h1
+id="viewing-and-rebuilding-files-for-external-payroll-ach-batch">Viewing
+and Rebuilding Files for External Payroll ACH Batch</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/Completed_ACH_Transx_External.htm
+Path: <code>PD/ACH/Admin/Completed_ACH_Transx_External.htm</code></p>
+<h1
+id="viewing-and-rebuilding-files-for-external-payroll-ach-batch-1">Viewing
+and Rebuilding Files for External Payroll ACH Batch</h1>
+<p>Viewing and rebuilding files for an external payroll ACH batch
+involves two forms:</p>
+<ul>
+<li><p>Completed ACH Transactions: View a summary of completed ACH
+batches.</p></li>
+<li><p>ACH Batch Control History: Reprint reports or reopen an external
+payroll ACH batch to rebuild the file.</p></li>
+</ul>
+<h2 id="completed-ach-transactions">Completed ACH Transactions</h2>
+<ol type="1">
+<li><p>By default, the ACH Originator ID field displays All and the list
+includes all completed batches. You can enter an ACH Originator ID and
+then click Refresh to see only the completed batches that have been
+posted for the specified ACH originator.</p></li>
+<li><p>You can filter the list by dates; the default Start Date is one
+week before the current date, and the End Date is the current date.
+Enter different dates and then click Refresh to see only the completed
+batches posted during that date range. For example:</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<p><strong>Note</strong>: You can select <em>multiple</em> ACH
+transactions by selecting the ACH Batch ID checkboxes.</p>
+<ol start="3" type="1">
+<li>Click the ACH Batch ID of the ACH batch you want to work with. The
+ACH Batch Control History form opens.</li>
+</ol>
+<h2 id="ach-batch-control-history">ACH Batch Control History</h2>
+<p>The ACH Batch Control History form summarizes the transactions
+included in the posted batch.</p>
+<ol start="4" type="1">
+<li>Click each link under ACH Files for Download to download the
+original ACH file(s). You would typically do this when the original ACH
+file was misplaced.</li>
+</ol>
+<p>There is at least one file; there may be more depending on the format
+and the transactions. Send all files to your financial institution.</p>
+<ol start="5" type="1">
+<li>Click one of the buttons to proceed as needed:</li>
+</ol>
+<ul>
+<li>Build Review Reports: Rebuilds the report(s) as they were at the
+time the original batch was posted. The number of reports depends on the
+financial institution’s format.</li>
+</ul>
+<p><strong>Note</strong>: The Build Review Reports button is disabled
+for <em>completed</em> ACH transactions. (This button is still enabled
+for any ACH batch that is <em>not</em> completed, including reopened
+batches.) Instead, you can use ACH reports in the Report Center for
+these transactions.</p>
+<p>One of the following messages displays when you click this button for
+completed transactions, depending on the form you are accessing:</p>
+<ul>
+<li><p>ACH Batch Control History form: When you click Build Review
+Reports for a completed ACH batch the following message displays, “ACH
+reporting for completed ACH batches is now available in Report
+Center.”</p></li>
+<li><p>ACH Batch Control form: After creating the ACH file, when you
+click Build Review Reports for a completed ACH batch the following
+message displays, “Build Review already completed, you can access the
+reports by clicking the links on the screen.”</p></li>
+</ul>
+<p>In place of this disabled functionality, you can use the following
+ACH reports in the Report Center for completed ACH transactions:</p>
+<ul>
+<li><p>ACH File Cash Receipt Audit: Includes details of ACH cash receipt
+transactions. (Data from ACH history.)</p></li>
+<li><p>ACH History: Includes detail and summary views of the ACH File
+History (see pivot). Now includes columns for Child Support and
+Garnishment Deposits. (Data from ACH history.)</p></li>
+<li><p>ACH Reconciliation Net: Includes net ACH amounts for payroll
+invoices, child support, and electronic garnishments. (Data from ACH
+history.)</p></li>
+<li><p>ACH Resubmission by Transmit Date: Includes details of ACH
+resubmission transactions. (Data from ACH history.)</p></li>
+</ul>
+<p><strong>Note</strong>: See the Report Center documentation for
+information on how to build report views.</p>
+<ul>
+<li>Reopen: Reopens the batch if there was an issue with the original
+file. It becomes available in the ACH Processing form for external
+payrolls, where it will be available as In Process and locked down to
+any changes. You can finish the ACH process again for the external
+payroll.</li>
+</ul>
+<h2 id="performing-a-mass-download-of-created-bank-files">Performing a
+Mass Download of Created Bank Files</h2>
+<p>After processing <em>multiple</em> ACH files, you can download the
+created bank files by selecting at least one ACH Batch ID checkbox to
+display Download File. For example:</p>
+<p>[Image: screenshot]</p>
+<p>Select the checkboxes and click Download File. A message displays,
+“Download ACH Files?” Click Yes to download the files. A new window
+opens displaying the downloaded ACH files in a .zip file, which you can
+open and save to another location.</p>
+<p><strong>Note</strong>: You can use this method in case the system did
+not automatically download the files to the SFTP server.</p>
+<p>Related Topics</p>
+<p><a href="ACH_File_for_External_Payroll.htm">Processing ACH for
+External Payroll</a></p>
+<p><a href="../FrontMatter/External_Payrolls.htm">External
+Payrolls</a></p>
+<p>========================================================================</p>
+<h1
+id="viewing-and-rebuilding-files-for-internal-payroll-ach-batch">Viewing
+and Rebuilding Files for Internal Payroll ACH Batch</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/Completed_ACH_Transx_Internal.htm
+Path: <code>PD/ACH/Admin/Completed_ACH_Transx_Internal.htm</code></p>
+<h1
+id="viewing-and-rebuilding-files-for-internal-payroll-ach-batch-1">Viewing
+and Rebuilding Files for Internal Payroll ACH Batch</h1>
+<p>Viewing and rebuilding files for an internal payroll ACH batch
+involves two forms:</p>
+<ul>
+<li><p>Completed ACH Transactions: View a summary of completed ACH
+batches.</p></li>
+<li><p>ACH Batch Control History: Reprint reports or reopen an internal
+payroll ACH batch to rebuild the file.</p></li>
+</ul>
+<h2 id="completed-ach-transactions-1">Completed ACH Transactions</h2>
+<ol type="1">
+<li><p>By default, the ACH Originator ID field displays All and the list
+includes all completed batches. You can enter an ACH Originator ID and
+then click Refresh to see only the completed batches that have been
+posted for the specified ACH originator.</p></li>
+<li><p>You can filter the list by dates; the default Start Date is one
+week before the current date, and the End Date is the current date.
+Enter different dates and then click Refresh to see only the completed
+batches posted during that date range. For example:</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<p><strong>Note</strong>: You can select <em>multiple</em> ACH
+transactions by selecting the ACH Batch ID checkboxes.</p>
+<ol start="3" type="1">
+<li>Click the ACH Batch ID of the ACH batch you want to work with. The
+ACH Batch Control History form opens.</li>
+</ol>
+<h2 id="ach-batch-control-history-1">ACH Batch Control History</h2>
+<p>The ACH Batch Control History form summarizes the transactions
+included in the posted batch. For example:</p>
+<p>[Image: screenshot]</p>
+<ol start="4" type="1">
+<li>Click each link under ACH Files for Download to download the
+original ACH file(s). You would typically do this when the original ACH
+file was misplaced.</li>
+</ol>
+<p>There is at least one file; there may be more depending on the format
+and the transactions. Send all files to your financial institution.</p>
+<ol start="5" type="1">
+<li>Click one of the buttons to proceed as needed:</li>
+</ol>
+<ul>
+<li>Build Review Reports: Rebuilds the report(s) as they were at the
+time the original batch was posted. The number of reports depends on the
+financial institution’s format.</li>
+</ul>
+<p><strong>Note</strong>: The Build Review Reports button is disabled
+for <em>completed</em> ACH transactions. (This button is still enabled
+for any ACH batch that is <em>not</em> completed, including reopened
+batches.) Instead, you can use ACH reports in the Report Center for
+these transactions.</p>
+<p>One of the following messages displays when you click this button for
+completed transactions, depending on the form you are accessing:</p>
+<ul>
+<li>ACH Batch Control History form: When you click Build Review Reports
+for a completed ACH batch, the ACH File Build Reports panel displays.
+You can view <em>original</em> (historical) ACH reports by selecting the
+following options:</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Build Detail Report</td>
+<td>Displays the <em>ACH File Detail Report</em>.</td>
+</tr>
+<tr class="even">
+<td>Cash Receipt Details Report</td>
+<td>Displays the <em>ACH File Cash Receipt Detail Report</em>.</td>
+</tr>
+<tr class="odd">
+<td>Build Summary Report</td>
+<td>Displays the <em>ACH File Build Hash Total Report</em>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note</strong>: These are the same reports that the system
+creates when you complete the ACH process for the first time, which
+display in the ACH Batch Control form by selecting Build Review
+Reports.</p>
+<ul>
+<li>ACH Batch Control form: After creating the ACH file, when you click
+Build Review Reports for a completed ACH batch the following message
+displays, “Build Review already completed, you can access the reports by
+clicking the links on the screen.”</li>
+</ul>
+<p>In place of this disabled functionality, you can use the following
+ACH reports in the Report Center for completed ACH transactions:</p>
+<ul>
+<li><p>ACH File Cash Receipt Audit: Includes details of ACH cash receipt
+transactions. (Data from ACH history.)</p></li>
+<li><p>ACH History: Includes detail and summary views of the ACH File
+History (see pivot). Now includes columns for Child Support and
+Garnishment Deposits. (Data from ACH history.)</p></li>
+<li><p>ACH Reconciliation Net: Includes net ACH amounts for payroll
+invoices, child support, and electronic garnishments. (Data from ACH
+history.)</p></li>
+<li><p>ACH Resubmission by Transmit Date: Includes details of ACH
+resubmission transactions. (Data from ACH history.)</p></li>
+</ul>
+<p><strong>Note</strong>: See the Report Center documentation for
+information on how to build report views.</p>
+<ul>
+<li>Reopen: Reopens the batch if there was an issue with the original
+file. It becomes available in the ACH Processing form for internal
+payrolls, where it will be available as In Process and locked down to
+any changes. You can finish the ACH process again for the internal
+payroll.</li>
+</ul>
+<h2 id="performing-a-mass-download-of-created-bank-files-1">Performing a
+Mass Download of Created Bank Files</h2>
+<p>After processing <em>multiple</em> ACH files, you can download the
+created bank files by selecting at least one ACH Batch ID checkbox to
+display Download File. For example:</p>
+<p>[Image: screenshot]</p>
+<p>Select the checkboxes and click Download File. A message displays,
+“Download ACH Files?” Click Yes to download the files. A new window
+opens displaying the downloaded ACH files in a .zip file, which you can
+open and save to another location.</p>
+<p><strong>Note</strong>: You can use this method in case the system did
+not automatically download the files to the SFTP server.</p>
+<p>Related Topics</p>
+<p><a href="ACH_File_for_Internal_Payroll.htm">Processing ACH for
+Internal Payroll</a></p>
+<p><a href="../FrontMatter/Internal_Payrolls.htm">Internal
+Payrolls</a></p>
+<p>========================================================================</p>
+<h1
+id="specifying-maximum-number-of-bank-accounts-for-employee">Specifying
+Maximum Number of Bank Accounts for Employee</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/Direct%20Deposit%20Form%20Settings.htm
+Path: <code>PD/ACH/Admin/Direct Deposit Form Settings.htm</code></p>
+<h1
+id="specifying-maximum-number-of-bank-accounts-for-employee-1">Specifying
+Maximum Number of Bank Accounts for Employee</h1>
+<p>Use this form to specify the maximum number of bank accounts that can
+be set up for an employee.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> <strong>This form does
+not use Client Access Group Security.</strong></p>
+</blockquote>
+<p>To access the form, click the Back Office menu. Under System|Change,
+click Direct Deposit Form Settings.</p>
+<p>To set up the Direct Deposit form:</p>
+<ol type="1">
+<li>Complete the following fields:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Direct Deposit Form Settings</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Maximum Number of Bank Accounts Allowed</td>
+<td>Enter the maximum number of bank accounts to be set up for an
+employee.</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Click Save to save the record.</li>
+</ol>
+<p>========================================================================</p>
+<h1 id="setting-up-clients-pre-ach-maintenance-for-pay-groups">Setting
+Up Client’s Pre-ACH Maintenance for Pay Groups</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/PreACH_Maintenance_for_Pay_Groups.htm
+Path:
+<code>PD/ACH/Admin/PreACH_Maintenance_for_Pay_Groups.htm</code></p>
+<h1 id="setting-up-clients-pre-ach-maintenance-for-pay-groups-1">Setting
+Up Client’s Pre-ACH Maintenance for Pay Groups</h1>
+<p>Use the Pre-ACH Maintenance panel of the Pay Groups form to set up
+client pre‑ACH processing for that pay group.</p>
+<p>[Image: Pre-ACH Maintenance panel]</p>
+<p>To set up Pre-ACH Maintenance for client pay groups:</p>
+<ol type="1">
+<li><p>In PrismHR, open the Pay Groups form (found in the Payroll menu
+under Payroll|Change).</p></li>
+<li><p>Make sure that the correct client is selected. If not, click the
+client name at the top of the form and then select the correct
+client.</p></li>
+<li><p>Enter the Pay Group code. The form populates with the information
+for that pay group.</p></li>
+<li><p>Expand the Pre‑ACH Maintenance panel.</p></li>
+<li><p>If appropriate, select the number of Pre‑ACH Days. The system
+sends a pre‑ACH file ahead of the regular ACH file by the number of days
+selected. This number must be less than the cycle length for the feature
+to work correctly.</p></li>
+</ol>
+<p>If your organization is not using pre‑ACH processing for this pay
+group, you must set this field to ‑‑Select‑‑.</p>
+<ol start="6" type="1">
+<li>The system can use either an average or a flat amount for the
+pre‑ACH:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pre-ACH Amount Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Average</td>
+<td>Use the pre‑ACH invoice fields to specify an average for up to five
+invoices. You can enter any information in the Pre‑ACH Invoice Number
+and Pre‑ACH Invoice Amount columns, because the system does not verify
+it. For example, if you are setting up a pre‑ACH prenote on the client
+for the first time and plan to use five invoices for the average that
+will typically be around $10,000, you can enter five “starter” invoices
+using any invoice number (for example, START1, START2, START3, and so
+on) and enter $10,000 for each. When the system processes a real
+payroll, it drops the first starter invoice from the list and inserts a
+real invoice at the end. After the first five payrolls, all the starter
+invoices are no longer on the list. The system sends pre‑ACH prenotes
+using the average of the invoices in the list. After five payrolls, the
+average will be based on actual data. - The system lists each Pre‑ACH
+Invoice Number in the chain for seeking the current average to pre‑ACH.
+You can enter different invoice numbers. - The Pre‑ACH Invoice Amount is
+each invoice’s contribution amount. You can enter a different amount to
+force a new average. The Current Average displays below the table.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The system lists each Pre‑ACH Invoice Number in the chain for
+seeking the current average to pre‑ACH. You can enter different invoice
+numbers.</li>
+<li>The Pre‑ACH Invoice Amount is each invoice’s contribution amount.
+You can enter a different amount to force a new average. | Flat | Enter
+the Pre‑ACH Override to use a flat amount rather than the Current
+Average of invoices and amounts. If you use the flat method, the system
+always uses that amount for pre‑ACH for the client and this pay group.
+The system never checks nor averages the invoice amounts. |</li>
+</ul>
+<ol start="7" type="1">
+<li>If setting up Pre-ACH for the first time, enter the batch number of
+any <em>completed</em> batch in the Pre‑ACH Batch Number field.</li>
+</ol>
+<p>For each pay group, the daily Pre-ACH program compares the
+in-progress batch number with the batch number entered in this field. If
+these are identical, the system skips the in-progress batch for Pre-ACH
+processing. When you enter the ID of a <em>previously completed</em>
+batch, you indicate that PrismHR needs to process the in-progress batch
+for Pre-ACH. The system will evaluate the in-progress batch for
+processing, create the appropriate ACH entries, and automatically update
+this field with the in-progress batch number. This prevents double
+entries from occurring.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> In the case where
+Pre-ACH entries were already created for a batch, but this batch was
+later deleted and re-created (therefore giving it a new batch number),
+you must <em>manually</em> update this field with the new batch number.
+For example, assume a Pre‑ACH prenote was sent for batch 202202, but for
+some reason you decided to delete that batch and create the next regular
+payroll batch to replace it. If the system assigns number 202205 to the
+new batch, you must change the value in the Pre-ACH Batch Number field
+from 202202 to 202205. This ensures that PrismHR does not re-transmit
+the Pre-ACH entry.</p>
+</blockquote>
+<ol start="8" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Related Topics</p>
+<p><a href="../FrontMatter/ACH_UG_Chapter_PreACH_Processing.htm">Pre-ACH
+Processing</a></p>
+<p><a href="../../Payroll/Change/Pay_Groups.htm">Establishing Pay
+Groups</a></p>
+<p>========================================================================</p>
+<h1 id="register-rebuild-history">Register Rebuild History</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/Register%20Rebuild%20History.htm
+Path: <code>PD/ACH/Admin/Register Rebuild History.htm</code></p>
+<h1 id="register-rebuild-history-1">Register Rebuild History</h1>
+<p>Use this form to generate a Register Rebuild Log showing the tax
+register rebuild logs every time the company tax register was rebuilt.
+You cannot find this form using normal search as this form is built into
+the Register Rebuilds form.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> <strong>Client Access
+Group Security is enabled on this form.</strong></p>
+</blockquote>
+<p>To access this form, click the Back Office menu. Under
+Operations|Action, click Register Rebuilds. On Register Rebuilds, click
+History Report button to open the Register Rebuild History form.</p>
+<p>To view the company tax register rebuild history report:</p>
+<ol type="1">
+<li>Complete the following fields:</li>
+</ol>
+<p>Field — Description</p>
+<p>Client ID — This field is optional. You can enter the client ID or
+click the Client ID link to select one from the Select Client dialog
+box. Leave this field blank to select all clients.</p>
+<p>Year — Defaults to the current year. Select the year for which you
+want to run this report from the drop-down.</p>
+<ol start="2" type="1">
+<li><p>Click Run to run the report. The Register Rebuild Log opens on
+the screen.</p></li>
+<li><p>The Register Rebuild Log has the following columns:</p></li>
+</ol>
+<ul>
+<li><p>Company ID</p></li>
+<li><p>Client Name</p></li>
+<li><p>Year</p></li>
+<li><p>Register Rebuild Date</p></li>
+<li><p>Register Rebuild Time</p></li>
+<li><p>Register Rebuild User</p></li>
+<li><p>Register Rebuild Reason</p></li>
+</ul>
+<ol start="4" type="1">
+<li>Click the XLS link to download the report.</li>
+</ol>
+<p>========================================================================</p>
+<h1 id="resubmitting-an-individual-ach-transaction">Resubmitting an
+Individual ACH Transaction</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Admin/Resubmit_an_ACH_Item.htm
+Path: <code>PD/ACH/Admin/Resubmit_an_ACH_Item.htm</code></p>
+<h1 id="resubmitting-an-individual-ach-transaction-1">Resubmitting an
+Individual ACH Transaction</h1>
+<p>Use the Resubmit an ACH Item form to resubmit an individual ACH
+transaction within an ACH file.</p>
+<p>For example, you might need to do this if the account number for the
+employee was incorrect and the receiving financial institution accepted
+all of the other transactions in the file but not that one. (You can
+often prevent this issue by going through the prenote process.)</p>
+<p>[Image: screenshot]</p>
+<p>To resubmit an individual ACH transaction within an ACH file, do the
+following:</p>
+<ol type="1">
+<li>Enter the Journal ID for the transaction you want to resubmit or
+search for a journal ID by clicking this field. When performing a
+search, enter the selection criteria in the Select ACH History panel and
+click Accept. The dialog closes and a list matching the selection
+criteria displays. After selecting the journal ID, the transaction
+information populates the form.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> The Employee ID or
+Client ID, Original Transmit Date, ACH transaction Amount, and New
+Amount fields are read-only.</p>
+</blockquote>
+<ol start="2" type="1">
+<li><p>Enter the ID of the payroll Checking Account from which the
+credited funds will be drawn or to which the debited funds will be
+deposited.</p></li>
+<li><p>From the Debit/Credit drop-down, indicate whether the transaction
+is debit or credit:</p></li>
+</ol>
+<ul>
+<li><p>Debit: The transaction will draw funds from the client or
+employee’s account.</p></li>
+<li><p>Credit: The transaction will deposit funds into the client or
+employee’s account.</p></li>
+</ul>
+<ol start="4" type="1">
+<li><p>Enter ABA Transit Number of the receiver’s bank or other
+financial institution.</p></li>
+<li><p>Enter the DFI Account Number of the receiver’s bank or other
+financial institution.</p></li>
+<li><p>From the Checking/Savings drop-down, indicate whether the
+receiver’s account is a checking or savings account.</p></li>
+<li><p>If the transaction pays an invoice, enter the Invoice
+No.</p></li>
+<li><p>If applicable, enter the Add On Fee for the transaction.</p></li>
+<li><p>Enter the New Transmit Date on which the ACH will be transmitted.
+It must be a date in the future.</p></li>
+<li><p>Click Resubmit to resubmit the ACH item with changes. You can
+also click Cancel to close the ACH item without submitting
+changes.</p></li>
+</ol>
+<p>Related Topic</p>
+<p><a href="../FrontMatter/ACH_UG_Chapter_File_Tasks.htm">File Tasks and
+ACH Processing</a></p>
+<p>========================================================================</p>
+<h1 id="using-ach-network">Using ACH Network</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/ACH_UG_ACH_Network.htm
+Path: <code>PD/ACH/FrontMatter/ACH_UG_ACH_Network.htm</code></p>
+<h1 id="using-ach-network-1">Using ACH Network</h1>
+<p>The Automated Clearing House (ACH) Network is a nationwide system
+that uses electronic payments exclusively, rather than physical checks
+or forms. The electronic transactions are passed between financial
+institutions, corporations, and consumers throughout the country.</p>
+<p>The following illustration is based on a figure published by the
+National Automated Clearing House Association (NACHA), that explains the
+basic transaction flow within the ACH network.</p>
+<p>[Image: screenshot]</p>
+<p>To make the illustration about ACH participants more specific:</p>
+<ol type="1">
+<li>Your organization is the originator of the ACH transactions.</li>
+</ol>
+<p>These include payroll transactions and commercial transactions.</p>
+<ol start="2" type="1">
+<li>You create your ACH files for your clients (or your own company) and
+send them to the</li>
+</ol>
+<p>Originating Depository Financial Institution (ODFI) for each client
+(or your own bank).</p>
+<p>In PrismHR, the ODFIs to which you send the ACH files are known as
+“ACH originators,” which is a simpler way to describe them—even though,
+technically speaking, your organization is the originator.</p>
+<ol start="3" type="1">
+<li>Each ODFI transmits their ACH transactions to an ACH operator.</li>
+</ol>
+<p>There may actually be two ACH operators involved—one for the ODFI,
+one for the RDFI (Receiving Depository Financial Institution)—if both
+institutions do not use the same operator.</p>
+<ol start="4" type="1">
+<li><p>The ACH operator sends the ACH transactions to the appropriate
+RDFI.</p></li>
+<li><p>The RDFI transmits the ACH transactions to the receiving
+employees (for payroll direct deposits, usually) or companies (for
+commercial transactions).</p></li>
+</ol>
+<p>========================================================================</p>
+<h1 id="client-and-employee-setup">Client and Employee Setup</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/ACH_UG_Chapter_Client_Setup.htm
+Path:
+<code>PD/ACH/FrontMatter/ACH_UG_Chapter_Client_Setup.htm</code></p>
+<h1 id="client-and-employee-setup-1">Client and Employee Setup</h1>
+<p>After completing system-level setup, you can customize the ACH
+transaction information at the client level according to each client’s
+accounts and requirements. You can also maintain employee direct deposit
+information.</p>
+<p>When your organization signs a new client, when they hire a new
+employee, or when there is any financial institution change, you would
+define and administer the proper bank account and ACH processing
+information.</p>
+<p>========================================================================</p>
+<h1 id="file-tasks-and-ach-processing">File Tasks and ACH
+Processing</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/ACH_UG_Chapter_File_Tasks.htm
+Path: <code>PD/ACH/FrontMatter/ACH_UG_Chapter_File_Tasks.htm</code></p>
+<h1 id="file-tasks-and-ach-processing-1">File Tasks and ACH
+Processing</h1>
+<p>ACH file tasks involve building the ACH file and sending it to your
+ACH originators. They can also include any review or maintenance you
+need to perform on the ACH files.</p>
+<p>The features you use for processing ACH are found in the Back Office
+menu under Operations|Action. When a user opens a form, that feature is
+locked and no other users can access it until the user is finished. This
+prevents multiple users from processing the same files, which would
+result in erroneous duplicate ACH transactions. This locking feature is
+called “concurrency control”.</p>
+<p>[Image: screenshot]</p>
+<p>========================================================================</p>
+<h1 id="pre-ach-processing">Pre-ACH Processing</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/ACH_UG_Chapter_PreACH_Processing.htm
+Path:
+<code>PD/ACH/FrontMatter/ACH_UG_Chapter_PreACH_Processing.htm</code></p>
+<h1 id="pre-ach-processing-1">Pre-ACH Processing</h1>
+<p>Pre-ACH processing allows your organization to send a file days
+before you run a payroll to ensure that all transactions can be
+fulfilled.</p>
+<p>========================================================================</p>
+<h1 id="system-level-setup">System-Level Setup</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/ACH_UG_Chapter_System_Setup.htm
+Path:
+<code>PD/ACH/FrontMatter/ACH_UG_Chapter_System_Setup.htm</code></p>
+<h1 id="system-level-setup-1">System-Level Setup</h1>
+<p>Your organization can define ACH transaction information at the
+system level and then administer it individually at the client level,
+depending on their accounts and needs.</p>
+<p>========================================================================</p>
+<h1 id="intended-audience">Intended Audience</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/ACH_UG_Intended_Audience.htm
+Path: <code>PD/ACH/FrontMatter/ACH_UG_Intended_Audience.htm</code></p>
+<h1 id="intended-audience-1">Intended Audience</h1>
+<p>The contents are for users who are:</p>
+<ul>
+<li><p>Involved in ACH processing</p></li>
+<li><p>Familiar with the use of an internet browser</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Unless you have
+permission to access system-level features, you cannot set global ACH
+information.</p>
+</blockquote>
+<p>Your organization should already have set up the initial defaults,
+files, and preferences required for system administration, as well as
+client information. You should also have general knowledge of ACH
+processing. Explaining industry-specific topics other than the use of
+this software product is outside the scope of this document.</p>
+<p>This document does not cover the specifics of transmitting your ACH
+files to financial institutions. Your organization and the financial
+institution should have an established procedure for this.</p>
+<p>========================================================================</p>
+<h1 id="introduction">Introduction</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/ACH_UG_Intro.htm
+Path: <code>PD/ACH/FrontMatter/ACH_UG_Intro.htm</code></p>
+<h1 id="introduction-1">Introduction</h1>
+<p>The ACH online help explains the functions and features of ACH
+processing in PrismHR.</p>
+<p>========================================================================</p>
+<h1 id="ach-processing-in-prismhr">ACH Processing in PrismHR</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/ACH_UG_Processing.htm
+Path: <code>PD/ACH/FrontMatter/ACH_UG_Processing.htm</code></p>
+<h1 id="ach-processing-in-prismhr-1">ACH Processing in PrismHR</h1>
+<p>PrismHR can create the ACH files you must send to various financial
+institutions. A simplified version of the ACH process in PrismHR is
+illustrated below.</p>
+<p>[Image: screenshot]</p>
+<p>To make the illustration about ACH participants more specific:</p>
+<ul>
+<li><p>PrismHR processes your payroll and writes records to a repository
+known as the ACH Journal.</p></li>
+<li><p>You periodically (once a day or perhaps more often) “build” your
+ACH, which creates a file according to the ACH rules set forth by the
+National Automated Clearing House Association (NACHA).</p></li>
+</ul>
+<p>In addition, when you build your ACH, PrismHR also creates reports
+and backs up the ACH Journal and the NACHA directory. The replicas are
+the ACH History and NACHA Archive, respectively.</p>
+<ul>
+<li><p>When PrismHR builds the “NACHA file”, it automatically clears out
+the records from the ACH Journal.</p></li>
+<li><p>The NACHA file is the file you send to one or more financial
+institutions, known as ACH originators.</p></li>
+<li><p>If, for whatever reason, you need to resubmit an ACH transaction,
+PrismHR uses the ACH History to create a resubmittal file you must edit
+before you build your ACH.</p></li>
+</ul>
+<p>Specific information concerning NACHA formats, records and files are
+beyond the scope of this guide.</p>
+<p>For more information about NACHA’s ACH record format specifications,
+please refer to the latest ACH Rules, one of the documents published by
+NACHA.</p>
+<p>========================================================================</p>
+<h1 id="external-payrolls">External Payrolls</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/External_Payrolls.htm
+Path: <code>PD/ACH/FrontMatter/External_Payrolls.htm</code></p>
+<h1 id="external-payrolls-1">External Payrolls</h1>
+<p>External payrolls are for the clients managed by your
+organization.</p>
+<p>========================================================================</p>
+<h1 id="internal-payrolls">Internal Payrolls</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/Internal_Payrolls.htm
+Path: <code>PD/ACH/FrontMatter/Internal_Payrolls.htm</code></p>
+<h1 id="internal-payrolls-1">Internal Payrolls</h1>
+<p>Internal payrolls are typically for a “client” that is used for your
+organization’s employees. Internal clients are maintained in System
+Parameters; <a
+href="../../Maintenance/System/SP_More_Parameters.htm">see Setting
+Miscellaneous Parameters</a>.</p>
+<p>========================================================================</p>
+<h1 id="overview-of-the-pre-ach-process-in-prismhr">Overview of the
+Pre-ACH Process in PrismHR</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/Overview_PreNote_Process.htm
+Path: <code>PD/ACH/FrontMatter/Overview_PreNote_Process.htm</code></p>
+<h1 id="overview-of-the-pre-ach-process-in-prismhr-1">Overview of the
+Pre-ACH Process in PrismHR</h1>
+<p>Typically, you use pre-ACH processing to protect your organization
+from unacceptable situations with high-risk clients. You transmit a
+prenote—a non-dollar entry to alert the receiving bank that an ACH
+transaction is forthcoming—that allows you to verify that there are no
+problems with the forthcoming transaction, or resolve any issues that
+might be revealed by the pre-ACH process. This assures that your
+organization does not lose money on transactions that would not be
+fulfilled by a client.</p>
+<p>The system sends the pre-ACH file a number of days (usually 5–7)
+ahead of the regular ACH file. The amount you transmit in the pre-ACH
+can be equal to either:</p>
+<ul>
+<li><p>An arbitrary figure, or</p></li>
+<li><p>The average of the last n regular payrolls run (for example, the
+average of the last 5 regular payrolls).</p></li>
+</ul>
+<h2 id="pre-ach-and-floating-deposit">Pre-ACH and Floating Deposit</h2>
+<p>The system uses the pre-ACH amount to “settle out” on the invoice.
+For example:</p>
+<p>The average of the last five invoices for a client is $1120.50. Your
+organization processes regular payroll runs on Thursday for Friday pay
+days.</p>
+<p>You elect to perform pre-ACH processing five days before the payroll
+runs, therefore, you transmit a pre‑ACH on Mondays.</p>
+<p>When you process the actual payroll on Thursday, for Friday’s pay
+date, the system then “settles” the balance. If the client’s actual
+payroll is $1100.00, the system sends them a $22.50 credit. If it is
+more, the system sends an ACH charge to them for the balance due.</p>
+<p>Essentially, the pre-ACH processing allows your client companies to
+have a “floating deposit” of their average payroll, which is always in
+transit. However, they get to use that floating deposit each week.</p>
+<h2 id="bounced-transactions">Bounced Transactions</h2>
+<p>As part of the process, your accounting department must ensure any
+pre‑ACH that does not clear (or “bounces”) is marked immediately. After
+they check the bank’s list of bounces each morning, the accounting
+department must then:</p>
+<ol type="1">
+<li><p>Handle any “bounced” ACH accounts.</p></li>
+<li><p>Set the value of the Payroll Processing Through Date field to
+reflect that the accounting department has handled/entered all of the
+bounced ACH files received from the bank that day.</p></li>
+</ol>
+<p><a
+href="../../Maintenance/Operations/Lockout%20Payroll%20Processing%20Control%20Date.htm">See
+Locking the Payroll Processing Through Date</a>.</p>
+<p>After the accounting department sets the Payroll Processing Through
+Date field, you can process or post any pre‑ACH prenote.</p>
+<h2 id="timing-of-pre-ach-process">Timing of Pre-ACH Process</h2>
+<p>PrismHR runs the pre-ACH process once a day, the first time a user
+opens the ACH Processing or the ACH Processing (Internal Payroll) form.
+While this process runs, users will typically see a message that reads
+“Please wait - processing Pre-ACH.”</p>
+<p>The pre-ACH process will not run again on the same day unless a user
+sets up pre‑ACH on a pay group that did not have it before. The system
+will run it again the next time a user opens one of the forms. The
+system will not duplicate any transactions if it runs the process more
+than once in a day; it only creates new transactions.</p>
+<h2 id="important-considerations-for-preach-processing">Important
+Considerations for Pre‑ACH Processing</h2>
+<p>You would not want to send a pre-ACH on Monday when the payroll
+department is likely to complete the payroll processing on Tuesday for
+the Friday pay day. If the pre-ACH processing exposes on Wednesday that
+the transaction will not be properly fulfilled, it is too late to
+recover from that.</p>
+<ul>
+<li><p>If the financial institution is delayed in notifying you of an
+upcoming problem identified by the pre‑ACH process, you run the risk of
+processing a payroll that will ultimately bounce. In such cases, you
+will have only collected (or refunded) the difference from what you
+thought you were getting in the pre‑ACH run.</p></li>
+<li><p>If you administer the process carefully, however, you can limit
+your risk, especially where ACH bounces are predictable at two days or
+fewer.</p></li>
+</ul>
+<p>Your organization must decide when each pay group should use pre-ACH
+processing. The process is a rule based on pay groups, not clients. You
+must select the One Payroll/Pay Group option in the Client Details
+Payroll tab so that the system correctly assigns the credits for pre-ACH
+processing. (Selecting this option ensures that PrismHR always processes
+weekly and biweekly payrolls separately, even on weeks where they pay on
+the same day.)</p>
+<p>If your organization decides to implement the pre-ACH processing
+feature for the first time, you should begin slowly to ensure that it
+behaves as desired.</p>
+<h2 id="pre-ach-process">Pre-ACH Process</h2>
+<p>This figure illustrates the flow of pre-ACH processing.</p>
+<p>[Image: ACH flowchat, showing how the Journal relates to manual
+prenotes, builds, NACHA files, ACH.HISTORY, and NACHA.ARCHIVE]</p>
+<p>Related Topics</p>
+<p><a href="ACH_UG_Chapter_PreACH_Processing.htm">Pre-ACH
+Processing</a></p>
+<p>Client Details <a
+href="../../Company/Change/Client_Payroll.htm">Controlling Client
+Payroll Processing</a></p>
+<p>========================================================================</p>
+<h1
+id="important-considerations-for-processing-ach-in-prismhr">Important
+Considerations for Processing ACH in PrismHR</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/FrontMatter/Provisions_for_ACH_Processing.htm
+Path:
+<code>PD/ACH/FrontMatter/Provisions_for_ACH_Processing.htm</code></p>
+<h1
+id="important-considerations-for-processing-ach-in-prismhr-1">Important
+Considerations for Processing ACH in PrismHR</h1>
+<p>The ACH processing in PrismHR requires that your organization be set
+up to use ACH originators and consolidated ACH processing.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Non-consolidated ACH
+will not be supported in the near future.</p>
+</blockquote>
+<p>The ACH processes bypass the normal security filters. Any user who
+has access to the external or internal ACH processes must be someone who
+can have access to all relevant clients and employees. (External
+processing is for your organization’s clients while internal processing
+is for your organization’s employees.) Some forms expose pay amounts,
+therefore you must only grant access to the ACH features in user roles
+for users who ought to be allowed to see them.</p>
+<p>Access to processing for internal payrolls is separate from
+processing for external payrolls, and user access to each feature is
+controlled separately.</p>
+<p>Only one user at a time can access the ACH processing options. This
+ensures that data is not accidentally duplicated.</p>
+<p>Service Providers with access to System|Change|User Roles can only be
+assigned Full or Deny access options for the following ACH Processing
+forms:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Process ID</th>
+<th>Form Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ACH.HISTORY*RETRANSMIT.ENTRY</td>
+<td>Resubmit an ACH Item</td>
+</tr>
+<tr class="even">
+<td>ACH.JOURNAL*EDIT</td>
+<td>ACH Journal Edit</td>
+</tr>
+<tr class="odd">
+<td>ACH.JOURNAL*HOLD.REVIEW</td>
+<td>ACH Hold Management (External Payroll)</td>
+</tr>
+<tr class="even">
+<td>ACH.JOURNAL*INTERNAL.HOLD.REVIEW</td>
+<td>ACH Hold Management (Internal Payroll)</td>
+</tr>
+<tr class="odd">
+<td>ACH.ORIGINATORS*EXTERNAL.ACH.BUILD.START</td>
+<td>Pending ACH Transactions (External Payroll)</td>
+</tr>
+<tr class="even">
+<td>ACH.ORIGINATORS*EXTERNAL.ACH.START.FORM</td>
+<td>ACH Processing External Payroll</td>
+</tr>
+<tr class="odd">
+<td>ACH.ORIGINATORS*INTERNAL.ACH.BUILD.ENTRY</td>
+<td>Pending ACH Transactions</td>
+</tr>
+<tr class="even">
+<td>ACH.ORIGINATORS*INTERNAL.ACH.BUILD.START</td>
+<td>Pending ACH Transactions (Internal Payroll)</td>
+</tr>
+<tr class="odd">
+<td>ACH.ORIGINATORS*INTERNAL.ACH.START.FORM</td>
+<td>ACH Processing (Internal Payroll)</td>
+</tr>
+<tr class="even">
+<td>ACH.ORIGINATORS*INTERNAL.POSTED.ACH.INQUIRY</td>
+<td>Completed ACH Transactions (Internal Payroll)</td>
+</tr>
+<tr class="odd">
+<td>ACH.ORIGINATORS*POSTED.ACH.INQUIRY</td>
+<td>Completed ACH Transactions (External Payroll)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Service Providers
+cannot be assigned the Inquiry access option for the ACH Processing
+forms listed above.</p>
+</blockquote>
+<p>========================================================================</p>
+<h1 id="ach-lock-errors">ACH Lock Errors</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Reference/ACH_Lock_Errors_PHR.htm
+Path: <code>PD/ACH/Reference/ACH_Lock_Errors_PHR.htm</code></p>
+<h1 id="ach-lock-errors-1">ACH Lock Errors</h1>
+<p>There are two possible error messages that can prevent a user from
+running an ACH process in PrismHR due to the processes being locked.</p>
+<h2 id="error-1-ach-is-locked-at-a-different-session">Error 1: ACH Is
+Locked at a Different Session</h2>
+<p>ACH is locked by {user’s name} at a different session. Locked on
+{date} at {time} Continue?</p>
+<p>This error occurs when a user is disconnected while running an ACH
+process and attempts to continue after logging back in.</p>
+<p>It also displays if the user is logged into two or more different
+sessions (such as having PrismHR open in two windows or tabs at the same
+time) and they attempt to run any of the ACH processes in both of
+them.</p>
+<p><strong>Solution:</strong> The user can regain control of the ACH
+processes by clicking Yes.</p>
+<ul>
+<li><p>If the user had only one session open, they can continue with the
+ACH process they wanted to run.</p></li>
+<li><p>If the user had more than one session open, they can continue in
+the active session and they will lose control of the ACH process in any
+other sessions.</p></li>
+</ul>
+<h2 id="error-2-ach-is-locked">Error 2: ACH Is Locked</h2>
+<p>ACH is locked by {user’s name} Locked on {date} at {time}</p>
+<p>This error occurs when another user is (or was) running one of the
+ACH processes.</p>
+<p><strong>Solution:</strong></p>
+<p>Make sure that the user named in the error message is not actually
+engaged in an ACH process or working in any ACH menu option. If they
+are, do nothing.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> If they were
+disconnected while running one of the processes and did not attempt to
+continue where they left off, then it is safe to clear the lock.</p>
+</blockquote>
+<p>If they are not working in an ACH process:</p>
+<ol type="1">
+<li><p>Open ACH Clear Lock (found in the Back Office menu under
+Operations|Change). If you do not have access to ACH Clear Lock, work
+with another user at your organization who does.</p></li>
+<li><p>Click Clear Lock.</p></li>
+<li><p>Click Yes to confirm that you want to clear the lock.</p></li>
+<li><p>Click OK.</p></li>
+</ol>
+<p>See also <a href="../Admin/ACH_Clear_Lock.htm">Clearing the Lock on
+ACH Processing Features</a>.</p>
+<p>========================================================================</p>
+<h1 id="setting-up-ach-originators-for-consolidated-processing">Setting
+Up ACH Originators for Consolidated Processing</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Setup/ACH_Originators_for_Consolidated.htm
+Path: <code>PD/ACH/Setup/ACH_Originators_for_Consolidated.htm</code></p>
+<h1
+id="setting-up-ach-originators-for-consolidated-processing-1">Setting Up
+ACH Originators for Consolidated Processing</h1>
+<p>An ACH originator is a financial institution to which a client sends
+ACH files. The financial institution becomes the “originating DFI” by
+submitting the transactions to the ACH network. If you process ACH
+transactions for clients, each client can have a different financial
+institution. Use the ACH Originators form to maintain records for each
+institution.</p>
+<h2 id="maintaining-financial-institution-information">Maintaining
+Financial Institution Information</h2>
+<p>Use the ACH Originators panel to maintain the financial institution
+information.</p>
+<p>To maintain financial institution information, do the following:</p>
+<ol type="1">
+<li><p>Go to the ACH Originators form on the System|Change
+menu.</p></li>
+<li><p>Complete the following fields in the ACH Originators
+panel:</p></li>
+</ol>
+<p>Field — Description</p>
+<p>Processor ID — Enter a Processor ID for the financial institution.
+The PrismHR Customer Support Team recommends that you use
+easy-to-remember abbreviations for the processor IDs.</p>
+<p>Processing Bank ID — Enter the Processing Bank ID, which is the
+bank-assigned number that identifies your service bank as the
+destination of the ACH input files. In line 101, it occupies 10
+characters, beginning at position 4.</p>
+<p>Processing Bank Name — Enter the Processing Bank Name that processes
+the ACH file on behalf of your organization. This is the originating
+depository financial institution (ODFI).</p>
+<p>Processing Company ID — Enter the Processing Company ID of the
+originating company that sends ACH files to the bank. Typically, this is
+the taxpayer ID of the entity sending the files to the bank.</p>
+<p>Processing Company Name — Enter the Processing Company Name of the
+organization that sends ACH files to the originating bank. Typically,
+this is the employer’s name.</p>
+<p>Customer Data Sender ID — Enter the Customer Data Sender ID.</p>
+<p>Reference Code — Enter an optional Reference Code that describes the
+input file for internal accounting purposes. The system uses this in
+positions 87 through 94 of the file header record.
+<strong>Note</strong>: If the Trace Number Prefix field is left blank,
+PrismHR uses the first eight (8) digits of the originating bank’s
+ID.</p>
+<p>Trace Number Prefix — Enter the Trace Number Prefix, which is the
+first eight characters of the trace number that the system will enter in
+positions 80 through 94 in the entry detail record. (If you leave this
+field blank, the system uses the first eight digits of the originating
+bank ID.)</p>
+<p>Header Trace Number — Enter the eight-character custom number to
+automatically include it in positions 80-87 of both the Company/Batch
+Header and Company/Batch Control records within the NACHA file. (This
+number meets the specific formatting requirements of certain financial
+institutions, such as credit unions.)</p>
+<p>ACH File Options — Select the ACH File Options to use.</p>
+<p>Insert End-of-Transmission Character — Select Insert
+End-of-Transmission Character to include the end-of-transmission
+character at the end of the ACH deposit file.</p>
+<p>End-of-Transmission ASCII Character — If you have chosen to insert an
+end-of-transmission character, select the End-of-Transmission ASCII
+Character to use.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> When users process
+consolidated ACH files, they will name the file and choose the location
+on their system where they want to save it.</p>
+</blockquote>
+<ol start="3" type="1">
+<li>Your organization can use a bank script to transfer ACH files to the
+financial institution that requires the use of a certain file name.
+Enter the NACHA Directory Override File Name to use instead of the
+standard file name when writing ACH files to the NACHA directory on a
+Windows 2000 operating system.</li>
+</ol>
+<p>If you enter an override file name here, the system always uses that
+file name when writing to the NACHA directory. Users will overwrite
+files with the same name.</p>
+<ol start="4" type="1">
+<li><p>To override the ACH naming convention enter the base name of the
+files transferred to your PC in the PC File Name field, where the first
+character must be alpha. (The date and “.txt” extension are included in
+the downloaded filename.) For example, using PHOTO1 as the base name
+could display the downloaded filename as PHOTO120200101.txt.</p></li>
+<li><p>Indicate the format used for the Child Support EFT Addenda
+Format. The default is Fixed and you can choose to set it to
+Variable.</p></li>
+<li><p>Enter the number of business Days Into Future for ACH Selection.
+The system selects ACH transactions to submit to the ACH originator.
+This overrides the global setting in System Parameters; if you enter a
+negative number, the system holds the ACH until after its expected due
+date, which you can use to hold garnishments.</p></li>
+<li><p>Select Separate Child Support Batches by Company to separate
+child support batches by client.</p></li>
+<li><p>Select Separate ACH Batches For Debits/Credits to create separate
+payroll ACH batches within the file for credit and debit transactions.
+This applies only when you are separating child support batches by
+company.</p></li>
+<li><p>If you use Cachet or Wells Fargo, or want to process a Reverse
+Wire Transfer for ACH processing, select the appropriate Third Party
+Format.</p></li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>If you select Cachet or Wells Fargo, a panel displays at the
+bottom of the form (see the following sections for the relevant
+information).</p></li>
+<li><p>If you select Reverse Wire Transfer, the following warning
+displays:</p></li>
+</ul>
+<p>[Image: screenshot]</p>
+<p>Click OK to continue, then perform the tasks listed in the warning
+(see the “Setting Up Reverse Wire Transfer Format” section, below).</p>
+<h2 id="entering-the-file-headerfooter">Entering the File
+Header/Footer</h2>
+<p>If required, enter the header and footer records unique to the ACH
+originator, if required. The system appends these to the start and end
+of each file, respectively.</p>
+<p>[Image: screenshot]</p>
+<ol start="10" type="1">
+<li><p>Enter the ACH File Header Record for each line in the file
+header.</p></li>
+<li><p>Enter the ACH File Footer Record for each line in the file
+footer.</p></li>
+</ol>
+<h2 id="setting-up-cachet-third-party-format">Setting Up Cachet Third
+Party Format</h2>
+<p>If you selected Cachet for the Third Party Format, complete the
+fields in the Cachet panel.</p>
+<p>[Image: screenshot]</p>
+<p>Complete the following information:</p>
+<ol type="1">
+<li>Select Generate Cachet ACH File Format to generate a separate direct
+deposit funding transaction for Cachet.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Cachet prefers the net
+collection method, so typically you would select this option. If needed,
+contact the PrismHR Customer Support Team to verify.</p>
+</blockquote>
+<ol start="2" type="1">
+<li><p>Select Generate Cachet Net Collection Funding to use the net
+collection funding method.</p></li>
+<li><p>Enter the Net Collection Bank Account to which to post net fund
+debits. The offset account on this bank account should be the one to
+which to credit funds.</p></li>
+<li><p>Enter the number of days prior to any pay date that a funding
+transaction should take place in the Cachet Funding Transaction Days
+Prior to Pay Date field.</p></li>
+<li><p>Select Suppress Child Support EFT from Funding Debit Amount if
+your organization does not use Cachet to process child support
+transactions.</p></li>
+<li><p>Enter the Cachet File Name Prefix for the transaction file sent
+to Cachet.</p></li>
+<li><p>To override the days prior to pay date for one or more
+clients:</p></li>
+</ol>
+<ol type="a">
+<li>— Enter the client ID that makes the ACH transaction in the Cachet
+Client ID field. The client’s doing-business-as name displays.</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>b.</th>
+<th>Enter the number of days for the client in the Override Days Prior
+Pay Date field.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="setting-up-wells-fargo-third-party-format">Setting Up Wells
+Fargo Third Party Format</h2>
+<p>If you selected Wells Fargo for the Third Party Format, complete the
+fields in the Wells Fargo panel.</p>
+<p>[Image: screenshot]</p>
+<p>Complete the following information:</p>
+<ol type="1">
+<li><p>Enter the Wells Fargo Control No assigned by Wells Fargo
+Bank.</p></li>
+<li><p>Enter the CEO Company ID assigned by Wells Fargo Bank.</p></li>
+</ol>
+<p>Related Topics</p>
+<p><a href="../FrontMatter/ACH_UG_ACH_Network.htm">Using ACH
+Network</a></p>
+<p><a href="ACH_Parameters_for_Bank_Account.htm">Setting Up ACH
+Parameters for Bank Accounts</a></p>
+<p>========================================================================</p>
+<h1 id="setting-up-ach-parameters-for-bank-accounts">Setting Up ACH
+Parameters for Bank Accounts</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Setup/ACH_Parameters_for_Bank_Account.htm
+Path: <code>PD/ACH/Setup/ACH_Parameters_for_Bank_Account.htm</code></p>
+<h1 id="setting-up-ach-parameters-for-bank-accounts-1">Setting Up ACH
+Parameters for Bank Accounts</h1>
+<p>An ACH parameter is a piece of information that is included in an ACH
+transaction. To set up the ACH parameters for a bank account, you first
+need to open the Bank Accounts form (found in the Back Office menu under
+System|Change) and then enter the Account ID.</p>
+<p>The fields that are available in the ACH Setup panel depend on
+whether your organization is using consolidated or company ACH file
+processing (set in System Parameters). Refer to the instructions that
+match the setup in your system.</p>
+<h3 id="basic-consolidated-processing">Basic Consolidated
+Processing</h3>
+<p>When Consolidated ACH File Processing Used in System Parameters is
+set to Yes, the ACH Setup panel displays as shown below.</p>
+<p>[Image: screenshot]</p>
+<ol type="1">
+<li><p>Enter or select the ACH Processor ID. <a
+href="../../Maintenance/System/ACH_Originators.htm">See Using ACH
+Originators</a> to learn about creating ACH processors.</p></li>
+<li><p>Enter the Company Name (Batch Header), which is the name of the
+client who owns this checking account. This name appears in positions
+5–20 of the Company Batch Header Record.</p></li>
+<li><p>Enter the Company Identification# (Batch Header), which is the
+client identification number used only on the batch header. Typically,
+this consists of a 1 followed by the 9-digit EIN.</p></li>
+<li><p>Enter the Company Identification# (CCD Batch Header), which is an
+optional client identification number used on the CCD batch header.
+Typically, you enter a value only when advised to do so by your
+financial institution.</p></li>
+<li><p>Enter the Company Identification# (PPD Batch Header), which is an
+optional client identification number used on the PPD batch header.
+Typically, you enter a value only when advised to do so by your
+financial institution.</p></li>
+<li><p>Enter the Company Identification# (Offset), which is an
+identification number used on the offset detail form when this account
+is specified as an offset account.</p></li>
+<li><p>If the service bank requires you to provide a different account
+number for offset transactions, enter the Immediate Destination
+Identification # (Offset).</p></li>
+<li><p>Enter the Originating DFI Identification # assigned by the
+service bank. It is 8 characters and appears on the lines that begin
+with 52 and 82 in positions 80–87.</p></li>
+<li><p>Enter the PC File Name, which is an optional field used as the
+base name of files transferred to your computer. The system also appends
+the date and .txt extension to the end of the name you indicate in this
+field.</p></li>
+<li><p>Select Use Suspense Accounting if this bank account should use
+suspense accounting. When selected, ACH transactions are tracked in a
+“suspense” account and do not move to the cash account until the ACH
+batch file is created. That allows users to easily reconcile account
+balances based on transactions processed by the bank. <a
+href="../../Maintenance/System/Bank_Accounts_Suspense.htm">See Suspense
+Accounts</a>.</p></li>
+<li><p>Do not select Process As Wire (only for special File Formats)
+unless directed to do so by a PrismHR Customer Support Team
+representative. It is only for custom-designed file formats.</p></li>
+</ol>
+<h3 id="other-processing">Other Processing</h3>
+<p>The Company setting uses ACH originators and generates consolidated
+ACH files sorted by company.</p>
+<p>[Image: screenshot]</p>
+<ol type="1">
+<li><p>Enter or select the ACH Processor ID. <a
+href="../../Maintenance/System/ACH_Originators.htm">See Using ACH
+Originators</a> to learn about creating ACH processors.</p></li>
+<li><p>Enter the Immediate Destination Identification # that identifies
+the service bank as the destination of ACH input files.</p></li>
+<li><p>If the service bank requires you to provide a different account
+number for offset transactions, enter the Immediate Destination
+Identification # (Offset).</p></li>
+<li><p>Enter the Immediate Origin Identification # assigned by the
+service bank. In the 101 record, this occupies the 10 characters
+beginning at position 14. If you use headers, this is typically the
+account number, and could be longer than 10 characters.</p></li>
+<li><p>Enter the Company Identification# (Batch Header), which is the
+client identification number used only on the batch header. Typically,
+this consists of a 1 followed by the 9-digit EIN.</p></li>
+<li><p>Enter the Company Identification# (CCD Batch Header), which is an
+optional client identification number used on the CCD batch header.
+Typically, you enter a value only when advised to do so by your
+financial institution.</p></li>
+<li><p>Enter the Company Identification# (PPD Batch Header), which is an
+optional client identification number used on the PPD batch header.
+Typically, you enter a value only when advised to do so by your
+financial institution.</p></li>
+<li><p>Enter the Company Identification# (Offset), which is an
+identification number used on the offset detail form when this account
+is specified as an offset account.</p></li>
+<li><p>Enter the Company Name. This can be up to 16 alphanumeric
+characters, and appears in the 101 record starting at position
+64.</p></li>
+<li><p>Enter the Company Name (Batch Header), which is the name of the
+client who owns this checking account. This name appears in positions
+5–20 of the Company Batch Header Record.</p></li>
+<li><p>The Reference Code is optional; use it to refer to your input
+file for internal accounting purposes.</p></li>
+<li><p>Enter the Trace Number Prefix, which is the first 8 digits of the
+Trace Number entered in positions 80–94 of the Entry Detail Record. If
+this field is blank, PrismHR populates it with zeroes.</p></li>
+<li><p>Enter the Company Name (Batch Header), which is the name of the
+client who owns this checking account. This name appears in positions
+5–20 of the Company Batch Header Record.</p></li>
+<li><p>If required, enter the ACH File Header Record(s), which is unique
+to the financial institution. This information is placed at the
+beginning of the ASCII file.</p></li>
+<li><p>Enter the full DOS File Path Name (Unix Host Only) to which to
+download the ACH files built for the checking account. Include the
+ (backslash) at the end of the path name.</p></li>
+<li><p>Enter the PC File Name, which is an optional field used as the
+base name of files transferred to your computer. The system also appends
+the date and .txt extension to the end of the name you indicate in this
+field.</p></li>
+<li><p>Enter the NACHA Directory Override File Name (NT Host Only),
+which is the file name used instead of a standard file name when PrismHR
+writes to the NACHA directory.</p></li>
+</ol>
+<p>If your organization uses a bank script to transfer your ACH file to
+a financial institution that requires the use of a certain file name. If
+you enter an override file name in this field, the system will
+<em>always</em> use that file name when writing to the NACHA
+directory.</p>
+<p>This process assumes that there will not already be a file by the
+same name in the directory when writing to the directory. If it finds an
+existing file, the system displays a message that gives the user the
+choice of whether to overwrite the existing file.</p>
+<ol start="18" type="1">
+<li><p>Enter the destination ACH Bank Name used in the header record of
+the ACH file. If left blank, the system uses the Bank Name.</p></li>
+<li><p>Select Suppress EOT Character to suppress appending the
+end-of-transmission character (Char(26)) at the end of the ACH deposit
+file.</p></li>
+<li><p>Enter the Slash Replacement Character that PrismHR replaces with
+a slash when it builds the ACH file. For example, ^.</p></li>
+<li><p>Select Use Suspense Accounting if this bank account should use
+suspense accounting. When selected, ACH transactions are tracked in a
+“suspense” account and do not move to the cash account until the ACH
+batch file is created. That allows users to easily reconcile account
+balances based on transactions processed by the bank. <a
+href="../../Maintenance/System/Bank_Accounts_Suspense.htm">See Suspense
+Accounts</a>.</p></li>
+</ol>
+<p>Related Topics</p>
+<p><a href="../FrontMatter/ACH_UG_ACH_Network.htm">Using ACH
+Network</a></p>
+<p><a href="../../Maintenance/System/ACH_Originators.htm">Using ACH
+Originators</a></p>
+<p><a href="../../Maintenance/System/Bank_Accounts.htm">Maintaining Bank
+Accounts</a></p>
+<p><a href="../../Maintenance/System/SP_Details.htm">Setting General
+System Parameters</a></p>
+<p>========================================================================</p>
+<h1 id="ach-settings-in-system-parameters">ACH Settings in System
+Parameters</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Setup/ACH_Settings_in_System_Params.htm
+Path: <code>PD/ACH/Setup/ACH_Settings_in_System_Params.htm</code></p>
+<h1 id="ach-settings-in-system-parameters-1">ACH Settings in System
+Parameters</h1>
+<p>Settings in System Parameters control some ACH features for all
+clients.</p>
+<h2 id="ach-processing-method">ACH Processing Method</h2>
+<p>PrismHR processes ACH information using the consolidated method,
+which sends one file for multiple checking accounts. This method works
+well for organizations that process payrolls with the client’s checking
+accounts.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> The non-consolidated
+method is not supported in PrismHR.</p>
+</blockquote>
+<p>To set the ACH processing method:</p>
+<ol type="1">
+<li>Open System Parameters (found in the Back Office menu under
+System|Change).</li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="2" type="1">
+<li>Select the appropriate option from the Consolidated ACH File
+Processing Used drop-down:</li>
+</ol>
+<ul>
+<li><p>Yes: Use the consolidated method, which processes multiple
+checking accounts for one ACH originating bank. Your organization will
+process ACH using the features in PrismHR.</p></li>
+<li><p>Company: Use the consolidated method with company batching, which
+processes multiple checking accounts for one ACH originating bank and
+sorts by client.</p></li>
+</ul>
+<h2 id="other-controls">Other Controls</h2>
+<p>These settings control other basic ACH behaviors in PrismHR.</p>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li><p>Enter the Maximum ACH Batch amount to process in a single ACH
+transaction batch. The system moves any amount in excess of this amount
+to the next batch in the file.</p></li>
+<li><p>Enter the Minimum ACH Window, which is the minimum number of days
+required to process ACH transactions. Any payroll batch with an ACH
+transaction must be at least this many days in the future; if it is not,
+then the system will generate paychecks to print instead of ACH
+transactions.</p></li>
+<li><p>Enter the ACH Billing Days Offset, which is number of days to
+offset ACH for invoicing. If the system should draft the ACH the day
+before the payroll, for example, enter -1 in this field.</p></li>
+<li><p>Enter the number of Days Into Future for ACH Selection after
+which PrismHR selects ACH transactions to submit to the ACH originating
+bank.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+<p>========================================================================</p>
+<h1 id="setting-up-client-ach">Setting Up Client ACH</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Setup/Client_ACH_Setup_Information.htm
+Path: <code>PD/ACH/Setup/Client_ACH_Setup_Information.htm</code></p>
+<h1 id="setting-up-client-ach-1">Setting Up Client ACH</h1>
+<p>Set up ACH information if the client pays by direct debit using the
+Electronic Billing panel Client Details.</p>
+<p>To set up the ACH information for a client, open Client Details
+(found in the Client menu under Client|Change) and then select the
+Billing tab.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> If it is not set to the
+client you need to edit, click the name near the top of the page and
+then select the correct client.</p>
+</blockquote>
+<ol type="1">
+<li>Complete these fields as required.</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ACH Status</td>
+<td>Select a direct debit status: - Active: ACH is enabled for the
+client. <strong>Note</strong>: When you select Active, a warning
+displays stating that you must enter the client’s ABA/Routing Number,
+Account Number, and Account Type (see below). Click OK to continue, then
+proceed with entering the required information. - Inactive: ACH is not
+enabled for the client. - ACH by Location: The system uses ACH
+information from the Worksite Location records. <strong>Note</strong>:
+When you select ACH by Location, a warning displays stating that the
+Bill by Sort (see above) must be set to Location and you must enter the
+client’s ABA/Routing Number, Account Number, and Account Type in the ACH
+Details of the Worksite Location (see below). Click OK to continue, then
+proceed with entering the required information. - ACH by Division: The
+system uses ACH information from Division records.
+<strong>Note</strong>: When you select ACH by Division, a warning
+displays stating that the Bill by Sort (see above) must be set to
+Division and you must enter the client’s ABA/Routing Number, Account
+Number, and Account Type in the ACH Details of the Division (see below).
+Click OK to continue, then proceed with entering the required
+information. - Wire Transfer Client: After calculating payroll and
+reviewing reports, the processor must wait for the client to wire the
+money before proceeding with payroll. - Prenote: The client is in
+prenote (preauthorization) status for the account. The effects of the
+ACH options are further controlled by other settings on the Control tab
+in the Client Details form. Specifically: ACH Hold Threshold; After
+Post, Pre Mail Hold; and After Post, Pre Mail Threshold. (For details
+about these settings, see <a
+href="../../Company/Change/Client_Controls.htm">Setting Client Control
+Parameters</a>.)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Active: ACH is enabled for the client.</li>
+<li>Inactive: ACH is not enabled for the client.</li>
+<li>ACH by Location: The system uses ACH information from the Worksite
+Location records.</li>
+<li>ACH by Division: The system uses ACH information from Division
+records.</li>
+<li>Wire Transfer Client: After calculating payroll and reviewing
+reports, the processor must wait for the client to wire the money before
+proceeding with payroll.</li>
+<li>Prenote: The client is in prenote (preauthorization) status for the
+account. | ABA/Routing Number | Enter a nine-digit routing number for a
+client’s financial institution. (If the correct routing number is not
+available, you need to create it; <a
+href="../../Maintenance/System/Bank_Routing.htm">see Bank Routing</a>.)
+<strong>Note</strong>: This field changes to Swift Code when you enable
+the International Client field on the Detail tab, so you can enter up to
+11 characters and bypass standard ABA routing number validation to
+specify a particular bank or branch for international money transfers.
+(<a href="../../Company/Change/Client_Detail_Tab.htm">See Maintaining
+Client Information</a>.) | | Account Number | Enter an ACH bank account
+number for the client. | | Account Type | Select an account type
+(checking or savings). | | Adjust to ACH Bill Day | Enter a value
+(positive or negative) to adjust the processing of the ACH if it is
+different from the employee pay date. | | Cachet Transfer Type | Select
+a method to transfer ACH information to Cachet Financial Services. | |
+Transfer Type | Select a transfer method for ACH information. |</li>
+</ul>
+<ol start="2" type="1">
+<li>Click Save.</li>
+</ol>
+<p>========================================================================</p>
+<h1 id="setting-up-employee-direct-deposit-information">Setting Up
+Employee Direct Deposit Information</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/ACH/Setup/Employee_Direct_Deposit_Setup.htm
+Path: <code>PD/ACH/Setup/Employee_Direct_Deposit_Setup.htm</code></p>
+<h1 id="setting-up-employee-direct-deposit-information-1">Setting Up
+Employee Direct Deposit Information</h1>
+<p>Employee direct deposit information can be set up during their
+onboarding process, through EP, or another employee self-service tool.
+You can also maintain the direct deposit information for an employee
+using Employee Details.</p>
+<p>To maintain the direct deposit information for an employee, open
+Employee Details (found in the HR menu under HR|Change), enter the
+Employee ID, and then select the Deposit tab.</p>
+<h2 id="setting-direct-deposit-status">Setting Direct Deposit
+Status</h2>
+<p>You can set the status for all direct deposits using the Status
+panel.</p>
+<p>To set direct deposit status:</p>
+<ol type="1">
+<li><p>From HR|Change, select Employee Details. The Employee Details
+form displays.</p></li>
+<li><p>Enter or select an Employee.</p></li>
+<li><p>Select the Deposit tab.</p></li>
+<li><p>Complete the following fields in the Status panel:</p></li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Deposit Status</td>
+<td>Select the Deposit Status: - If the status is Active, PrismHR
+generates an ACH entry for the voucher. - If the status is Inactive,
+PrismHR produces a pay check during payroll processing for the net
+amount of the pay voucher. <strong>Note</strong>: If an employee is
+terminated and the If ACH, Turn Off ACH? field is enabled on the
+Employee Termination form, all records for the employee’s direct deposit
+become inactive.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>If the status is Active, PrismHR generates an ACH entry for the
+voucher.</li>
+<li>If the status is Inactive, PrismHR produces a pay check during
+payroll processing for the net amount of the pay voucher. | Pay Types to
+Deposit | Select the Pay Types to Deposit for which the system makes
+direct deposits: - All: All voucher types - Regular: Only regular checks
+- Vacation: Only vacation checks - Supplemental: Only supplemental
+checks - Reg &amp; Vac: Regular and vacation checks - Reg &amp; Sup:
+Regular and supplemental checks - Sup &amp; Vac: Supplemental and
+vacation checks |</li>
+<li>All: All voucher types</li>
+<li>Regular: Only regular checks</li>
+<li>Vacation: Only vacation checks</li>
+<li>Supplemental: Only supplemental checks</li>
+<li>Reg &amp; Vac: Regular and vacation checks</li>
+<li>Reg &amp; Sup: Regular and supplemental checks</li>
+<li>Sup &amp; Vac: Supplemental and vacation checks | Suppress Account
+Number Print | Select Suppress Account Number Print to prevent the
+printing of the employee’s bank account number on the direct deposit
+advice. | ## Maintaining Direct Deposit Account Information</li>
+</ul>
+<p>You can maintain the accounts where direct deposits are made using
+the Direct Deposit Information panel.</p>
+<p>To maintain the accounts for direct deposits:</p>
+<ol type="1">
+<li>Complete the following fields in the Direct Deposit Information
+panel:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Type</td>
+<td>Select the bank account Type for the deposit transaction: -
+Checking: A checking account. - Savings: A savings account. - EE HSA to
+Checking: Employee’s HSA contribution to checking account. - Co HSA to
+Checking: Company’s HSA contribution to checking account. - EE HSA to
+Savings: Employee’s HSA contribution to savings account. - Co HSA to
+Savings: Company’s HSA contribution to savings account. - Payroll
+Deduction: Routes payroll deduction amounts via ACH to a designated
+account. <strong>Note</strong>: The Payroll Deduction type is only
+available for service providers. - Non-ACH Transmittal: Transmittal not
+processed by ACH. - Deduction 1, Deduction 2, Deduction 3: Voluntary ACH
+deduction. Selecting these options automatically populates the Method
+field as Fixed and the Amount field as 0.00, which cannot be changed. In
+addition, you cannot set the Limit if you select one of these option
+types. &gt; <strong>Note:</strong> Note the following: - These options
+only display if you enable the VOLUNTARYDEDACH custom feature code on
+the System Parameters form. - During ACH processing, the system
+processes the deduction (direct deposit) the same as it does for
+checking accounts, where it displays as a credit in the ACH reports and
+through to the bank file. (<strong>Note</strong>: These deduction
+options only apply to a checking account.) <strong>Note</strong>: If you
+select the EE HSA to Checking or EE HSA to Savings bank account type,
+you must also select the Co HSA to Checking or Co HSA to Savings bank
+account type. If you do not make this selection, a warning displays
+because HSA accounts should include <em>both</em> an employee and a
+company entry.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Checking: A checking account.</li>
+<li>Savings: A savings account.</li>
+<li>EE HSA to Checking: Employee’s HSA contribution to checking
+account.</li>
+<li>Co HSA to Checking: Company’s HSA contribution to checking
+account.</li>
+<li>EE HSA to Savings: Employee’s HSA contribution to savings
+account.</li>
+<li>Co HSA to Savings: Company’s HSA contribution to savings
+account.</li>
+<li>Payroll Deduction: Routes payroll deduction amounts via ACH to a
+designated account.</li>
+<li>Non-ACH Transmittal: Transmittal not processed by ACH.</li>
+<li>Deduction 1, Deduction 2, Deduction 3: Voluntary ACH deduction.
+Selecting these options automatically populates the Method field as
+Fixed and the Amount field as 0.00, which cannot be changed. In
+addition, you cannot set the Limit if you select one of these option
+types.</li>
+<li>These options only display if you enable the VOLUNTARYDEDACH custom
+feature code on the System Parameters form.</li>
+<li>During ACH processing, the system processes the deduction (direct
+deposit) the same as it does for checking accounts, where it displays as
+a credit in the ACH reports and through to the bank file.
+(<strong>Note</strong>: These deduction options only apply to a checking
+account.) | Transit Number | Enter or select the nine-digit ABA Transit
+Number of the receiving bank or other financial institution. The Bank
+Name displays. If the correct transit number is not available, you need
+to create it; <a href="../../Maintenance/System/Bank_Routing.htm">see
+Bank Routing</a>. | | Account Number | Enter the Account Number
+associated with the transit number where the money will be deposited.
+<strong>Note</strong>: With the REKEY.DDA custom feature code enabled,
+if you enter an incorrect account number in this form simply click
+Cancel to re-enter the account number while retaining the other direct
+deposit information you already entered. | | Pay Type | Select the Pay
+Type for which type of ACH is active: - All: All voucher types -
+Regular: Only regular checks - Vacation: Only vacation checks -
+Supplemental: Only supplemental checks - Reg &amp; Vac: Regular and
+vacation checks - Reg &amp; Sup: Regular and supplemental checks - Sup
+&amp; Vac: Supplemental and vacation checks |</li>
+<li>All: All voucher types</li>
+<li>Regular: Only regular checks</li>
+<li>Vacation: Only vacation checks</li>
+<li>Supplemental: Only supplemental checks</li>
+<li>Reg &amp; Vac: Regular and vacation checks</li>
+<li>Reg &amp; Sup: Regular and supplemental checks</li>
+<li>Sup &amp; Vac: Supplemental and vacation checks | Method | Select
+the Method used to determine the deposit Amount, and then enter that
+value: - Fixed: Enter the exact dollar Amount to deposit, assuming that
+the net pay amount available is greater than or equal to that amount. -
+Percentage: Enter the percentage Amount of net pay to deposit into the
+account. You can also enter the Limit amount, which is the maximum
+deposit amount. - Remaining Balance: Select this method to deposit the
+employee’s entire net pay amount—or the remaining balance—to this
+account. If the total pay voucher is split between more than one bank
+account, use this method for the last account in the list. Whatever
+amount remains after calculating the previous lines, PrismHR deposits
+that to the account. &gt; <strong>Note:</strong> Note the following that
+occurs when you change the Percentage option to the Remaining Balance
+option on an existing entry in the following scenarios: - If there is a
+value in the deposit Amount field, the following message displays when
+you make the update and click Save: “There cannot be a value in the
+Amount field on line &lt;<em>line number</em>&gt; when using the
+Remaining Balance method.” - If there is a value only in the Limit
+field, the following message displays when you make the update and click
+Save: “There cannot be a value in the Limit field on line &lt;<em>line
+number</em>&gt; when using the Remaining Balance method.” - If there is
+a value in both the deposit Amount field and the Limit field, the
+following message displays when you make the update and click Save:
+“There cannot be an amount in either the Amount or Limit field on line
+&lt;<em>line number</em>&gt; when using the Remaining Balance method.” -
+Designating one account to receive the remaining balance ensures that
+the total amount of the voucher will be deposited. For example, the
+employee splits their vouchers between two accounts, and it is set to
+apply 50% to each. If the voucher were for an odd amount, the system
+would generate a check for one penny. If one is set to 50% and the other
+is set to remaining balance, the half plus the penny would go to the
+account receiving the remaining balance. - Fixed Skip: Enter a fixed
+amount that will be skipped if the full amount cannot be posted. -
+Percentage of Net After Taxes: Enter the percentage Amount of net pay to
+deposit to the account after tax deductions. |</li>
+<li>Fixed: Enter the exact dollar Amount to deposit, assuming that the
+net pay amount available is greater than or equal to that amount.</li>
+<li>Percentage: Enter the percentage Amount of net pay to deposit into
+the account. You can also enter the Limit amount, which is the maximum
+deposit amount.</li>
+<li>Remaining Balance: Select this method to deposit the employee’s
+entire net pay amount—or the remaining balance—to this account. If the
+total pay voucher is split between more than one bank account, use this
+method for the last account in the list. Whatever amount remains after
+calculating the previous lines, PrismHR deposits that to the
+account.</li>
+<li>If there is a value in the deposit Amount field, the following
+message displays when you make the update and click Save: “There cannot
+be a value in the Amount field on line &lt;<em>line number</em>&gt; when
+using the Remaining Balance method.”</li>
+<li>If there is a value only in the Limit field, the following message
+displays when you make the update and click Save: “There cannot be a
+value in the Limit field on line &lt;<em>line number</em>&gt; when using
+the Remaining Balance method.”</li>
+<li>If there is a value in both the deposit Amount field and the Limit
+field, the following message displays when you make the update and click
+Save: “There cannot be an amount in either the Amount or Limit field on
+line &lt;<em>line number</em>&gt; when using the Remaining Balance
+method.”</li>
+<li>Designating one account to receive the remaining balance ensures
+that the total amount of the voucher will be deposited. For example, the
+employee splits their vouchers between two accounts, and it is set to
+apply 50% to each. If the voucher were for an odd amount, the system
+would generate a check for one penny. If one is set to 50% and the other
+is set to remaining balance, the half plus the penny would go to the
+account receiving the remaining balance.</li>
+<li>Fixed Skip: Enter a fixed amount that will be skipped if the full
+amount cannot be posted.</li>
+<li>Percentage of Net After Taxes: Enter the percentage Amount of net
+pay to deposit to the account after tax deductions. | Status | Select
+the Status of the direct deposit account: - Prenotification: The system
+creates a direct deposit transaction for this bank account, with a
+deposit amount of zero. <strong>Note</strong>: If a direct deposit
+prenotification fails, it remains in Prenotification status. When the
+client receives notification that the prenotification was rejected, you
+must <em>manually</em> set the Status to Deposit Inactive (see below). -
+Deposit Active: Prenotification process is complete. - Deposit Inactive:
+Deposits are inactive. Typically, you must put new direct deposit
+accounts through a prenotification process. During that process, the
+system makes a transaction with a deposit amount equal to zero. Once the
+prenotification process is complete, set the Status to Deposit Active.
+The Prenote Date populates with the date of the prenotification. |</li>
+<li>Prenotification: The system creates a direct deposit transaction for
+this bank account, with a deposit amount of zero.</li>
+<li>Deposit Active: Prenotification process is complete.</li>
+<li>Deposit Inactive: Deposits are inactive. ## Setting Exclusion
+Amounts</li>
+</ul>
+<p>You can set exclusion amounts using the Amounts Excluded from Direct
+Deposit panel. If the same amount applies to all Direct Deposit
+exclusions, enter the amounts for each exclusion type.</p>
+<p>To set exclusion amounts:</p>
+<ol type="1">
+<li>Complete the following fields in the Amounts Excluded from Direct
+Deposit panel:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DD Exclude Voucher Types</td>
+<td>Select the DD Exclude Voucher Type against which this exclusion
+amount applies: - Regular: Only regular checks - Vacation: Only vacation
+checks - Supplemental: Only supplemental checks</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Regular: Only regular checks</li>
+<li>Vacation: Only vacation checks</li>
+<li>Supplemental: Only supplemental checks | DD Exclude Amt | Enter the
+DD Exclude Amt for this exclusion. This amount goes on a paper check;
+the system processes any net pay beyond this amount as a direct deposit.
+| ## Storing Account Information for Pay On-demand Processing</li>
+</ul>
+<p>You can store employees’ account information for pay on-demand
+processing using the Pay On-Demand Account panel.</p>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>Employees can only have one pay on-demand account where these
+types of funds will be deposited.</p></li>
+<li><p>You can only use a pay on-demand account when the payroll is
+marked as Manual in the payroll options. (The system ignores this
+account for any other payroll type.).</p></li>
+<li><p>The system records changes made to the pay on-demand account
+information in the audit log.</p></li>
+<li><p>Payrolls set to Pay On-Demand <em>ignore</em> the settings in the
+Amounts Excluded from Direct Deposit panel.</p></li>
+</ul>
+<p>To store employees’ account information for pay on-demand
+processing:</p>
+<ol type="1">
+<li>Complete the following fields in the Pay On-Demand Account
+panel.</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Status</td>
+<td>Select the Status of the direct deposit pay on-demand account: -
+Active: Deposits are active. - Inactive: Deposits are inactive.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Active: Deposits are active.</li>
+<li>Inactive: Deposits are inactive. | Transit Number | Enter or select
+the nine-digit ABA Transit Number of the pay on-demand account’s
+receiving bank or other financial institution. The Bank Name displays.
+If the correct transit number is not available, you need to create it;
+<a href="../../Maintenance/System/Bank_Routing.htm">see Bank
+Routing</a>. | | Account Number | Enter the Account Number associated
+with the transit number where the pay on-demand funds will be deposited.
+<strong>Note</strong>: With the REKEY.DDA custom feature code enabled,
+if you enter an incorrect account number in this form simply click
+Cancel to re-enter the account number while retaining the other direct
+deposit information you already entered. | | Vendor | Select the vendor
+who processes the pay on-demand funds. <strong>Note</strong>: When you
+set the pay on-demand account Status to Active, after you enter a
+Transit Number and move to the Account Number field, the system
+automatically displays the Vendor associated with that transit number.
+For example, if you enter the Pathward (124085244) or the Greendot
+(124303162) transit number, the system pre-populates the Vendor field
+with rapid! PayCard. |</li>
+</ul>
+<ol start="2" type="1">
+<li>Click Save.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>If you complete some of the fields but not all of them and click
+Save, the following error message displays, “You must complete the Pay
+On-Demand Account setup on the direct deposit section.” Click OK to
+continue.</p></li>
+<li><p>A save banner, “The current record has been saved,” displays on
+the tab at the top of the form after you make an update and click Save.
+(The save banner disappears in a few seconds.)</p></li>
+</ul>
+</body>
+</html>

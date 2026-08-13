@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>./index.html</loc></url>
+  <url><loc>./payroll.html</loc></url>
+  <url><loc>./benefits.html</loc></url>
+  <url><loc>./system-admin.html</loc></url>
+  <url><loc>./client-admin.html</loc></url>
+  <url><loc>./human-resources.html</loc></url>
+  <url><loc>./compliance.html</loc></url>
+  <url><loc>./onboarding.html</loc></url>
+  <url><loc>./task-sheets.html</loc></url>
+  <url><loc>./accounting.html</loc></url>
+  <url><loc>./ach.html</loc></url>
+  <url><loc>./billing.html</loc></url>
+  <url><loc>./imports.html</loc></url>
+  <url><loc>./employee-experience.html</loc></url>
+  <url><loc>./time-off.html</loc></url>
+  <url><loc>./overview.html</loc></url>
+  <url><loc>./release-notes.html</loc></url>
+  <url><loc>./guides-payroll.html</loc></url>
+  <url><loc>./guides-benefits-hr.html</loc></url>
+  <url><loc>./guides-admin.html</loc></url>
+</urlset>

@@ -1,0 +1,2763 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PrismHR Help — Billing</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<p><a href="index.html">PrismHR Help</a> · Public documentation for Microsoft 365 Copilot</p>
+<nav>
+<a href="index.html">Home</a>
+<a href="payroll.html">Payroll</a>
+<a href="benefits.html">Benefits</a>
+<a href="system-admin.html">System Admin</a>
+<a href="human-resources.html">HR</a>
+<a href="compliance.html">Compliance</a>
+<a href="task-sheets.html">Task Sheets</a>
+<a href="release-notes.html">Release Notes</a>
+</nav>
+</header>
+<header id="title-block-header">
+<h1 class="title">PrismHR Help — Billing</h1>
+</header>
+<h1 id="billing">Billing</h1>
+<p>This file is a combined export of PrismHR help topics in
+<strong>Billing</strong>. Source help system:
+https://tech-docs.prismhr.com/SP_help/Default.htm Each topic is
+separated by a heading and includes its original URL.</p>
+<p>========================================================================</p>
+<h1 id="billing-for-group-benefit-plans">Billing for Group Benefit
+Plans</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Billing_Benefit_Plans.htm
+Path:
+<code>PD/Billing/Front_Matter/Bill_UG_Billing_Benefit_Plans.htm</code></p>
+<h1 id="billing-for-group-benefit-plans-1">Billing for Group Benefit
+Plans</h1>
+<p>To define billing for group benefit plans, open the Back Office menu
+and select System|Change &gt; Group Benefit Plans. Open the benefit plan
+and enter the billing code in the top panel. Next, open the Actions
+menu</p>
+<p>[Image: screenshot]</p>
+<p>and then select Billing Rates. <a
+href="../../../BA/Topics/Group_Benefit_Plans.htm">See Maintaining Group
+Benefit Plans</a> for details.</p>
+<p>========================================================================</p>
+<h1 id="deduction-codes-for-billing">Deduction Codes for Billing</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Billing_Deductions.htm
+Path:
+<code>PD/Billing/Front_Matter/Bill_UG_Billing_Deductions.htm</code></p>
+<h1 id="deduction-codes-for-billing-1">Deduction Codes for Billing</h1>
+<p>To define deduction codes, open the Back Office menu and select
+System|Change &gt; Deduction Codes. <a
+href="../../Maintenance/System/Deduction_Codes.htm">See Maintaining
+Global Deduction Codes</a> for details.</p>
+<p>========================================================================</p>
+<h1 id="billing-for-retirement-plans">Billing for Retirement Plans</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Billing_Retirement_Plans.htm
+Path:
+<code>PD/Billing/Front_Matter/Bill_UG_Billing_Retirement_Plans.htm</code></p>
+<h1 id="billing-for-retirement-plans-1">Billing for Retirement
+Plans</h1>
+<p>To set the billing for retirement plans, open the Back Office menu
+and select System|Change &gt; Retirement Plans. <a
+href="../../../BA/Topics/Retirement_Plans.htm">See Setting Up and
+Maintaining Retirement Plans</a> for details.</p>
+<p>========================================================================</p>
+<h1 id="billing-codes">Billing Codes</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Chapter_Bill_Codes.htm
+Path:
+<code>PD/Billing/Front_Matter/Bill_UG_Chapter_Bill_Codes.htm</code></p>
+<h1 id="billing-codes-1">Billing Codes</h1>
+<p>There are billing codes that your organization must define and set
+up.</p>
+<p>========================================================================</p>
+<h1 id="creating-billing-templates">Creating Billing Templates</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Chapter_Bill_Templates.htm
+Path:
+<code>PD/Billing/Front_Matter/Bill_UG_Chapter_Bill_Templates.htm</code></p>
+<h1 id="creating-billing-templates-1">Creating Billing Templates</h1>
+<p>You can create billing templates for PEO and ASO clients.</p>
+<p>========================================================================</p>
+<h1 id="client-billing">Client Billing</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Chapter_Client_Billing.htm
+Path:
+<code>PD/Billing/Front_Matter/Bill_UG_Chapter_Client_Billing.htm</code></p>
+<h1 id="client-billing-1">Client Billing</h1>
+<p>There are features that your organization uses to maintain client
+billing.</p>
+<p>========================================================================</p>
+<h1 id="client-level-setup">Client-Level Setup</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Chapter_Client_Setup.htm
+Path:
+<code>PD/Billing/Front_Matter/Bill_UG_Chapter_Client_Setup.htm</code></p>
+<h1 id="client-level-setup-1">Client-Level Setup</h1>
+<p>Your organization must set up billing features at the client level.
+Typically, how you bill a client and what you bill varies from client to
+client.</p>
+<p>If a client’s type is Corporate (that is, if you set up your own
+organization as a client in PrismHR for internal use), you do not need
+to set up billing information.</p>
+<p>========================================================================</p>
+<h1 id="introduction">Introduction</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Chapter_Intro.htm
+Path: <code>PD/Billing/Front_Matter/Bill_UG_Chapter_Intro.htm</code></p>
+<h1 id="introduction-1">Introduction</h1>
+<p>The billing online help explains the functions and features of the
+billing features in PrismHR.</p>
+<ul>
+<li><p>Setup - The tasks and steps involved in setting up or defining
+codes, values, and definitions commonly used throughout the
+billing-related features. Authorized personnel set up these values
+before initial use of the system, however, they may perform these tasks
+when your organization requires new values or definitions.</p></li>
+<li><p>Administration - The tasks and steps involved in the daily
+maintenance, administration of the billing features.</p></li>
+</ul>
+<p>========================================================================</p>
+<h1 id="system-level-setup">System-Level Setup</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Chapter_System_Setup.htm
+Path:
+<code>PD/Billing/Front_Matter/Bill_UG_Chapter_System_Setup.htm</code></p>
+<h1 id="system-level-setup-1">System-Level Setup</h1>
+<p>There are billing setup tasks that your organization must set up at
+the system level.</p>
+<p>========================================================================</p>
+<h1 id="general-ledger-accounts-for-billing">General Ledger Accounts for
+Billing</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_GL_Accounts.htm
+Path: <code>PD/Billing/Front_Matter/Bill_UG_GL_Accounts.htm</code></p>
+<h1 id="general-ledger-accounts-for-billing-1">General Ledger Accounts
+for Billing</h1>
+<p>Your organization needs to include billing in the chart of accounts.
+See the <em>PrismHR Accounting User Guide</em> for details.</p>
+<p>========================================================================</p>
+<h1 id="intended-audience">Intended Audience</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Billing/Front_Matter/Bill_UG_Intended_Audience.htm
+Path:
+<code>PD/Billing/Front_Matter/Bill_UG_Intended_Audience.htm</code></p>
+<h1 id="intended-audience-1">Intended Audience</h1>
+<p>The contents are for users who are:</p>
+<ul>
+<li><p>Responsible for the setup and administration of client accounting
+and billing</p></li>
+<li><p>Familiar with the use of an internet browser</p></li>
+</ul>
+<h1 id="official-billing-user-guide-pdf-text">Official Billing User
+Guide (PDF text)</h1>
+<h1 id="billing-user-guide">Billing User Guide</h1>
+<ul>
+<li><strong>Source PDF:</strong>
+https://tech-docs.prismhr.com/SP_help/Content/Resources/UserGuidePDFs/Billing.pdf</li>
+<li><strong>Original filename:</strong> <code>Billing.pdf</code></li>
+<li><strong>Pages extracted:</strong> 76</li>
+</ul>
+<hr />
+<p>Billing User Guide</p>
+<p>Setup and administration of billing codes, values, and definitions on
+the PrismHR platform. PrismHR 26.07.0 Copyright notice The information
+in this document is subject to change without notice. PrismHR shall not
+be liable for any technical or editorial errors contained herein or for
+incidental or consequential damages resulting from the performance,
+furnishing, or use of this publication. The software described in this
+document is furnished under license and may be used or copied only in
+accordance with the terms of that license. No part of this documentation
+may be reproduced or transmitted in any form or by any means, electronic
+or mechanical, including (but not limited to) photocopying, recording,
+scanning, or retrieval system, for any other than the purchaser’s
+personal use without the express written permission of PrismHR. The
+company data contained in the examples within this document are
+fictitious and any resemblance to real people, places, or companies is
+purely coincidental. PrismHR is a trademark of PrismHR. All other brand
+and product names are trademarks or registered trademarks of their
+respective owners.</p>
+<p>© August 2026 by PrismHR. All rights reserved.  Table of Contents</p>
+<p>Table of Contents Billing User Guide 1 Copyright notice 2 Table of
+Contents 3 Chapter 1 Introduction 7 Intended Audience 7 Chapter 2
+Billing Codes 8 Rate Groups 8 Using Billing Codes 9 Establishing Billing
+Events 11 Creating a Billing Event 12 Establishing Price Overrides 13
+Chapter 3 Creating Billing Templates 14 Defining Methods for Billing
+Clients 14 Establishing Parameters Required to Bill Clients 14
+Maintaining Bill Rates and Administration Fees 16 Selecting Pay Codes
+That Control Unit-based Administration Fees 17 Defining Benefits
+Included in Administration Fees 17 Including Other Taxes 18 Entering
+Overrides by State 18 Classifying Expense Reimbursement Pay Codes 19
+Chapter 4 System-Level Setup 20 General Ledger Accounts for Billing 20
+Deduction Codes for Billing 20 Billing for Retirement Plans 20 Billing
+for Group Benefit Plans 20 Establishing Billing Formats 20</p>
+<p>Billing User Guide © 2026 PrismHR 3  Table of Contents</p>
+<pre><code>     Adding Billing Codes to a New Line Item                               22</code></pre>
+<p>Chapter 5 Client-Level Setup 24 Billing Rules 24 Bundled Billing
+Rules 24 Unbundled Billing Rules 25 Tax Criteria 31 Additional
+Conditions 32 Based On Options 34 Establishing State Tax Rates (SUTA) 40
+Establishing Officer and State Bill Rates 41 Importing SUTA Rates Data
+43 Defining State Tax Bill Rates (SUTA) 45 Setting a Location for State
+Tax Bill Rates 45 Setting SUTA Bill Rate Information 46 Establishing
+Officer and State Bill Rates 46 Selecting Relevant Employers 47
+Importing SUTA Billing Rates Data 48 Defining W/C Accrual Modifiers 49
+Adjusting W/C Billing Modifiers 49 Importing a Workers’ Compensation
+Template File 50 Using Override Rates Option 51 Chapter 6 Client Billing
+53 Working with Bill Pending Data 53 Background 53 System Billing Events
+53 Manual Billing Events 54 Importing Bill Pending Data 54 Understanding
+the E-Verify Bill Pending Fee 54</p>
+<p>Billing User Guide © 2026 PrismHR 4  Table of Contents</p>
+<pre><code>  Working with Billing Items                                               55
+     Avoiding Pitfalls                                                     58
+        Employee Sensitivity                                               58
+        Date Sensitivity                                                   58
+        Using Repeat Thru Date Correctly                                   58
+        Using Repeat Cycle Correctly                                       59
+        Cost                                                               59</code></pre>
+<p>Chapter 7 Stack Invoice with Workers’ Comp Broken Out 60 Set Up the
+Billing Format 60 Set Up the Billing Template 62 Set Billing Information
+for the Client 62 Chapter 8 Setting Up Invoice Header Information 64
+Invoice Logos 64 Employer Invoice Logo 65 Global Invoice Logos (PEO and
+Non-PEO) 65 Company Invoice Logos 65 Global Invoice Report and Blank
+Image Logo 66 MVQ Invoice Information 66 Client Information 66 Client
+Name 66 Client Address 67 Setting Up Employer Information 68 PEO Clients
+68 Non-PEO Clients 68 Employer Name 69 Employer Address 69 Other
+Employer Information 70</p>
+<p>Billing User Guide © 2026 PrismHR 5  Table of Contents</p>
+<p>Chapter 9 Setting Up Garnishment Setup Fees 71 Creating GSF Billing
+Event Code 71 Assigning Fee Setup in Client Details 72 Notes About
+Take-On Clients 72 Chapter 10 Setting Up Form W-2 Billing Fees 73
+Background 73 Billing Codes 73 Billing Rules 74 Chapter 11 Importing
+Client Bill Pending Data 75 Importing the File 75 Viewing Bill Pending
+for Clients 75</p>
+<p>Billing User Guide © 2026 PrismHR 6  Chapter 1 Introduction</p>
+<p>Chapter 1 Introduction The Billing User Guide explains the functions
+and features of the billing features in PrismHR. • Setup - The tasks and
+steps involved in setting up or defining codes, values, and definitions
+commonly used throughout the billing-related features. Authorized
+personnel set up these values before initial use of the system, however,
+they may perform these tasks when your organization requires new values
+or definitions. • Administration - The tasks and steps involved in the
+daily maintenance, administration of the billing features.</p>
+<p>Intended Audience The contents are for users who are: • Responsible
+for the setup and administration of client accounting and billing •
+Familiar with the use of an internet browser</p>
+<p>Billing User Guide © 2026 PrismHR 7  Chapter 2 Billing Codes</p>
+<p>Chapter 2 Billing Codes There are billing codes that your
+organization must define and set up.</p>
+<p>Rate Groups Use the Rate Groups form to maintain rate group codes.
+The system uses these codes to manage billing for benefit plans.</p>
+<p>Note: Rate Group Codes can contain any alphanumeric characters except
+0. They also cannot contain a period (.).</p>
+<p>To set up a rate group: 1. Enter the Rate Group code. 2. Enter a
+description of the rate group in the Group Name field. 3. Select
+Inactive if this rate group is not currently used in PrismHR. 4. Select
+Premium Rate Group to use this rate group for premiums instead of
+billing. 5. Click Save. When you select an existing Rate Group and save
+the form, the system checks for the following validations for the
+Premium Rate Group checkbox: • If the Premium Rate Group field is
+checked, then on clicking Save, the system verifies that there are no
+Billing Rate records associated with the selected Rate Group. • If the
+Premium Rate Group field in unchecked, then on clicking Save, the system
+verifies that there are no Premium Rate records associated with the
+selected Rate Group.</p>
+<p>Billing User Guide © 2026 PrismHR 8  Chapter 2 Billing Codes</p>
+<p>Note: If any Billing Rate or Premium Rate is found in any of the
+above mentioned validation, an error message stating, Rates are
+currently associated with this Rate Group. Changes to the ‘Premium Rate
+Group’ are not allowed. is displayed.</p>
+<p>Using Billing Codes Use the Billing Codes form to define billing
+entry and accounting information. There are certain bill codes that
+PrismHR requires, and rules for others. Here is a list of codes used as
+system defaults and their usage: • 000: Gross Wages • 001: FICA/OASDI •
+002: FICA/Medicare • 003: FUTA • 004: SUTA • 004O: Other State Tax (when
+needed) • 005: Workers’ Compensation • 005D: Workers’ Compensation
+Discount • 006: Administrative Fee • 006D: Administrative Fee Special
+Discount • 006M: Adminstrative Fee Adjust to Min/Max All other codes are
+added to the end of the list at bill time, such as benefits and
+deductions. Sales tax codes are formatted TAX{xx}, where xx is the
+two-character state code, for example, TAXOH for Ohio state tax.
+TB{BenefitPlanID} is the first bill code checked during the termination
+of an employee’s benefits. For example, a benefit plan MEDABC would look
+for the bill code TBMEDABC. If present, the system uses that, otherwise
+the system looks for a code TEBA (terminated employee benefit
+acceleration). This method gives the ability to create accounting detail
+where it is warranted while lumping smaller plans into one TEBA
+bucket.</p>
+<p>Billing User Guide © 2026 PrismHR 9  Chapter 2 Billing Codes</p>
+<ol type="1">
+<li><p>Open the Billing Codes form and complete the following
+fields:</p>
+<p>Field Description Bill Code Enter or select the Bill Code that
+describes a billing entry. If you select this field, a selector form
+displays where you can search for a specific bill code or its
+description or select a code from the list that displays. When this form
+opens, the bill code, description, and obsolete date display. To filter
+the search to display only Obsolete codes, select Yes in the Obsolete
+field (the default is No). (Note: Codes with an obsolete date earlier
+than the current date do not display in the selector form.) To refresh
+the list, select Reset Search and Filters. Bill Description Enter a Bill
+Description of this Bill Code. The description displays on invoices if
+the bill format does not normally include this bill code. It does not
+display on normal invoices if the billing code is included in the usual
+invoice format. Profitability Rpt Column Select the Profitability Rpt
+Column of the report in which to include this billing code. Annualized
+on Profit Select Annualized on Profit to annualize the bill code for the
+profitability report. Invoice Sales Rpt Column Select the Invoice Sales
+Rpt Column of the Invoice Sales report in which to include this billing
+code. Invoice Revenue Analysis Rpt Select the Invoice Revenue Analysis
+Rpt column of the Invoice Revenue Analysis report in which to include
+this billing code. TX Franchise Rpt Accumulator Select the TX Franchise
+Rpt Accumulator to print on the Texas Franchise Report. The system adds
+any amount billed to this code to that accumulator. Obsolete Date Enter
+the Obsolete Date when this billing code becomes obsolete, if
+ever.</p></li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 10  Chapter 2 Billing Codes</p>
+<pre><code> Field                              Description
+ Memo Client Acct Only              Select Memo Client Acct Only if this bill code should not display in the
+                                    actual invoice, but remain part of the client accounting system.
+                                    Note: The Memo Client Acct Only field setting is only available for
+                                    retirement 401(k) match reporting through PEO accounting.
+                                    Selecting this option causes the client accounting record to be out of
+                                    balance by the amount of the memo entries unless the client accounting
+                                    records include a memo offset line. To do this, your organization must
+                                    have a memo offset set up in PEO Client Accounting as an other bill code.
+                                    The breakdown of these non-billed entries can be helpful on a retirement
+                                    plan with a match that your organization does not collect.
+ Sales Tax                          Enter each Sales Tax state code where taxes apply to this billing code. If
+                                    this is a state-based sales tax billing code, do not enter any states in the
+                                    table.
+ Bill Redirect Code/Bill Redirect   To redirect billing:
+ Clent
+                                        a. Enter the Bill Redirect Code to redirect this billing code based on
+                                           a Redirection Plan.
+                                        b. Enter the Bill Redirect Client against which this plan should
+                                           redirect this billing code.</code></pre>
+<ol start="2" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Related Topic Setting Up PEO Client Accounting in the Payroll User
+Guide</p>
+<p>Establishing Billing Events You can use the Billing Events form to
+establish events to bill, or override prices for various items. There
+are certain events that PrismHR requires, and rules for others. Here is
+a list of codes used as system defaults and their usage: • 000: Payroll
+Generated; you cannot edit the bill code for this event. Those codes are
+predefined. • NESxx: New Employee Setup, where xx is the employment
+type. If the system does not find an NES code with the appropriate
+employment type, it uses the standard NES code. • TEPxx: Terminated
+Employee Processing, where xx is the employment type. If the system does
+not find a TEP code with the appropriate employment type, it uses the
+standard TEP code. • RHSFEE: Rehire Setup Fee. Auto-bills for employees
+of any type when there is no specific FT/PT designation. • RHSFEEF:
+Rehire Setup Fee Full Time Employees. Auto-bills for employees of any
+type when there is no specific FT/PT designation.</p>
+<p>Billing User Guide © 2026 PrismHR 11  Chapter 2 Billing Codes</p>
+<p>• RHSFEEP: Rehire Setup Fee Part Time Employees. Auto-bills for
+employees of any type when there is no specific FT/PT designation.</p>
+<p>Note: You can override billing event rates for specific clients using
+the Billing tab on the Client Details form.</p>
+<p>Creating a Billing Event You can use the Billing Events panel to
+establish an event to bill.</p>
+<p>To create a billing event, do the following: 1. Enter or select a
+Bill Event Code that represents the reason for a billing item. If you
+select this field, a selector form displays where you can search for a
+specific bill event code or its description or select a code from the
+list that displays. When this form opens, the bill event code,
+description, and obsolete date display. To filter the search to display
+only Obsolete codes, select Yes in the Obsolete field (the default is
+No). (Note: Codes with an obsolete date earlier than the current date do
+not display in the selector form.) To refresh the list, select Reset
+Search and Filters. 2. Enter a Description of the billing event. 3.
+Enter the Bill Code related to this billing event. 4. Select Show
+Detailed if you want to display the details of this billing event on an
+invoice. 5. If you selected Show Detailed in the previous step, the
+Display Duplicate Detail Lines on Invoices field now displays. If your
+organization does not use the INVDUPEDETAIL feature code, you can select
+this option to only display duplicate detail line items associated with
+this billing event. Please note that this is a system-level setting and
+will take effect for any client in your system that is billed under this
+billing event code.</p>
+<p>Note: Your profits are the difference between the Standard Price
+billed to your client and the Standard Cost to your organization.</p>
+<ol start="6" type="1">
+<li>Enter the Standard Price if the event has a standard amount to bill
+for this billing event.</li>
+<li>Enter the Bill Pend Std Cost if there is a standard cost associated
+with this billing event. For example, 2nd Day Air could have a standard
+cost of $9.00.</li>
+<li>Enter the Obsolete Date when this billing event is no longer
+valid.</li>
+<li>Enter the desired template combination in the Comment Template text
+box. This text box is available only for the following Third Party Sick
+Bill Event Codes:</li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 12  Chapter 2 Billing Codes</p>
+<p>l TPS-FUTA l TPS-MED l TPS-OASDI l TPS-TAX</p>
+<p>Establishing Price Overrides You can use the Price Overrides panel to
+establish prices that override the standard price of this billing
+event.</p>
+<p>To establish override prices, do the following: 10. For each cost
+center that requires a different standard price from the default: a.
+Enter the Cost Center ID. b. Enter the Override Rate to use for the cost
+center. c. Enter the Bill Pend Cost to charged against this override. A
+negative number represents a decrease in costs. 11. Click Save.</p>
+<p>Billing User Guide © 2026 PrismHR 13  Chapter 3 Creating Billing
+Templates</p>
+<p>Chapter 3 Creating Billing Templates You can create billing templates
+for PEO and ASO clients.</p>
+<p>Defining Methods for Billing Clients Use the Billing Templates form
+to define methods for billing clients.</p>
+<p>Establishing Parameters Required to Bill Clients The Billing
+Templates panel establishes the parameters required to bill a client for
+services. Example of the Billing Templates form (PEO type)</p>
+<p>Example of the Billing Templates form (ASO type)</p>
+<p>Billing User Guide © 2026 PrismHR 14  Chapter 3 Creating Billing
+Templates</p>
+<p>To configure billing templates: 1. Enter the Template ID used to
+access this billing template. 2. From the Template Type list, select
+whether this template applies to PEOs or ASOs. Selecting one of these
+options does the following: • PEO: Allows users to enable check boxes in
+the Limit and Discount Shelter columns as default items. • ASO:
+Automatically defaults to honoring Limit and Discount Shelter column
+items. 3. Enter a Template Description. 4. Select Bundled if this is a
+bundled billing template. The client is billed at a fixed rate and the
+Admin fee is a squeezed computation. Note: You cannot select the Default
+Rates check box unless you also select the Bundled check box. 5. Select
+Default Rates to use the standard default rate. 6. Select the Based On
+method, which determines whether to base the Admin fee on Units or
+Wages. If you select Units, you must also complete the Bundled Unit
+Based Maintenance panel. 7. Select Workers’ Comp Sort if the invoice
+should sort and break on Workers’ Compensation codes. The system applies
+this sort after other sorts for the stack invoice only. Other sorts are
+set at the client level (by department, division, location, and so on).
+The stack invoice formats the invoice differently, presenting hours,
+wages, and extensions—usually for bundled billing. 8. Select the service
+types and matching G/L templates: • Enter each Service Type for which
+this billing template can be used. • Enter the G/L Template that is
+appropriate for this billing template and Service Type.</p>
+<p>Billing User Guide © 2026 PrismHR 15  Chapter 3 Creating Billing
+Templates</p>
+<ol start="9" type="1">
+<li>Enter the billing template expiration date in the Expires On field,
+if any. After this date, PrismHR will not allow your organization to
+process payrolls using this template until it is updated.</li>
+<li>Select the Replaced By template, which is the template that replaces
+this one after the expiration date in the Expired On field.</li>
+<li>Select the check boxes as appropriate. (Fewer check boxes are
+available for ASO templates than for PEO templates.) • Select Add to
+indicate that each bill item is an add-on to the compensation rates for
+unbundled amounts. For Workers’ Comp (if Hourly), this determines
+whether to add hourly based workers’ compensation to each billing item.
+• For PEO templates, select Limit to indicate that each bill item must
+stop at the prescribed high limit for billing purposes. For bundled
+amounts, the bundled rates are decreased. On bundled companies, the rate
+decreases when the limit is met for items that are limited. It decreases
+by the amount of the client’s bill rate for the item. • For PEO
+templates, select Discount Shelter to indicate that clients with this
+template should receive a benefit of any sheltered amounts (Section 125,
+401(k), and so on) for each bill item. • Workers Comp High Comp
+indicates whether compensation is limited on employees determined as
+highly compensated, or whether to compute it on all
+compensation-eligible wages. An employee is high comp if they are over
+the high compensation limit (either the state-mandated or officer). •
+Workers Comp Overtime indicates whether the Workers’ Compensation should
+use two-thirds (2/3) of overtime for premium computations.</li>
+</ol>
+<p>Note: Use the Special FUTA Rate only as an override; do not use it
+for all clients. If the federal government changed FUTA to be 0.85% and
+you used this field to set the FUTA rate for each client, you would have
+to change it for every client.</p>
+<ol start="12" type="1">
+<li>If appropriate, enter the Special FUTA Rate as a percentage.</li>
+<li>Select Skip Employee Fees for New Clients if you will not charge the
+client for new hires and terminated employees during the first 30 days
+of service.</li>
+<li>Complete the additional sections below, as needed. When finished,
+click Save.</li>
+</ol>
+<p>Maintaining Bill Rates and Administration Fees If this is a bundled
+billing template that uses default rates, use the Bundled Rate
+Maintenance panel to maintain the bill rates and administrative
+fees.</p>
+<p>Billing User Guide © 2026 PrismHR 16  Chapter 3 Creating Billing
+Templates</p>
+<p>Note: If the Default Rate is greater than zero, the system uses it
+for any Workers’ Compensation code not listed in the table. If there is
+a value in this field and no value in the W/C Code field, there may be
+billing errors; use the Default Rate with care. If you leave the Default
+Rate blank, users entering data for clients with this billing template
+see messages that the listed Workers’ Compensation code does not have a
+billing amount. The system continues to display this message until you
+update the bill template for the code or enter a default amount.</p>
+<p>Field Name Description Default Rate Enter the Default Rate to use for
+all clients’ Workers’ Compensation rates not defined in the table. This
+value is useful for “one-price-fits-all” clients. W/C Code Grid For each
+Workers’ Compensation code that requires a different rate: • Enter the
+W/C Code. The Class Description displays. • Enter the Min Admin Fee
+amount to use. This overrides any amount entered on the client record,
+except for special rates. The system discounts the minimum fee by the
+special discount rate. • Enter the WC Def Bill Rate, which is the
+default billing rate for the W/C Code.</p>
+<p>Selecting Pay Codes That Control Unit-based Administration Fees If
+this is a bundled billing template with rates based on units, use the
+Bundled Unit Based Maintenance panel to select the pay codes that
+control the unit-based Admin fee. Enter all Pay Codes to include in the
+Admin fee computation.</p>
+<p>Defining Benefits Included in Administration Fees Use the Benefits
+Included panel to define the benefits included in the Admin fee.</p>
+<p>Billing User Guide © 2026 PrismHR 17  Chapter 3 Creating Billing
+Templates</p>
+<p>For each benefit: 1. Enter any Included Benefits for this billing
+template’s Admin fees. 2. Indicate whether the benefit plan is Included
+on Arrears: • Yes: The system charges the fee even if employees do not
+receive pay. The system creates a zero billing, charging the value of
+the benefits against the Admin fee, and resulting in negative Admin
+fees. • No: The client pays the benefit for employees when they do not
+receive pay. The system bills clients for each employee (who is not on
+leave) receiving an arrearage voucher. It returns the value of these
+charges upon the employee’s return, with the assumption that billing
+covers all fees up to that time. If the employee never receives another
+payment, the system continues the charge. 3. Select Retirement Match
+Included to include the match amounts in the billing template
+amount.</p>
+<p>Including Other Taxes Use the Other Tax Code Billing Options panel to
+include other taxes in the billing template.</p>
+<p>To include other taxes: 1. Enter each Tax Code to include. 2.
+Indicate whether to Add the tax code to the Comp rates. • Yes: The
+system adds the tax code to the Comp rates listed above. Typically, you
+select Yes for unbundled billing rates. • No: Select No if the tax code
+is included in the Comp Rate above. Typically, you select this for
+bundled amounts.</p>
+<p>Note: On bundled billing, the rate decreases when the limit is met
+for items that are limited. It decreases by the amount of the client’s
+bill rate of the item.</p>
+<ol start="3" type="1">
+<li>Indicate whether to stop at high Limit if this tax code stops at
+prescribed limits. Note: You cannot set the Limit or Discount Shelter
+for an ASO billing Template Type to Yes. (An error message displays when
+you click Save.)</li>
+<li>Indicate whether the billing template includes Discount Shelter
+limits.</li>
+<li>Enter the Override Wage Base if there is a wage base override for
+this tax code. Leave this field blank if the standard wage base
+applies.</li>
+</ol>
+<p>Entering Overrides by State Use the SUI Billing Wage Base Overrides
+panel to enter overrides by state.</p>
+<p>Billing User Guide © 2026 PrismHR 18  Chapter 3 Creating Billing
+Templates</p>
+<p>To enter overrides by state: 1. Enter each State Code. The State Name
+populates. 2. Enter the taxable Wage Base Override the system should use
+for SUTA billing calculations for the state. 3. Enter the overriding
+FUTA Bill Rate for the state. This overrides the Special FUTA Rate, if
+any.</p>
+<p>Classifying Expense Reimbursement Pay Codes Use the Taxable Expense
+panel to classify any expense reimbursement pay codes as taxable pay
+codes for the purposes of tax billing. Select each Taxable Expense
+Reimbursement Pay Code. The Description populates.</p>
+<p>Billing User Guide © 2026 PrismHR 19  Chapter 4 System-Level
+Setup</p>
+<p>Chapter 4 System-Level Setup There are billing setup tasks that your
+organization must set up at the system level.</p>
+<p>General Ledger Accounts for Billing Your organization needs to
+include billing in the chart of accounts. See the PrismHR Accounting
+User Guide for details.</p>
+<p>Deduction Codes for Billing To define deduction codes, open the Back
+Office menu and select System|Change &gt; Deduction Codes. Refer to the
+PrismHR Payroll User Guide for details.</p>
+<p>Billing for Retirement Plans To set the billing for retirement plans,
+open the Back Office menu and select System|Change &gt; Retirement
+Plans. Refer to the PrismHR Benefits Administration User Guide for
+details.</p>
+<p>Billing for Group Benefit Plans To define billing for group benefit
+plans, open the Back Office menu and select System|Change &gt; Group
+Benefit Plans. Open the benefit plan and enter the billing code in the
+top panel. Next, open the Actions menu and then select Billing Rates.
+Refer to the PrismHR Benefits Administration User Guide for details.</p>
+<p>Establishing Billing Formats The Billing Formats form establishes
+bill formats/invoices that you can use for one or more clients.</p>
+<p>Note: If a user creates a new billing code, you must define a bill
+format that links to that code, or else it displays as an “other” line
+on the invoice.</p>
+<p>To set up a billing format: 1. Click Back Office. 2. From
+System|Change, select Billing Formats. 3. Complete these fields as
+required:</p>
+<p>Billing User Guide © 2026 PrismHR 20  Chapter 4 System-Level
+Setup</p>
+<pre><code> Field                                   Description
+ Format                                  Specifies the Billing Format ID.
+ Format Description                      A description that indicates how this billing format is used. If
+                                         the format is specific to one client, indicate that in the
+                                         description.
+ Invoice Print Format                    Format for printing invoices. For example, STACK Print 3Col
+                                         by Break Stacked Version (WCSort on Template!).
+                                         Note the following:
+                                         •    The STACK Print 3Col by Break Stacked Version
+                                              (WCSort on Template!) option is only valid in PrismHR
+                                              Core and will not display in Employee Portal (EP).
+                                         •    The STDNOBANK Standard Invoice with suppressed
+                                              banking info option hides ACH/banking account
+                                              information (that is, the system removes the bank
+                                              account and all ACH Payment record data from the on-
+                                              screen invoice display and the invoice&#39;s PDF output)
+                                              when the client is using any of the Electronic Billing
+                                              options on the Billing tab in the Client Details form.
+                                         Note: This format is only valid in PrismHR Core and will not
+                                         display in Employee Portal (EP).
+ Format Orientation (Portrait or         Specifies the orientation for invoices. If you select landscape,
+ Landscape)                              specify whether you want invoices to display a client logo or
+                                         return address. For landscape, this formats the first page of
+                                         the report so that address information displays in double-
+                                         window 9&quot; x 12&quot; envelopes.
+ Message ID                              Enter text or select an invoice message for any special
+                                         message format. (These formats are defined in System
+                                         Parameters.) If you select this field, the Select Invoice
+                                         Message list displays where you can select an invoice
+                                         message.
+ Show Past Due                           Displays open/past due amounts on the invoice.
+
+ Past Due In Invoice Total               Displays open and past due invoices in the invoice total.
+                                         Otherwise, there is only a statement listing at the end.
+ Show on Remit                           Displays open/past due invoice listings on the remittance
+                                         form.
+ Billing Code Multi-Value Grid Fields:</code></pre>
+<p>Billing User Guide © 2026 PrismHR 21  Chapter 4 System-Level
+Setup</p>
+<pre><code> Field                                   Description
+ Line Description                        Description that appears on the invoice in the position
+                                         indicated, depending on the value of the Print if 0 field.
+
+                                         Note: Position indicated means the order of these line
+                                         items determines the order of the billing lines when
+                                         printed. In other words, the first description in this column
+                                         is the first line printed on the bill, the second description is
+                                         the second line printed, and so forth.
+ Company Account                         Account number used to show clients what journal effect to
+                                         post on their records. This is for special client accounting.
+ Print if zero                           Select Yes from the drop-down to print the line on the invoice
+                                         even when the value is zero. If you select No, the invoice does
+                                         not include the line if its value is zero for that invoice.
+ View Code                               Click   to see the list of bill codes included in the line.
+
+ Add/Edit Code                           Click   to add or edit billing codes.
+
+                                         Note: When entering codes for a new line item, the search
+                                         link no longer adds extra lines before the first bill code in a
+                                         multi-value grid.</code></pre>
+<ol start="4" type="1">
+<li>Click Save in the Billing Formats form.</li>
+</ol>
+<p>Note: You can copy data by selecting the Copy option from the Actions
+menu; however, do not use spaces in the Copy To field (an error message
+will display).</p>
+<p>Adding Billing Codes to a New Line Item This section describes how to
+add billing codes to new line items on a billing format.</p>
+<p>To add billing codes to a new line item: 1. Select an existing bill
+format. The form is populated with the billing format settings and
+existing line items for this format.</p>
+<p>Billing User Guide © 2026 PrismHR 22  Chapter 4 System-Level
+Setup</p>
+<ol start="2" type="1">
+<li><p>Click + to add a new line item. A new row appears at the bottom
+of the multi-value grid (MVG).</p></li>
+<li><p>Enter a Line Description. When you click outside that field, the
+View and Edit icons appear.</p></li>
+<li><p>Click the Edit icon . The Bill Codes selector appears.</p></li>
+<li><p>Select a code from the list. The view switches to the Bill Codes
+for <Line Description> MVG with that code displayed in the first
+row.</p></li>
+</ol>
+<p>Note: You can enter additional rows either by entering codes manually
+or by using the search link in the Bill Code header. The form should not
+insert any blank rows.</p>
+<ol start="6" type="1">
+<li><p>Click Save to save that code to the line item. The system returns
+to Billing Formats.</p></li>
+<li><p>Click View for the new line item to confirm that the billing code
+was added. For example, Auto401k for NEW.</p></li>
+<li><p>Click Save on the main Billing Formats form to commit these
+changes to your billing format.</p></li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 23  Chapter 5 Client-Level
+Setup</p>
+<p>Chapter 5 Client-Level Setup Your organization must set up billing
+features at the client level. Typically, how you bill a client and what
+you bill varies from client to client. If a client’s type is Corporate
+(that is, if you set up your own organization as a client in PrismHR for
+internal use), you do not need to set up billing information.</p>
+<p>Billing Rules Client billing can be bundled or unbundled: • Bundled
+billing charges a lump sum percentage of gross payroll per pay period.
+It includes FUTA, SUTA, FICA, and workers’ compensation. • Unbundled
+billing breaks out each line item charge for payroll taxes, workers’
+comp premiums, and administrative fees.</p>
+<p>Note: The billing method (bundled or unbundled) does not affect the
+invoice format. Both the bill format and the billing template are set on
+the Billing tab in the Client Details form.</p>
+<p>After defining billing rules, you can begin to enter other billing
+settings on the Billing tab on the Client Details form.</p>
+<p>Bundled Billing Rules Use the Bundled Billing Rules form to establish
+information for charging one fee per workers’ compensation class for
+FUTA, SUTA, FICA, and workers’ compensation. You can “bundle” benefit
+billing based on the workers’ compensation code. You can use the Bundled
+Billings Comp Class workers’ compensation code to reflect actual costs
+that are based on workers’ compensation classifications. You can also
+set up bundled billing so that each Comp Class has the same billing
+rate, such as when a client has a flat rate for all classes of
+employees.</p>
+<p>To set up bundled billing: 1. Select Client. 2. From Client|Change,
+select Billing Rules (Bundled). 3. Fill in these fields as required.</p>
+<p>Billing User Guide © 2026 PrismHR 24  Chapter 5 Client-Level
+Setup</p>
+<pre><code> Field                          Description
+ Billing Rule                   Enter an existing Billing Rule ID, or click New Rule to create a new
+                                bundled billing rule. The system automatically assigns an ID.
+ Workers&#39;                       Enter the Workers&#39; Compensation Code for this bundled billing rule.
+ Compensation Code
+ Price Code                     If appropriate, select the Price Code to use instead of the standard billing
+                                rate.
+                                The Price Code overrides the Bundled Rate set on the Bundled Billing Rule
+                                panel for any employee assigned to this job code and a matching Price
+                                Code. Use this field if an employee is granted special pricing (rather than
+                                using the standard bundled rate and with an employee-specific add-on
+                                unbundled rule, which is more common).
+ Bundled Rate                   Enter the Bundled Rate to use when billing the client for this workers’
+                                compensation code. This percentage is multiplied by the Unadjusted Gross
+                                Taxable pay.
+ Special Bundled Rate           If required, enter the Special Bundled Rate to use for a specific date
+                                range.
+ Special Rate From Date Enter the date when the Special Bundled Rate begins. Payrolls before this
+                        date do not use the rate.
+ Special Rate To Date           Enter the date when the Special Bundled Rate ends. Payrolls after this
+                                date do not use the rate.
+ Rule Start Date/Rule           If the rule only applies during a specific date range:
+ End Date
+                                •    Enter the Rule Start Date when this rule begins.
+                                •    Enter the Rule End Date when this rule ends.</code></pre>
+<ol start="4" type="1">
+<li>If Bundled Tiers (Optional) are required: • Enter the Maximum Pay
+Level covered by this billing rate. Use this field only if bundled rates
+vary by pay level. • Select the Department Code for this billing tier. •
+Enter each of the Pay Codes affected by this billing rate.</li>
+<li>If bundled rules exist for the client, they display in the Existing
+Bundled Rules panel.</li>
+<li>Click Save.</li>
+</ol>
+<p>Unbundled Billing Rules Use the Billing Rules (Unbundled) form to
+create the individual fees you charge to your clients.</p>
+<p>Billing User Guide © 2026 PrismHR 25  Chapter 5 Client-Level
+Setup</p>
+<p>To set unbundled billing rules: 1. Select Client. 2. From
+Client|Change, select Billing Rules (Unbundled). The Billing Rules
+(Unbundled) form displays. For example:</p>
+<ol start="3" type="1">
+<li><p>Complete these fields as required.</p>
+<pre><code>Field                        Description
+Billing Rule                 Enter or select an existing Billing Rule ID, or click New Rule to create a
+                             new unbundled billing rule. The system automatically assigns an ID.
+Rule Description             Enter a Rule Description.
+Rate                         Enter the billing Rate. The system uses this in conjunction with the Based
+                             On value.
+Based On                     Select a Based On value, which represents the logic to use when
+                             calculating the rate.
+                             For more information about &quot;based on&quot; options, refer to the &quot;Based On&quot;
+                             option documentation for unbundled billing rules.</code></pre></li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 26  Chapter 5 Client-Level
+Setup</p>
+<pre><code>   Field                        Description
+   Use Timesheet Location Only displays for rules based on Percent of Wages or Percent of
+   Or State               WorkerComp Billed. If enabled, the billing rule targets the location or
+                          state billed on the time sheet.
+   Rule Start Date/Rule         If the rule only applies during a specific date range:
+   End Date
+                                •    Enter the Rule Start Date when this rule begins.
+                                •    Enter the Rule End Date when this rule ends.
+
+   Voucher Types                Select the Voucher Types to which a billing rule applies.
+
+   Employee                     If the billing rule applies to a single employee, enter the Employee ID. If
+                                the billing rule applies to all employees who do not have another billing
+                                rule assigned to them, leave this field blank.
+   Batch Type                   Select the Batch Type to which this billing rule applies.
+   Employee Type                Select the Employee Type to which this billing rule applies, if any. For
+                                example, FT is a full time employee.
+   Pay Group                    Select the Pay Group to which this billing rule applies, if any. For
+                                example, W is a weekly pay group.
+   Deduction Period             Enter the Deduction Period number (1 through 5) to which this billing
+                                rule applies, if any. If employees are paid during this period, the system
+                                assesses a fee. If you enter a Deduction Period, you must also enter a
+                                Pay Group unless Based On is set to Flat Amount / Benefit Plan Class.
+   Position                     Enter the Position to restrict the billing rule to one position. For example,
+                                SALES is a position type.
+   Obsolete                     Enable this field to set the selected Billing Rule as obsolete. (The default
+                                is disabled.)
+   Obsolete Date                Enter or select the date when the Billing Rule becomes obsolete. (If you
+                                enable the Obsolete field and do not enter or select the Obsolete Date,
+                                the system automatically defaults to the current date.)
+   Pay Period                   Select the Pay Period to which this rule applies. If it applies to all periods,
+                                do not make a selection.</code></pre>
+<p>Billing User Guide © 2026 PrismHR 27  Chapter 5 Client-Level
+Setup</p>
+<pre><code>   Field                        Description
+   Home Location Code           Enter a Home Location Code to limit the application of this unbundled
+                                billing rule to that location. If the rule applies to all locations by default,
+                                enter DEFAULT-ALL.
+                                Using DEFAULT-ALL for a billing rule allows locations to have “by
+                                exception” logic. For example, you could have a rule where all locations
+                                are charged $100 except for the CORP location, which is charged $40. In
+                                that case, you would create two billing rules: one with the DEFAULT-ALL
+                                location code and one with the CORP location code.
+   Special Rate                 Enter the Special Rate in effect for a specified period. The system uses
+                                this value instead of the standard rate.
+                                Note: You cannot enter a special rate for Per Active Employee Per
+                                Month (PAEPM) rules.
+   Special Rate                 If the special rate only applies during a specific period:
+   Start/Special Rate End       •   Enter the Special Rate Start date when the special rate goes into
+                                    effect.
+                                •   Enter the Special Rate End date when the special rate ends.
+                                Note: You cannot enter a special rate start/end date for Per Active
+                                Employee Per Month (PAEPM) rules.
+   Billing Code                 Enter the Billing Code the system uses. Typically, this is 006, but you can
+                                assign another code to use instead of this standard administration fee.
+   Benefit Plan                 Enter the Benefit Plan to use when calculating an administrative fee. This
+                                field only impacts calculations when the rule’s Based On field is set to
+                                Percent of Listed Benefit or Percent of Listed Benefit Net Billed to
+                                Client.
+
+   Optional Fields
+   Benefit Plan Class           This field is only active when Based On is set to Flat Amount / Benefit
+                                Plan Class. Select one of the classifications used for group benefit plans
+                                or select Retirement. The system charges the amount once if an
+                                employee has any plans in that class (unless the group benefit plan is set
+                                to suppress flat billing by plan type). If there is a benefit adjustment in
+                                addition to the regular plan, the billing rule is applied only once. If the
+                                pay voucher has only benefit adjustments, then the billing rule applies
+                                once.</code></pre>
+<p>Billing User Guide © 2026 PrismHR 28  Chapter 5 Client-Level
+Setup</p>
+<pre><code>   Field                        Description
+   Benefit Plan Types           You can only specify benefit plan types on which to charge fees when
+                                Based On is set to Percent of Listed Benefit, Percent of Listed Benefit
+                                Net Billed to Client, or Flat Amount based on Benefit Rule.
+
+                                Select each Benefit Plan Type Equal To for which you bill an
+                                administrative fee surcharge, or select each Benefit Plan Type Not Equal
+                                To for which you do not bill an administrative fee surcharge.</code></pre>
+<p>Billing User Guide © 2026 PrismHR 29  Chapter 5 Client-Level
+Setup</p>
+<pre><code>   Field                        Description
+   Pay Class Equal To/          If the billing rule applies to only a few pay classes, list them in the Pay
+   Pay Class Not Equal To       Class Equal To table. If there are only a few exceptions, use the Pay Class
+                                Not Equal To table instead. If the billing rule covers all pay classes, leave
+                                both tables empty. For example, set Pay Class Not Equal ToExpense
+                                Reimbursement when you do not want to calculate Admin Fee as a
+                                percentage of wages on non-taxable wages.
+                                Important! When listing the Pay Class, note that they are only valid when
+                                using the following Based On options:
+                                •    Hours Worked
+                                •    Percent of Wages
+                                •    Amt per Check (One Per Voucher will Fire)
+                                •    Flat Amount
+                                •    Flat Amount / Paid EE (only once per EE)
+                                •    Flat Amount / Benefit Plan Class
+                                •    Monthly Rate/52 weeks =\ Only One of these
+                                •    Monthly Rate/48 weeks =/ Per Voucher will Fire
+                                •    Percent of Retirement Match Amount
+                                •    Percent to Not Shelter Benefit plan from FICA
+                                •    Percent of WorkerComp Billed
+                                •    Percent of FUTA Billed
+                                •    Percent of FUTA Wages Billed
+                                •    Percent of SUTA Billed
+                                •    Percent of SUTA Wages Billed
+                                •    Tax-Code Based Rule (Rate(s) on sub screen)
+                                •    Tiered Cumulative Per Employee Per Pay Period
+                                •    Tiered Per Employee Per Pay Period</code></pre>
+<p>Billing User Guide © 2026 PrismHR 30  Chapter 5 Client-Level
+Setup</p>
+<pre><code>   Field                        Description
+   Pay Code Equal To/           If the billing rule applies to only a few pay codes, list them in the Pay
+   Pay Code Not Equal To        Code Equal To table. If there are a few pay code exceptions, use the Pay
+                                Code Not Equal To table to list the pay codes not covered by this billing
+                                rule. If the billing rule covers all pay codes, leave both tables empty.
+                                Important! When listing the Pay Code, note that they are only valid when
+                                using the following Based On options:
+                                •   Hours Worked
+                                •   Percent of Wages
+                                •   Amt per Check (One Per Voucher will Fire)
+                                •   Flat Amount
+                                •   Flat Amount / Paid EE (only once per EE)
+                                •   Flat Amount / Benefit Plan Class
+                                •   Monthly Rate/52 weeks =\ Only One of these
+                                •   Monthly Rate/48 weeks =/ Per Voucher will Fire
+                                •   Percent of Retirement Match Amount
+                                •   Percent to Not Shelter Benefit plan from FICA
+                                •   Percent of WorkerComp Billed
+                                •   Percent of FUTA Billed
+                                •   Percent of FUTA Wages Billed
+                                •   Percent of SUTA Billed
+                                •   Percent of SUTA Wages Billed
+                                •   Tax-Code Based Rule (Rate(s) on sub screen)
+                                •   Tiered Cumulative Per Employee Per Pay Period
+                                •   Tiered Per Employee Per Pay Period</code></pre>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Tax Criteria Enter tax criteria by setting Based On in unbundled
+billing to Tax-Code Based Rule. The Tax Criteria panel displays.</p>
+<p>Billing User Guide © 2026 PrismHR 31  Chapter 5 Client-Level
+Setup</p>
+<ol type="1">
+<li><p>Go to the Tax Criteria panel and complete the following fields
+for the employee tax criteria:</p>
+<p>Field Description EE Tax Codes Enter each of the EE Tax Codes
+(employee tax deduction codes) to associate with this billing rule. Per
+Employee Indicate whether to charge the code Per Employee. If not, then
+the system assesses the charge once per payroll batch. Bill Rate Enter
+the Bill Rate to charge on the code. F/P Indicate whether the amount is
+a Flat Rate or a Percent.</p></li>
+<li><p>Complete the following fields for the employer tax criteria:</p>
+<p>Field Description ER Tax Codes Enter each ER Tax Codes (employer tax
+deduction codes) to associate with this billing rule. Per Employee
+Indicate whether to charge the code Per Employee. If not, then the
+system assesses the charge once per payroll batch. Bill Rate Enter the
+Bill Rate to charge on the code. F/P Indicate whether the amount is a
+Flat Rate or a Percent.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+<p>Additional Conditions Set up additional unbundled billing rule
+parameters with the Additional Conditions form.</p>
+<p>To access this form: 1. Select Client. 2. From Client|Change, select
+Billing Rules (Unbundled). 3. From the Actions menu , select Additional
+Conditions. 4. Fill in the fields as required.</p>
+<p>Billing User Guide © 2026 PrismHR 32  Chapter 5 Client-Level
+Setup</p>
+<p>Field Description Select the option as For ACH (applicable only if
+the unbundled billing rule is based on a flat appropriate for amount):
+ACH • Use If Any ACH: Apply this billing rule on a voucher with ACH. •
+Use Per ACH Line: Charge a fee for each ACH line. • Use If Electronic
+Stub: Applies only to electronic pay stubs.</p>
+<p>Select the option as For garnishments: appropriate for garnishments •
+Use If Any Garnish: Apply this rule if there are any garnishments. • Use
+Per Garn Item: Charge a fee for each garnishment.</p>
+<p>Use If Any Check Select Use If Any Check to apply the rule for any
+pay voucher. Exclude From Select Exclude From Manual Check to suppress
+the billing (delivery fee) for a Manual Check manual check that occurs
+when a billing rule is processing live checks. Note: This field only
+displays if you select Use If Any Check and one of the following rules
+in the Based On field in the Billing Rules (Unbundled) form: • Amt per
+Check (One Per Voucher will Fire) • Flat Amount • Flat Amount / Invoice
+• Flat Amount / Paid EE (only once per EE)</p>
+<p>Rule Minimum Enter the Rule Minimum, which is the least amount this
+rule should bill. Rule Maximum Enter the Rule Maximum, which is the
+dollar limit for this rule. Exclude from Select Exclude From FPEMIN to
+exclude this rule from the Flat Amount/Per FPEMIN Employee Invoice
+Minimum billing rule. FSA Plan Type Enter each FSA Plan Type Equal To
+that causes the system to apply this rule. Equal To The system applies
+the rule once for any of the plans. To associate a fee with each plan,
+create a separate rule. FSA Plan Type Not Enter each FSA Plan Type Not
+Equal To that should not be present to cause Equal To the system to
+apply this rule. Retirement Plans Enter each Retirement Plans Equal To
+that if found on the voucher applies Equal To this rule. Retirement
+Plans Enter the Retirement Plans Not Equal To that if not used on the
+voucher Not Equal To applies this rule. State(s) Equal To If you select
+the Use If Any Check option, you can enter a list of State(s) Equal to
+where this unbundled billing rule applies.</p>
+<p>Billing User Guide © 2026 PrismHR 33  Chapter 5 Client-Level
+Setup</p>
+<ol start="5" type="1">
+<li>Click Close.</li>
+</ol>
+<p>Based On Options You can use these options as the basis for
+calculating unbundled billing rules. Note the following: • If you define
+rules based on the Employee Minimums and Employee Maximum, the system
+uses only one rule per voucher. • If you define one rule with Invoice
+Minimum, and another with Invoice Maximum, the system uses only one rule
+per payroll. • If a Per Active Employee Per Month (PAEPM) rule is
+already active for a client, you cannot create another PAEPM rule for
+that client using the same rule dates. (A warning displays if you try to
+create another PAEPM rule using the same rule dates, which would make
+them active at the same time.) Use the Based On options as follows:</p>
+<p>Based On Calculation Units Enter the flat amount to calculate per
+unit paid. For example, one unit of bonus pay with a Rate amount of 10
+($10.00) generates a $10.00 admin fee. Hours Worked Enter the flat
+amount to calculate per hour worked. For example, 40 hours worked with a
+Rate amount of 10 ($10.00) generates a $400.00 admin fee. Percent of
+Wages Enter the percent of wages to charge. For example, $1270.00 of
+gross wages with a Rate amount of 10 (10%) generates a $127.00 admin
+fee. Amt per Check (One Per Enter the flat amount to bill per check. For
+example, 100 vouchers Voucher will Fire) with a Rate amount of 1 ($1.00)
+generates a $100.00 admin fee. Flat Amount Bills the client this amount
+for each employee and each check. For example, two employees and three
+total checks (one employee receives two checks) with a Rate amount of 10
+($10.00) generates a $30.00 Admin fee. Flat Amount / Invoice Bills the
+client this amount per invoice generated. For example, two invoices and
+a Rate amount of 50 ($50.00) generates a $100.00 Admin fee.</p>
+<p>Billing User Guide © 2026 PrismHR 34  Chapter 5 Client-Level
+Setup</p>
+<p>Based On Calculation Flat Amount / Paid EE (only Triggers the flat
+amount only once per employee in the payroll once per EE) batch. For
+example, if an employee receives a regular, supplemental, and vacation
+voucher on the same payroll, the billing rule triggers only once. If
+there were two employees and four total vouchers with a Rate amount of
+10 ($10.00), the system generates a $20.00 Admin fee. Flat Amount / Paid
+EE sets Determines an invoice minimum based on an amount per employee.
+IMIN basis. For example, if the Rate amount is 7.5, then two employees,
+one (Must also have 0 IMIN) with $7.00 admin fee and another with $10.00
+admin fee would not trip the value of $15.00. (If you selected Based On
+Employee Minimum, the first employee would generate a $0.50 fee, and
+there would be no fee for the second employee.) Note the following: • If
+you define one rule with Monthly Rate/52 weeks, and another with Monthly
+Rate/48 weeks, the system uses only one per voucher. • The Flat Amount /
+Paid EE sets IMIN basis. (Must also have 0 IMIN) and Invoice Minimum
+= Only One of these options must be the last billing rules that the
+system calculates. If either exists as a Billing Rule, the system will
+resort the rules so they calculate last.</p>
+<p>Flat Amount / Benefit Plan Triggers the flat amount based on the
+classification selected from Class the Benefit Plan Class drop-down.
+Monthly Rate / 52 Weeks Enter the monthly rate to charge; the system
+divides it by pay period based on 52 weeks a year per employee. For
+example, if the Rate amount is 65, the system bills the client $15.00
+per employee for a weekly payroll. This does not limit the billing to
+$65.00 per month. If an employee receives multiple vouchers and the
+voucher type is not limited, more than $65.00 can be charged in a month.
+Monthly Rate / 48 Weeks Enter the monthly rate to charge; the system
+divides it by pay period based on 48 weeks a year per employee. For
+example, if the Rate amount is 65, the system bills the client $16.25
+per employee for a weekly payroll. Employee Minimum Bills the minimum
+amount on each voucher for each employee. For example, if the rule has a
+Rate amount of 25 and an employee receives three vouchers (regular,
+supplemental, and vacation), the system bills the client $75 for that
+employee.</p>
+<p>Billing User Guide © 2026 PrismHR 35  Chapter 5 Client-Level
+Setup</p>
+<p>Based On Calculation Employee Minimum, NO For example, if the
+employee minimum is $10.00, but a client pays Credit On Overbills only
+$7.50 because they had $2.50 in overlimit credits, the system assesses a
+$2.50 charge. (Employee Minimum would not assess a fee.) Employee
+Maximum The maximum per voucher per employee that will be billed. For
+example; a user could set up one rule as a percent of wages and a second
+rule with an employee maximum, and the system would limit the
+calculation to the employee maximum. If rule #1 is set up as 20% of
+wages, and the wages are $2000, then rule #1 calculates at $400. If rule
+#2 is set up with an employee maximum of $25, then the system limits the
+admin fee to $25 even though rule #1 was calculated at $400. Invoice
+Minimum Any admin fee below this amount increases to this amount.
+Invoice Maximum Any admin fee above this amount reduces to this amount.
+Invoice Minimum (incl Zero Can be used in conjunction with Invoice
+Minimum. Invoice) Per Employee Per Month Bills automatically the first
+payroll after the billing rule is set up and automatically bills on the
+first payroll of each month following. It only bills for employees that
+are paid within that pay period. • If there is a new hire on the next
+payroll, the system will bill for just that employee. • If an employee
+was not paid on the first payroll of the month but gets paid on the next
+payroll, the system will bill for just that employee. Percent of Listed
+Benefit Takes the benefit entered in Benefit Plan and charges this
+percent against the total amount. For example, 10% of a $1000 benefit
+(with employee paying $500) would be $100. Percent of Listed Benefit Net
+Takes the benefit listed and charges this percent against the net Billed
+to Client amount. For example, 10% of a $1000 benefit (with employee
+paying $500) would be $50. Percent of Retirement Match Charges a
+percentage of the Match Fees. Amount</p>
+<p>Billing User Guide © 2026 PrismHR 36  Chapter 5 Client-Level
+Setup</p>
+<p>Based On Calculation Percent to Not Shelter Percentage that will not
+be sheltered as a benefit from FICA. A Benefit Plan from FICA sheltered
+amount shelters the whole amount from FICA for billing purposes, so use
+this option when you want to pass some of the savings through, but not
+all of them. Flat Amount Based on Charges a flat amount once per Benefit
+Plan. Benefit Rule Percent of WorkerComp Percentage of billed workers’
+compensation amount. Billed Percent of FUTA Billed Percentage of billed
+amount for FUTA. Percent of FUTA Wages Percentage of billed FUTA wages.
+Billed Percent of SUTA Billed Percentage of billed SUTA amount. Percent
+of SUTA Wages Percentage of billed SUTA wages. Billed Percent of Tip Tax
+Credit Uses special calculation Over Min Tax-Code Based Rule This option
+requires you to use the Tax Criteria panel to complete the calculations.
+The system ignores the Rate defined in the Unbundled Billing Rules
+panel. Tiered Cumulative Per This option calculates the admin fee based
+on the client’s employee Employee Per Pay Period count, when multiple
+pay groups exist in the batch. The fee is based on the total number of
+active employees in the client associated with those pay groups, even if
+those employees are not in the pay groups themselves.</p>
+<pre><code>                                This feature uses a special tier table with three columns:
+                                    •   Tiered From (smallest number of employees in this tier)
+                                    •   Tiered To (largest number of employees in this tier)
+                                    •   Tiered Rate (admin fee to charge per employee in this tier)
+                                Add a row to the table for each calculation tier.</code></pre>
+<p>Billing User Guide © 2026 PrismHR 37  Chapter 5 Client-Level
+Setup</p>
+<p>Based On Calculation Tiered Cumulative Per This is custom programming
+that calculates the admin fee based on Employee the employee count from
+two different pay groups. The fee is based on the number of active
+employees in each group.</p>
+<pre><code>                                This feature uses the same tier table described in the row above.</code></pre>
+<p>Tiered Per Employee Per Pay Use this method to bill the same
+administrative fees for all Period employees based on the total number
+of employees. Note: Pay Group is the only filter criteria available for
+the Tiered Per Employee Per Pay Period option. (The system does not
+recognize any other filters when using this option.) This feature uses a
+special tier table with three columns: • Tiered From: Smallest number of
+employees in this tier • Tiered To: Largest number of employees in this
+tier • Tiered Rate: Admin fee to charge per employee in this tier Add a
+row to the table for each calculation tier. Flat Amt based on Count Use
+this method to charge a flat amount per voucher. Specify the rule
+limiters in the Additional Conditions form’s Rule Minimum and Rule
+Maximum fields. For example, you need to bill the client at two
+different rates, based on the number of employees. You would establish
+two rules using Flat Amt based on Count. Set up the first rule with a
+Rate of $35, the Rule Minimum set to 0, and the Rule Maximum set to 5.
+Set up the second rule with a Rate of $100, a Rule Minimum of 6, and a
+Rule Maximum of 99. When there are five employees or fewer in the batch
+control record, PrismHR uses the first rule: four employee result in a
+bill for $140. For a batch with 6-99 employees, the system uses the
+second rule: six employees result in a bill for $600.</p>
+<p>Billing User Guide © 2026 PrismHR 38  Chapter 5 Client-Level
+Setup</p>
+<p>Based On Calculation Flat Amt based on Count Per Use this method to
+charge the client a certain amount for the first X Tier number of
+vouchers and then a different amount for the next X number of vouchers.
+Specify the tiers for the rule in the Additional Conditions form’s Rule
+Minimum and Rule Maximum fields. For example, you need to bill one rate
+for the first five employees, and then at another rate for every
+employee after that. You would establish two rules using Flat Amt based
+on Count Per Tier. Set up the first rule with the Rate of $35, the Rule
+Minimum set to 0, and the Rule Maximum set to 5. Set up the second rule
+with a Rate of $100, with a Rule Minimum of 6, and a Rule Maximum of 99.
+The system calculates the first five employees using the first rule, and
+the sixth employee using the second rule, resulting in a bill for $275
+((5<em>$35)+(1</em>$100)). Annual W-2 Production Fee Use this method to
+generate a one-time yearly charge for Forms W- 2 (W-2s) as a production
+fee. This is a one-time flat fee that the system will bill for the
+current year the first time the rule applies. If your organization would
+prefer that it run in January, set the Rule Start Date to a date in
+January of the next year. This rule generates a miscellaneous billing
+charge. Annual Fee per W-2 Use this method to generate a one-time yearly
+charge for W-2s as a per-employee fee. This billing rule is based on a
+count of generated W-2s. W-2s are generated in the first quarter of the
+following year (for example, your organization will generate 2024 W-2s
+in Q1 2025). If W-2s have not been generated yet (such as in early
+January), then the system processes the rule during each payroll until
+your organization generates the W-2s. This rule generates a
+miscellaneous billing charge. Minimum Bill for Code 005 Any amount below
+this value increases to this value.</p>
+<p>Billing User Guide © 2026 PrismHR 39  Chapter 5 Client-Level
+Setup</p>
+<p>Based On Calculation Per Active Employee Per This option calculates
+the admin fee based on the client’s employee Month count on the first
+regular payroll of the month, using a tiered charge format. (The second
+payroll captures any new employees.) The fee is based on the total
+number of active employees in the client associated with the first
+payroll of the month. This feature uses a special tier table with three
+columns: • Tiered From (smallest number of employees in this tier) •
+Tiered To (largest number of employees in this tier) • Tiered Rate
+(admin fee to charge per employee in this tier) Add a row to the table
+for each calculation tier. Enabling the Per Active Employee Per Month
+option bills active employees for the month. For example, if the first
+payroll of the month has 100 active employees, they will be billed for
+100 employees. On the second payroll if there is a new hire and a
+termination, they will still be billed for one employee on that payroll,
+since the new hire needs to be billed and the termination was active for
+part of the month. Note: An edge case could occur that is currently not
+supported. When you calculate a payroll, the system determines the
+number of employees that are active at that time and once the payroll is
+posted, it commits counts to the employee records. If you calculate the
+payroll and add several employees or terminate employees and then post
+without recalculating, the system misses the new employees added/removed
+in the billing cycle. Note the following: • The billing rate calculates
+the tier rate for the employee count. • The admin fee bills the entire
+month at the same rate.</p>
+<p>Establishing State Tax Rates (SUTA) Set a client’s state SUTA
+information (instead of using the PEO’s state SUTA rate) with the State
+Tax Rates (SUTA) form.</p>
+<p>To establish SUTA rates: 1. Select Client.</p>
+<p>Billing User Guide © 2026 PrismHR 40  Chapter 5 Client-Level
+Setup</p>
+<p>From Client|Change, select State Tax Rates (SUTA).</p>
+<p>Fill in the required fields.</p>
+<p>Field Description State Code Enter a two-character state code, or
+select it from the drop-down. The Client State ID displays. Effective
+Date Enter a date when the bill rate goes into effect, or select an
+existing date to edit.</p>
+<ol start="2" type="1">
+<li>Click Save. Note the following: • SUTA is based on an employee’s
+home location and is specified by the location code in the Employee
+Master/Details. Entering hours for a different state does not trigger
+the SUTA for that state. • You cannot have multiple SUTA states in a
+single payroll. If an employee worked in multiple states for a single
+payroll and you need to calculate SUTA for each state, you must run a
+separate payroll to process hours for each state the employee worked in.
+For each of these payrolls, you must change the employee’s home location
+in Master/Details before processing.</li>
+</ol>
+<p>Establishing Officer and State Bill Rates Establish officer and state
+bill rates with the Rate Breakdown panel.</p>
+<p>To set these rates: 1. Select Client. 2. From Client|Change, select
+State Tax Rates (SUTA) to view the Rate Breakdown panel. 3. Fill in the
+required fields.</p>
+<p>Field Description SUTA Rate Enter the client’s SUTA Rate for this
+state. Officer SUTA Rate Enter the Officer SUTA Rate if it differs from
+the regular SUTA rate. SDI Rate Enter an employer’s SDI Rate if the
+employer pays disability insurance in this state.</p>
+<p>Billing User Guide © 2026 PrismHR 41  Chapter 5 Client-Level
+Setup</p>
+<p>Field Description Miscellaneous Enter the miscellaneous override
+rates for employer-paid taxes (for example, override rates you can
+increase the tax rate paid by the employer). Note: If these fields are
+left blank, the system uses the default rate. Set these fields as
+follows: • Enter the State Misc1 Rate (Tax ID 26). • Enter the State
+Misc2 Rate only to set employer tax rates for Vermont Childcare Employee
+Tax Rate (Tax Code 48-28). If no tax rate is entered for the employer,
+but a tax rate is entered for the employee using the State Misc 2
+Employee Rate field below, you will see the full amount for the employer
+calculated at 0.44%. The employee tax rate below does not offset the
+employer tax rate here. So, you must enter the tax rates for both the
+employer and the employee in this form if using overrides. • Enter the
+State Misc3 Rate to set employer tax rates for paid family medical leave
+for tax codes:</p>
+<pre><code>                                •   22-41 (Massachusetts)
+                                •   48-41 (Washington)
+                                •   51-41 (Wyoming)
+                                •   08-41 (Delaware)
+                                •   20-41 (Maine)
+                        •       Enter the State Misc4 Rate to set employer tax rates for tax codes 24-54
+                                (Minnesota).</code></pre>
+<p>Wage Base Enter the Wage Base Override to use a different amount than
+what is Override specified in the Vertex guide. For example, Michigan
+has two tiers based on experience. State Misc 2 Enter the State Misc 2
+Employee Rate only to set employee tax rates for Employee Rate Vermont
+Childcare Employee Tax Rate (Tax Code 48-27). The employer tax rate
+above does not offset the employee tax rate here. So, you must enter the
+tax rates for both the employer and the employee in this form if using
+overrides.</p>
+<p>Billing User Guide © 2026 PrismHR 42  Chapter 5 Client-Level
+Setup</p>
+<p>Field Description State Misc 3 Enter the State Misc 3 Employee Rate
+to set employee tax rates for paid Employee Rate family medical leave
+for tax codes: • 22-40 (Massachusetts) • 48-40 (Washington) • 08-40
+(Delaware) • 20-40 (Maine) For example, you can decrease the tax rate
+paid by employees. Note: If you adjust State Misc2 Rate or State Misc 2
+Employee Rate and State Misc3 Rate or State Misc 3 Employee Rate, you
+must use both the corresponding fields. Do not assume one field will
+adjust automatically when a change is made to the other field. PFML
+Employer This field will display only if the field named PFML ER Pickup
+Fringe Pay Code Pickup on the Systems Parametrs form as been defined.
+This field is optional. Enter the amount the employer is contributing in
+excess of their mandatory contribution amount here. You can only enter
+numeric values with decimals. For example, if the State PFML rate is 0.8
+with a 50% split between Employee and Employer, and the employer
+contributes the full 0.8% with the employee contributing 0%, you will
+enter 0.4 in this field. During payroll calculation, PrismHR uses your
+configured PFML Employer Pickup percentage for the state as defined on
+the State Tax Rates (SUTA) form and PFML ER Pickup Fringe Pay Code as
+defined on the System Parameters form to calculate the employer paid
+PFML amount and automatically posts it as a taxable non-cash fringe
+income to the employee’s payroll voucher under Other Payments, provided
+both values are valid. If either value is missing or invalid, no taxable
+fringe income is posted. The employer paid employee PFML amount is
+calculated as: (YTD net taxable) multiplied by (PFML ER Pick up Rate)
+minus (YTD PFML Fringe Pay)</p>
+<pre><code>                        Note: The calculation does not include the PFML wages on the current
+                        voucher.</code></pre>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Importing SUTA Rates Data You can access the State Tax Rates (SUTA)
+import template in the Data Import Tool from this form to import</p>
+<p>SUTA rates data by clicking Import . The State Tax Rates (SUTA)
+import template option and its tabs/fields automatically display when
+you access this template directly from the State Tax Rates (SUTA)
+form.</p>
+<p>Billing User Guide © 2026 PrismHR 43  Chapter 5 Client-Level
+Setup</p>
+<p>Note: You can also navigate directly to the Data Import Tool by
+clicking (Back Office), then select Data Import Tool on the
+Operations|Import Processing menu. In the Data Import Tool form, select
+the State Tax Rates (SUTA) import template option. Note the following
+when importing State Tax Rates (SUTA) data: • Importing only
+creates/adds new entries and does not edit or update existing state tax
+rate entries. • If you try to import a record with the same state code
+and effective date combination as an existing record the following
+message displays, “A record already exists for Client <Client ID> for
+<state code> with an effective date of <effective date>. Updates to
+existing records should be done on the State Tax Rates (SUTA) form.” •
+You can import at the operations level for single clients or for
+multiple clients at once. • If you select a state code based on settings
+on the State Rules form and on the Tax tab on the Client Details form a
+warning displays on the Messages tab in this import template before you
+select Import, which prevents you from adding an unnecessary record if
+the state is not set up as a client reporting state. For example: • If
+the SUTA PEO/Client Based field is set to SUTA is PEO Based on the State
+Rules form the following message displays, “Warning: <state code> is not
+a client reporting state. There should not be a client reporting entry
+required for Client <Client ID>. Row <row number>.” • If there is no
+state code set on the Tax tab in the State Tax Setup panel on the Client
+Details form the following message displays, “Warning: The State
+Information for <Client ID>/<State Code> is not on Client Details State
+Tax Setup section. Row <row number>.” • If the SUTA PEO/Client Based
+field is set to SUTA is PEO Based on the State Rules form AND you select
+the Officer SUTA Client Based field the following message displays,
+“Warning: Client Reporting is required for Officers only in <state code>
+for Client <Client ID>. Row <row number>.” Note: These warnings are
+informational only and when you select Import, the system imports the
+data unless there are other failure messages. In addition, the warning
+messages display in the Confirmation Report after the import finishes
+with the “Success” import status. • Two failure errors occur in
+conjunction with the Wage Base Override column: • If the amount is less
+than zero (0) the following error displays, “You can’t set an override
+wage base less than zero - Client <Client ID> Row <row number>.” • If
+the amount is equal to zero (0) the following error displays, “You can’t
+set an override wage base of zero - Client <Client ID> Row
+<row number>.” • Users whose user role is set to DENY for the State Tax
+Rates (SUTA) form cannot import data using the State Tax Rates (SUTA)
+import template and subsequently, the Data Import Tool icon will not
+display on this form. • Users whose user role is set to FULL or INQUIRY
+for the State Tax Rates (SUTA) form, but whose user role is also set to
+DENY for the Data Import Tool cannot view the Import icon on the State
+Tax Rates (SUTA) form. • Users whose user role is set to INQUIRY for the
+State Tax Rates (SUTA) form can view the State Tax Rates (SUTA) import
+template, but cannot import data.</p>
+<p>Billing User Guide © 2026 PrismHR 44  Chapter 5 Client-Level
+Setup</p>
+<p>• Users whose user role is set to INQUIRY for the Data Import Tool
+can view the form and import template options, but cannot import data. •
+Users who do not have access to a particular company through client
+access groups are unable to import data into that company.</p>
+<p>Defining State Tax Bill Rates (SUTA) Define a client’s SUTA billing
+rates with the State Tax Bill Rates (SUTA) form. Note the following: •
+SUTA is based on an employee’s home location and is specified by the
+location code in the Employee Details. Entering hours for a different
+state does not trigger the SUTA for that state. • You cannot have
+multiple SUTA states in a single payroll. If an employee worked in
+multiple states for a single payroll and you need to calculate SUTA for
+each state, you must run a separate payroll to process hours for each
+state the employee worked in. For each of these payrolls, you must
+change the employee’s home location in Employee Details before
+processing.</p>
+<p>Setting a Location for State Tax Bill Rates Set a location to which a
+state tax bill rate applies with the State Tax Bill Rates (SUTA)
+panel.</p>
+<p>To set location: 1. Select Client. 2. From Client|Change, select
+State Tax Bill Rates (SUTA).</p>
+<ol start="3" type="1">
+<li><p>Fill in the required information in these fields.</p>
+<p>Field Description State Code Enter a two-character state code, or
+select it from the drop-down. The Client State ID displays. Location
+Code Enter or select the Location Code where the billing rate applies.
+Leave (Optional) this field blank if the billing rate applies to all
+client locations in the state. Effective Date Enter a date when the bill
+rate goes into effect, or select an existing date to edit.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 45  Chapter 5 Client-Level
+Setup</p>
+<p>Setting SUTA Bill Rate Information Set SUTA bill rate information
+with he SUTA Bill Rates panel. If the client has multiple employers, you
+can establish rates for each employer.</p>
+<p>To set SUTA bill rate information: 1. Select Client. 2. From
+Client|Change, select State Tax Bill Rates (SUTA) to view the SUTA Bill
+Rates panel.</p>
+<ol start="3" type="1">
+<li><p>Fill in the required information in these fields.</p>
+<p>Field Description SUTA Bill Rate Enter at least one SUTA Bill Rate
+for the state that applies to the client. Employer If appropriate,
+select the Employer to which this SUTA bill rate applies. To specify a
+different billing rate for different employers, enter that information
+on different rows. Otherwise, do not select an employer. Overbill Credit
+Amt Enter the Overbill Credit Amt back rate only if it is different from
+the (Optional) SUTA bill rate.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+<p>Establishing Officer and State Bill Rates Set officer and state bill
+rates with the Other Billing Rates panel.</p>
+<p>To set these rates: 1. Select Client. 2. From Client|Change, select
+State Tax Rates (SUTA) to view Other Billing Setup.</p>
+<ol start="3" type="1">
+<li>Fill in the required information in these fields.</li>
+</ol>
+<p>Field Description Officer SUTA Rate Enter the Officer SUTA Rate, if
+it is different for officers.</p>
+<p>Billing User Guide © 2026 PrismHR 46  Chapter 5 Client-Level
+Setup</p>
+<p>Field Description SDI Rate Enter the employer’s SDI Rate if the
+employer pays disability insurance in this state. Miscellaneous Enter
+the miscellaneous override rates for employer-paid taxes. If you leave
+override rates any of these fields blank, the system uses the default
+rate. • Enter the State Misc1 Rate (Tax ID 26). • Enter the State Misc2
+Rate (Tax ID 28). • Enter the State Misc3 Rate to set employer tax rates
+for tax codes 22- 41 (Massachusetts) and 48-41 (Washington). • Enter the
+State Misc4 Rate to set employer tax rates for tax codes 24- 54
+(Minnesota).</p>
+<p>Location Rate If this rate is for a specific location that is
+closing, and the code is no longer Obsolete Date used in calculations,
+enter the last active pay date in the Location Rate Obsolete Date field.
+Overbill CR Bill Code Enter the Overbill CR Bill Code to use for credit
+backs for SUTA overlimit (Optional) credits instead of the default. Wage
+Base Override Enter the Wage Base Override if you want to use a
+different amount than that specified in the Vertex guide. For example,
+Michigan has two tiers based on experience. Lock Down Employer Select
+Lock Down Employer to “lock down” the employees working in this state to
+one of the employer IDs entered in the SUTA Bill Rates panel. This lock
+goes into effect during payroll calculation and new hire/rehire. Use the
+Lockdown Employer panel.</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Selecting Relevant Employers Choose the relevant employers from the
+Lockdown Employer panel if Lock Down Employer is selected.</p>
+<p>To select relevant employers: 1. Select Client. 2. From
+Client|Change, select State Tax Rates (SUTA) to view Other Billing
+Setup.</p>
+<p>Billing User Guide © 2026 PrismHR 47  Chapter 5 Client-Level
+Setup</p>
+<ol start="3" type="1">
+<li><p>Select Lock Down Employer to view the Lockdown Employer
+panel.</p></li>
+<li><p>Select Yes from the Lock New Hire drop-down to lock new or
+rehired personnel working in this state to the employer.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+<p>Importing SUTA Billing Rates Data You can access the State Tax Bill
+Rates (SUTA) import template in the Data Import Tool from this form to
+import</p>
+<p>SUTA billing rates data by clicking Import . The State Tax Bill Rates
+(SUTA) import template option and its tabs/fields automatically display
+when you access this template directly from the State Tax Bill Rates
+(SUTA) form.</p>
+<p>Note: You can also navigate directly to the Data Import Tool by
+clicking (Back Office), then select Data Import Tool on the
+Operations|Import Processing menu. In the Data Import Tool form, select
+the State Tax Bill Rates (SUTA) import template option. Note the
+following when importing State Tax Bill Rates (SUTA) data: • Importing
+only creates/adds new entries and does not edit or update existing state
+tax bill rate entries. • If you try to import a record with the exact
+same state code and effective date combination as an existing record the
+following message displays, “A record already exists for Client
+<Client ID> for <state code> with an effective date of <effective date>.
+Updates to existing records should be done on the State Tax Bill Rates
+(SUTA) form.” • You can import at the operations level for single
+clients or for multiple clients at once. • Users whose user role is set
+to DENY for the State Tax Bill Rates (SUTA) form cannot import data
+using the State Tax Bill Rates (SUTA) import template and subsequently,
+the Data Import Tool icon will not display on this form. • Users whose
+user role is set to FULL or INQUIRY for the State Tax Bill Rates (SUTA)
+form, but whose user role is also set to DENY for the Data Import Tool
+cannot view the Import icon on the State Tax Bill Rates (SUTA) form. •
+Users whose user role is set to INQUIRY for the State Tax Bill Rates
+(SUTA) form can view the State Tax Bill Rates (SUTA) import template,
+but cannot import data. • Users whose user role is set to INQUIRY for
+the Data Import Tool can view the form and import template options, but
+cannot import data. • Users who do not have access to a particular
+company through client access groups are unable to import data into that
+company.</p>
+<p>Billing User Guide © 2026 PrismHR 48  Chapter 5 Client-Level
+Setup</p>
+<p>Defining W/C Accrual Modifiers You can define how the system handles
+when the wages of the client’s employees are not sufficient to support a
+benefit deduction. In these cases, use the W/C Accrual Modifiers form to
+define workers’ compensation accrual modifiers that the client uses. W/C
+accrual modifiers are required: • For states that require client
+reporting of workers’ compensation accrual • When the workers’
+compensation policy or Client Details stipulates the use of a modifier
+and discounts</p>
+<p>To set W/C Accrual Modifiers: 1. Select Client. 2. From
+Client|Change, select W/C Accrual Modifiers.</p>
+<ol start="3" type="1">
+<li><p>Fill in the required information in these fields.</p>
+<pre><code>                               Table 1: W/C Accrual Modifiers - Fields</code></pre>
+<p>Field Description State Code Enter a two-character state code, or
+select it from the drop-down. Effective Date Enter a date when the bill
+rate goes into effect, or select an existing date to edit.
+Discount/Debit Enter the employer’s Discount/Debit for this state.
+Modifier Enter the employer’s Modifier for this state. Effective Rate
+The Effective Rate is calculated by multiplying the Discount/Debit by
+the Modifier.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+<p>Adjusting W/C Billing Modifiers You can adjust worker’s compensation
+rates to bill the client with the W/C Billing Modifiers form. The amount
+billed is based on a percentage of the gross rate. The system keeps a
+history of discount and modifier data that you can view by selecting the
+date.</p>
+<p>Billing User Guide © 2026 PrismHR 49  Chapter 5 Client-Level
+Setup</p>
+<p>Importing a Workers’ Compensation Template File Clicking the Import
+button displays the Data Import Tool form, which allows you to import a
+W/C Billing Modifiers template file that contains the following fields
+(this file must be in .txt format): • Company ID (Required) • State Code
+(Required) • Effective Date (Required) • Location • Use Override Rates?
+(Required) • Discount/Debit • Modifier • W/C Class Code • Billing
+Override Rate • Bill on Wages or Hours • Accrual Override Rate</p>
+<p>Note: The Import button displays on the W/C Billing Modifiers form
+for all user roles except the “Deny” and “Inquiry-only” roles. Imports
+can be performed for multiple clients at the operations level. For more
+information about the Data Import Tool form, refer to the Payroll
+Administration Guide.</p>
+<p>To adjust rates, do the following: 1. Select Client. 2. From
+Client|Change, select W/C Billing Modifiers.</p>
+<ol start="3" type="1">
+<li>Fill in the required information in these fields.</li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 50  Chapter 5 Client-Level
+Setup</p>
+<pre><code>   Field                        Description
+   State Code                   Enter a two-character state code, or select it from the drop-down.
+   Location Code                If the rate applies to a specific location for this client, enter the Location
+                                Code or select an existing location billing modifier record.
+   Effective Date               Enter a new Effective Date or select an existing effective date.
+
+   Use Override Rates           Select Use Override Rates to calculate the billing amount using the
+                                override rates. Otherwise, the system uses the Discount/Debit and
+                                Modifier values.
+   Pay Levels                   For each of the client&#39;s Pay Levels established in the billing rules for the
+                                client, enter the rates for the selected state:
+                                •    Enter the employer&#39;s Discount/Debit rate.
+                                •    Enter the employer&#39;s Modifier rate.
+
+   Location Obsolete Date       If this billing modifier is for a location that is closing, enter the Location
+                                Obsolete Date. This is the last pay date to use this billing modifier.</code></pre>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Using Override Rates Option You can charge the client a different
+rate per workers’ compensation classification if you select Use Override
+Rates.</p>
+<p>To enter billing rates in the Overrides panel, do the following (make
+sure you define a billing rate for each of the classifications used by
+the client): 1. Select Client. 2. From Client|Change, select W/C Billing
+Modifiers and select the Use Override Rates checkbox.</p>
+<ol start="3" type="1">
+<li>Enter the required information in these fields for each W/C
+classification code used by the client:</li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 51  Chapter 5 Client-Level
+Setup</p>
+<pre><code>   Field                        Description
+   W/C Class Code               Enter or select each W/C classification code.
+                                If you select the W/C Class Code field, you can search for a class code
+                                using the WC Class Code or Description field in the Select WC Class
+                                Codes list.
+                                Note: After you enter or select the codes and save them, the system
+                                alphabetizes the list.
+   Billing Rate                 Enter the Billing Rate. This is the rate per hundred dollars in wages or
+                                per hour worked (depending on the state) used to calculate the bill
+                                amount to the client for this W/C classification.
+   Bill on Wages or Hours       Select whether to Bill on Wages or Hours. The standard is wages unless
+                                the state specifies that the rate is based on hours.
+   Accrual Rate                 Enter the Accrual Rate. This is the rate per hundred dollars in wages or
+                                per hour worked (depending on the state) used to calculate the accrual
+                                amount to the client for this W/C classification.</code></pre>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 52  Chapter 6 Client Billing</p>
+<p>Chapter 6 Client Billing There are features that your organization
+uses to maintain client billing.</p>
+<p>Working with Bill Pending Data The Bill Pending Events panel, on the
+Bill Pending form, lists billing events that will occur during the next
+scheduled billing date (in other words, they are pending). These billing
+events can be created on this form or generated automatically by
+PrismHR.</p>
+<p>Background There are three ways to create invoice line items: • As a
+scheduled bill, according to payroll dates and so on. • As an immediate
+bill, manually generated using the Miscellaneous Invoice Entry form. •
+As a future-dated or “pending” bill, which waits until the next
+scheduled billing date. Those items appear in the Bill Pending Events
+form.</p>
+<p>• To view an existing event, click the event’s Bill Date. The Line
+Item Details form opens, where you can view the read-only information. •
+To manually create a new event, click New Entry. The Line Item Details
+form opens, where you can enter the billing event.</p>
+<p>System Billing Events Several events trigger PrismHR to generate a
+pending bill for clients. Here are two examples: • When you set up a new
+employee, the system creates a line item for the employee setup fee. •
+When you terminate benefits for an employee, the system searches for a
+billing event using the TB+<plan
+    ID> naming convention. For example, if a plan ID is HMOBLUE, the
+system searches for a billing event named TBHMOBLUE. If it does not find
+that billing event, the system uses TEBA.</p>
+<p>Billing User Guide © 2026 PrismHR 53  Chapter 6 Client Billing</p>
+<p>Manual Billing Events Many reasons and situations exist in which you
+need to manually create a line item. In each case, PrismHR bills the
+client upon the next invoice, not an immediate invoice.</p>
+<p>Importing Bill Pending Data You can access the Bill Pending import
+template in the Data Import Tool from this form to import bill
+pending</p>
+<p>data by clicking Import . The Bill Pending import template option and
+its tabs/fields automatically display when you access this template
+directly from the Bill Pending form.</p>
+<p>Note: You can also navigate directly to the Data Import Tool by
+clicking (Back Office), then select Data Import Tool on the
+Operations|Import Processing menu. In the Data Import Tool form, select
+the Bill Pending import template option. Note the following when
+importing Bill Pending data: • Importing only creates new entries. It
+does not edit or update existing bill pending entries. • Users who do
+not have access to a particular company through client access groups are
+unable to import data into that company. • Users with a user role set to
+DENY for the Bill Pending form cannot import data using the Bill Pending
+import template. The Data Import Tool icon will not display on this
+form. • Users with a user role set to INQUIRY for the Bill Pending form,
+but whose user role is also set to DENY for the Data Import Tool, cannot
+view the Import icon on the Bill Pending form. • Users with a user role
+set to INQUIRY for the Bill Pending form can view the Bill Pending
+import template, but cannot import data. • Users with a user role set to
+INQUIRY for the Data Import Tool can view the form and import template
+options, but cannot import data.</p>
+<p>Understanding the E-Verify Bill Pending Fee The system applies an
+E-Verify fee in the Bill Pending form for each new hire when the Submit
+for E-Verification field is enabled on the New Hire form. After saving
+the new hire, the system automatically creates a bill pending fee using
+the EV-FEES bill code. For example:</p>
+<p>Billing User Guide © 2026 PrismHR 54  Chapter 6 Client Billing</p>
+<p>Note the following: • Billing can be set up globally or have an
+override at the client level. (The override takes precedence over the
+global setup, if in place.) • You must name the Bill Event Code EV-FEES.
+• For the first 30 days of service for new clients, if you enable Skip
+Employee Fees for New Clients on the Billing Templates form the system
+does not create the EV-FEES bill code. • If you enable Skip Employee
+Fees for New Clients on the Billing Templates form, then the system does
+not create the EV-FEES bill code. • If the Employer Start Date on the
+New Hire form is greater than the Hire Date, then the system uses the
+Employer Start Date as the EV-FEES bill date. • The bill pending date is
+based on the employee’s hire date and populates the location and
+employee on the bill pending fee. • When the client and worksite
+location is set up for E-Verify, the system generates an E-Verify fee.
+However, if the worksite location is excluded, then the system does not
+generate a fee. • This fee structure does not apply to rehires or those
+who have a different code/fee structure for the employee type.</p>
+<p>Working with Billing Items Use the Bill Pending Details form to enter
+a billing item or view the details of an existing one. For example:</p>
+<p>Billing User Guide © 2026 PrismHR 55  Chapter 6 Client Billing</p>
+<p>Note: If you are creating a new line item, enter the necessary
+information. If you are viewing a line item entry, you cannot make
+changes. In addition, you can place a bill-pending item on hold (taking
+it out of “in-progress” status and returning it to “time-entry” status)
+by editing its Bill Date, Event, and Bill Rate in the Bill Pending
+Details form. Important! This process is not available for restartable
+payrolls.</p>
+<p>To enter a billing item: 1. Go to the Bill Pending form on the
+Client|Action menu. 2. Click New Entry. The Bill Pending Details form
+displays. 3. Enter the following information for the line item:</p>
+<pre><code> Field                          Description
+ Bill Date                      Enter or select the Bill Date on which billing will occur.
+ Event                          Enter or select the billing Event code.
+ Billing Units                  Enter the Billing Units.
+ Bill Rate                      Enter the Bill Rate for each billing unit.
+ Bill Amount                    The Bill Amount field is equal to Billing Units x Bill Rate. If you change the Bill
+                                Amount, the system recalculates the Bill Rate to make the numbers work.
+ Employee                       Enter or select the ID of the Employee. The employee&#39;s name displays, as well as
+                                any Location, Division, Department, Shift, or Project assignments.
+ Pay Group                      Enter or select the Pay Group code. If you specify a pay group, you must enter a
+                                Location so the system can calculate any taxes.
+                                Note: You can enter an employee or a pay group (or neither), but you cannot</code></pre>
+<p>Billing User Guide © 2026 PrismHR 56  Chapter 6 Client Billing</p>
+<pre><code> Field                          Description
+                                have both in the same line item entry.
+ Payroll Type                   Select the payroll batch type. For example, you can select the Regularly
+                                Scheduled payroll type if you only want to bill on a regularly scheduled payroll.
+                                (Note: The Select option (default) assumes all payroll types.)
+ Location                       Enter or select the Location code.
+ Division                       Enter or select the Division code.
+                                Note: If you have multiple locations with separate bank accounts for each of
+                                them, you can debit an invoice for a specific location/division&#39;s bank account by
+                                setting it to ACH by Location or ACH by Division and selecting the Non-ACH
+                                option on the Client|Change|Worksite Locations form, which would eliminate
+                                internal bank transfers when submitting a pending client bill.
+ Department                     Enter or select the Department code.
+ Shift                          Enter or select the Shift.
+ Project                        Enter or select the Project code.
+ Comment                        Enter a Comment for this line item, if appropriate.
+                                Note: Comments are restricted to a maximum of 40 characters.
+ Cost Amount                    You can enter the Cost Amount as a positive number to charge against this line
+                                item, or you can enter a negative amount to lower the total cost.
+ Repeat Thru Date               Enter or select a Repeat Thru Date that indicates when the recurring event starts
+                                and stops. See Using Repeat Thru Date Correctly on page 58 for more
+                                information.
+ Repeat Cycle                   If you entered a Repeat Thru Date, select a Repeat Cycle for the billing frequency.
+                                See Using Repeat Cycle Correctly on page 59 for more information.
+ Bill Status                    If this is an existing line item, the system displays the Bill Status for this line item.</code></pre>
+<ol start="4" type="1">
+<li>The Audit Information panel lists the user who entered the line
+item, the date and time they did so, and the invoice number and date for
+the billing. (Any entries you make in these fields while creating a bill
+pending line item will not be saved. The system saves the audit
+information.)</li>
+<li>When you are sure of your entries, click Save.</li>
+</ol>
+<p>Note: You can delete a bill pending entry that is included in a
+payroll batch before the batch is finalized; the payroll processor will
+be required to recalculate the payroll. Please note that you cannot
+delete a bill pending item that is included in a payroll batch that is
+awaiting the client’s approval.</p>
+<p>Billing User Guide © 2026 PrismHR 57  Chapter 6 Client Billing</p>
+<p>To edit a bill-pending item to place it on hold: 1. Reset the Payroll
+Calculation: Complete status to Payroll Calculation: Ready on the
+calculated payroll by finalizing the timesheets again in the Process
+Payroll form. (This step deletes any initialized vouchers, so the
+payroll is no longer initialized.) 2. Select the bill-pending item on
+the Bill Pending form. The Bill Pending Details form displays. 3. Update
+the Bill Date and other pertinent information, which places the
+bill-pending item on hold. 4. Click Save. After initializing the payroll
+again, the edited bill-pending item no longer displays in the
+initialized invoice. Note the following: • You cannot edit or delete an
+item that is “complete” (on a posted invoice). • You cannot edit or
+delete an item “in-progress” (on an initialized invoice). • You can edit
+or delete an item that was “in-progress,” if the timesheets are
+finalized (this forces payroll to reinitialize). • You can edit or
+delete an item that is “pending” (does not appear on any invoice).</p>
+<p>Avoiding Pitfalls Client Bill Pending is an extremely useful tool; at
+the same time, problems can occur if you are not careful. PrismHR does
+only what you tell it to do, so ensure your entries are correct. Client
+Bill Pending is both employee- sensitive and date-sensitive.</p>
+<p>Employee Sensitivity For example, you set up a new employee named
+Joe, who is an active employee and is paid once a month on the first.
+You create a line item for Joe on the second day of the month. PrismHR
+does not convert the line item into a bill for the client until Joe’s
+next pay day, which is the first of the following month. If this feature
+was not employee-sensitive, you would bill the client on the next
+invoice, which could fall before the first of the month.</p>
+<p>Date Sensitivity For example, you create a line item for January 1,
+2024, but specify a billing date of January 1, 2026 by mistake. The line
+item remains dormant in PrismHR until the date you specified, then is
+included in the next invoice after that date.</p>
+<p>Using Repeat Thru Date Correctly If you set up a recurring event, you
+must define the date limits of the event. The system uses the Repeat
+Thru Date field to know when the recurring event starts and when it
+stops. Be very aware of the dates you want to define and double-check
+your date entries. The system automatically calculates if any dates have
+been “missed” upon the first payroll run after you define the recurring
+event.</p>
+<p>Billing User Guide © 2026 PrismHR 58  Chapter 6 Client Billing</p>
+<p>For example, you have a weekly billing event for a payroll that you
+want to occur starting on or after January 1, 2024. You enter 12/31/24
+in the Repeat Thru Date field. However, you mistakenly enter the start
+date (in the Bill Date field) as 1/1/23 instead of 1/1/24. Upon January
+2, 2024 (the first business day of the year), PrismHR realizes it has
+not performed its weekly billing (based on the check date) since the
+starting date. Therefore, PrismHR creates 52 transactions in order to
+“catch up” to the present date.</p>
+<p>Using Repeat Cycle Correctly If you set up a recurring event, you
+must define how often to repeat the event. The system uses the Repeat
+Cycle field to know how often it must run the recurring event. For
+example, you have a monthly billing event for an end-of-the-month
+payroll. The system reads what you enter literally: in other words, it
+is very exact. You mistakenly enter the billing date (in the Bill Date
+field) as 1/31/24 instead of 1/28/24. Upon February 29, 2024 (because of
+the leap year – otherwise February 28), PrismHR realizes it is not the
+31st day of the month. Therefore, PrismHR skips the transaction.</p>
+<p>Cost If you enter an amount in the cost section of Bill Pending, the
+cost is updated when a payroll is posted. For example, you need to set
+up a client bill pending for an overbilling on SUTA. The rate you charge
+your client is 2.7% and you mistakenly charged them 3.00% on $15,000
+taxable wages. SUTA is not a profit center for this client so the
+billing should match the cost. The liability was calculated at the
+correct rate of 2.7%. When entering the client’s credit for $45.00,
+leave the cost column blank. There is no need to adjust cost. As another
+example, you bill your client for drug testing the employees. The
+arrangement you make with the client is they pay $28.00 per drug test.
+Your provider bills you $20.00 per employee. Enter the client bill
+pending as $20.00 in the cost field so that the system can calculate the
+income.</p>
+<p>Billing User Guide © 2026 PrismHR 59  Chapter 7 Stack Invoice with
+Workers’ Comp Broken Out</p>
+<p>Chapter 7 Stack Invoice with Workers’ Comp Broken Out Your
+organization can use a stack invoice with workers’ compensation broken
+out for clients. Once you have completed these procedures, the next time
+you process a payroll the reports will include the invoice with the
+report title “Client Invoice Print using STACKWC format”. Workers’
+compensation breaks out by state and class combination.</p>
+<p>Set Up the Billing Format You need to create a billing format
+(invoice) with the Stack Invoice with Workers Comp Broken out alternate
+print routine.</p>
+<p>To set up the billing format: 1. Open Billing Formats (found in the
+Back Office menu under System|Change). 2. Enter the Format ID. 3. Enter
+the Format Description. 4. Select Stack Invoice with Workers Comp Broken
+out from the Alternate Print Routine drop-down. 5. Enter a Message ID
+for any special message format. These formats are defined in System
+Parameters. 6. Select Show Past Due to include any open/past due amounts
+on the invoice. 7. Select Past Due In Invoice Total to show open and
+past due invoices in the invoice total. Otherwise, there is only a
+statement listing at the end. 8. Select Show On Remit to show open/past
+due invoice listings on the remittance form.</p>
+<p>Billing User Guide © 2026 PrismHR 60  Chapter 7 Stack Invoice with
+Workers’ Comp Broken Out</p>
+<ol start="9" type="1">
+<li>For each line: • Enter the Line Description that appears on the
+invoice in the position indicated, depending on the value of the Print
+if 0 field.</li>
+</ol>
+<p>Note: Position indicated means the order of these line items
+determines the order of the billing lines when printed. In other words,
+the first description in this column is the first line printed on the
+bill, the second description is the second line printed, and so on.</p>
+<pre><code>•    If appropriate, enter the Company Account number used to show clients what journal effect to post on
+     their records. This is for special client accounting.
+•    Select Yes from the Print if zero drop-down to print the line on the invoice even when the value is zero.
+     If you select No, the invoice does not include the line if its value is zero for that invoice.
+     Click     to see the list of bill codes included in the line.
+     Click      to add bill codes to the line item.
+     Enter each Bill Code. The Bill Description displays.
+     Click Save in the Bill Codes for Line Item form.</code></pre>
+<ol start="10" type="1">
+<li>Click Save in the Billing Formats form.</li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 61  Chapter 7 Stack Invoice with
+Workers’ Comp Broken Out</p>
+<p>Set Up the Billing Template Make sure that the billing template used
+by the client is set to bill for and sort by workers’ compensation.</p>
+<p>To set up the billing template: 1. Open Billing Templates (found in
+the Back Office menu under System|Change). 2. Enter the Template ID used
+for the client. 3. Verify that the Workers Comp Sort is selected. 4.
+Verify that Workers Comp (if Hourly) and Workers Comp TRIA are selected
+in the Add column.</p>
+<p>Note: See Defining Methods for Billing Clients on page 14Refer to
+other sections of this guide for information on the other fields in the
+form.</p>
+<ol start="5" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Set Billing Information for the Client Verify that the client is set
+up to use the stack invoice with workers’ compensation broken out
+billing format. 1. Make sure that the correct client record displays. 2.
+Open Client Details (found in the Client menu under Client|Change). 3.
+Select the Billing tab. 4. Verify that Billing Template is one that
+bills for workers’ compensation. 5. Verify that the Bill Format is the
+one that you set up to use the Stack Invoice with Workers Comp Broken
+out alternate print routine. 6. Select Pay Codes with W/C Class w/Price
+Levels from the Bundled Billing Based On drop-down.</p>
+<p>Billing User Guide © 2026 PrismHR 62  Chapter 7 Stack Invoice with
+Workers’ Comp Broken Out</p>
+<ol start="7" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Billing User Guide © 2026 PrismHR 63  Chapter 8 Setting Up Invoice
+Header Information</p>
+<p>Chapter 8 Setting Up Invoice Header Information Organizations can
+customize client and employer information that displays in invoice
+headers, as well as include global, employer, and client logos in the
+PDF versions.</p>
+<p>Invoice Logos There are multiple fields in PrismHR where
+administrators can enter invoice logo file paths (the image locations on
+the mvQuery print server). Once the logo file paths are entered, the
+system can include the logo images in the PDF versions of invoices –
+logos do not show in the display version.</p>
+<p>Note: Contact the PrismHR Customer Support Team to upload logos to
+the mvQuery print server.</p>
+<p>The system chooses the logo to display in the invoice header based on
+the following hierarchy:</p>
+<pre><code>              If you enter a logo path for the ...                        Then ...
+
+           Employer invoice logo the Invoice Logo      •   The employer invoice logo displays in the
+           File Path field in in Employer Details          invoice header;
+                                                       •   Otherwise, the system checks to see if
+                                                           the global invoice logo is available.
+
+           Global invoice logo in the PEO Invoice      •   The global invoice logo displays in the
+           Global Logo File Path or the Non-PEO            invoice header;
+           Invoice Global Logo File Path fields in     •   Otherwise, the system checks to see if
+           Logo Path Maintenance                           the client&#39;s print service report logo is
+                                                           available.
+
+           Client&#39;s print service report logo in the   •   The client&#39;s print service report logo
+           Print Service Report Logo Filepath field        displays in the invoice header;
+           in Report Print Options                     •   Otherwise, the system checks to see if
+                                                           the global mvQuery report logo is
+                                                           available.</code></pre>
+<p>Billing User Guide © 2026 PrismHR 64  Chapter 8 Setting Up Invoice
+Header Information</p>
+<pre><code>              If you enter a logo path for the ...                      Then ...
+
+           Global mvQuery report logo in the         •   The global mvQuery report logo displays
+           mvQuery Report Logo Filepath field in         in the invoice header;
+           the mvQuery Image Path Maintenance        •   Otherwise, the system checks to see if
+           form in the backend system for                the global blank image logo is available.
+           PrismHR
+           Global blank image logo in the Blank      •   The global blank image logo displays in
+           Image Filepath field in the mvQuery           the invoice header;
+           Image Path Maintenance form in the in     •   If there is no image path entered, no
+           the backend system for PrismHR                logo displays in the invoice header.</code></pre>
+<p>Employer Invoice Logo Enter the complete path to the image locations
+on the mvQuery print server in the Invoice Logo File Path in the Invoice
+Information Maintenance panel in Employer Details.</p>
+<p>Global Invoice Logos (PEO and Non-PEO) Enter the complete paths to
+the image locations on the mvQuery print server in the PEO Invoice
+Global Logo File Path (for the PEO global invoice logo) and Non-PEO
+Invoice Global Logo File Path (for the non-PEO global invoice logo) in
+the Logo Path Maintenance form, accessed in the System Parameters
+Actions menu .</p>
+<p>Company Invoice Logos Enter the complete path to the image locations
+on the mvQuery print server in the Print Service Report Logo Filepath in
+the Report Print Options form, accessed in the Client Details Actions
+menu .</p>
+<p>Billing User Guide © 2026 PrismHR 65  Chapter 8 Setting Up Invoice
+Header Information</p>
+<p>Global Invoice Report and Blank Image Logo Enter the complete paths
+to the image locations on the mvQuery print server in the mvQuery Report
+Logo Filepath and the Blank Image Filepath in the Global mvQuery Image
+Path Maintenance form. To access the form, click the Back Office menu
+and select System|Change &gt; System Parameters. Then, select Actions
+menu &gt; Global mvQuery Image Path Maintenance. For complete
+documentation, see “Maintaining Global mvQuery Image Path” in the System
+Administration User Guide.</p>
+<p>MVQ Invoice Information Users can enter additional MVQ invoice data
+as needed using the Invoice Messaging form. For complete documentation,
+see “Invoice Messaging” in the System Administration User Guide. •
+Invoice Name replaces the Employer Name in the Invoice. • Invoice Phone
+displays a phone number to use for invoice questions. • Address
+information replaces the Employer Address as the return address on the
+Invoice. • Invoice Notes entered are displayed on all invoices after any
+client notes. Information pertaining to the period end date and the
+batch number has also been moved in portrait formats for invoice, and
+displays under the Invoice Number and Invoice Date. Headings and
+descriptions have been changed to read Pay Period Ending and Control
+Number for all invoice formats.</p>
+<p>Client Information The client name and address information included
+in the invoice header is based on the client specified in the invoice.
+The information displayed is the same in invoices for both PEO and
+non-PEO clients.</p>
+<p>Client Name The client name displayed is either the Client Name (DBA)
+or the Legal Name specified for the client in the Client Details form.
+This choice of name is defined by the value in the Name to Print
+Invoices field, located in the Report Print Options form, which is
+accessible from the Client Details Actions menu .</p>
+<p>Billing User Guide © 2026 PrismHR 66  Chapter 8 Setting Up Invoice
+Header Information</p>
+<p>Client Address The client address displayed is based on the following
+hierarchy.</p>
+<p>Note: If the Address Line 1 field in any of the above addresses does
+not have a value entered, the system skips the address and the next
+address in the hierarchy is used.</p>
+<pre><code>              If there is an address entered in ...                      Then ...
+
+           The Alternate Billing Address panel in     •   The alternate billing address entered
+           Pay Groups                                     displays in the invoice header;
+                                                      •   If no address is entered, the system uses
+                                                          the next address in the hierarchy.
+
+           The client record specified in the         •   The alternate billing address for the
+           Alternate Client Bill Address field in         client specified displays in the invoice
+           Client Details                                 header;
+                                                      •   If no address is entered, the system uses
+                                                          the next address in the hierarchy.
+
+           The Mailing Address fields in the          •   The account mailing address entered
+           Account tab in Client Details                  displays in the invoice header;
+                                                      •   If no address is entered, the system uses
+                                                          the standard address entered for the
+                                                          client.
+
+           The Name and Address fields in the         •   This is the standard address for the
+           Detail tab in Client Details                   client; it will display in the invoice
+                                                          header.</code></pre>
+<p>Billing User Guide © 2026 PrismHR 67  Chapter 8 Setting Up Invoice
+Header Information</p>
+<p>Setting Up Employer Information PEO and non-PEO clients use different
+logic to define the employer whose information is included in the
+invoice. Whether the client is PEO or non-PEO is defined by the Service
+Type selected in the Contract panel in Client Details.</p>
+<pre><code>                If the Service Type selected is ...                       Then ...
+
+           Professional Employer                      The client is a PEO client.
+
+           Any other value in the drop-down           The client is a non-PEO client.</code></pre>
+<p>PEO Clients If the client is a PEO, it uses the employer associated
+with the invoice. Typically this is the Employer specified in the
+Contract panel in Client Details.</p>
+<p>Non-PEO Clients If the client is non-PEO, it uses the Non-PEO Invoice
+Employer specified in the Billing Tab in Client Details.</p>
+<p>Note: The Non-PEO Invoice Employer field only displays in Client
+Details if the client is non-PEO.</p>
+<p>• If the client does not specify a Non-PEO Invoice Employer, the
+Non-PEO Invoice Global Employer specified in Logo Path Maintenance is
+used.</p>
+<p>Billing User Guide © 2026 PrismHR 68  Chapter 8 Setting Up Invoice
+Header Information</p>
+<p>• If the client does not specify a Non-PEO Invoice Employer and does
+not specify a Non-PEO Invoice Global Employer, the Employer specified in
+the Contract panel in Client Details. Once the system determines an
+employer to use in the invoice, it uses the employer name, address, and
+other information entered in Employer Details.</p>
+<p>Employer Name The Employer Print Name displays in the invoice as
+entered in Employer Details. If an Employer Print Name is not entered,
+the Employer Name is used.</p>
+<p>Employer Address If an employer has return address information
+entered in the Invoice Information Maintenance panel in Employer
+Details, this is the address that displays in the invoice. If an address
+is not specified in the Invoice Information Maintenance panel, the
+employer’s standard address as entered in the Employer Details panel
+displays.</p>
+<p>Note: If the first return address field in the Invoice Information
+Maintenance panel does not have a value entered, the system uses the
+employer’s standard address.</p>
+<p>Billing User Guide © 2026 PrismHR 69  Chapter 8 Setting Up Invoice
+Header Information</p>
+<p>Other Employer Information If any of the following fields have
+information entered in the Invoice Information Maintenance panel in
+Employer Details, the information displays in the PDF version of the
+invoice (it is not included in the display version). • Contact Name •
+Invoice Contact Phone • Invoice Contact FAX Number • Invoice Email
+Address • Invoice Website</p>
+<p>Billing User Guide © 2026 PrismHR 70  Chapter 9 Setting Up
+Garnishment Setup Fees</p>
+<p>Chapter 9 Setting Up Garnishment Setup Fees You can set up a billing
+event for garnishment setup fees and add it to client records for any
+clients that are charged for those setups. This system triggers the
+billing event when a user sets up and saves a garnishment using the
+Employee Garnishments form. See Notes About Take-On Clients on page 72.)
+You must setup the billing event as described below, and then assign the
+GSF event code to each client that you need to charge.</p>
+<p>Creating GSF Billing Event Code To begin, you must create a billing
+event code named GSF. Once you have this in PrismHR, you can use it for
+all clients that should be charged this fee.</p>
+<p>To create a billing event code, do the following: 1. Click Back
+Office. 2. On the System|Change menu, select Billing Events. 3. Enter
+GSF as the Bill Event Code. 4. Enter a Description for the garnishment
+setup fee. 5. Enter the Bill Code related to the garnishment setup fee.
+6. Select Show Detailed if you want to display the details of this
+billing event on an invoice.</p>
+<p>Billing User Guide © 2026 PrismHR 71  Chapter 9 Setting Up
+Garnishment Setup Fees</p>
+<ol start="7" type="1">
+<li>The Standard Price is not used for this particular fee. You will
+enter the rate for each client in the Client Details Billing tab (see
+below).</li>
+<li>If appropriate, enter values in the other fields (see “Billing
+Events” for more information).</li>
+<li>Click Save.</li>
+</ol>
+<p>Assigning Fee Setup in Client Details Once the GSF billing event
+exists, you assign it to each client that you want to charge for
+garnishment setups. The system only charges the fee to clients that have
+it assigned.</p>
+<p>To assign the GSF billing event, do the following: 1. On the
+Client|Change menu, select Client Details. 2. Select the Billing tab. 3.
+In the Fee Rate Overrides panel, enter or select GSF as the Bill Event
+Code. 4. Enter the Rate to charge the client for each garnishment
+setup.</p>
+<ol start="5" type="1">
+<li>If appropriate, enter values in the other fields (see the Client
+Administration User Guide).</li>
+<li>Click Save.</li>
+</ol>
+<p>Notes About Take-On Clients The garnishment setup fee billing event
+does not trigger if there are any garnishments setup when importing a
+take-on client. You should assume that the client is exempt from the fee
+during that time, or that you can manually enter it as a one-line bulk
+fee. Also, note that if you have a new client and the billing template
+is set to skip employee fees for new clients, the system will not
+trigger the billing event for any garnishments setup during the first 30
+days. This is the same as the behavior of the new employee setup (NES)
+fee. (See Defining Methods for Billing Clients on page 14.)</p>
+<p>Billing User Guide © 2026 PrismHR 72  Chapter 10 Setting Up Form W-2
+Billing Fees</p>
+<p>Chapter 10 Setting Up Form W-2 Billing Fees Your organization can set
+up billing for Forms W-2 (W-2s) as a production fee and a per employee
+fee. You need to define billing codes and billing rules to enable this
+feature.</p>
+<p>Background Some important things to know about the fees generated by
+these billing rules: • Both rules generate a one-time yearly charge for
+the client-billing rule combination. • The Annual W-2 Production Fee is
+a one-time flat fee that the system will bill for the current year the
+first time the rule applies (for example, it would run in 2024 if
+included in a payroll). If your organization would prefer that it run in
+January, set the Rule Start Date to a date in January 2025. • The Annual
+Fee per Form W-2 billing rule is based on a count of generated W-2s.
+W-2s are generated in the first quarter of the following year (for
+example, your organization would generate 2024 W-2s in Q1 2025). If W-2s
+have not been generated yet (such as in early January), then the system
+processes the rule during each payroll until your organization generates
+the W-2s. PrismHR recommends that you use the option to generate all
+Form W-2s at once; you might need to make adjustments for additional
+Form W-2s generated after the fee is charged. • Each rule generates a
+miscellaneous billing charge.</p>
+<p>Billing Codes You must set up the billing codes that you intend to
+use for any client.</p>
+<p>To set up the appropriate billing codes: 1. Create billing codes W2EE
+and W2BASE. 2. Set the descriptions and other information as needed.</p>
+<p>Billing User Guide © 2026 PrismHR 73  Chapter 10 Setting Up Form W-2
+Billing Fees</p>
+<p>Billing Rules Create unbundled billing rules for each client that
+should be charged the fees. You can use either or both as needed. • For
+the rule that charges per Form W-2, select Annual Fee Per W-2 from the
+Based On drop-down. • For the rule that charges once per production of
+all W-2s, select Annual W-2 Production Fee from the Based On drop-down.
+To ensure that the rule runs only in January, specify a Rule Start
+Date.</p>
+<p>The system generates the fees when a user creates the employee
+W-2s.</p>
+<p>Billing User Guide © 2026 PrismHR 74  Chapter 11 Importing Client
+Bill Pending Data</p>
+<p>Chapter 11 Importing Client Bill Pending Data This feature allows you
+to import client bill pending data for one or more clients. The
+validations are similar to those in the Bill Pending Details entry form.
+The system reports the valid data and any errors that occurred from the
+validation.</p>
+<p>Importing the File Important! The Bill Pending Import form has been
+retired. Instead, use the Bill Pending import template in the Data
+Import Tool. (Refer to the PrismHR Payroll Administration Guide for more
+information.) Note the following: • If your user role is set to FULL for
+the Data Import Tool and you enter Bill Pending Import in the search box
+or select it from the Operations|Import Processing menu, the system
+redirects you to the Data Import Tool. • If your user role is set to
+INQUIRY for the Data Import Tool, when you try to access the Bill
+Pending Import form a message displays, “The Bill Pending Import has
+been moved to the Data Import Tool. Access to the Data Import Tool will
+need to be added to your user role.” You can access the Data Import Tool
+by either entering it in the search box or selecting it from the
+Operations|Import Processing menu, but you cannot use it for importing
+until you set your user role to FULL. (Clicking OK in the message does
+not open the Data Import Tool.) • If your user role is set to DENY for
+the Data Import Tool, you cannot access it.</p>
+<p>Related Topic Viewing Bill Pending for Clients (page 75)</p>
+<p>Viewing Bill Pending for Clients Use the Bill Pending form to view
+the bill pending entry for the client.</p>
+<p>To view the bill pending entry, do the following: 1. On the
+Client|Action menu, select Bill Pending. 2. The bill pending events
+display for the client. For example:</p>
+<p>Billing User Guide © 2026 PrismHR 75  Chapter 11 Importing Client
+Bill Pending Data</p>
+<p>Billing User Guide © 2026 PrismHR 76</p>
+<h1 id="official-third-party-checks-tpc-user-guide-pdf-text">Official
+Third-Party Checks (TPC) User Guide (PDF text)</h1>
+<h1 id="third-party-checks-tpc-user-guide">Third-Party Checks (TPC) User
+Guide</h1>
+<ul>
+<li><strong>Source PDF:</strong>
+https://tech-docs.prismhr.com/SP_help/Content/Resources/UserGuidePDFs/TPC-Guide.pdf</li>
+<li><strong>Original filename:</strong> <code>TPC-Guide.pdf</code></li>
+<li><strong>Pages extracted:</strong> 21</li>
+</ul>
+<hr />
+<p>Third Party Check Processing</p>
+<p>Setup and administration of third party check processing on the
+PrismHR platform PrismHR 26.07.0 Copyright notice The information in
+this document is subject to change without notice. PrismHR shall not be
+liable for any technical or editorial errors contained herein or for
+incidental or consequential damages resulting from the performance,
+furnishing, or use of this publication. The software described in this
+document is furnished under license and may be used or copied only in
+accordance with the terms of that license. No part of this documentation
+may be reproduced or transmitted in any form or by any means, electronic
+or mechanical, including (but not limited to) photocopying, recording,
+scanning, or retrieval system, for any other than the purchaser’s
+personal use without the express written permission of PrismHR. The
+company data contained in the examples within this document are
+fictitious and any resemblance to real people, places, or companies is
+purely coincidental. PrismHR is a trademark of PrismHR. All other brand
+and product names are trademarks or registered trademarks of their
+respective owners.</p>
+<p>© August 2026 by PrismHR. All rights reserved.  Table of Contents</p>
+<p>Table of Contents Third Party Check Processing 1 Copyright notice 2
+Table of Contents 3 Chapter 1 Processing Third Party Checks 4
+Maintaining Third Party Payees Vendor Information 4 Defining Voluntary
+Third Party Deductions 5 Setting Up Third Party Check Printing Mode 5
+Generating Third Party Check Information 6 Chapter 2 Performing Third
+Party Check Processing 8 Creating a Third Party Check Processing Batch 8
+Viewing Posted Third Party Check Batches 11 Posting a Third Party Check
+Processing Batch 13 Reprinting Third Party Checks 15 Running Third Party
+Check Posted Batch Report 17 Voiding Third Party Checks 18 Managing
+Transactions On Hold 19</p>
+<p>Third Party Check Processing © 2026 PrismHR 3  Chapter 1 Processing
+Third Party Checks</p>
+<p>Chapter 1 Processing Third Party Checks Third party check processing
+connects employee voluntary deductions and garnishments with designated
+payees. PrismHR deducts the designated pay amounts from the employee and
+creates a check made payable to the designated payee through third party
+check batch processing or when your organization processes a
+payroll.</p>
+<p>Note: In addition to setting up the payees and deduction codes for
+each client, Third Party Check Printing Mode must be set in System
+Parameters.</p>
+<p>Important! The legacy system did not require a system parameter
+selection because the automatic processing of garnishment checks with
+payroll did not function as intended. With the improvement to the
+process in PrismHR, it is now necessary to define whether processing
+will be done by Batch Mode or Real Time. This setting must be enabled in
+system parameters before processing payrolls with third party
+deductions/garnishments. To process third party checks, see the
+following: • Maintaining Third Party Payees Vendor Information •
+Defining Voluntary Third Party Deductions • Setting Up Third Party Check
+Printing Mode • Generating Third Party Check Information</p>
+<p>Maintaining Third Party Payees Vendor Information Use the Third Party
+Payees form to maintain vendor information.</p>
+<p>To maintain vendor information, do the following: 1. Enter the third
+party Payee ID. 2. Enter the actual vendor Payee Name. 3. In the Remit
+To Name field, enter the vendor name to print on the check. 4. Enter the
+vendor’s address and ZIP Code. The system displays the vendor’s city and
+state automatically. If there is more than one city associated with that
+ZIP Code, select the location in the pop-up window. 5. Click Save.</p>
+<p>Third Party Check Processing © 2026 PrismHR 4  Chapter 1 Processing
+Third Party Checks</p>
+<p>Defining Voluntary Third Party Deductions Use the Third Party
+Deductions form to define voluntary third party deductions for a client
+and link them to a third party payee.</p>
+<p>To define voluntary third party deductions, do the following: 1.
+Enter each Third Party Deduction Code. The Deduction Code Description
+displays. Note: Only use voluntary deductions that do not have a rebate
+bill code. If you select a voluntary deduction with an assigned rebate
+bill code an error message displays, “Third Party Deductions must have a
+Voluntary Deduction Type and have no Rebate Bill Code assigned. Check
+the deduction code settings or select an applicable code.” Click OK to
+continue. 2. Enter the relevant Third Party Payee Code for each
+deduction. 3. Click Save. Note: Refer to the Payroll Setup Guide for
+information on creating standard deduction codes. See Maintaining Third
+Party Payees Vendor Information on page 4 for information on creating
+third party payees.</p>
+<p>Setting Up Third Party Check Printing Mode In order to support third
+party check printing, your organization must set up the Third Party
+Check Printing Mode in the System Parameters form. For example:</p>
+<p>To set the print mode for third party checks, do the following: 1.
+Open the System Parameters form. (Click Back Office. Select System
+Parameters under System|Change.) 2. Select one of the two options for
+the Third Party Check Printing Mode to support the way your organization
+wants to work:</p>
+<p>Third Party Check Processing © 2026 PrismHR 5  Chapter 1 Processing
+Third Party Checks</p>
+<pre><code>•    Batch Mode: Consolidates liabilities and prints third party checks in batch mode
+•    Real Time: Prints third party checks when payroll batch posts (with other payroll reports)
+Important! If you do not select an option in the Third Party Check Printing Mode field (that is, this field
+selection remains &quot;--Select--&quot;), the system processes as though it was in Batch Mode. However, to access
+third party check processing, you must set this field to Batch Mode.</code></pre>
+<p>Note: In the backend system, you can manage Third Party Check
+Printing Mode in mvQuery Third Party Checks Maintenance along with the
+third party check format, logo, and signature. The setting is always the
+same setting in both forms.</p>
+<ol start="3" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Generating Third Party Check Information The Third Party Check Advice
+Report, available from the Payroll|Report menu, retrieves garnishment or
+non- garnishment third party check information that details employees
+and component amounts included in the third party check.</p>
+<p>To run this report, do the following: 1. Select Third Party Check
+Advice Report in the Reports menu under Payroll|Report. 2. In the
+Selection Parameters panel, complete the following fields:</p>
+<pre><code> Field                                    Description
+ Check Type                               Select one of the following options:
+                                          •    Garnishment: Retrieves employee garnishment information.
+                                          •    Third Party: Retrieves employee third party check information.
+
+ Third Party Batch                        If you select the Garnishment or Third Party check type, this field
+                                          displays. Enter or select the Third Party Batch number associated
+                                          with the third party check.
+ Check Date                               If you select the Garnishment or Third Party check type, this field
+                                          displays. Enter or select a date range in the to and from date fields
+                                          for the Check Type.
+                                          Note: You can only enter or select valid dates in the to and from
+                                          date fields. Once you enter the to date, you must enter the from
+                                          date to proceed. Also, when you select Check Date, Third Party
+                                          Batch changes to Batch Number.
+ Payroll Number                           If you select the Third Party check type with the Third Party Check
+                                          Printing Mode field set to Real Time in the System Parameters
+                                          form, this field displays. Enter or select the Payroll Number
+                                          associated with the third party check.</code></pre>
+<p>Third Party Check Processing © 2026 PrismHR 6  Chapter 1 Processing
+Third Party Checks</p>
+<pre><code> Field                                    Description
+ Employee identifier to show              Select one of the following options:
+ in the report
+                                          •   Employee ID: Displays employee IDs in the report.
+                                          •   SSN: Displays social security numbers in the report.</code></pre>
+<ol start="3" type="1">
+<li><p>Click Run. During a short delay, the system builds the data.
+(Note: If you enter or select a Payroll Number and no third party checks
+are found, a confirmation message displays.) If third party checks are
+found, the report displays. For example:</p>
+<p>The report columns are:</p>
+<p>Column Description Check Number The number on the third party check.
+Payee The vendor name associated with the third party check. Check Date
+The date on the third party check. Line The line associated with the
+third party check. Employee The employee ID associated with the third
+party check. Name The employee name associated with the third party
+check. Case Number The case number associated with the third party
+check. Case Date The case date associated with the third party check.
+Payment Amount The payment amount on the third party check.</p></li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 7  Chapter 2 Performing
+Third Party Check Processing</p>
+<p>Chapter 2 Performing Third Party Check Processing Third party check
+processing connects employee garnishments and voluntary deductions with
+designated payees. PrismHR deducts the designated pay amounts from the
+employee and allows a service provider to create a check made payable to
+the designated payee by using the Third Party Check Process. Important!
+Before you begin this process, you must set the Third Party Check Print
+Mode field to Batch Mode on the System Parameters form. The Third Party
+Check Process form lists all third party check payments that are being
+processed in payroll batches that meet the selection criteria. From this
+form, you can maintain third party check batches by doing the following:
+• Create a batch (see Creating a Third Party Check Processing Batch) •
+View batches available to post and post a batch (see Posting a Third
+Party Check Processing Batch) • Hold/release third party check
+transactions (see Managing Transactions On Hold) • View posted batches,
+then select a batch to reprint or void checks, view the accounting or
+check information, and run reports (see Viewing Posted Third Party Check
+Batches)</p>
+<p>Creating a Third Party Check Processing Batch Use the Third Party
+Check Process form to select an employer and create a batch of third
+party checks to process. For example, you can select the employer in
+this form as part of the third party check processing batch process:</p>
+<p>Third Party Check Processing © 2026 PrismHR 8  Chapter 2 Performing
+Third Party Check Processing</p>
+<p>Note: When you open this form, the system locks third party check
+processing until you close it. Also, if you set the Third Party Check
+Printing Mode to Real Time on the System Parameters form, a message
+displays, “This account is set up to print Third Party Checks during
+payroll processing. If Third Party Checks should be processed in ‘Batch
+Mode,’ change the Third Party Check Printing mode at System Parameters.”
+Click OK.</p>
+<p>The Third Party Check Process form serves as the main “hub” for some
+third party check processing transactions. In addition to creating a
+third party check processing batch, you can also do the following in
+this form: • View posted batches by clicking Posted Batches (see Viewing
+Posted Third Party Check Batches) • Manage transactions on hold by
+clicking Hold Review (see Managing Transactions On Hold) • View third
+party check processing batches that are ready to post to the system and
+then post batches by clicking Batches Available to Post (see Posting a
+Third Party Check Processing Batch) Important! Before you begin this
+process, you must set the Third Party Check Print Mode field to Batch
+Mode on the System Parameters form.</p>
+<p>To select an employer and create a batch of third party checks to
+process, do the following:</p>
+<ol type="1">
+<li>Click Back Office , then select Third Party Check Process from the
+Operations|Change menu. The Third Party Check Process form
+displays.</li>
+<li>If necessary, enter the pay date in the Pay Date on or before field
+to limit the list to payroll batches that were processed for that date
+or earlier. (The default is the Friday of the current week.)</li>
+<li>To begin creating a batch of third party checks, click the Employer
+Name or Employer ID. This opens the Third Party Check Batch Control
+form, where you can create a batch. To apply filters, select the + sign
+next to Batch Creation Filters to expand the form.</li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 9  Chapter 2 Performing
+Third Party Check Processing</p>
+<pre><code>Note: If the net payee amount was less than or equal to zero, the following message displays when the Third
+Party Check Batch Control form opens, &quot;Some items were skipped because the net payee amount was less
+than or equal to zero.&quot;</code></pre>
+<ol start="4" type="1">
+<li><p>Complete the appropriate information:</p>
+<p>Field Description Check Date Enter or select the Check Date. Checking
+Account Enter or select the Checking Account. (Note: You can set up a
+separate checking account only for third party check processing, but
+this is not a requirement.) Batch Name Enter the Batch Name. Batch
+Creation Filters Use the filters, if you need to limit the items in the
+third party check processing batch: • Enter or select the Pay Date on or
+before date. • Select the Check Type. • Select the Filter, then select
+the Payee ID, Client ID, or Employee ID. Note: If you select a Filter
+option, such as Payee, add some payees, but then decide not to use them
+and switch to the Client or Employee options and then select Payee
+again, the system remembers and displays the payees you originally
+added. (This behavior also applies to the Pay Date on or before date and
+the Check Type filter.) Note: Select Clear Filters to remove any filters
+you selected.</p>
+<p>The following example displays third party (voluntary deductions)
+check transactions (labeled “Third” in the Check Type column) for a
+particular client:</p></li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 10  Chapter 2 Performing
+Third Party Check Processing</p>
+<pre><code>Note: Garnishment transactions are labeled &quot;Garn&quot; in the Check Type column.</code></pre>
+<ol start="5" type="1">
+<li>To view the details of a line item, click the icon next to the Payee
+ID. When you are finished, click Close Detail View.</li>
+<li>When the list displays only the third party check transactions that
+you want to include, click Create Batch. The system displays a message
+with the ID of the batch that you created.</li>
+<li>Click OK to return to the main Third Party Check Process form.</li>
+</ol>
+<p>Viewing Posted Third Party Check Batches Use the Third Party Check
+Process form to access the Posted Third Party Check Batches form, where
+you can view a list of all the posted batches. You can then select a
+batch to reprint or void checks, view the accounting or check
+information, and run reports. Note: When you open this form, the system
+continues to lock third party check processing until you close the main
+Third Party Check Process form.</p>
+<p>To view a list of all posted batches, do the following:</p>
+<ol type="1">
+<li>Click Back Office , then select Third Party Check Process from the
+Operations|Change menu.</li>
+<li>Select Posted Batches. The Posted Third Party Check Batches form
+displays.</li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 11  Chapter 2 Performing
+Third Party Check Processing</p>
+<ol start="3" type="1">
+<li><p>Use the filter to limit the list to third party check batches
+with a particular status: Employer ID, Batch Status, Check Dated, Start
+Date, or End Date. (The default is to Show All with the current week’s
+Friday date as the End Date.)</p></li>
+<li><p>To view batch information or a voided batch, click the Batch Name
+or Batch ID. This opens the Third Party Check Posted Batch form. For
+example:</p>
+<p>From this form, you can view: • Details of a line item in the batch
+by clicking the Payee Type-ID. When you are finished, click Close Detail
+View. For example:</p>
+<p>• Accounting for the batch by clicking Show Batch Accounting. When
+you are finished, click Close Batch Accounting. For example:</p></li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 12  Chapter 2 Performing
+Third Party Check Processing</p>
+<pre><code>•    A report of the garnishment or third party checks in the batch by clicking Remit Advice Report. (See
+     Running Third Party Check Posted Batch Report on page 17.) A dialog opens where you can select the
+     Check Type and include an Advice Message, then click Run Report. For example:
+
+You can also view information about the check and reprint it or void it by doing the following:
+•    Click Reprint Checks if you need to reprint one or more checks from the batch. (See Reprinting Third
+     Party Checks on page 15.)
+•    Click the Void Check icon if you need to void a check. The Third Party Check Void form opens, which
+     displays information for that check. (See Voiding Third Party Checks on page 18.)</code></pre>
+<p>Posting a Third Party Check Processing Batch Use the Third Party
+Check Batches Available to Post form to select a batch of third party
+checks to post. Note: When you open this form, the system continues to
+lock third party check processing until you close the main Third Party
+Check Process form.</p>
+<p>Third Party Check Processing © 2026 PrismHR 13  Chapter 2 Performing
+Third Party Check Processing</p>
+<p>To view batches available to post and select a batch for posting, do
+the following:</p>
+<ol type="1">
+<li><p>Click Back Office , then select Third Party Check Process from
+the Operations|Change menu. The Third Party Check Process form
+displays.</p></li>
+<li><p>If necessary, enter the pay date in the Pay Date on or before
+field to limit the list to payroll batches that were processed for that
+date or earlier. (The default is the Friday of the current
+week.)</p></li>
+<li><p>Click Batches Available to Post to view the third party check
+processing batches that are ready to post to the system. The Third Party
+Check Batches Available to Post form displays the number of employers,
+journals, and total amount ready to be processed as of the specified
+effective date. For example:</p></li>
+<li><p>To begin posting a batch of third party checks, click the Batch
+Name or Batch ID. This opens the Third Party Check Batch Processing
+form. For example:</p>
+<p>In addition, you can delete a batch on this form by clicking Delete
+Batch. A confirmation message displays where you can click Yes to
+proceed with deleting the batch. (Click No to return to the form without
+deleting the batch.) Note: After deleting a batch, the transactions in
+that batch are once again available to process in a new batch using
+third party check processing.</p></li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 14  Chapter 2 Performing
+Third Party Check Processing</p>
+<ol start="5" type="1">
+<li>If necessary, enter or select a different Check Date and Checking
+Account. (This updated information will display on the posted batch and
+checks.) When you select the Checking Account field, a list displays all
+active bank accounts regardless of the Show in Cash Receipts setting on
+the Bank Accounts form. Note: After making these changes, if you close
+the form without posting the batch the information reverts back to its
+original state when you reopen that batch.</li>
+<li>To view the details of a line item, click the Payee Type-ID. When
+you finish, click Close Detail View.</li>
+<li>When you are ready, click Post Batch. The system displays a message
+that the batch is posting. After that, it displays the Printing Third
+Party Checks job progress form to display the print process. Click Close
+when it finishes. (Note: The PDF of the check print file automatically
+loads to display on the screen.) The system returns you to the Third
+Party Check Batch Processing form.</li>
+<li>Click Close. The system returns you to the Third Party Check Batches
+Available to Post form with the list of open batches.</li>
+</ol>
+<p>Reprinting Third Party Checks From the Third Party Check Posted Batch
+form, you can reprint any checks as needed by clicking the Reprint
+Checks button. This opens the PDF for the check(s) in the selected
+batch, which you can then print as needed.</p>
+<p>To reprint a check, do the folllowing:</p>
+<ol type="1">
+<li>Click Back Office , then select Third Party Check Process from the
+Operations|Change menu.</li>
+<li>Select Posted Batches. The Posted Third Party Check Batches form
+displays.</li>
+<li>Use the filter to limit the list to third party check batches with a
+particular status: Employer ID, Batch Status, Check Dated, Start Date,
+or End Date. (The default is to Show All with the current week’s Friday
+date as the End Date.)</li>
+<li>To view batch information or a voided batch, click the Batch Name or
+Batch ID. This opens the Third Party Check Posted Batch form, where you
+can reprint checks. For example:</li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 15  Chapter 2 Performing
+Third Party Check Processing</p>
+<ol start="5" type="1">
+<li>Click Reprint Checks. A PDF of the check displays. For example:</li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 16  Chapter 2 Performing
+Third Party Check Processing</p>
+<ol start="6" type="1">
+<li>Click the Print icon to reprint it or download it by clicking the
+Download ( ) icon.</li>
+</ol>
+<p>Running Third Party Check Posted Batch Report From the Third Party
+Check Posted Batch form, you can print a report of the checks included
+in the batch using the Remit Advice Report button.</p>
+<p>To run a third party check posted batch report, do the following: 1.
+Clicking Remit Advice Report in the Third Party Check Posted Batch form.
+A dialog displays. 2. Select the Check Type, either Garnishment Checks
+or Third Party Checks.</p>
+<p>Third Party Check Processing © 2026 PrismHR 17  Chapter 2 Performing
+Third Party Check Processing</p>
+<ol start="3" type="1">
+<li><p>You can enter an Advice Message to display on the
+report.</p></li>
+<li><p>You can also click Save Message to save the message you entered,
+which saves your message and displays it when anyone chooses to print
+the report again.</p></li>
+<li><p>Click Run Report. The report displays. For example:</p>
+<p>Close it when you are finished.</p></li>
+</ol>
+<p>Voiding Third Party Checks Use the Third Party Check Void form to
+void a check included in the batch.</p>
+<p>Note: You can only void checks that have been printed. Also, when you
+open this form, the system locks third party check processing until you
+close it.</p>
+<p>To void a check included in the batch, do the following:</p>
+<ol type="1">
+<li>Click Back Office , then select Third Party Check Void from the
+Operations|Action menu. The Third Party Check Void form opens.</li>
+<li>Enter or select the Checking Account and the Check Number. The
+Payable To, Check Date, and Check Amount display. For example:</li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 18  Chapter 2 Performing
+Third Party Check Processing</p>
+<ol start="3" type="1">
+<li>Review the check information to confirm that it is accurate.</li>
+<li>Enter the Reason for Void.</li>
+<li>Click Void Check. A confirmation message displays where you can
+click Yes to proceed with voiding the check. (Click No to return to the
+form without voiding the check.)</li>
+<li>Click Close to release the third party check processing lock. Note:
+After a check is voided, it is once again available to process in a new
+batch using third party check processing.</li>
+</ol>
+<p>Managing Transactions On Hold Use the Third Party Check Hold and
+Review form to manage transactions on hold. From there, you can put
+transactions on hold, remove a hold, or delete transactions.</p>
+<p>Note: When you open this form, the system locks third party check
+processing until you close it.</p>
+<p>To review third party transactions, do the following:</p>
+<ol type="1">
+<li><p>Click Back Office , then select Third Party Check Hold and Review
+from the Operations|Change menu. The Third Party Check Hold &amp; Review
+form displays.</p>
+<p>Note: You can also access this form from the Third Party Check
+Process form by clicking Hold Review. (See Creating a Third Party Check
+Processing Batch on page 8.)</p></li>
+<li><p>Select the Current On-Hold Status to view: All, On Hold, or NOT
+On Hold.</p></li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 19  Chapter 2 Performing
+Third Party Check Processing</p>
+<ol start="3" type="1">
+<li><p>Using the other four fields, you can limit the list to review
+only the third party transactions related to a specific employer,
+company (client), employee, or payee.</p></li>
+<li><p>Click Run. The Third Party Check Hold Maintenance &amp; Review
+form opens, displaying all third party transactions that meet the
+criteria you specified.</p>
+<p>Note: If you make a change on this form without saving it and then
+click Close, a message displays, “Any unsaved changes you entered will
+not be kept. Are you sure you want to exit?” Click Yes to close the form
+without saving your changes and return to the Third Party Check Hold
+&amp; Review form.</p></li>
+<li><p>You can change the on-hold status of the transactions one at a
+time or all at once: • To change the on-hold status of one transaction,
+click the link in the On Hold? column. You can toggle the status between
+Y (on hold) and N (not on hold). • To put all transactions in the list
+on hold, click All On Hold. This applies to all pages. • To remove holds
+from all in the list transactions, click All Off Hold. This applies to
+all pages.</p></li>
+<li><p>You can mark transactions for deletion: • Click the N link in the
+Delete? column. • Click Yes in the confirmation message. The link in the
+column changes to Y. It will not be deleted until you click the Save
+button. If you do not want to delete the transaction, click the Y link
+to set it back to N.</p></li>
+<li><p>Click Save to save all your changes. This includes the hold
+statuses for transactions and deletions.</p></li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 20  Chapter 2 Performing
+Third Party Check Processing</p>
+<ol start="8" type="1">
+<li>Click Close to exit the form without saving your changes. The system
+prompts you to confirm that you want to close the form without changing
+any on-hold statuses or deleting any transactions: • Click Yes to
+confirm and close without saving your changes. • Click No to stay in the
+Third Party Check Hold Maintenance &amp; Review form. Note: The system
+prompt that displays when you close the form always displays as a
+reminder and if you save the changes, these saved selections remain
+saved.</li>
+</ol>
+<p>Third Party Check Processing © 2026 PrismHR 21</p>
+</body>
+</html>

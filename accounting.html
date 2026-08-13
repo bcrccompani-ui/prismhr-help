@@ -1,0 +1,4980 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PrismHR Help — Accounting</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<p><a href="index.html">PrismHR Help</a> · Public documentation for Microsoft 365 Copilot</p>
+<nav>
+<a href="index.html">Home</a>
+<a href="payroll.html">Payroll</a>
+<a href="benefits.html">Benefits</a>
+<a href="system-admin.html">System Admin</a>
+<a href="human-resources.html">HR</a>
+<a href="compliance.html">Compliance</a>
+<a href="task-sheets.html">Task Sheets</a>
+<a href="release-notes.html">Release Notes</a>
+</nav>
+</header>
+<header id="title-block-header">
+<h1 class="title">PrismHR Help — Accounting</h1>
+</header>
+<h1 id="accounting">Accounting</h1>
+<p>This file is a combined export of PrismHR help topics in
+<strong>Accounting</strong>. Source help system:
+https://tech-docs.prismhr.com/SP_help/Default.htm Each topic is
+separated by a heading and includes its original URL.</p>
+<p>========================================================================</p>
+<h1 id="resetting-posted-payroll-account-journals">Resetting Posted
+Payroll Account Journals</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/2020/External_Accounting_Reset.htm
+Path:
+<code>PD/Accounting/Action/2020/External_Accounting_Reset.htm</code></p>
+<h1 id="resetting-posted-payroll-account-journals-1">Resetting Posted
+Payroll Account Journals</h1>
+<p>You can use this feature to reset payroll account journals that have
+been posted to external accounting, so they can be exported again.</p>
+<p>You can reset three types of journals:</p>
+<ul>
+<li><p>Export journals</p></li>
+<li><p>Third Party journals</p></li>
+<li><p>Cash-transfer journals</p></li>
+</ul>
+<p>The External Accounting Reset panel displays:</p>
+<ul>
+<li><p>Select: Use these checkboxes to select individual line(s) to
+process</p></li>
+<li><p>Journal ID: ID of the payroll account journal</p></li>
+<li><p>Post Date: Date the payroll account journal was posted</p></li>
+<li><p>TranDate: Date of the payroll (transaction date)</p></li>
+<li><p>Co No: Employer ID</p></li>
+<li><p>Debit Amt: Total debit amount</p></li>
+<li><p>Count: Debit count for date and employer</p></li>
+<li><p>Credit Amt: Total credit amount</p></li>
+<li><p>Count: Credit count for date and employer</p></li>
+<li><p>Debit Total: Totals of the Debit Amt and Count columns</p></li>
+<li><p>Credit Total: Totals of the Credit Amt and Count columns</p></li>
+</ul>
+<p>To reset payroll account journals, do the following:</p>
+<ol type="1">
+<li><p>Click Back Office. Select External Accounting Reset from the
+Operations|Action menu.</p></li>
+<li><p>Do the following in the External Accounting Reset form:</p></li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Start Date/End Date</td>
+<td>Enter or select the Start Date and End Date.</td>
+</tr>
+<tr class="even">
+<td>Accounting Type</td>
+<td>Select one of the following Accounting Type options: - Cash Post:
+For journals created by entering cash receipts. - Third Party Post: For
+journals created by posting a third party deductions batch. (If an error
+occurs while posting third party deductions, select this option to view
+the posted journals for that type so you can re-post.) - Journal Post:
+All other journals. <strong>Note</strong>: Select the option based on
+the form where you want to re-post.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Cash Post: For journals created by entering cash receipts.</li>
+<li>Third Party Post: For journals created by posting a third party
+deductions batch. (If an error occurs while posting third party
+deductions, select this option to view the posted journals for that type
+so you can re-post.)</li>
+<li>Journal Post: All other journals.</li>
+</ul>
+<ol start="3" type="1">
+<li>Depending on the option you selected, a panel displays the selected
+journals posted during that date range for individual payroll account
+journals. For example, cash posts could look similar to the
+following:</li>
+</ol>
+<p>[Image: External Accounting Reset form, for Cash Post accounting
+type]</p>
+<ol start="4" type="1">
+<li><p>Click each journal you want to reset in the Select
+column.</p></li>
+<li><p>Click Submit. A dialog box displays asking you to confirm that
+you want to reset these items, so they can be exported again. Click Yes
+to reset the items.</p></li>
+<li><p>The process updates the selected payroll account journals and
+displays a confirmation dialog box stating how many items were
+reset.</p></li>
+<li><p>To post these reset journals to external accounting, access the
+External Journal Post form. (Click Back Office. Select External Journal
+Post from the Operations|Action menu.) The reset journals
+display.</p></li>
+<li><p>Click Process Batch.</p></li>
+</ol>
+<p>To view the Accounting Journal Detail Report, click the TranDate.</p>
+<p>[Image: Accounting Journal Detail Report, showing columns: Journal
+ID, Pay Date, Period, G/L Account Number, Debit Amount, Credit Amount,
+and totals.]</p>
+<p>Related Topics</p>
+<p><a href="../External_Journal_Post.htm">Examining External Journal
+Posts and External Cash Transfer Posts</a></p>
+<p>========================================================================</p>
+<h1 id="about-ar-aging-buckets">About A/R Aging Buckets</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/About_AR_Aging_Buckets.htm
+Path: <code>PD/Accounting/Action/About_AR_Aging_Buckets.htm</code></p>
+<h1 id="about-ar-aging-buckets-1">About A/R Aging Buckets</h1>
+<p>PrismHR supports data aging and uses two sets of buckets. The buckets
+represent aged accounts receivable data. Many organizations have a
+different set of rules for their operational use (operations) than what
+is required by financial standards (finance).</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> If your organization
+uses more than five buckets, you must print the reports on legal-sized
+paper. The system supports up to seven total buckets.</p>
+</blockquote>
+<h2 id="example-setup">Example Setup</h2>
+<p>For example, consider an organization that mostly uses cash. An open
+balance over seven days old is a cause for concern and review. The
+organization’s banking relationships, however, want to review the
+receivables in standard increments of 30-, 60-, and 90-days. To
+facilitate reporting, the organization built two sets of buckets:</p>
+<ul>
+<li><p>Operations records</p></li>
+<li><p>Standard financial records</p></li>
+</ul>
+<p>The organization has these Operations buckets:</p>
+<ul>
+<li><p>Current (0)</p></li>
+<li><p>1–7</p></li>
+<li><p>8–14</p></li>
+<li><p>15–21</p></li>
+<li><p>22+</p></li>
+</ul>
+<p>The Finance buckets are standard:</p>
+<ul>
+<li><p>Current (0)</p></li>
+<li><p>1–30</p></li>
+<li><p>31–60</p></li>
+<li><p>61–90</p></li>
+<li><p>91+</p></li>
+</ul>
+<p>Related Topic</p>
+<p><a href="Aging_Bucket_Maintenance.htm">Maintaining Aging
+Buckets</a></p>
+<p>========================================================================</p>
+<h1 id="maintaining-aging-buckets">Maintaining Aging Buckets</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Aging_Bucket_Maintenance.htm
+Path: <code>PD/Accounting/Action/Aging_Bucket_Maintenance.htm</code></p>
+<h1 id="maintaining-aging-buckets-1">Maintaining Aging Buckets</h1>
+<p>Your organization can define AR aging buckets for your own use
+(operations) and for reporting purposes (finance) in the Aging Bucket
+Maintenance form.</p>
+<p>You can create up to seven buckets.</p>
+<p>[Image: Aging Bucket Maintenance form, showing the standard fields:
+Bucket Code, Age Based On, and the Buckets grid with columns for Desc
+Line 1 and 2.]</p>
+<p>To maintain AR aging buckets:</p>
+<ol type="1">
+<li><p>Access the Aging Bucket Maintenance form (found in the Back
+Office menu under Accounts Receivable|Change).</p></li>
+<li><p>Select the Bucket code:</p></li>
+</ol>
+<ul>
+<li><p>Operations: aging bucket for use by your organization.</p></li>
+<li><p>Finance: aging bucket for reporting to financial
+institutions.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>Select the Age based on, either Invoice Date or Due Date. The system
+calculates the actual due date based on the AR term code.</li>
+</ol>
+<p>Next, define each bucket. You must define the buckets in order, with
+the newest at the top and the oldest at the bottom.</p>
+<ol start="4" type="1">
+<li>Enter the number for each of the Buckets, for example, 60.</li>
+</ol>
+<ul>
+<li><p>This must be an integer, and the number represents the aging; any
+document this age or newer will go in this column.</p></li>
+<li><p>Define the last bucket as 99999. The system recognizes that value
+as the final tier.</p></li>
+</ul>
+<ol start="5" type="1">
+<li><p>Enter the first line of the stacked heading for the aging report
+in Desc Line1, for example, 31 - 60.</p></li>
+<li><p>Enter the second line of the stacked heading for the aging report
+in Desc Line2, for example, Past Due.</p></li>
+</ol>
+<p>On the report, this example would display as:</p>
+<p>31 - 60</p>
+<p>Past Due</p>
+<ol start="7" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Related Topics</p>
+<p><a href="About_AR_Aging_Buckets.htm">About A/R Aging Buckets</a></p>
+<p><a href="AR_Terms_Code_Maint.htm">Configuring AR Terms</a></p>
+<p>========================================================================</p>
+<h1 id="configuring-ar-terms">Configuring AR Terms</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/AR_Terms_Code_Maint.htm
+Path: <code>PD/Accounting/Action/AR_Terms_Code_Maint.htm</code></p>
+<h1 id="configuring-ar-terms-1">Configuring AR Terms</h1>
+<p>Your organization can define different terms for dealing with
+different customers or vendors, such as <em>Net 0</em> or <em>Net 10th
+Prox</em>. Each term is represented by a terms code.</p>
+<p>[Image: AR Terms form open to terms code Net0. The Due Type is set to
+days and the number of days is set to 0.]</p>
+<p>[Image: AR Terms form open to terms code Net10P. The due type is set
+to Prox, last day of the month is set to 25, and number of days is set
+to 10.]</p>
+<p>To define AR terms codes:</p>
+<ol type="1">
+<li><p>Access the AR Terms form (found in the Back Office menu under
+Accounts Receivable|Change).</p></li>
+<li><p>Enter the Terms Code. If you are creating a new code, use a code
+or ID that best represents the accounts receivable terms used by your
+organization. For example:</p></li>
+</ol>
+<ul>
+<li><p>Net0 for a net zero term (due immediately)</p></li>
+<li><p>Net10P for net 10th prox term (due by the tenth of the
+month)</p></li>
+</ul>
+<ol start="3" type="1">
+<li><p>Enter a clear and concise description of the term in the A/R
+Terms Desc field.</p></li>
+<li><p>Select the A/R Terms Due Type:</p></li>
+</ol>
+<ul>
+<li><p>Days - Terms due after a certain number of days</p></li>
+<li><p>Prox - Terms due on a day of the following month</p></li>
+</ul>
+<ol start="5" type="1">
+<li>If you selected Prox, enter the cutoff day in the field that begins
+“What is the last day of the month…”. This defines the cutoff date for
+the due date. Payments for invoices through this date are due by the
+specified day of the following month.</li>
+</ol>
+<p>If the due day is 10, the due date is the 10th of the following
+month. The cutoff day is the 25th of the current month, therefore:</p>
+<ul>
+<li><p>Invoices dated between June 1 through June 25 are due on July
+10.</p></li>
+<li><p>Invoices dated between June 26 and June 30 are due on August
+10.</p></li>
+</ul>
+<ol start="6" type="1">
+<li>In the Number of days or day of the month field:</li>
+</ol>
+<ul>
+<li><p>For Days, enter the number of days when the invoice is
+due.</p></li>
+<li><p>For Prox, enter the day of the month when the invoice is
+due.</p></li>
+</ul>
+<ol start="7" type="1">
+<li>Click Save.</li>
+</ol>
+<p>========================================================================</p>
+<h1 id="importing-auto-reconciliation-data">Importing Auto
+Reconciliation Data</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Auto_Check_Reconciliation_Load.htm
+Path:
+<code>PD/Accounting/Action/Auto_Check_Reconciliation_Load.htm</code></p>
+<h1 id="importing-auto-reconciliation-data-1">Importing Auto
+Reconciliation Data</h1>
+<p>Once your organization receives the reconciliation data file from
+your financial institution, use Auto Check Reconciliation Load to import
+the reconciliation data into PrismHR.</p>
+<p>[Image: Example of the Auto Check Reconciliation Load form]</p>
+<p>To run the Auto Check Reconciliation Load:</p>
+<ol type="1">
+<li><p>Click Back Office, then select Auto Check Reconciliation Load
+under Operations|Action.</p></li>
+<li><p>Select the Bank Media Format.</p></li>
+</ol>
+<p><strong>Note</strong>: The system can either leave unreconciled
+checks in the temporary file from a previous pass or clear the temporary
+file before proceeding. To ensure that you do not process duplicate
+data, the PrismHR Customer Support Team recommends that you either
+complete the previous pass or use the option to clear the data.</p>
+<p>The following print examples display each bank and file format
+required when selecting this option while using the Check Reconciliation
+Program in the Post Auto Reconciliations form.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Format</th>
+<th>Bank Name</th>
+<th>File Type</th>
+<th>File Format Structure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>Bank of America</td>
+<td>Fixed Length</td>
+<td>- Account Number - Starts in Position 1 (12 characters long) - Check
+Number - Starts in Position 14 (10 characters long) - Check Amount -
+Starts in Position 24 (12 characters long) - Check Clear Date - Starts
+in Position 36 (6 characters long) <strong>Note</strong>: This date
+indicates when the <em>bank</em> clears the check. MMDDYY format</td>
+</tr>
+<tr class="even">
+<td>- Account Number - Starts in Position 1 (12 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Number - Starts in Position 14 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Amount - Starts in Position 24 (12 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Clear Date - Starts in Position 36 (6 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>AA</td>
+<td>Bank of America</td>
+<td>Fixed Length</td>
+<td>- Check Number - Starts in Position 1 (10 characters long) - Check
+Amount - Starts in Position 11 (11 characters long) - Check Clear Date -
+Starts in Position 28 (6 characters long) <strong>Note</strong>: This
+date indicates when the <em>bank</em> clears the check. MMDDYY format -
+Account Number - Starts in Position 34 (10 characters long) - Record
+Type - Starts in Position 44 (1 character long)</td>
+</tr>
+<tr class="odd">
+<td>- Check Number - Starts in Position 1 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Amount - Starts in Position 11 (11 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Clear Date - Starts in Position 28 (6 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Account Number - Starts in Position 34 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Record Type - Starts in Position 44 (1 character long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>AB</td>
+<td>Bank of America (BAI format)</td>
+<td>Delimited Text (Tab)</td>
+<td>- Check Clear Date - Field 1 <strong>Note</strong>: This date
+indicates when the <em>bank</em> clears the check. - Account Number -
+Field 6 - Check Amount - Field 12 - Check Number - Field 13</td>
+</tr>
+<tr class="odd">
+<td>- Check Clear Date - Field 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Account Number - Field 6</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Field 12</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Number - Field 13</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>AMC</td>
+<td>Amcor</td>
+<td>Fixed Length</td>
+<td>- Check Number - Starts in Position 12 (9 characters long) - Check
+Clear Date - Starts in Position 22 (6 characters long) -
+<strong>Note</strong>: This date indicates when the <em>bank</em> clears
+the check. MMDDYY format - Check Amount - Starts in Position 29 (10
+characters long)</td>
+</tr>
+<tr class="even">
+<td>- Check Number - Starts in Position 12 (9 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Clear Date - Starts in Position 22 (6 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- <strong>Note</strong>: This date indicates when the <em>bank</em>
+clears the check.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Starts in Position 29 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>Bay Bank</td>
+<td>Fixed Length</td>
+<td>- Record Type - Starts in Position 1 (3 characters long) - Check
+Number - Starts in Position 14 (10 characters long) - Check Amount -
+Starts in Position 24 (10 characters long) - Check Clear Date - Starts
+in Position 40 (6 characters long) <strong>Note</strong>: This date
+indicates when the <em>bank</em> clears the check. MMDDYY format</td>
+</tr>
+<tr class="odd">
+<td>- Record Type - Starts in Position 1 (3 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Number - Starts in Position 14 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Starts in Position 24 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Starts in Position 40 (6 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>BW</td>
+<td>Bank of The West</td>
+<td>Fixed Length</td>
+<td>- Account Number - Starts in Position 2 (9 characters long) - Check
+Number - Starts in Position 11 (10 characters long) - Check Amount -
+Starts in Position 21 (10 characters long) - Check Month - Starts in
+Position 37 (2 characters long) - Check Day - Starts in Position 39 (2
+characters long) - Check Year - Starts in Position 41 (2 characters
+long) - Record Type - Starts in Position 61 (1 character long)</td>
+</tr>
+<tr class="even">
+<td>- Account Number - Starts in Position 2 (9 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Number - Starts in Position 11 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Amount - Starts in Position 21 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Month - Starts in Position 37 (2 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Day - Starts in Position 39 (2 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Year - Starts in Position 41 (2 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Record Type - Starts in Position 61 (1 character long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Chemical Bank</td>
+<td>Fixed Length</td>
+<td>- Check Number - Starts in Position 1 (10 characters long) - Check
+Amount - Starts in Position 11 (11 characters long) - Account Number -
+Starts in Position 22 (9 characters long) - Check Clear Date - Starts in
+Position 31 (6 characters long) <strong>Note</strong>: This date
+indicates when the <em>bank</em> clears the check. MMDDYY format</td>
+</tr>
+<tr class="even">
+<td>- Check Number - Starts in Position 1 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Starts in Position 11 (11 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Account Number - Starts in Position 22 (9 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Clear Date - Starts in Position 31 (6 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>CH</td>
+<td>Chase</td>
+<td>Delimited Text (Tab)</td>
+<td>- Record Type - Field 1 - Check Clear Date - Field 2
+<strong>Note</strong>: This date indicates when the <em>bank</em> clears
+the check. YYYYMMDD format - Check Number - Field 3 - Check Amount -
+Field 4</td>
+</tr>
+<tr class="odd">
+<td>- Record Type - Field 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Field 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Number - Field 3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Amount - Field 4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>CZ</td>
+<td>Citizens Bank</td>
+<td>Delimited Text (Tab)</td>
+<td>- Check Clear Date - Field 1 <strong>Note</strong>: This date
+indicates when the <em>bank</em> clears the check. - Account Number -
+Field 4 - Check Amount - Field 8 - Check Number - Field 10</td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Field 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Account Number - Field 4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Amount - Field 8</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Number - Field 10</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>E</td>
+<td>Escheated Check</td>
+<td>Comma Delimited (CSV)</td>
+<td>- Bank Account - Accepting PrismHR Bank Accounts Account ID - Check
+Number - Check Amount - Check Clear Date <strong>Note</strong>: This
+date indicates when the <em>bank</em> clears the check.</td>
+</tr>
+<tr class="odd">
+<td>- Bank Account - Accepting PrismHR Bank Accounts Account ID</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Number</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>F</td>
+<td>First Union</td>
+<td>Fixed Length</td>
+<td>- Check Clear Date - Starts in Position 2 (8 characters long)
+<strong>Note</strong>: This date indicates when the <em>bank</em> clears
+the check. MM/DD/YY format - Check Amount - Starts in Position 11 (19
+characters long) - Check Number - Starts in Position 30 (12 characters
+long)</td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Starts in Position 2 (8 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Starts in Position 11 (19 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Number - Starts in Position 30 (12 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>H</td>
+<td>Hancock</td>
+<td>Delimited Text (Tab)</td>
+<td>- Check Clear Date - Field 1 <strong>Note</strong>: This date
+indicates when the <em>bank</em> clears the check. - Account Number -
+Field 4 - Check Amount - Field 8 - Check Number - Field 9</td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Field 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Account Number - Field 4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Amount - Field 8</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Number - Field 9</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>K</td>
+<td>Key Corp</td>
+<td>Fixed Length</td>
+<td>- Account Number - Starts in Position 1 (15 characters long) - Check
+Number - Starts in Position 16 (10 characters long) - Check Amount -
+Starts in Position 26 (10 characters long) - Check Clear Date - Starts
+in Position 36 (6 characters long) <strong>Note</strong>: This date
+indicates when the <em>bank</em> clears the check. MMDDYY format</td>
+</tr>
+<tr class="odd">
+<td>- Account Number - Starts in Position 1 (15 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Number - Starts in Position 16 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Starts in Position 26 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Starts in Position 36 (6 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>M</td>
+<td>Merrill Lynch</td>
+<td>Delimited Text (Tab)</td>
+<td>- Check Clear Date - Field 4 <strong>Note</strong>: This date
+indicates when the <em>bank</em> clears the check. MM/DD/YYYY format -
+Check Amount - Field 10 - Check Number - Field 13</td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Field 4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Field 10</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Number - Field 13</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>N</td>
+<td>Nations Bank</td>
+<td>Fixed Length</td>
+<td>- Account Number - Starts in Position 1 (12 characters long) - Check
+Number - Starts in Position 16 (10 characters long) - Check Amount -
+Starts in Position 26 (12 characters long) - Check Clear Date - Starts
+in Position 38 (6 characters long) <strong>Note</strong>: This date
+indicates when the <em>bank</em> clears the check.</td>
+</tr>
+<tr class="even">
+<td>- Account Number - Starts in Position 1 (12 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Number - Starts in Position 16 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Amount - Starts in Position 26 (12 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Clear Date - Starts in Position 38 (6 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>S</td>
+<td>Suntrust</td>
+<td>Fixed Length</td>
+<td>- Account Number - Starts in Position 1 (10 characters long) - Check
+Number - Starts in Position 11 (10 characters long) - Check Amount -
+Starts in Position 21 (10 characters long) - Check Clear Date - Starts
+in Position 31 (6 long) <strong>Note</strong>: This date indicates when
+the <em>bank</em> clears the check. MMDDYY format</td>
+</tr>
+<tr class="odd">
+<td>- Account Number - Starts in Position 1 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Number - Starts in Position 11 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Starts in Position 21 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Starts in Position 31 (6 long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>T</td>
+<td></td>
+<td>Delimited Text (Tab)</td>
+<td>- Check Number - Field 1 - Check Amount - Field 2 - Check Clear Date
+- Field 3 <strong>Note</strong>: This date indicates when the
+<em>bank</em> clears the check.</td>
+</tr>
+<tr class="even">
+<td>- Check Number - Field 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Field 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Field 3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>W</td>
+<td>Wells Fargo</td>
+<td>Fixed Length</td>
+<td>- Check Number - Starts in Position 1 (10 characters long) - Check
+Clear Date - Starts in Position 11 (6 characters long)
+<strong>Note</strong>: This date indicates when the <em>bank</em> clears
+the check. MMDDYY format - Check Amount - Starts in Position 17 (10
+characters long)</td>
+</tr>
+<tr class="even">
+<td>- Check Number - Starts in Position 1 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Clear Date - Starts in Position 11 (6 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Amount - Starts in Position 17 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>WC</td>
+<td>Wells Fargo Comma</td>
+<td>Delimited Text (Tab)</td>
+<td>- Account Number - Field 1 - Check Amount - Field 2 - Check Clear
+Date - Field 3 <strong>Note</strong>: This date indicates when the
+<em>bank</em> clears the check. - Check Number - Field 4</td>
+</tr>
+<tr class="even">
+<td>- Account Number - Field 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Field 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Field 3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Number - Field 4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>WF</td>
+<td>Wells Fargo</td>
+<td>Fixed Length</td>
+<td>- Check Number - Starts in Position 4 (10 characters long) - Check
+Clear Date - Starts in Position 17 (6 characters long)
+<strong>Note</strong>: This date indicates when the <em>bank</em> clears
+the check. MMDDYY format - Check Amount - Starts in Position 23 (10
+characters long)</td>
+</tr>
+<tr class="odd">
+<td>- Check Number - Starts in Position 4 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>- Check Clear Date - Starts in Position 17 (6 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>- Check Amount - Starts in Position 23 (10 characters long)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li><p>Select the checkbox if you want to clear any data that already
+exists in the temporary reconciliation file. For example, you would
+select this when there are checks with some discrepancy that have not
+yet been reconciled.</p></li>
+<li><p>Enter each Checking Account Number included in the data file that
+you are ready to reconcile. This account number represents an account in
+PrismHR and may not match the actual bank account number.</p></li>
+<li><p>If there are any accounts that you do not want to reconcile at
+this time, enter them in the Exclude Account# table. The system will not
+display error messages for those accounts during processing.</p></li>
+<li><p>Click Import.</p></li>
+<li><p>In the Upload a File window, click Choose File.</p></li>
+<li><p>Navigate to the location where you saved the reconciliation data
+file, and then click Open.</p></li>
+<li><p>Click Submit in the Upload a File window.</p></li>
+<li><p>Click Close in the successful upload message.</p></li>
+</ol>
+<p>The Uploading Check Reconciliation Data form displays the processing
+steps.</p>
+<p>[Image: Example of a few processing steps, with date and time
+stamps.]</p>
+<ol start="11" type="1">
+<li>When the import is complete, click the Close button.</li>
+</ol>
+<p>The summary of the reconciliation report displays on the right side
+of the Auto Check Reconciliation Load form.</p>
+<p>[Image: Auto Check Reconciliation Load form with the Reconciliation
+Report box in the upper right corner. The box displays information about
+the completed process.]</p>
+<p>Next Step</p>
+<p><a href="Reconciliation_Report_for_Auto_Recon.htm">Reviewing Auto
+Reconciled Checks</a></p>
+<p>========================================================================</p>
+<h1 id="entering-cash-receipts">Entering Cash Receipts</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Cash_Receipts_Entry.htm
+Path: <code>PD/Accounting/Action/Cash_Receipts_Entry.htm</code></p>
+<h1 id="entering-cash-receipts-1">Entering Cash Receipts</h1>
+<p>Use the Cash Receipts form to enter new batches of cash receipts or
+edit existing ones and upload a file for import.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> When you enter a debit
+invoice that is greater than the deposit amount, you must enter credit
+invoices first. Otherwise, the system generates an error.</p>
+</blockquote>
+<h2 id="using-post-and-clear-buttons">Using Post and Clear Buttons</h2>
+<ul>
+<li><p>Post: Click to post the cash receipts batch when the deposit is
+complete.</p></li>
+<li><p>Clear: Click to save the cash receipts batch. The system adds it
+to the list of open batches at the top of the Cash Receipts
+form.</p></li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<p>To enter cash receipts:</p>
+<ol type="1">
+<li>Access the Cash Receipts form (found in the Back Office menu under
+Accounts Receivable|Action).</li>
+</ol>
+<p>[Image: Cash Receipts form showing open batches at the top of the
+screen. The table includes deposit date, last worked date, batch owner,
+and total deposit.]</p>
+<ol start="2" type="1">
+<li>Use the form to edit a new or existing cash receipts batch and
+upload a file for import:</li>
+</ol>
+<ul>
+<li><p>To open an existing batch, click the Batch ID in the Cash
+Receipts panel.</p></li>
+<li><p>To start a new cash receipts batch, click New deposit in the
+Receipt Entry panel.</p></li>
+<li><p>To open the Cash Receipts Import form to upload a file for import
+and view errors that occurred during cash receipts imports or view
+successfully imported rows, click the Import icon ( [Image: screenshot]
+). (<a href="Cash_Receipts_Import.htm">See Importing and Posting Cash
+Receipts</a>.)</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>This feature is only available for service providers.</p></li>
+<li><p>Users whose user role is set to FULL or INQUIRY for the Cash
+Receipts form, but whose user role is also set to DENY for the Cash
+Receipts Import form cannot view the Import icon ( [Image: screenshot] )
+on the Cash Receipts form.</p></li>
+<li><p>Users whose role is set to INQUIRY for the Cash Receipts form can
+select the Import icon ( [Image: screenshot] ), but the Cash Receipts
+Import form will display in read-only format.</p></li>
+</ul>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li><p>The Deposit number populates automatically. You can edit
+it.</p></li>
+<li><p>Enter the Bank ID.</p></li>
+<li><p>You can enter the Deposit Date, or allow the system to populate
+it automatically with the current date.</p></li>
+<li><p>Enter a Deposit Description, if desired. For example, you can
+enter the reason for the transaction or the actual date if it is
+different from the posting date. There are two lines that you can
+use.</p></li>
+</ol>
+<p>[Image: Deposit Details grid with two lines entered. The first
+Customer Line has some example invoice details entered. The second line
+is ‘Additional’ type and includes a second invoice number, which updates
+the calculated totals.]</p>
+<ol start="7" type="1">
+<li>Enter the initial Deposit Detail information:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Line Type</td>
+<td>Select the appropriate deposit line type. The first line must
+beCustomer. If the deposit applies to multiple items under the same
+customer, use Additional to add more lines for the same customer and
+deposit. You cannot enter a different deposit type, amount, reference,
+or customer. Proceed to the Invoice Number field.</td>
+</tr>
+<tr class="even">
+<td>Deposit Type</td>
+<td>Select the appropriate deposit type.</td>
+</tr>
+<tr class="odd">
+<td>Deposit Amount</td>
+<td>Enter the total deposit amount.</td>
+</tr>
+<tr class="even">
+<td>Deposit Reference</td>
+<td>Enter the unique reference ID, which can include alphanumeric
+characters but not spaces.</td>
+</tr>
+<tr class="odd">
+<td>Customer ID</td>
+<td>Enter the customer ID here. The customer’s Outstanding Invoices
+display.</td>
+</tr>
+<tr class="even">
+<td>Customer Name</td>
+<td>Defaults to the name associated with the Customer ID.
+<strong>Note</strong>: You can change this if the name on the check is
+different.</td>
+</tr>
+<tr class="odd">
+<td>Posting Type</td>
+<td>Select the appropriate type. Posting types are established on the
+Cash Receipt Rules form. <strong>Note</strong>: For invoices, select the
+posting type you configured for invoices. Otherwise, select the posting
+type defined for the transaction you are entering.</td>
+</tr>
+<tr class="even">
+<td>Invoice Number</td>
+<td>Click an invoice number in the Outstanding Invoices list to add its
+information to the line. Otherwise, continue entering information. - You
+can select Invoices matching deposit amount to filter the Outstanding
+Invoices and show only the ones that match the deposit amount. - Click
+Reload outstanding invoices [Image: screenshot] in the Deposit Detail
+panel to see the remaining balance on the invoices included in this
+batch. [Image: Outstanding Invoices list filtered for ‘All Invoices’.
+The two invoices added to the cash posting have checkmarks next to their
+IDs.]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>You can select Invoices matching deposit amount to filter the
+Outstanding Invoices and show only the ones that match the deposit
+amount.</li>
+<li>Click Reload outstanding invoices [Image: screenshot] in the Deposit
+Detail panel to see the remaining balance on the invoices included in
+this batch.</li>
+</ul>
+<ol start="8" type="1">
+<li>Review the calculated balance fields, and continue entering details
+as needed:</li>
+</ol>
+<ul>
+<li><p>The Current Invoice Balance displays the total amount of the
+invoice.</p></li>
+<li><p>The Amount value populates based on the deposit amount and
+invoice amount.</p></li>
+</ul>
+<p>If the deposit amount is the same as or greater than the invoice,
+then the amount is the same as the invoice.</p>
+<p>If the deposit amount is less than the invoice, then the amount is
+equal to the remaining deposit amount.</p>
+<ul>
+<li><p>The Leaving column displays the remaining balance on the
+invoice.</p></li>
+<li><p>The first row for the customer displays the Deposit Remaining
+amount, which is the difference between the amount and the total of the
+Amount column for the client.</p></li>
+</ul>
+<ol start="9" type="1">
+<li>If you are done entering invoice details, click Post.</li>
+</ol>
+<p>Otherwise, click Clear – the system saves your progress as an open
+batch at the top of the form.</p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/AR_UG_Chapter_Cash_Receipts_Balances.htm">Working
+with Cash Receipts and Balances</a></p>
+<p><a href="Invoice_WriteOff.htm">Writing Off an Invoice</a></p>
+<p><a href="Cash_Receipts_Rules_Misc.htm">Setting Cash Receipt
+Rules</a></p>
+<p><a href="Cash_Receipts_Import.htm">Importing and Posting Cash
+Receipts</a></p>
+<p>========================================================================</p>
+<h1 id="importing-and-posting-cash-receipts">Importing and Posting Cash
+Receipts</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Cash_Receipts_Import.htm
+Path: <code>PD/Accounting/Action/Cash_Receipts_Import.htm</code></p>
+<h1 id="importing-and-posting-cash-receipts-1">Importing and Posting
+Cash Receipts</h1>
+<p>You can use the Cash Receipts Import form to quickly import and post
+cash receipts in the system. For example:</p>
+<p>[Image: screenshot]</p>
+<p>To perform an import using the Cash Receipts Import form, simply
+upload a file for import and then view any errors that occurred during
+the import or view successfully imported rows.</p>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>This form is only available for service providers.</p></li>
+<li><p>You can access this form by selecting Cash Receipts Import on the
+Accounts Receivable|Action menu or by selecting the Import icon (
+[Image: screenshot] ) on the Cash Receipts form.</p></li>
+<li><p>Client Access Group security is enabled on this form.</p></li>
+</ul>
+<p>To import cash receipts:</p>
+<ol type="1">
+<li><p>Select Download Spreadsheet Template to download a .csv file to
+your computer that contains the cash receipts import headings in row 1.
+A separate window displays the downloaded file link.</p></li>
+<li><p>Click Open File. The spreadsheet template displays, where you can
+enter the cash receipts information.</p></li>
+</ol>
+<p><strong>Note</strong>: All columns in this spreadsheet are
+<em>required</em> except for the Description 1 and Description 2
+columns.</p>
+<p>The spreadsheet template contains the following columns:</p>
+<p>Column — Description</p>
+<p>Client Number — The client number associated with the deposit.</p>
+<p>Bank ID — The bank ID associated with the deposit.
+<strong>Note</strong>: The system uses the Bank ID from the first row in
+the import file for all Cash Receipts imports on the file.</p>
+<p>Deposit Date — The deposit date associated with the deposit.</p>
+<p>Description 1 — The description associated with the deposit
+(optional).</p>
+<p>Description 2 — The description associated with the deposit
+(optional).</p>
+<p>Deposit Number — The deposit number associated with the deposit.</p>
+<p>Line Type — The line type associated with the deposit.</p>
+<p>Deposit Type — The type of deposit.</p>
+<p>Deposit Amount — The total amount that was deposited.</p>
+<p>Deposit Reference — The unique reference ID associated with the
+deposit, which can include alphanumeric characters, but not spaces.</p>
+<p>Posting Type — The posting type associated with the deposit. (Posting
+types are established on the Cash Receipt Rules form.)</p>
+<p>Invoice Number — The invoice number associated with the deposit.</p>
+<p>Amount — The amount that is applied to the deposit.</p>
+<ol start="3" type="1">
+<li><p>Select Upload File. Click Add Files and select the file to
+upload, then click Start Upload.</p></li>
+<li><p>Click Close. The uploaded filename displays.</p></li>
+<li><p>Select Preview Data. Information displays on the following
+tabs:</p></li>
+</ol>
+<ul>
+<li><p>Errors: Any cash receipts errors from the import process display
+on this tab. Click Error Report to view them. (A browser window opens
+where you can download the .csv file that contains the errors.)</p></li>
+<li><p>File Content: Any successful rows from the import process display
+on this tab.</p></li>
+</ul>
+<p><strong>Note</strong>: If you select Preview Data before uploading
+the file, no information displays.</p>
+<ol start="6" type="1">
+<li>Click Import Cash Receipts to post the cash receipts that display on
+the File Content tab. The “File content successfully imported” message
+displays. Click OK.</li>
+</ol>
+<p><strong>Note</strong>: Any additional errors that occur during the
+posting display in the existing errors list on the Errors tab.</p>
+<p>Related Topics</p>
+<p><a href="Cash_Receipts_Entry.htm">Entering Cash Receipts</a></p>
+<p><a href="Cash_Receipts_Rules_Misc.htm">Setting Cash Receipt
+Rules</a></p>
+<p>========================================================================</p>
+<h1 id="setting-cash-receipt-rules">Setting Cash Receipt Rules</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Cash_Receipts_Rules_Misc.htm
+Path: <code>PD/Accounting/Action/Cash_Receipts_Rules_Misc.htm</code></p>
+<h1 id="setting-cash-receipt-rules-1">Setting Cash Receipt Rules</h1>
+<p>Use the Cash Receipt Rules form to enter the posting types for the
+cash receipts that your organization processes, along with the G/L
+account to use for each cash receipt posting type.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> When you enter a debit
+invoice that is greater than the deposit amount, you must enter credit
+invoices first. Otherwise, the system generates an error.</p>
+</blockquote>
+<p>[Image: Cash Receipt Rules form, with several items in the grid.
+Invoice/INVOICE in the first row. Reversal/15.0555 in the second.
+Write-Off/16.09812 in the third.]</p>
+<p>To configure cash receipt rules:</p>
+<ol type="1">
+<li><p>Access the Cash Receipt Rules form (found in the Back Office menu
+under Accounts Receivable|Action).</p></li>
+<li><p>For each of the G/L accounts:</p></li>
+</ol>
+<ul>
+<li><p>Enter the Posting Description.</p></li>
+<li><p>In Post to GL Account: enter INVOICE for the posting type used to
+process invoices.</p></li>
+</ul>
+<p>Otherwise, enter the G/L account number for other types of cash
+receipts transactions.</p>
+<ol start="3" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Related Topic</p>
+<p><a href="Cash_Receipts_Entry.htm">Entering Cash Receipts</a></p>
+<p><a href="Cash_Receipts_Import.htm">Importing and Posting Cash
+Receipts</a></p>
+<p>========================================================================</p>
+<h1 id="clearing-the-positive-pay-file-indicator">Clearing the Positive
+Pay File Indicator</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Clear%20Positive%20Pay%20File%20Indicator.htm
+Path:
+<code>PD/Accounting/Action/Clear Positive Pay File Indicator.htm</code></p>
+<h1 id="clearing-the-positive-pay-file-indicator-1">Clearing the
+Positive Pay File Indicator</h1>
+<p>This process clears the positive pay file ID indicator from all check
+register records. It is typically used during the testing of the
+Positive Pay functionality.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> <strong>This form does
+not use Client Access Group Security.</strong></p>
+</blockquote>
+<p>To access the form, click Back Office &gt; Operations|Action &gt;
+Clear Positive Pay File Indicator.</p>
+<p>To clear the Positive Pay file indicator</p>
+<ol type="1">
+<li><p>Click Clear Positive Pay Indicator. A progress window opens that
+shows the number of records processed and notifies you when the process
+is complete. The Close and Report buttons remain disabled while the
+report is being generated.</p></li>
+<li><p>Click Close to close the window.</p></li>
+<li><p>Click Report to display the Job Control Status Report
+window.</p></li>
+<li><p>In the Job Control Status Report window, click the XLS link to
+download the report.</p></li>
+</ol>
+<p>========================================================================</p>
+<h1 id="configuring-ar-customer-details">Configuring AR Customer
+Details</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Customer_Details.htm
+Path: <code>PD/Accounting/Action/Customer_Details.htm</code></p>
+<h1 id="configuring-ar-customer-details-1">Configuring AR Customer
+Details</h1>
+<p>Use Customer Details to maintain the customer address and contact
+information for collection purposes, view the current representation of
+aging for the customer, and edit the credit limit rules.</p>
+<p>The form displays the information for the currently selected
+client.</p>
+<p>To access this form, open the Back Office menu and select Customer
+Details under Accounts Receivable|Change.</p>
+<p>[Image: Customer Details panel for an example client. Shows the
+client address and the A/R Terms Code set to “Net 10th Prox”]</p>
+<p>To set up basic customer details:</p>
+<ol type="1">
+<li><p>Locate the Customer Details panel at the top of the form. The
+Customer number displays.</p></li>
+<li><p>Edit the customer name and address as needed.</p></li>
+<li><p>Enter the Customer Group used to prepare agings to which this
+customer belongs, if any.</p></li>
+<li><p>Select the A/R Terms Code.</p></li>
+</ol>
+<h2 id="contacts">Contacts</h2>
+<p>Use the Contacts panel to maintain customer contacts.</p>
+<p>[Image: Customer contacts panel showing one row labeled “MAIN NUMBER”
+along with an example phone number.]</p>
+<ol start="5" type="1">
+<li>For each contact at the customer:</li>
+</ol>
+<ul>
+<li><p>Enter the Contact Name.</p></li>
+<li><p>Enter the Phone number.</p></li>
+<li><p>Enter the Extension, if any.</p></li>
+<li><p>Enter the Email address.</p></li>
+</ul>
+<h2 id="aging">Aging</h2>
+<p>The Aging panel displays your organization’s operations aging
+information for the customer.</p>
+<p>[Image: Example of the Aging panel, showing different aging bucket
+descriptions in each row (read only column). The Aging Buckets column is
+empty.]</p>
+<ul>
+<li><p>The Bucket Desc column shows the descriptions for each of the
+buckets.</p></li>
+<li><p>The Aging Buckets column displays the amount in each
+bucket.</p></li>
+</ul>
+<h2 id="credit-details">Credit Details</h2>
+<p>Use the Credit Details panel to maintain credit rules, if that
+applies to this customer.</p>
+<p>[Image: Customer Credit Details panel showing the available fields.
+Max Credit is set to 45,000 and in the Limit Rules grid, there is a row
+for a “Flat Amount” also equal to 45,000.]</p>
+<ol start="6" type="1">
+<li><p>The panel displays the customer’s current Credit Limit, Balance
+Due, and Available Credit.</p></li>
+<li><p>Enter the Max Credit, which is the maximum credit limit allowed.
+If you leave this field blank, there is no credit limit.</p></li>
+<li><p>Select Client On Hold if this customer is on a credit hold. The
+option indicates a manual hold, not the automatic hold.</p></li>
+<li><p>Set the limit rules:</p></li>
+</ol>
+<ul>
+<li><p>Select each of the Limit Rules that determines what the credit
+limit should be and how far the client is allowed to go outside those
+limits, if at all.</p></li>
+<li><p>Enter the Limit Amt that applies to the limit rule.</p></li>
+</ul>
+<ol start="10" type="1">
+<li>For each limit review:</li>
+</ol>
+<ul>
+<li><p>Enter the Limit Review Date when you conducted the review of the
+credit limit.</p></li>
+<li><p>Enter the Limit Review By name or user name.</p></li>
+<li><p>Enter the Limit Review Description/Override.</p></li>
+</ul>
+<p>If the customer is put on credit hold, enter OVERRIDE and then any
+additional comments.</p>
+<p>Otherwise, enter any comments about the limit review.</p>
+<ol start="11" type="1">
+<li>Click Save.</li>
+</ol>
+<h2 id="invoices">Invoices</h2>
+<p>Users can click the Invoices button to view the client’s invoices. <a
+href="../../Company/View/Invoices.htm">See Reviewing Invoice
+Information</a> for details.</p>
+<p>========================================================================</p>
+<h1 id="using-the-external-invoice-post-feature">Using the External
+Invoice Post Feature</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/External_Invoice_Post.htm
+Path: <code>PD/Accounting/Action/External_Invoice_Post.htm</code></p>
+<h1 id="using-the-external-invoice-post-feature-1">Using the External
+Invoice Post Feature</h1>
+<p>When users process a payroll batch, the system looks at the pay date
+and the employer ID and adds it to a file of transactions. All payrolls
+processed with the same pay date and employer ID are compiled into one
+entry in the Export Invoice Update form (part of the External Invoice
+Post feature). When you look at the data in the report, it is listed by
+client number and invoice date. The import file includes the details by
+account number.</p>
+<p>The External Invoice Update form displays:</p>
+<ul>
+<li><p>Select: Use these checkboxes to select individual line(s) to
+process</p></li>
+<li><p>TranDate: Date of the payroll (transaction date)</p></li>
+<li><p>Co No: Employer ID</p></li>
+<li><p>Invoice Amt: Total invoice amount</p></li>
+<li><p>Count: Invoice count for date and employer</p></li>
+<li><p>Receipt Amt: Total receipt amount</p></li>
+<li><p>Count: Receipt count for date and employer</p></li>
+<li><p>Available Invoice Total: Totals of the Invoice Amt and Count
+columns</p></li>
+<li><p>Available Receipt Total: Totals of the Receipt Amt and Count
+columns</p></li>
+<li><p>Show Receipts: Use this checkbox to display ACH receipts for the
+following accounting types:</p></li>
+<li><p>Great Plains / Dymamics (with or without Build Account
+#’s)</p></li>
+<li><p>Quick Books (with or without Build Account #’s)</p></li>
+<li><p>Peach Tree / Sage (with or without Build Account #’s)</p></li>
+<li><p>Itacct (with or without Build Account #’s)</p></li>
+</ul>
+<p>The following example illustrates the External Invoice Post form.</p>
+<p>[Image: This is the External Invoice Post form]</p>
+<ul>
+<li><p>To view the External Invoice Detail report for only one
+transaction date at a time, click the TranDate.</p></li>
+<li><p>To view the External Invoice Detail report for one or more than
+one transaction dates, select them and click the Report button. The
+Report button will display only after at least one line item (TranDate)
+has been selected.</p></li>
+</ul>
+<p>This report is not available in any menu. If you might need to refer
+to it again in the future, print or save a copy of the report.</p>
+<p>[Image: The External Invoice Detail report]</p>
+<ul>
+<li>To create the file that you will use to import the information into
+your financial accounting system:</li>
+</ul>
+<ol type="1">
+<li><p>Select each line that you want to process, or Select All to
+include all lines.</p></li>
+<li><p>Click Process Batch.</p></li>
+<li><p>Click Yes in the confirmation message to proceed with the
+process, otherwise click No to return to the Export Invoice Update
+form.</p></li>
+<li><p>If you clicked Yes, the system builds the external journal
+posting file.</p></li>
+<li><p>When the process completes, click Close. (The button enables when
+the process is complete.)</p></li>
+</ol>
+<p>[Image: Process dialog for “Building External Invoice Posting
+File”]</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> All dates and times in
+PrismHR are Central Time.</p>
+</blockquote>
+<ol start="6" type="1">
+<li><p>When the process completes, click Close.</p></li>
+<li><p>The action of saving the file varies depending on your browser
+preferences. Some typical examples are that the system will prompt you
+with a Save As dialog, or merely ask you to confirm that you want to
+save the ZIP file, or it might simply download the file to your default
+location.</p></li>
+</ol>
+<p>Once you save the file, the processed transaction(s) no longer
+display in the Export Journal Update form.</p>
+<ol start="8" type="1">
+<li><p>When you navigate to the location where you saved the ZIP file.
+Inside it contains text files with the format INVmmddyyERID.xxx (where
+mmddyy is the month, day, and year, ERID is the employer ID, and xxx is
+the type of file created).</p></li>
+<li><p>Import the file into your accounting software as directed by that
+product’s requirements.</p></li>
+</ol>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/AR_UG_Chapter_Integrate_Acct_Sys.htm">Accounting
+System Integration</a></p>
+<p><a href="External_Journal_Post.htm">Examining External Journal Posts
+and External Cash Transfer Posts</a></p>
+<p><a href="../Setup/Global_Accounting_Parameters.htm">Setting Global
+Accounting Parameters</a></p>
+<p>========================================================================</p>
+<h1
+id="examining-external-journal-posts-and-external-cash-transfer-posts">Examining
+External Journal Posts and External Cash Transfer Posts</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/External_Journal_Post.htm
+Path: <code>PD/Accounting/Action/External_Journal_Post.htm</code></p>
+<h1
+id="examining-external-journal-posts-and-external-cash-transfer-posts-1">Examining
+External Journal Posts and External Cash Transfer Posts</h1>
+<p>When users process a payroll batch, the system looks at the pay date
+and the employer ID or cash transfers and adds it to a file of
+transactions. All payrolls processed with the same pay date and employer
+ID or cash transfers are compiled into one entry in the Export Journal
+Update panel and the Export Journal Update Cash Transfers panel (part of
+the External Journal Posting and External Cash Transfer Posting
+features, respectively). When you look at the data in the import file or
+report, however, it is broken down by the client and pay date or by cash
+transfer.</p>
+<p><strong>Note</strong>: You can capture Third-Party Check Reporting
+for Corporate clients using the External Journal Post
+(Corporate/Staffing) form.</p>
+<p>The Export Journal Update panel displays:</p>
+<ul>
+<li><p>Select: Use these checkboxes to select individual line(s) to
+process</p></li>
+<li><p>TranDate: Date of the payroll (transaction date)</p></li>
+<li><p>Co No: Employer ID</p></li>
+<li><p>Debit Amt: Total debit amount</p></li>
+<li><p>Count: Debit count for date and employer</p></li>
+<li><p>Credit Amt: Total credit amount</p></li>
+<li><p>Count: Credit count for date and employer</p></li>
+<li><p>Debit Total: Totals of the Debit Amt and Count columns</p></li>
+<li><p>Credit Total: Totals of the Credit Amt and Count columns</p></li>
+</ul>
+<p>For external journal postings involving the pay date and the employer
+ID, access these from the External Journal Post form. (Click Back
+Office. Select External Journal Post from the Operations|Action menu.)
+The following panel displays:</p>
+<p>[Image: Export Journal Update form, listing a number of transactions.
+The top two are selected.]</p>
+<p>For external journal postings involving cash transfers, access these
+from the External Journal Post form. (Click Back Office. Select External
+Cash Transfer Post from the Operations|Action menu.) The following panel
+displays:</p>
+<p>[Image: Export Journal Update grid for Cash Transfers, with several
+transactions selected.]</p>
+<ul>
+<li><p>To view the Accounting Journal Detail Report for one transaction
+date, click the TranDate.</p></li>
+<li><p>To view the Accounting Journal Detail Report for more than one
+transaction date, select them and click the Report button. The Report
+button will become visible only after you have selected at least one or
+more transaction dates.</p></li>
+</ul>
+<p>[Image: Accounting Journal Detail report, showing Journal ID, Pay
+Date, Period, Account Number, Debit Amount, Credit Amount, and
+totals.]</p>
+<ul>
+<li>To create the file that you will use to import the information into
+your financial accounting system:</li>
+</ul>
+<ol type="1">
+<li><p>Select each line that you want to process, or Select All to
+include all lines.</p></li>
+<li><p>Click Process Batch.</p></li>
+<li><p>Click Yes in the confirmation message to proceed with the
+process, otherwise click No to return to the Export Journal Update
+form.</p></li>
+<li><p>If you clicked Yes, the system builds the external journal
+posting file.</p></li>
+<li><p>When the process completes, click Close. (The button enables when
+the process is complete.)</p></li>
+</ol>
+<p>[Image: Buliding External Journal Posting File process screen.]</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> All dates and times in
+PrismHR are Central Time.</p>
+</blockquote>
+<ol start="6" type="1">
+<li><p>When the process completes, click Close.</p></li>
+<li><p>The action of saving the file varies depending on your browser
+preferences. Some typical examples are that the system will prompt you
+with a Save As dialog, or merely ask you to confirm that you want to
+save the ZIP file, or it might simply download the file to your default
+location.</p></li>
+</ol>
+<p><strong>Note</strong>: Once you save the file, the processed
+transaction(s) no longer display in the Export Journal Update form.</p>
+<ol start="8" type="1">
+<li><p>Navigate to the location where you saved the ZIP file. Inside it
+contains text files with the format JRNmmddyyERID.xxx (where mmddyy is
+the month, day, and year, ERID is the employer ID, and xxx is the type
+of file created).</p></li>
+<li><p>Import the file into your accounting software as directed by that
+product’s requirements.</p></li>
+</ol>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/AR_UG_Chapter_Integrate_Acct_Sys.htm">Accounting
+System Integration</a></p>
+<p><a href="External_Invoice_Post.htm">Using the External Invoice Post
+Feature</a></p>
+<p>========================================================================</p>
+<h1 id="downloading-great-plains-check-or-customer-files">Downloading
+Great Plains Check or Customer Files</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Great-Plains-Customer-Export.htm
+Path:
+<code>PD/Accounting/Action/Great-Plains-Customer-Export.htm</code></p>
+<h1 id="downloading-great-plains-check-or-customer-files-1">Downloading
+Great Plains Check or Customer Files</h1>
+<p>The Great Plains Check Export form and the Great Plains Customer
+Export form are combined on a single form called Great Plains
+Export.</p>
+<p>To access this form:</p>
+<ol type="1">
+<li><p>Click Back Office.</p></li>
+<li><p>From Operations|Action, click Great Plains Export.</p></li>
+<li><p>Select a Download Type (Great Plains Check Export or Great Plains
+Customer Export.</p></li>
+</ol>
+<h2 id="check-export">Check Export</h2>
+<p>If you select Great Plains Check Export, the following options are
+added to the Great Plains Export form. Once these options are filled in,
+click Build to perform the export process. When the build process is
+complete, a hyperlink called Download Great Plains Check Export is
+available.</p>
+<p>Field — Description</p>
+<p>Starting Check Date — Required field. Starting date to include in the
+check export file.</p>
+<p>Ending Check Date — Required field. Ending date to include in the
+check export file.</p>
+<p>Checking Account — Checking account these checks are drawn on.</p>
+<p>Include Voided Checks in Date Range? — Enabled by default; includes
+any voided checks in the specified date range.</p>
+<p>Report every item, even if previously reported? — Disabled by
+default; reports items in the date range, even if they were previously
+reported.</p>
+<p>Do you want to mark these items as reported? — Enabled by default;
+marks items in the export file as reported.</p>
+<h2 id="customer-export">Customer Export</h2>
+<p>If you select Great Plains Customer Export, the Build option is
+enabled. When the build process is complete, a link called Download
+Great Plains Customer Export is available.</p>
+<p>========================================================================</p>
+<h1 id="writing-off-an-invoice">Writing Off an Invoice</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Invoice_WriteOff.htm
+Path: <code>PD/Accounting/Action/Invoice_WriteOff.htm</code></p>
+<h1 id="writing-off-an-invoice-1">Writing Off an Invoice</h1>
+<p>You can use the Cash Receipts form to write off a customer
+invoice.</p>
+<p>[Image: Cash Receipts form showing open batches at the top of the
+screen. The table includes deposit date, last worked date, batch owner,
+and total deposit.]</p>
+<p>To write off an invoice on the cash receipts form:</p>
+<ol type="1">
+<li><p>Access the Cash Receipts form (found in the Back Office menu
+under Accounts Receivable|Action).</p></li>
+<li><p>Use the form to edit a new or existing cash receipts
+batch:</p></li>
+</ol>
+<ul>
+<li><p>To open an existing batch, click the Batch ID in the Cash
+Receipts panel.</p></li>
+<li><p>To start a new cash receipts batch, click New deposit in the
+Receipt Entry panel.</p></li>
+</ul>
+<p>[Image: Receipt Entry panel A deposit number is entered. Bank is set
+to “RECEIVABLE ACCT-CACHET” and the description says “Writing off an
+invoice”.]</p>
+<ol start="3" type="1">
+<li><p>The Deposit number populates automatically. You can edit
+it.</p></li>
+<li><p>Select the Bank.</p></li>
+<li><p>You can enter the Deposit Date, or allow the system to populate
+it automatically with the current date.</p></li>
+<li><p>Enter a Deposit Description, if desired. For example, you can
+enter the reason for the write-off transaction or the actual date if it
+is different from the posting date. There are two lines that you can
+use.</p></li>
+</ol>
+<p>[Image: Screenshot of the Deposit Details configured as an example of
+a write-off. The customer line deposit amount is set to 0.00, while the
+Additional Line Amount column is set to the negative of the value in the
+row above it.]</p>
+<ol start="7" type="1">
+<li>Enter the initial Deposit Detail information as shown:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Line Type</td>
+<td>Select Customer.</td>
+</tr>
+<tr class="even">
+<td>Deposit Type</td>
+<td>Select Write-Off.</td>
+</tr>
+<tr class="odd">
+<td>Deposit Amount</td>
+<td>Enter 0.00.</td>
+</tr>
+<tr class="even">
+<td>Deposit Reference</td>
+<td>Enter the unique reference ID, which can include alphanumeric
+characters but not spaces.</td>
+</tr>
+<tr class="odd">
+<td>Customer ID</td>
+<td>Enter the customer ID here. The customer’s Outstanding Invoices
+display.</td>
+</tr>
+<tr class="even">
+<td>Customer Name</td>
+<td>Defaults to the name associated with the Customer ID. You can change
+this if the name on the check is different.</td>
+</tr>
+<tr class="odd">
+<td>Posting Type</td>
+<td>Select the posting type for Invoices.</td>
+</tr>
+<tr class="even">
+<td>Invoice Number</td>
+<td>Click an invoice number in the Outstanding Invoices list to add its
+information to the line. Otherwise, continue entering information. - You
+can select Invoices matching deposit amount to filter the Outstanding
+Invoices and show only the ones that match the deposit amount. - Click
+Reload outstanding invoices [Image: screenshot] in the Deposit Detail
+panel to see the remaining balance on the invoices included in this
+batch. [Image: Outstanding Invoices list filtered for ‘All Invoices’.
+The two invoices added to the cash posting have checkmarks next to their
+IDs.]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>You can select Invoices matching deposit amount to filter the
+Outstanding Invoices and show only the ones that match the deposit
+amount.</li>
+<li>Click Reload outstanding invoices [Image: screenshot] in the Deposit
+Detail panel to see the remaining balance on the invoices included in
+this batch.</li>
+</ul>
+<ol start="8" type="1">
+<li>Enter a second line in the Deposit Detail panel:</li>
+</ol>
+<ul>
+<li><p>Set Line Type to Additional.</p></li>
+<li><p>Select the Posting type for write-offs.</p></li>
+<li><p>Enter the negative cash value in the Amount field that “cancels”
+the total invoice amount.</p></li>
+</ul>
+<ol start="9" type="1">
+<li><p>Go back to the first line and enter the positive cash value in
+the Amount field to write off the invoice.</p></li>
+<li><p>Make sure the Deposit Remaining displays as 0.00.</p></li>
+<li><p>If you are done entering details for this posting, click
+Post.</p></li>
+</ol>
+<p>Otherwise, click Clear – the system saves your progress as an open
+batch at the top of the form.</p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/AR_UG_Chapter_Cash_Receipts_Balances.htm">Working
+with Cash Receipts and Balances</a></p>
+<p><a href="Cash_Receipts_Entry.htm">Entering Cash Receipts</a></p>
+<p><a href="Cash_Receipts_Rules_Misc.htm">Setting Cash Receipt
+Rules</a></p>
+<p>========================================================================</p>
+<h1 id="manual-check-reconciliation">Manual Check Reconciliation</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Manual_Check_Reconciliation.htm
+Path:
+<code>PD/Accounting/Action/Manual_Check_Reconciliation.htm</code></p>
+<h1 id="manual-check-reconciliation-1">Manual Check Reconciliation</h1>
+<p>Use the Manual Check Reconciliation feature to reconcile checks that
+cannot be reconciled by the automatic reconciliation feature.</p>
+<p>To perform manual check reconciliation:</p>
+<ol type="1">
+<li><p>Open the Manual Check Reconciliation form, found in the Back
+Office menu under Operations|Action.</p></li>
+<li><p>Enter the Checking Account ID. This is the number that represents
+an account in PrismHR and may not match the actual bank account number.
+The Bank Name and Account Number display.</p></li>
+<li><p>Enter the Recon Date. The default is the current date.</p></li>
+<li><p>Enter each Check Number that you want to reconcile. The Check
+Date, Paid To (payee), and Check Amount display.</p></li>
+</ol>
+<p>You must enter a valid check number. You cannot enter the number of a
+check that has already been reconciled.</p>
+<ol start="5" type="1">
+<li>When you are ready, click Update.</li>
+</ol>
+<p>The system sets the status of those checks to reconciled (R).</p>
+<p>Related Topic</p>
+<p><a href="Auto_Check_Reconciliation_Load.htm">Importing Auto
+Reconciliation Data</a></p>
+<p>========================================================================</p>
+<h1 id="posting-auto-reconciliations">Posting Auto Reconciliations</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Post_Auto_Reconciliations.htm
+Path:
+<code>PD/Accounting/Action/Post_Auto_Reconciliations.htm</code></p>
+<h1 id="posting-auto-reconciliations-1">Posting Auto
+Reconciliations</h1>
+<p>Once you have loaded the reconciliation data file, reviewed the
+report, and addressed any issues, you can post the reconciliations to
+the system.</p>
+<p>To post auto reconciliations:</p>
+<ol type="1">
+<li><p>Open the Post Auto Reconciliations form, found in the Back Office
+menu under Operations|Action.</p></li>
+<li><p>Enter the Checking Account No. you previously entered for the
+previous steps of the process, Auto Check Reconciliation Load and
+Reconciliation Report for Auto Recon.</p></li>
+<li><p>Enter the appropriate dates in the Beginning Date and Ending Date
+fields.</p></li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> It is especially
+important to enter these dates before posting. If you post the bank
+reconciliation files without entering the Beginning Date and Ending
+Date, the process still completes, but the system will continue to list
+the checks as outstanding in the check register.</p>
+</blockquote>
+<ol start="4" type="1">
+<li><p>The Reconciliation Date defaults to the current date, but you can
+change it if appropriate.</p></li>
+<li><p>Click Run. The system displays the Posting Check Reconciliation
+form, which details the processing steps.</p></li>
+</ol>
+<p>[Image: Example check reconciliation processing steps, along with
+date and time stamps.]</p>
+<ol start="6" type="1">
+<li>When the posting is complete, click the Close button.</li>
+</ol>
+<p>Related Topics</p>
+<p><a href="Auto_Check_Reconciliation_Load.htm">Importing Auto
+Reconciliation Data</a></p>
+<p><a href="Reconciliation_Report_for_Auto_Recon.htm">Reviewing Auto
+Reconciled Checks</a></p>
+<p>========================================================================</p>
+<h1 id="reviewing-auto-reconciled-checks">Reviewing Auto Reconciled
+Checks</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Reconciliation_Report_for_Auto_Recon.htm
+Path:
+<code>PD/Accounting/Action/Reconciliation_Report_for_Auto_Recon.htm</code></p>
+<h1 id="reviewing-auto-reconciled-checks-1">Reviewing Auto Reconciled
+Checks</h1>
+<p>Use the Reconciliation Report for Auto Recon to review the reconciled
+checks in the reconciliation data file your organization is currently
+processing <a href="Auto_Check_Reconciliation_Load.htm">see Importing
+Auto Reconciliation Data</a>.</p>
+<p>To run the Reconciliation Report for Auto Recon:</p>
+<ol type="1">
+<li><p>Open the report parameters form (found in the Back Office menu
+under Operations|Report).</p></li>
+<li><p>Enter the Checking Account No. you entered in Auto Check
+Reconciliation Load when you started the process.</p></li>
+<li><p>Enter the appropriate dates in the Beginning Date and Ending Date
+fields.</p></li>
+<li><p>Click Run. The Check Reconciliation Edit Report
+displays.</p></li>
+</ol>
+<p>[Image: Example of report output displaying check number, clear date,
+amount cleared, and error descriptions. (For example: check amount on
+file is different, invalid check status, and check number not found in
+register).]</p>
+<p>The report displays all the checks in the data file with pay dates
+that were in the specified date range. The report displays the
+reconciliation error. Some examples of discrepancies are:</p>
+<ul>
+<li><p>A Check number that does not match an open check number in the
+system.</p></li>
+<li><p>An Amount Cleared value that does not match the value in the
+system.</p></li>
+</ul>
+<h2 id="notes-about-common-issues">Notes About Common Issues</h2>
+<ul>
+<li><p>If the wrong file was loaded accidentally or if the file is
+loaded with the wrong format, the Check Reconciliation Edit Report will
+display garbage data, possibly including references to check numbers
+that do not exist. If that is the case, return to the Auto Check
+Reconciliation Load and begin again. <strong>Be sure to select the
+option to clear out the existing in the reconciliation
+file.</strong></p></li>
+<li><p>The automatic reconciliation process does not allow a check to be
+reconciled more than once. If you attempt to use a check number that has
+already been reconciled, the report displays the error Invalid Check
+Status: R.</p></li>
+<li><p>If you know a check listed in the report with an error is
+actually correct and should be reconciled, use the manual reconciliation
+feature.</p></li>
+</ul>
+<p>Checks that were included in the reconciliation data file that do not
+have errors will be reconciled when you post them.</p>
+<p>Next Step</p>
+<p><a href="Post_Auto_Reconciliations.htm">Posting Auto
+Reconciliations</a></p>
+<p>Related Topics</p>
+<p><a href="Auto_Check_Reconciliation_Load.htm">Importing Auto
+Reconciliation Data</a></p>
+<p><a href="Manual_Check_Reconciliation.htm">Manual Check
+Reconciliation</a></p>
+<p>========================================================================</p>
+<h1 id="regenerating-payroll-cost-accounting">Regenerating Payroll Cost
+Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Regenerate-Payroll-Cost-Accounting.htm
+Path:
+<code>PD/Accounting/Action/Regenerate-Payroll-Cost-Accounting.htm</code></p>
+<h1 id="regenerating-payroll-cost-accounting-1">Regenerating Payroll
+Cost Accounting</h1>
+<p>Use this form when the GL Chart of Accounts setup has changed and
+various earning, deduction, or tax codes need to be allocated to a new
+account number. Once this process is complete, you can run this process
+to change data on the vouchers and download a GL file with the correct
+COA information.</p>
+<p>The process ID for Regenerate Payroll Cost Accounting
+(HRPY.WORK*REGENERATE.COST.ACCT) must be added to a Service Provider
+role before this form is available.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> <strong>This form does
+not use Client Access Group Security.</strong></p>
+</blockquote>
+<p>To access this form:</p>
+<ol type="1">
+<li><p>Click Back Office.</p></li>
+<li><p>From Operations|Action, click Regenerate Payroll Cost
+Accounting.</p></li>
+<li><p>Enter the Employer ID.</p></li>
+<li><p>Enter the starting and ending pay dates.</p></li>
+<li><p>Click Run. The system asks if you want to regenerate cost
+accounting.</p></li>
+<li><p>Click Yes to confirm the process. [Image: After clicking Yes to
+confirm the process, the Regenerate Payroll Cost Accounting window
+displays the processing steps]</p></li>
+</ol>
+<p>When the process is complete, the system emails you a confirmation
+message.</p>
+<p>========================================================================</p>
+<h1 id="clearing-outstanding-checks">Clearing Outstanding Checks</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Stale_Check_Reconciliation.htm
+Path:
+<code>PD/Accounting/Action/Stale_Check_Reconciliation.htm</code></p>
+<h1 id="clearing-outstanding-checks-1">Clearing Outstanding Checks</h1>
+<p>Use Stale Check Reconciliation form to clear outstanding checks.</p>
+<p>To reconcile stale checks:</p>
+<ol type="1">
+<li><p>Open the Stale Check Reconciliation form, found in the Back
+Office menu under Operations|Action.</p></li>
+<li><p>Enter the Checking Account ID. This is the number that represents
+an account in PrismHR and may not match the actual bank account number.
+The Account Number displays.</p></li>
+<li><p>There are two ways to enter stale check numbers:</p></li>
+</ol>
+<ul>
+<li><p>If you know the numbers, you can enter each of them in the Check
+Number column in the table.</p></li>
+<li><p>You can also click the Import Stale Checks button to retrieve a
+list of all outstanding checks for the specified account and select the
+ones you want to reconcile.</p></li>
+</ul>
+<p>After you click the button, the system retrieves a list of all
+uncleared checks. This can take a little while, depending on how many
+outstanding checks exist for the checking account.</p>
+<p>[Image: Import Stale Checks form. An Ending Check Date has been
+entered and a number of checks display in the table.]</p>
+<p>You can limit the checks in the list by entering a Beginning Check
+Date, an Ending Check Date, or both.</p>
+<ul>
+<li><p>If you enter a Beginning Check Date, the system filters out any
+checks with a pay date before that date.</p></li>
+<li><p>If you enter an Ending Check Date, the system filters our any
+checks with a pay date after that date.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> There are different
+ways to enter dates. For example, if you want to enter a date that is
+180 days in the past (about six months), enter -180 in the appropriate
+date field. <a href="../../../Shared-Files/Navigating/Dates.htm">See
+Entering Dates</a> for more information.</p>
+</blockquote>
+<p>After entering the date, press the Tab key. The list filters to match
+the criteria you entered.</p>
+<ul>
+<li><p>Enable the Select checkbox for each check you want to include, or
+use the Select All checkbox to select all checks in the list.</p></li>
+<li><p>Click Accept. The system returns you to the Stale Check
+Reconciliation Entry form and the selected checks populate the
+table.</p></li>
+</ul>
+<ol start="4" type="1">
+<li><p>Click Update on the Stale Check Reconciliation Entry form. The
+system marks the selected checks as reconciled with a stale date of the
+current day.</p></li>
+<li><p>The system prompts you to choose whether to view a report of the
+checks marked as reconciled.</p></li>
+</ol>
+<ul>
+<li><p>Click Yes to view the Stale Check Register by Check Number
+Report. The report displays the stale checks that you just reconciled.
+Use the Actions drop-down to print, share, or save the report.</p></li>
+<li><p>Click No if you do not want to see the report. The system
+displays a reminder that stale checks are not account for in any way,
+and that you must do journals based on the reports to update your
+ledgers.</p></li>
+</ul>
+<p>When you are finished, the form clears.</p>
+<p>Related Topic</p>
+<p><a href="../Reports/Stale_Check_Register_By_Check_Number.htm">Check
+Register (Stale) by Check Number Report</a></p>
+<p>========================================================================</p>
+<h1 id="rebuilding-registers">Rebuilding Registers</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Tax-Register-Rebuild.htm
+Path: <code>PD/Accounting/Action/Tax-Register-Rebuild.htm</code></p>
+<h1 id="rebuilding-registers-1">Rebuilding Registers</h1>
+<p>Use the Register Rebuilds form to rebuild Form 941 Tax Registers,
+Company Tax Registers, or All Tax Registers for a Year. You can also
+Rebuild Tax Basis Transfer from Successor.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> <strong>This form does
+not use Client Access Group Security.</strong></p>
+</blockquote>
+<h2 id="adding-user-permission-to-register-type-options">Adding User
+Permission to Register Type Options</h2>
+<p>To display the Register Type options for users in the Register
+Rebuilds form, you must add the following forms to the user role(s) in
+the User Roles form:</p>
+<ul>
+<li><p>941 Tax Registers: 941 Register Rebuild Security Control Form
+(HRPY.WORK*941.REBUILD.SECURITY.STUB)</p></li>
+<li><p>Company Tax Registers: Company Register Rebuild Security Control
+Form (HRPY.WORK*COMPANY.REBUILD.SECURITY.STUB)</p></li>
+<li><p>Rebuild All Tax Registers for a Year: Tax Register Rebuild
+Security Control Form (HRPY.WORK*TAX.REBUILD.SECURITY.STUB)</p></li>
+<li><p>Rebuild Tax Basis Transfer from Successor: Transfer Tax Rebuild
+Security Control Form
+(HRPY.WORK*TRANSFER.REBUILD.SECURITY.STUB)</p></li>
+</ul>
+<p>For example, this user role is set up to allow a user to rebuild
+company registers and tax basis transfers, but that user cannot rebuild
+941 registers or all tax registers:</p>
+<p>[Image: User Roles form showing “Full” and “Deny” access for various
+register rebuild forms.]</p>
+<p>See the PrismHR<em>System Administration Guide</em> for more
+information about defining user roles.</p>
+<h2 id="rebuilding-941-tax-registers">Rebuilding 941 Tax Registers</h2>
+<p>The 941 tax registers are used to generate data contained on the 941
+worksheet report and the 941 schedule R report. These reports show the
+tax liabilities for Federal Income Tax as well as the Employee/Employer
+portion of OASDI and Medicare. The 941 register rebuild process corrects
+data that is contained in this register.</p>
+<p>To rebuild 941 registers:</p>
+<ol type="1">
+<li><p>Click Back Office. Under Operations|Action, select Register
+Rebuilds.</p></li>
+<li><p>Select Tax - 941 Tax Registers from the Register Type
+drop-down.</p></li>
+<li><p>Select a Year against which registers are rebuilt.</p></li>
+<li><p>Select All if you want to rebuild the 941 Tax Registers for all
+employers OR</p></li>
+<li><p>Select Select Employers if you want to rebuild the 941 Tax
+Registers for selected employers. Click the Employer ID hyperlink and
+add one or more employers.</p></li>
+<li><p>Click Rebuild. The system cautions you about the implications of
+rebuilding registers.</p></li>
+<li><p>Click Yes to proceed with the rebuild. A progress window
+displays.</p></li>
+</ol>
+<h2 id="rebuilding-company-registers">Rebuilding Company Registers</h2>
+<p>Rebuilding company registers rebuilds all tax registers for the
+specified company. This includes Employee and Employer Tax Registers,
+Employee 401K Registers, Employee Voucher Registers, Employee Benefits
+Registers, Employee Workers Comp Registers, Employee Deferral Registers,
+and Employee Voucher Cross Reference Registers.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> <strong>This form does
+not use Client Access Group Security.</strong></p>
+</blockquote>
+<p>To rebuild company registers:</p>
+<ol type="1">
+<li><p>Click Back Office. Under Operations|Action, select Register
+Rebuilds.</p></li>
+<li><p>Select Tax - Company Tax Registers from the Register Type
+drop-down.</p></li>
+<li><p>Select a Year against which registers are rebuilt.</p></li>
+<li><p>Select a Client ID for Company Register Rebuilds.</p></li>
+<li><p>Click Rebuild. The system cautions you about the implications of
+rebuilding registers.</p></li>
+<li><p>Click Yes to proceed with the rebuild. A progress window
+displays.</p></li>
+</ol>
+<h2 id="rebuild-all-tax-registers-for-a-year">Rebuild All Tax Registers
+for a Year</h2>
+<p>You can rebuild registers by selecting the type of register from a
+single form. The Notification process monitors each rebuild process to
+provide updates. It can take hours to rebuild tax registers. During this
+process, it is best practice to set the lockout feature to prevent
+payrolls from being initialized as this can cause incorrect voucher
+calculations.</p>
+<p>This option rebuilds the company, employee, employer, 941, and client
+federal entity tax registers at one time for a particular year.</p>
+<p>To rebuild all tax registers for a year:</p>
+<ol type="1">
+<li><p>Click Back Office. Under Operations|Action, select Register
+Rebuilds.</p></li>
+<li><p>Select Tax - Rebuild All Tax Registers for a Year from the
+Register Type drop-down.</p></li>
+<li><p>Select a tax Year.</p></li>
+<li><p>Click Rebuild. The system warns that the data used for payroll
+and employee pay history will be cleared and asks whether you still want
+to proceed.</p></li>
+<li><p>The following database files are involved in this
+process:</p></li>
+</ol>
+<ul>
+<li><p>EMPLOYEE.TAX.REGISTER</p></li>
+<li><p>EMPLOYER.TAX.REGISTER</p></li>
+<li><p>CLIENT.TAX.REGISTER</p></li>
+<li><p>EMPLOYER.941.REGISTER</p></li>
+<li><p>CLIENT.SUM.TAX.REGISTER</p></li>
+<li><p>TAX.LIABILITY.JOURNAL</p></li>
+<li><p>EMPLOYEE.PAYROLL.REGISTER</p></li>
+</ul>
+<ol start="6" type="1">
+<li>Click Yes. The rebuild progress window appears and displays the
+rebuild process steps. You will receive an email notification when the
+rebuild process is finished.</li>
+</ol>
+<h2 id="rebuilding-the-tax-transfer-basis-from-successor">Rebuilding the
+Tax Transfer Basis from Successor</h2>
+<p>This option rebuilds the tax registers that are created when
+importing the taxes from successor wages.</p>
+<p>To rebuild the tax registers that are created when importing taxes
+from successor wages:</p>
+<ol type="1">
+<li><p>Click Back Office. Under Operations|Action, select Register
+Rebuilds.</p></li>
+<li><p>Select Tax - Rebuild Tax Transfer Basis from Successor from the
+Register Type drop-down.</p></li>
+<li><p>Select a tax Year.</p></li>
+<li><p>If you want to clear the register before rebuilding, select Clear
+Register Prior to Rebuild.</p></li>
+<li><p>Click Rebuild. The system warns that the data used for payroll
+and employee pay history will be cleared, and asks whether you still
+want to proceed.</p></li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> This process only
+clears the Net Taxable to Another State or Successor and the Net Tax to
+Another State or Successor fields.</p>
+</blockquote>
+<ol start="6" type="1">
+<li>The following database files are involved in this process:</li>
+</ol>
+<ul>
+<li><p>EMPLOYEE.TAX.REGISTER</p></li>
+<li><p>EMPLOYER.TAX.REGISTER</p></li>
+<li><p>CLIENT.TAX.REGISTER</p></li>
+<li><p>CLIENT.FEDERAL.TAX.REGISTER</p></li>
+</ul>
+<ol start="7" type="1">
+<li>Click Yes. The rebuild progress window appears and displays the
+rebuild process steps. You will receive an email notification when the
+rebuild process is finished.</li>
+</ol>
+<p>========================================================================</p>
+<h1 id="reversing-check-reconciliation">Reversing Check
+Reconciliation</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Action/Unreconcile_a_Check.htm
+Path: <code>PD/Accounting/Action/Unreconcile_a_Check.htm</code></p>
+<h1 id="reversing-check-reconciliation-1">Reversing Check
+Reconciliation</h1>
+<p>If a check was reconciled in error and you need to reset it, use the
+Unreconcile a Check feature.</p>
+<p><strong>Note</strong>: You can reverse reconciliation on a check that
+is in either the R - Reconciled or S - Stale Dated Check status
+code.</p>
+<p>To reverse check reconciliation:</p>
+<ol type="1">
+<li><p>Open the Unreconcile a Check form, found in the Back Office menu
+under Operations|Action.</p></li>
+<li><p>Enter the Checking Account ID. This is the number that represents
+an account in PrismHR and may not match the actual bank account
+number.</p></li>
+<li><p>Enter the Check Number to unreconcile. The Status Code, Status
+Date, Check Amount, and Pay to Name (payee) display.</p></li>
+<li><p>Verify that this is the correct check and then click Unreconcile
+Check.</p></li>
+</ol>
+<p>========================================================================</p>
+<h1 id="automatically-reconciling-checks">Automatically Reconciling
+Checks</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Concepts/Using_Auto_Reconciliation.htm
+Path:
+<code>PD/Accounting/Concepts/Using_Auto_Reconciliation.htm</code></p>
+<h1 id="automatically-reconciling-checks-1">Automatically Reconciling
+Checks</h1>
+<p>Three different forms are involved in the automatic check
+reconciliation procedure. The overall procedure is as follows:</p>
+<ol type="1">
+<li><p>Receive the reconciliation data from the financial
+institution.</p></li>
+<li><p>Use Auto Check Reconciliation Load to import the reconciliation
+data into a temporary file.</p></li>
+<li><p>Run the Reconciliation Report for Auto Recon to review any checks
+that the system could not reconcile.</p></li>
+<li><p>Run Post Auto Reconciliations to clear the reconciled checks from
+the temporary file.</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<p>You can use the automatic reconciliation feature if your
+organization’s financial institution provides an electronic file format
+supported by PrismHR. The currently supported formats are:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>- Tab Delimited - Arch Format - Amcor - Bank of America - Alternate
+Bank of America - Bank of America - Bank of America BAI Format - Bank of
+America pos34 12-digit acct#</th>
+<th>- Bank of The West - Chemical Bank - Chase Bank - First Union -
+Fleet/Baybank - Hancock Bank - KeyCorp Bank - Merrill Lynch</th>
+<th>- M&amp;T Bank - National Bank - ARP - Regions Bank - SunTrust Bank
+- SunTrust Alternate Format - Wells Fargo - Wells Fargo CSV - Wells
+Fargo Fixed Length</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ul>
+<li>Tab Delimited</li>
+<li>Arch Format</li>
+<li>Amcor</li>
+<li>Bank of America</li>
+<li>Alternate Bank of America</li>
+<li>Bank of America</li>
+<li>Bank of America BAI Format</li>
+<li>Bank of America pos34 12-digit acct#</li>
+<li>Bank of The West</li>
+<li>Chemical Bank</li>
+<li>Chase Bank</li>
+<li>First Union</li>
+<li>Fleet/Baybank</li>
+<li>Hancock Bank</li>
+<li>KeyCorp Bank</li>
+<li>Merrill Lynch</li>
+<li>M&amp;T Bank</li>
+<li>National Bank</li>
+<li>ARP</li>
+<li>Regions Bank</li>
+<li>SunTrust Bank</li>
+<li>SunTrust Alternate Format</li>
+<li>Wells Fargo</li>
+<li>Wells Fargo CSV</li>
+<li>Wells Fargo Fixed Length Related Topics</li>
+</ul>
+<p><a href="../Action/Auto_Check_Reconciliation_Load.htm">Importing Auto
+Reconciliation Data</a></p>
+<p><a
+href="../Action/Reconciliation_Report_for_Auto_Recon.htm">Reviewing Auto
+Reconciled Checks</a></p>
+<p><a href="../Action/Post_Auto_Reconciliations.htm">Posting Auto
+Reconciliations</a></p>
+<p>========================================================================</p>
+<h1 id="system-and-general-ledger-setup">System and General Ledger
+Setup</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/Acct_UG_Chapter_System_Setup.htm
+Path:
+<code>PD/Accounting/Front_Matter/Acct_UG_Chapter_System_Setup.htm</code></p>
+<h1 id="system-and-general-ledger-setup-1">System and General Ledger
+Setup</h1>
+<p>Your organization must set up accounting parameters and general
+ledger information at the system level.</p>
+<p>========================================================================</p>
+<h1 id="troubleshooting-ach-issues">Troubleshooting ACH Issues</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/AR_UG_Appendix_Troubleshooting.htm
+Path:
+<code>PD/Accounting/Front_Matter/AR_UG_Appendix_Troubleshooting.htm</code></p>
+<h1 id="troubleshooting-ach-issues-1">Troubleshooting ACH Issues</h1>
+<p>These are procedures for uncommon situations:</p>
+<ul>
+<li><p><a href="../../ACH/Reference/ACH_Lock_Errors_PHR.htm">ACH Lock
+Errors</a>: Documents two possible error messages that can prevent a
+user from running an ACH process in PrismHR due to the processes being
+locked.</p></li>
+<li><p><a href="../../ACH/Admin/ACH_Clear_Lock.htm">Clearing the Lock on
+ACH Processing Features</a>: Describes how and when to clear the lock on
+ACH processing features.</p></li>
+</ul>
+<p>========================================================================</p>
+<h1 id="accounts-receivable-code-files">Accounts Receivable Code
+Files</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/AR_UG_Chapter_AR_Code_Files.htm
+Path:
+<code>PD/Accounting/Front_Matter/AR_UG_Chapter_AR_Code_Files.htm</code></p>
+<h1 id="accounts-receivable-code-files-1">Accounts Receivable Code
+Files</h1>
+<p>These topics describe how to set up and manage your codes and aging
+buckets for accounts receivable.</p>
+<p>========================================================================</p>
+<h1 id="working-with-cash-receipts-and-balances">Working with Cash
+Receipts and Balances</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/AR_UG_Chapter_Cash_Receipts_Balances.htm
+Path:
+<code>PD/Accounting/Front_Matter/AR_UG_Chapter_Cash_Receipts_Balances.htm</code></p>
+<h1 id="working-with-cash-receipts-and-balances-1">Working with Cash
+Receipts and Balances</h1>
+<p>At times, your organization will need to post non-automatic cash
+receipts.</p>
+<p>You can use the Cash Receipts form to:</p>
+<ul>
+<li><p>Enter corrections to prior automatic functions (for example, a
+bounced ACH)</p></li>
+<li><p>Write off balances that cannot be collected</p></li>
+<li><p>Distribute cash to a specific general ledger account (for
+example, you receive a rent check)</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> When you enter a debit
+invoice that is greater than the deposit amount, you must enter credit
+invoices first. Otherwise, the system generates an error.</p>
+</blockquote>
+<p>Related Topics</p>
+<p><a href="../Action/Cash_Receipts_Entry.htm">Entering Cash
+Receipts</a></p>
+<p>========================================================================</p>
+<h1 id="check-reconciliation">Check Reconciliation</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/AR_UG_Chapter_Check_Recon.htm
+Path:
+<code>PD/Accounting/Front_Matter/AR_UG_Chapter_Check_Recon.htm</code></p>
+<h1 id="check-reconciliation-1">Check Reconciliation</h1>
+<p>Users can reconcile or unreconcile checks in PrismHR.</p>
+<p>========================================================================</p>
+<h1 id="customer-level-ar-setup">Customer-Level A/R Setup</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/AR_UG_Chapter_Customer_Setup.htm
+Path:
+<code>PD/Accounting/Front_Matter/AR_UG_Chapter_Customer_Setup.htm</code></p>
+<h1 id="customer-level-ar-setup-1">Customer-Level A/R Setup</h1>
+<p>Customer Details contains the address and contact information for
+collection purposes, a current representation of the aging for the
+customer, and the ability to edit the credit limit rules (with
+authorization).</p>
+<p>========================================================================</p>
+<h1 id="accounting-system-integration">Accounting System
+Integration</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/AR_UG_Chapter_Integrate_Acct_Sys.htm
+Path:
+<code>PD/Accounting/Front_Matter/AR_UG_Chapter_Integrate_Acct_Sys.htm</code></p>
+<h1 id="accounting-system-integration-1">Accounting System
+Integration</h1>
+<p>Using the External Invoice Post and External Journal Post features,
+your organization can create the files that you will use to import data
+into your financial accounting system.</p>
+<p>PrismHR uses two different steps when processing payroll, where it
+creates:</p>
+<ol type="1">
+<li><p>Payroll vouchers and external journal post entries</p></li>
+<li><p>Billing vouchers and external invoice post entries</p></li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Your organization must
+set up Global Accounting in the System Parameters form to use these
+features. (See <a
+href="../Setup/Global_Accounting_Parameters.htm">Setting Global
+Accounting Parameters</a>.)</p>
+</blockquote>
+<p>========================================================================</p>
+<h1 id="introduction">Introduction</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/AR_UG_Chapter_Intro.htm
+Path:
+<code>PD/Accounting/Front_Matter/AR_UG_Chapter_Intro.htm</code></p>
+<h1 id="introduction-1">Introduction</h1>
+<p>The accounting online help explains the functions and features
+related to accounting in PrismHR, which consists of the following:</p>
+<ul>
+<li><p>Setup - The tasks and steps involved in defining and setting up
+codes, values, and definitions that are used for accounting. Authorized
+users set up these values and definitions at the global and company
+level, and might perform these tasks periodically when new values or
+definitions are required.</p></li>
+<li><p>Administration - The tasks and steps involved in the day-to-day
+maintenance and administration of accounting tasks.</p></li>
+</ul>
+<p>========================================================================</p>
+<h1 id="reports">Reports</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/AR_UG_Chapter_Reports.htm
+Path:
+<code>PD/Accounting/Front_Matter/AR_UG_Chapter_Reports.htm</code></p>
+<h1 id="reports-1">Reports</h1>
+<p>Use these reports in PrismHR to view accounting information.</p>
+<p>========================================================================</p>
+<h1 id="intended-audience">Intended Audience</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/AR_UG_Intended_Audience.htm
+Path:
+<code>PD/Accounting/Front_Matter/AR_UG_Intended_Audience.htm</code></p>
+<h1 id="intended-audience-1">Intended Audience</h1>
+<p>Your organization should already have set up the initial defaults,
+files, and preferences required for system administration, as well as
+client information. You should also have general knowledge of accounting
+practices. Explaining industry-specific topics other than the use of
+this software product is outside the scope of this document.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Unless you have
+permission to access system-level features, you cannot set global
+accounts receivable information.</p>
+</blockquote>
+<p>PrismHR strongly recommends that you follow the setup steps in the
+order they are presented in this guide. Be sure to complete the entire
+accounts receivable setup while no one is using PrismHR to initialize
+and post payrolls or other accounting processes, as this could cause
+unexpected results.</p>
+<p>========================================================================</p>
+<h1 id="setting-up-the-billing-code-and-gl-account-associations">Setting
+Up the Billing Code and G/L Account Associations</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/General_Ledger_Account_Associations.htm
+Path:
+<code>PD/Accounting/Front_Matter/General_Ledger_Account_Associations.htm</code></p>
+<h1
+id="setting-up-the-billing-code-and-gl-account-associations-1">Setting
+Up the Billing Code and G/L Account Associations</h1>
+<p>Use the G/L Setup form to set up the billing code and general ledger
+account associations.</p>
+<p>To set up the billing codes/general ledger account associations:</p>
+<ol type="1">
+<li>Enter or select the GL Template for the general ledger distribution
+template. (This template was previously defined.)</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>CLID wildcards <em>do not</em> work with the GL Template set to
+GL and the GL Type set to Miscellaneous.</p></li>
+<li><p>Your organization might have different templates for PEOs and
+ASOs. You can assign different account numbers to each
+template.</p></li>
+<li><p>An error message displays if you enter or select an
+<em>obsolete</em>GL Template, and the system will not process a payroll
+when a client assigned with an obsolete G/L template tries to initiate
+payroll calculation or finalization.</p></li>
+</ul>
+<ol start="2" type="1">
+<li><p>From the GL Type drop-down, select Billing Code. The form lists
+each Billing Code and Description in the system.</p></li>
+<li><p>Enter or import the G/L account number used for the billing code
+in the Account field.</p></li>
+</ol>
+<p><strong>Note</strong>: You can enter simple account segments or full
+account numbers with wildcards.</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>========================================================================</p>
+<h1 id="prismhr-accounting-setup">PrismHR Accounting Setup</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Front_Matter/PHR_Acct_Setup.htm
+Path: <code>PD/Accounting/Front_Matter/PHR_Acct_Setup.htm</code></p>
+<h1 id="prismhr-accounting-setup-1">PrismHR Accounting Setup</h1>
+<p>To understand how to assign G/L account numbers to codes in the
+system, it is important to know how PrismHR creates the actual
+accounting entries.</p>
+<p>Related Topic</p>
+<p><a href="Acct_UG_Chapter_System_Setup.htm">System and General Ledger
+Setup</a></p>
+<p>========================================================================</p>
+<h1 id="ach-build-errors">ACH Build Errors</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Reference/ACH_Build_Errors_HRP.htm
+Path: <code>PD/Accounting/Reference/ACH_Build_Errors_HRP.htm</code></p>
+<h1 id="ach-build-errors-1">ACH Build Errors</h1>
+<p>Users can rebuild the ACH file if needed. The following list provides
+example cases where an ACH rebuild is required.</p>
+<ul>
+<li><p>A user was in the process of building the ACH file, but they were
+kicked out of the system before they could get the file.</p></li>
+<li><p>The file includes incorrect data.</p></li>
+<li><p>The file contains both debits and credits, but they need to be
+separated.</p></li>
+<li><p>A user built the file before updating the client’s bank account
+number.</p></li>
+<li><p>An employee’s bank account number changed but was not updated in
+the system, so the ACH file has the wrong account number.</p></li>
+</ul>
+<p>Several features are available that allow users to save and rebuild
+the ACH file.</p>
+<p>========================================================================</p>
+<h1 id="reconciling-debits-and-credits-for-client-accounts">Reconciling
+Debits and Credits for Client Accounts</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Reports/Accounting_GL_Detail_Download.htm
+Path:
+<code>PD/Accounting/Reports/Accounting_GL_Detail_Download.htm</code></p>
+<h1
+id="reconciling-debits-and-credits-for-client-accounts-1">Reconciling
+Debits and Credits for Client Accounts</h1>
+<p>Use the Accounting G/L Detail Download form to run the Accounting G/L
+Detail Download Report. The report produces an internal CSV download
+file that allows service providers to reconcile all the debits and
+credits for their client accounts.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Security is enabled for
+clients and employees, so users can only view data for those clients and
+employees to which they have access.</p>
+</blockquote>
+<h2 id="regenerating-invoice-and-payroll-cost-accounting">Regenerating
+Invoice and Payroll Cost Accounting</h2>
+<p>If you made changes to the G/L Setup that affects Billing Codes, then
+you must run two system processes — Regenerate Invoice Accounting and
+Regenerate Payroll Cost Accounting — which update all the data in the
+Accounting G/L Detail Download Report.</p>
+<p>If there are no changes, you can just run the download.</p>
+<p>To update the G/L Setup after making changes to the Billing
+Codes:</p>
+<ol type="1">
+<li><p>In the Back Office menu, under Operations|Action, select
+Regenerate Invoice Accounting.</p></li>
+<li><p>Run the Regenerate Invoice Accounting process.</p></li>
+<li><p>In the Back Office menu, under Operations|Action, select
+Regenerate Payroll Cost Accounting.</p></li>
+<li><p>Run the Regenerate Payroll Cost Accounting process.</p></li>
+</ol>
+<h2 id="running-the-accounting-gl-detail-download-report">Running the
+Accounting G/L Detail Download Report</h2>
+<p>To run the Accounting G/L Detail Download Report:</p>
+<ol type="1">
+<li><p>In the Reports menu, under Operations|Report, select Accounting
+G/L Detail Download.</p></li>
+<li><p>Enter the Selection Parameters to determine what displays on the
+report by doing one of the following:</p></li>
+</ol>
+<ul>
+<li><p>Enter the Payroll Number or click this field and select from the
+list that displays to run this report for a specific payroll.</p></li>
+<li><p>Select Enter a Pay Date Range to enter a Start Date and an End
+Date to run this report for a date range.</p></li>
+</ul>
+<ol start="3" type="1">
+<li><p>Enter the Employer ID or Client ID or click the field and select
+from the list that displays, or leave both blank. The Employer Name or
+Client Name displays.</p></li>
+<li><p>Enter the Report Filters to display on the report:</p></li>
+</ol>
+<ul>
+<li>Enter the field type. The field label displays. For example, if you
+enter a Location, the Location Name displays. The report displays
+records for that Location.</li>
+</ul>
+<ol start="5" type="1">
+<li>Click Run.</li>
+</ol>
+<p>========================================================================</p>
+<h1 id="ach-review-report">ACH Review Report</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Reports/ACH_Review_Report.htm
+Path: <code>PD/Accounting/Reports/ACH_Review_Report.htm</code></p>
+<h1 id="ach-review-report-1">ACH Review Report</h1>
+<p>The ACH Review Report allows you to review direct deposit details
+before posting.</p>
+<p>To run the ACH Review report:</p>
+<ol type="1">
+<li><p>Enter the Processor ID of the ACH originator.</p></li>
+<li><p>Select the File Type Limiter:</p></li>
+</ol>
+<ul>
+<li><p>Both: This default option will include both debits and credits in
+the report.</p></li>
+<li><p>Credit: The report will include only credit
+transactions.</p></li>
+<li><p>Debit: The report will include only debit transactions.</p></li>
+</ul>
+<ol start="3" type="1">
+<li><p>Select Child Support Only to view only child support transactions
+(ACH class = CS) in the report.</p></li>
+<li><p>Click Run.</p></li>
+</ol>
+<p>The system builds the report.</p>
+<ol start="5" type="1">
+<li>When the file build process is complete, you can click View
+Report.</li>
+</ol>
+<p>[Image: ACH Review Report example]</p>
+<p>The report columns are:</p>
+<ul>
+<li><p>File ID: The name of the file in which the transaction will be
+included.</p></li>
+<li><p>Effective Date: Date of the transaction.</p></li>
+<li><p>Type: Indicates whether the transaction is a debit (DB) or credit
+(CR).</p></li>
+<li><p>Emp Com: Indicates whether the transaction was made to a company
+(C) or employee (E), if either.</p></li>
+<li><p>Depositor Name: Name of the depositor.</p></li>
+<li><p>Reference: Transaction reference, if any.</p></li>
+<li><p>A/R Invoice: Accounts receivable invoice, if any</p></li>
+<li><p>Check Save: Indicates whether the transaction was made to a
+checking (C) or savings (S) account.</p></li>
+<li><p>Transit: The transit number for the depositor’s bank.</p></li>
+<li><p>DFI Account: The depositor’s account number.</p></li>
+<li><p>Debit Amount: Debit amount of the transaction.</p></li>
+<li><p>Credit Amount: Credit amount of the transaction.</p></li>
+<li><p>The report shows the subtotals by depositor, date, and file. It
+also displays the grant total.</p></li>
+</ul>
+<p>========================================================================</p>
+<h1 id="ar-aging-reports-and-statements">A/R Aging Reports and
+Statements</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Reports/AR_Aging_Reports_and_Statements.htm
+Path:
+<code>PD/Accounting/Reports/AR_Aging_Reports_and_Statements.htm</code></p>
+<h1 id="ar-aging-reports-and-statements-1">A/R Aging Reports and
+Statements</h1>
+<p>This report displays aging based on client. Enter the Aging Date to
+show the amount and days past due. For example:</p>
+<p>[Image: A/R Aging Reports and Statements form]</p>
+<p>To display aging records:</p>
+<ol type="1">
+<li>Enter the Selection Parameters to determine what displays on the
+report:</li>
+</ol>
+<ul>
+<li><p>Enter the Aging Date.</p></li>
+<li><p>Select the Aging Type from Operations or Financial.</p></li>
+<li><p>Enter the Select Client Accounts to display on the
+report:</p></li>
+<li><p>Enter the Client Account. The client Name displays.</p></li>
+<li><p>Enter the Select Cost Centers:</p></li>
+<li><p>Enter the Cost Center. The cost Name displays.</p></li>
+<li><p>Select Statement Format to display one client per page.</p></li>
+<li><p>Select Current Balance Aging to display 30 days or less past
+due.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> If you select the
+Current Balance Aging option, the Aging Date field must contain a date
+that is today or later. If you desire to run an As-Of Aging report,
+enter the As-Of date but do not select the Current Balance Aging
+option.</p>
+</blockquote>
+<ul>
+<li><p>Select Total by Cost Center to display a total for each cost
+center.</p></li>
+<li><p>Select Only show totals to only display grand totals.</p></li>
+<li><p>Enter the Employer GL Number to limit the report information to
+only the number you enter in that field. Therefore, the report will not
+display any information if there is <em>no match</em> to the number you
+enter.</p></li>
+</ul>
+<p><strong>Note</strong>: This field does not display if you select the
+Statement Format or Total by Cost Center field.</p>
+<ol start="2" type="1">
+<li>Click Run. The report displays. For example:</li>
+</ol>
+<p>[Image: screenshot]</p>
+<p>The report columns are:</p>
+<ul>
+<li><p>Client Group: The client’s group name.</p></li>
+<li><p>Account: The client account number and name.</p></li>
+<li><p>Client: The client number.</p></li>
+<li><p>Invoice: The invoice number.</p></li>
+<li><p>Date: The invoice date.</p></li>
+<li><p>Opening Balance: The amount due on the invoice.</p></li>
+<li><p>Current: The amount currently due.</p></li>
+<li><p>Past Due: The amount past due.</p></li>
+<li><p>8-14 Past Due and so on: The amount past due for 8-14 days and so
+on.</p></li>
+</ul>
+<p><strong>Note</strong>: The past due number is based on the entered
+Aging Date and Date of the invoice.</p>
+<p>========================================================================</p>
+<h1 id="ar-transaction-report">A/R Transaction Report</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Reports/AR_Transaction_Report.htm
+Path: <code>PD/Accounting/Reports/AR_Transaction_Report.htm</code></p>
+<h1 id="ar-transaction-report-1">A/R Transaction Report</h1>
+<p>This report displays invoice details by client.</p>
+<p>To run the A/R Transaction report:</p>
+<ol type="1">
+<li>Enter the Selection Parameters to determine what displays on the
+report:</li>
+</ol>
+<ul>
+<li><p>Enter a Start Date and End Date to display transactions for that
+date range.</p></li>
+<li><p>Enter the Select Client Accounts to display on the
+report:</p></li>
+<li><p>Enter the Client Account. The client Name displays.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Click Run.</li>
+</ol>
+<p>The report columns are:</p>
+<ul>
+<li><p>Customer Group: The client’s group name.</p></li>
+<li><p>AR Account No: The client account number and name.</p></li>
+<li><p>Client: The client number.</p></li>
+<li><p>Employer ID: The client number.</p></li>
+<li><p>Invoice: The invoice number.</p></li>
+<li><p>Invoice Date: The invoice date.</p></li>
+<li><p>Invoice Total: The total dollar amount on that invoice.</p></li>
+<li><p>Pay Dates: The pay dates for that invoice.</p></li>
+<li><p>Pay Type: The type of pay for that invoice. For example, Cash,
+Check, or Wire Transfer.</p></li>
+<li><p>Receipt Account: The account number.</p></li>
+<li><p>Pay Ref: The reference number for that invoice.</p></li>
+<li><p>Pay Amounts: the amount paid.</p></li>
+<li><p>Net Transaction: The total after the Pay Amount has been
+subtracted from the Invoice Total.</p></li>
+</ul>
+<p>========================================================================</p>
+<h1 id="cash-posting-report">Cash Posting Report</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Reports/Cash_Posting_Report.htm
+Path: <code>PD/Accounting/Reports/Cash_Posting_Report.htm</code></p>
+<h1 id="cash-posting-report-1">Cash Posting Report</h1>
+<p>This report displays the details of a cash posting deposit.</p>
+<p>To run this report:</p>
+<ol type="1">
+<li>Enter the Selection Parameters to determine what displays on the
+report. If left blank, all employees display:</li>
+</ol>
+<ul>
+<li><p>Enter or select the Bank to display only that bank’s cash
+postings.</p></li>
+<li><p>Enter the Posting Batch Number to display only that batch
+number.</p></li>
+<li><p>Enter the Deposit Date From and to displaying cash deposits made
+between the entered dates.</p></li>
+<li><p>Enter the Posting Date From and to displaying cash posting
+between the entered dates.</p></li>
+<li><p>Enter the Deposit Reference to display only that reference
+ID.</p></li>
+<li><p>Enter the Deposit Description to display only that type of
+deposit.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Select the Format Options on how the report will display.</li>
+</ol>
+<ul>
+<li><p>Select Sort by Cash Type to sort on Deposit Type.</p></li>
+<li><p>Select Include Cost Centers to add the Cost Center and Employer
+columns to the report output.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>Click Run. The output for the <em>Cash Posting Report</em>
+displays.</li>
+</ol>
+<h2 id="report-output">Report Output</h2>
+<p>[Image: screenshot]</p>
+<p>The report columns that display are based on the criteria specified
+in the form:</p>
+<ul>
+<li><p>Bank ID: PrismHR Bank ID.</p></li>
+<li><p>Posting Batch #: The posting batch ID number.</p></li>
+<li><p>Deposit Date: The date the deposit is made.</p></li>
+<li><p>Name: The name of the client.</p></li>
+<li><p>Deposit Type: The type of deposit made.</p></li>
+<li><p>Deposit Reference: The deposit reference number.</p></li>
+<li><p>Invoice: The number of the invoice.</p></li>
+<li><p>Invoice Pay Amount: The amount paid on the invoice.</p></li>
+<li><p>Misc G/L Account: The amount for this account.</p></li>
+<li><p>Cost Center: The cost center name.</p></li>
+<li><p>Employer: The PEO.</p></li>
+</ul>
+<p>========================================================================</p>
+<h1 id="open-balance-report">Open Balance Report</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Reports/Open_Balance_Report.htm
+Path: <code>PD/Accounting/Reports/Open_Balance_Report.htm</code></p>
+<h1 id="open-balance-report-1">Open Balance Report</h1>
+<p>This report displays open accounts receivable balances.</p>
+<p>To setup the report parameters, do the following:</p>
+<ol type="1">
+<li>Enter the Selection Parameters to determine what displays on the
+report:</li>
+</ol>
+<ul>
+<li><p>Select Current Open Balance to show open balances to
+date.</p></li>
+<li><p>Enter As Of Date to show open balance as of that date.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Click Run.</li>
+</ol>
+<p>The report columns are:</p>
+<ul>
+<li><p>Branch: The client branch number.</p></li>
+<li><p>Invoice Date: The date of the invoice.</p></li>
+<li><p>Invoice: The invoice number.</p></li>
+<li><p>Client: The client number.</p></li>
+<li><p>Client Name: The client name.</p></li>
+<li><p>Amount: The amount of the open balance on the invoice.</p></li>
+<li><p>Cost Center: The cost center assigned to the open
+balance.</p></li>
+</ul>
+<p>========================================================================</p>
+<h1 id="check-register-stale-by-check-number-report">Check Register
+(Stale) by Check Number Report</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Reports/Stale_Check_Register_By_Check_Number.htm
+Path:
+<code>PD/Accounting/Reports/Stale_Check_Register_By_Check_Number.htm</code></p>
+<h1 id="check-register-stale-by-check-number-report-1">Check Register
+(Stale) by Check Number Report</h1>
+<p>Use the Check Register (Stale) by Check Number Report form to view a
+check register of stale checks sorted in ascending order by check
+number.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> All of the fields are
+optional. If you run the report without specifying any criteria, you
+will see all stale checks for all clients and checking accounts.</p>
+</blockquote>
+<ol type="1">
+<li>Enter the information you want to use the filter the report results,
+if any:</li>
+</ol>
+<ul>
+<li><p>Enter the client ID number in the Company Number field.</p></li>
+<li><p>Enter a Beginning Check Date to include only checks with pay
+dates on or after that date in the report.</p></li>
+<li><p>Enter an Ending Check Date to include only checks with pay dates
+on or before that date in the report.</p></li>
+<li><p>Enter the Checking Account ID; this is the number that represents
+an account in PrismHR and may not match the actual bank account number.
+The name of the account displays.</p></li>
+<li><p>Enter a Check No. to show only that check on the report.</p></li>
+<li><p>Enter a Beginning Stale Check Date to include only checks with a
+stale date on or after that date.</p></li>
+<li><p>Enter an Ending Stale Check Date to include only checks with a
+stale date on or before that date.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> The stale date is the
+day when the check was reconciled as stale.</p>
+</blockquote>
+<ol start="2" type="1">
+<li>Click Run. The report output displays. For example:</li>
+</ol>
+<p>[Image: Stale Check Register By Check Number Report example]</p>
+<p>The report columns are:</p>
+<ul>
+<li><p>Stale Date: The day when the check was reconciled as
+stale.</p></li>
+<li><p>Stale Chk Entry By: The user name of the person who reconciled
+the stale check.</p></li>
+<li><p>Check Number: The number of the check.</p></li>
+<li><p>Check Date: The date on the check.</p></li>
+<li><p>Paid To: The payee name on the check.</p></li>
+<li><p>Check Amount: The amount the check was made out for.</p></li>
+</ul>
+<p>Related Topic</p>
+<p><a href="../Action/Stale_Check_Reconciliation.htm">Clearing
+Outstanding Checks</a></p>
+<p>========================================================================</p>
+<h1 id="wage-billing-by-state-report">Wage Billing by State Report</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Reports/Wage%20Billing%20By%20State%20Report.htm
+Path:
+<code>PD/Accounting/Reports/Wage Billing By State Report.htm</code></p>
+<h1 id="wage-billing-by-state-report-1">Wage Billing by State
+Report</h1>
+<p>Use this Wage Billing By State Report form to generate a report to
+see how much has been billed to clients per state for selected bill
+codes for a specified pay date range. You can run this report for all or
+a specific employer or client.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> <strong>Client Access
+Group Security is enabled on this form.</strong></p>
+</blockquote>
+<p>To access this form, click Reports. Under Operations|Report, click
+Wage Billing by State Report.</p>
+<p>To generate the Wage Billing by State Report:</p>
+<ol type="1">
+<li>Complete the following fields:</li>
+</ol>
+<p>Field Name — Description</p>
+<p>Starting Date — Enter the first date of the pay date range for your
+report.</p>
+<p>Ending Date — Enter the first date of the pay date range for your
+report.</p>
+<p>Employer ID — This field is optional. Leave this field blank to
+include all employers for your report. If you want to run this report
+for a specific employer, enter the Employer ID here or click the
+Employer ID link and select it from the Select Employer dialog box.</p>
+<p>Client ID — This field is optional. Leave this field blank to include
+all clients for your report. If you want to run this report for a
+specific client, enter the Client ID here or click the Client ID link
+and select it from the Select Client dialog box.</p>
+<p>Bill Codes — Enter all the bill codes for which you want to run this
+report. &gt; <strong>Note:</strong> <strong>Note:</strong> If you do not
+enter at least one bill code, this report does not generate and an error
+displays.</p>
+<ol start="2" type="1">
+<li>Click Run to generate the report on screen. Following is a sample
+Wage Billing by State Report.</li>
+</ol>
+<p>[Image: screenshot]</p>
+<p>========================================================================</p>
+<h1 id="benefit-plan-accounting">Benefit Plan Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Benefit_Plan_Accounting.htm
+Path: <code>PD/Accounting/Setup/Benefit_Plan_Accounting.htm</code></p>
+<h1 id="benefit-plan-accounting-1">Benefit Plan Accounting</h1>
+<p>If you have created global group benefit plans, you must create the
+association of each group benefit plan ID with a general ledger
+account.</p>
+<p>To setup the group benefit plan code/general ledger account
+associations:</p>
+<ol type="1">
+<li>Enter the G/L Template for the general ledger distribution template.
+This template was defined previously.</li>
+</ol>
+<p>Your organization would have different templates for PEOs and ASOs.
+You can assign different account numbers to each template.</p>
+<ol start="2" type="1">
+<li>From the G/L Type drop-down, select Benefit Plan. The form lists
+each Benefit Plan ID and Description in the system.</li>
+</ol>
+<p>[Image: G/L Setup Maintenance for GL Type “Benefit Plans”, showing
+benefit plans, debit/credit accounts, and prepaid accounts.]</p>
+<ol start="3" type="1">
+<li>For each code that requires account information, enter the full
+Debit Account and Credit Account numbers of the associated general
+ledger accounts. You can enter a simple account segment or a full
+account number with wildcards.</li>
+</ol>
+<p>The debit and credit accounts represent the premium amount to be paid
+to the plan provider. You can use a different G/L code for Debit and
+Expense if the benefit plan uses the One Month Prepay option (bill the
+client and deduct the amounts from the employees for the next month in
+the current month).</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>In the system, group benefit plans have accrual accounting attached
+to them. (Many other systems only track employee contributions to group
+benefits as they are deducted from employee checks.)</p>
+<p>The system performs accrual accounting on a per-batch accounting
+basis, so that the costs associated with benefit plans are waiting in
+the liability accounts by the time the invoice arrives from the benefit
+provider. Using the per-batch method is especially useful for a company
+that performs complex cost accounting using cost centers. The costs are
+broken out at the source level, which means there is less chance for
+accounting errors—not to mention less work.</p>
+<p>Examples</p>
+<p><a href="Benefit_Plan_Acct_Provided_PEO_Paid.htm">PEO/Client Provided
+and PEO Paid Benefit Plan</a></p>
+<p><a href="Benefit_Plan_Acct_Client_Provided_Paid.htm">Client Provided
+and Paid Benefit Plan</a></p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="client-provided-and-paid-benefit-plan">Client Provided and Paid
+Benefit Plan</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Benefit_Plan_Acct_Client_Provided_Paid.htm
+Path:
+<code>PD/Accounting/Setup/Benefit_Plan_Acct_Client_Provided_Paid.htm</code></p>
+<h1 id="client-provided-and-paid-benefit-plan-1">Client Provided and
+Paid Benefit Plan</h1>
+<p>In this case, the PEO has no cost associated with the plan and has
+all monies deducted from the employee, decreasing the invoice.</p>
+<p>PrismHR users frequently handle these kinds of plans as simple
+voluntary deductions with a client rebate code attached (for example,
+see Table 68). This reduces the client invoice by the amount deducted
+from the employees.</p>
+<p>There are some issues handling these benefits as simple deductions,
+though. Since the PEO does not administer the plan, the client has to
+notify the PEO how and when to update the amounts to be withheld from
+each employee’s check. However, if your client is unable or does not
+desire to keep up with the balances due, you might want to build an
+“Other” group benefit plan. Building the “Other” group benefit plan
+automatically activates PrismHR’s built-in arrearage system and allows
+you to keep track of contributions.</p>
+<p>The accounting issue with benefit plans is making the Cost accounting
+side “go away.” With client sponsored/client paid benefits, the PEO has
+no liability or cost accounting requirements because the PEO is rebating
+all the money deducted from employee checks through invoice credits.</p>
+<p>For this case, the PrismHR Customer Support Team recommends that
+PrismHR users create a liability account that is assigned the function
+of washing through zero value journals. In this case, the Benefit Plan
+would have both the debit and credit transactions assigned to this zero
+account.</p>
+<p>Also, the premium cost sides of the plan should be set to zero (0.00)
+costs, as should the billing sides of the plan. You would do this by
+building a Benefit Plan in Benefit Plan maintenance that showed the
+premium costs for each plan level (single, single plus one, family, and
+so on) as zero. In the event some money ever ended up in the account
+accidentally, the fact that it would exist on the balance sheet would
+bring immediate attention to the problem.</p>
+<p>Table 68 shows benefit plan accounting for a $150.00 plan:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Zero (Wash) Liability</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>$0.00</td>
+<td>$0.00</td>
+</tr>
+</tbody>
+</table>
+<p>Table 68 shows the cost side of the benefit plan hitting the books.
+This example assumes the plan is built with zero costs, as recommended
+above. Likewise, the deduction code used in either case (Voluntary
+Deduction with Rebate Code (<a
+href="Dedn_Code_Acct_Vol_Dedn_Rebated.htm">see Voluntary Deduction
+Rebated to the Client</a>) or Benefit Plan with Deduction (<a
+href="Benefit_Plan_Acct_Provided_PEO_Paid.htm">see PEO/Client Provided
+and PEO Paid Benefit Plan</a>)) would be coded into the same wash
+account.</p>
+<p>The Bill Code associated with the Deduction/Benefit Plan would also
+be coded against the same account so that monies withheld from employees
+would be washed against the credit issued on the invoice, the net effect
+of which would be none, as shown in Table 69. Table 70 shows the credit
+from the billing transaction.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Payroll Cash</th>
+<th></th>
+<th>Zero (Wash) Liability</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>$50.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td>$50.00</td>
+</tr>
+<tr class="even">
+<td>Accounts Receivable</td>
+<td></td>
+<td>Zero (Wash) Liability</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>$50.00</td>
+<td></td>
+<td>$50.00</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The credit is the “sales” effect, sent to the Zero (Wash) Liability
+account. The desired effect is net zero. As you can see, once both are
+complete, the net effect in the Zero (Wash) Liability account is
+zero.</p>
+<p>Parent Topic</p>
+<p><a href="Benefit_Plan_Accounting.htm">Benefit Plan Accounting</a></p>
+<p>========================================================================</p>
+<h1 id="peoclient-provided-and-peo-paid-benefit-plan">PEO/Client
+Provided and PEO Paid Benefit Plan</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Benefit_Plan_Acct_Provided_PEO_Paid.htm
+Path:
+<code>PD/Accounting/Setup/Benefit_Plan_Acct_Provided_PEO_Paid.htm</code></p>
+<h1 id="peoclient-provided-and-peo-paid-benefit-plan-1">PEO/Client
+Provided and PEO Paid Benefit Plan</h1>
+<p>In this case, the PEO (service provider) or client provides the
+benefit plan and the PEO pays the plan provider for the benefit. The PEO
+has an accrual to their liability account for the amount of the check to
+be paid to the benefit provider.</p>
+<p>The system prompts for the debit and credit accounts for the benefit
+plan. It accrues the entire benefit payable while deciding which
+employees are eligible for the benefit—in other words, whether or not
+the employee makes a contribution against the benefit, the entire
+balance accrues. The system is capturing the total due to the plan
+provider.</p>
+<p>With this in mind, the selection of the Premium Debit and Premium
+Credit accounts should ultimately charge the cost of sale account for
+the debit and the liability account for the credit.</p>
+<p>The following table shows benefit plan accounting for a $150.00
+plan:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Benefit Liability Accrued (or Accrued Payable)</th>
+<th></th>
+<th>Cost of Sales - Benefit Plan Expense</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$150.00</td>
+<td></td>
+<td>$150.00</td>
+</tr>
+</tbody>
+</table>
+<p>The deduction code referenced on the benefit plan should be set up to
+credit the expense. Remember that anything the employee pays towards the
+benefit plan does not affect your liability; it simply decreases your
+cost.</p>
+<p>The following image shows the Group Benefit Plans form in PrismHR.
+(Click Back Office. Select Group Benefit Plans under System|Change.)
+This figure highlights the Deduction Code.</p>
+<p>[Image: screenshot]</p>
+<p>Since the same amount deducted from the employee will also be
+credited back to the client, the sales account will also be reduced by
+the same amount. The P&amp;L effect will not change. For example, if the
+employee contributes $50.00, the bill to the client will go down by
+$50.00, as will your cost for providing this benefit.</p>
+<p>Table 63 shows the effect of the deduction code:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Payroll Cash Account</th>
+<th></th>
+<th>Cost of Sales - Benefit Plan Expense</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>$50.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td>$50.00</td>
+</tr>
+</tbody>
+</table>
+<p>Table 64 shows the effect of the deduction on the billing side:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Accounts Receivable</th>
+<th></th>
+<th>Sales - Benefit Plans</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$50.00</td>
+<td></td>
+<td>$50.00</td>
+</tr>
+</tbody>
+</table>
+<p>Even if the benefit is 100% paid by the PEO, the amount paid by the
+employee serves to lower the PEO’s costs.</p>
+<p>As an option, the system can update an expense account instead of a
+revenue account so that an employee deduction towards a benefit serves
+to negate the reduction of expenses; however, this method never
+completely ties your invoiced amounts into your revenues. The PEO has to
+include revenues that were accounted for within your General Journal
+costs to get the complete picture of revenues; in this case, no invoice
+register would contain complete revenue data.</p>
+<p>Some clients wash all these elements through a clearing account if
+there is no mark-up on the plans.</p>
+<p>Parent Topic</p>
+<p><a href="Benefit_Plan_Accounting.htm">Benefit Plan Accounting</a></p>
+<p>========================================================================</p>
+<h1 id="accounting-for-checking-accounts">Accounting for Checking
+Accounts</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Checking_Accounts_GL_Accounting.htm
+Path:
+<code>PD/Accounting/Setup/Checking_Accounts_GL_Accounting.htm</code></p>
+<h1 id="accounting-for-checking-accounts-1">Accounting for Checking
+Accounts</h1>
+<p>Use the G/L Setup Maintenance form enter the appropriate account
+number for each checking account in the system.</p>
+<p>To set up the billing codes/general ledger account associations:</p>
+<ol type="1">
+<li>Enter or select the GL Template for the general ledger distribution
+template. (This template was previously defined.)</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Note the following:</p>
+</blockquote>
+<ul>
+<li><p>CLID wildcards <em>do not</em> work with the GL Template set to
+GL and the GL Type set to Miscellaneous.</p></li>
+<li><p>Your organization might have different templates for PEOs and
+ASOs. You can assign different account numbers to each
+template.</p></li>
+<li><p>An error message displays if you enter or select an
+<em>obsolete</em>GL Template, and the system will not process a payroll
+when a client assigned with an obsolete G/L template tries to initiate
+payroll calculation or finalization.</p></li>
+</ul>
+<ol start="2" type="1">
+<li><p>From the GL Type drop-down, select Billing Code. The form lists
+each Billing Code and Description in the system.</p></li>
+<li><p>Enter or import the G/L account number used for the billing code
+in the Account field.</p></li>
+</ol>
+<p><strong>Note</strong>: You can enter simple account segments or full
+account numbers with wildcards.</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="voluntary-deduction-not-rebated-to-the-client">Voluntary
+Deduction Not Rebated to the Client</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Dedn_Code_Acct_Vol_Dedn_Not_Rebated.htm
+Path:
+<code>PD/Accounting/Setup/Dedn_Code_Acct_Vol_Dedn_Not_Rebated.htm</code></p>
+<h1 id="voluntary-deduction-not-rebated-to-the-client-1">Voluntary
+Deduction Not Rebated to the Client</h1>
+<p>Before implementing this setup, your organization would decide
+whether your want to earn revenue off your employees.</p>
+<p>If these deductions are considered revenue streams, then you would
+code the charges for items such as stop payment check fees and other
+service charges to credit a revenue account. Most service providers find
+this revenue stream to be so small or unimportant that they choose
+instead to show these transactions as either a reduction of expenses for
+office or bank service fees or other income below the line.</p>
+<p>Whatever account your organization selects will be credited for any
+amount withheld from an employee’s check. Many organization prefer
+expense categories , making revenue a function of the invoice process.
+Table 76, for example, shows a credit for a garnishment pay period
+fee.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Payroll Cash</th>
+<th></th>
+<th>Office Expense</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>$50.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td>$50.00</td>
+</tr>
+</tbody>
+</table>
+<p>Do note that, if this type of transaction is coded to revenues, these
+revenues will not show on the invoice and may cause issues in reviewing
+invoice and billing reports for total revenues. To handle this, some
+service providers build special expense accounts to receive the money
+instead of lumping it into “office expense”; for example, “office
+expense reimbursed from garnishment or fees” as a contra-account to
+“office expense”.</p>
+<p>Parent Topic</p>
+<p><a href="Deduction_Code_Accounting.htm">Deduction Code
+Accounting</a></p>
+<p>========================================================================</p>
+<h1 id="voluntary-deduction-rebated-to-the-client">Voluntary Deduction
+Rebated to the Client</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Dedn_Code_Acct_Vol_Dedn_Rebated.htm
+Path:
+<code>PD/Accounting/Setup/Dedn_Code_Acct_Vol_Dedn_Rebated.htm</code></p>
+<h1 id="voluntary-deduction-rebated-to-the-client-1">Voluntary Deduction
+Rebated to the Client</h1>
+<p>A deduction code for a voluntary deduction rebated to the client
+should contain a Rebate Bill Code.</p>
+<p>[Image: Voluntary deduction code with its Rebate Bill Code field set
+to “DEDCR” (Deduction Credit).]</p>
+<p>The accounting for the deduction places a credit into a liability
+account that is the same account as the Bill Code referenced. The bill
+code subsequently creates a debit on the invoice that creates a
+zero-effect transaction. A liability account is preferable since any
+extra balances are more obvious to inspection.</p>
+<p>Table 73 shows the deduction code:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Payroll Cash</th>
+<th></th>
+<th>Zero (Wash) Liability</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>$50.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td>$50.00</td>
+</tr>
+</tbody>
+</table>
+<p>Table 74 shows the rebate transaction:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Accounts Receivable</th>
+<th></th>
+<th>Zero (Wash) Liability</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$50.00</td>
+<td></td>
+<td>$50.00</td>
+</tr>
+</tbody>
+</table>
+<p>Parent Topic</p>
+<p><a href="Deduction_Code_Accounting.htm">Deduction Code
+Accounting</a></p>
+<p>========================================================================</p>
+<h1 id="deduction-code-accounting">Deduction Code Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Deduction_Code_Accounting.htm
+Path: <code>PD/Accounting/Setup/Deduction_Code_Accounting.htm</code></p>
+<h1 id="deduction-code-accounting-1">Deduction Code Accounting</h1>
+<p>Once you have created your global deduction code files, go to the
+general ledger accounting interface files to create the interface for
+each deduction code file. Typical deductions are benefit plans,
+retirement plans, and standalone or voluntary deductions.</p>
+<p>Deduction codes associated with benefit plans need to be coded to
+have the desired effect as coordinating accounting. This area requires
+your organization to do significant planning and review; <a
+href="Benefit_Plan_Accounting.htm">see Benefit Plan Accounting</a>.</p>
+<p>If you have created global deduction codes, you must create the
+association of each deduction code with a general ledger account.</p>
+<p>To set up the deduction code/general ledger account associations:</p>
+<ol type="1">
+<li><p>Enter the G/L Template for the general ledger distribution
+template. This template was defined previously.</p></li>
+<li><p>From the G/L Type drop-down, select Deduction Codes. The form
+lists each Deduction Code and Description in the system.</p></li>
+</ol>
+<p>[Image: G/L Setup Maintenance form showing GL Type “Deduction Codes”.
+The grid displays deduction codes along with credit account and
+debit/credit arrears.]</p>
+<ol start="3" type="1">
+<li>For each code that requires account information:</li>
+</ol>
+<ul>
+<li><p>Enter the full Credit Account number (with wildcards, if needed)
+for the associated general ledger account.</p></li>
+<li><p>If the deduction code will affect arrears, enter the Debit
+Arrears and/or Credit Arrears. This is typically a clearing event, since
+you probably do not want to book a “receivable” for arrearage.</p></li>
+</ul>
+<p>You can enter simple account segments or full account numbers with
+wildcards.</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Examples</p>
+<p><a href="Dedn_Code_Acct_Vol_Dedn_Rebated.htm">Voluntary Deduction
+Rebated to the Client</a></p>
+<p><a href="Dedn_Code_Acct_Vol_Dedn_Not_Rebated.htm">Voluntary Deduction
+Not Rebated to the Client</a></p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="fsa-plan-accounting">FSA Plan Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/FSA_Plan_Accounting.htm
+Path: <code>PD/Accounting/Setup/FSA_Plan_Accounting.htm</code></p>
+<h1 id="fsa-plan-accounting-1">FSA Plan Accounting</h1>
+<p>If you have created Flexible Spending Account (FSA) plans, you must
+create the association of each FSA plan ID with a general ledger
+account.</p>
+<p>To set up the FSA plan code/general ledger account associations:</p>
+<ol type="1">
+<li><p>Enter the G/L Template for the general ledger distribution
+template. This template was previously defined.</p></li>
+<li><p>From the G/L Type drop-down, select FSA Match. The form lists
+each FSA Plan and Description in the system.</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li>For each FSA plan, enter information as necessary for your
+organization’s accounting:</li>
+</ol>
+<ul>
+<li><p>Enter the Match Debit Account.</p></li>
+<li><p>Enter the Match Credit Account.</p></li>
+<li><p>Enter the Debit ACH Account, which is the account to debit for
+any FSA amounts deposited via direct deposit.</p></li>
+</ul>
+<p>You can enter simple account segments or full account numbers with
+wildcards.</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="gl-account-numbers-in-prismhr">G/L Account Numbers in
+PrismHR</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/GL_Account_Numbers_Setup.htm
+Path: <code>PD/Accounting/Setup/GL_Account_Numbers_Setup.htm</code></p>
+<h1 id="gl-account-numbers-in-prismhr-1">G/L Account Numbers in
+PrismHR</h1>
+<p>You can establish G/L account numbers for each of the codes that
+exist in the system for pay, deductions, benefits, retirement, workers’
+compensation, taxes, checking, billing, and other items.</p>
+<p>========================================================================</p>
+<h1 id="using-gl-account-wildcards">Using G/L Account Wildcards</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/GL_Account_Wildcards.htm
+Path: <code>PD/Accounting/Setup/GL_Account_Wildcards.htm</code></p>
+<h1 id="using-gl-account-wildcards-1">Using G/L Account Wildcards</h1>
+<p>In the G/L Setup form, you can use the G/L account wildcards to
+divide your internal accounting into the correct segments.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Wildcard</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CLBROKER</td>
+<td>Client Broker*</td>
+</tr>
+<tr class="even">
+<td>CLCC</td>
+<td>Client Cost Center</td>
+</tr>
+<tr class="odd">
+<td>CLGRPCD</td>
+<td>Client Group Code*</td>
+</tr>
+<tr class="even">
+<td>CLID</td>
+<td>Client ID*</td>
+</tr>
+<tr class="odd">
+<td>CLNAISC</td>
+<td>Client NAISC*</td>
+</tr>
+<tr class="even">
+<td>CLSALES</td>
+<td>Client Sales Person*</td>
+</tr>
+<tr class="odd">
+<td>CLSCC</td>
+<td>Client Sub Cost Center</td>
+</tr>
+<tr class="even">
+<td>CLSTATE</td>
+<td>Client State*</td>
+</tr>
+<tr class="odd">
+<td>CLSVRT</td>
+<td>Client Service Type*</td>
+</tr>
+<tr class="even">
+<td>CLWC</td>
+<td>Client WC Policy*</td>
+</tr>
+<tr class="odd">
+<td>EEDP</td>
+<td>Employee Department</td>
+</tr>
+<tr class="even">
+<td>EEDP2</td>
+<td>Employee Department Two</td>
+</tr>
+<tr class="odd">
+<td>EEDV</td>
+<td>Employee Division</td>
+</tr>
+<tr class="even">
+<td>EEDV2</td>
+<td>Employee Division Two</td>
+</tr>
+<tr class="odd">
+<td>EEDV3</td>
+<td>Employee Division Three</td>
+</tr>
+<tr class="even">
+<td>EEJB</td>
+<td>Employee Position</td>
+</tr>
+<tr class="odd">
+<td>EEJB2</td>
+<td>Employee Position Two</td>
+</tr>
+<tr class="even">
+<td>EEJB3</td>
+<td>Employee Position Three</td>
+</tr>
+<tr class="odd">
+<td>EELCC</td>
+<td>Employee Location Code</td>
+</tr>
+<tr class="even">
+<td>EELC</td>
+<td>Employee Location</td>
+</tr>
+<tr class="odd">
+<td>EELC2</td>
+<td>Employee Location Two</td>
+</tr>
+<tr class="even">
+<td>EELC3</td>
+<td>Employee Location Three</td>
+</tr>
+<tr class="odd">
+<td>EEPR</td>
+<td>Employee Project</td>
+</tr>
+<tr class="even">
+<td>EESCC</td>
+<td>Employee Sub Cost Center</td>
+</tr>
+<tr class="odd">
+<td>EMCC</td>
+<td>Employer Cost Center</td>
+</tr>
+<tr class="even">
+<td>EMID</td>
+<td>Employer ID*</td>
+</tr>
+<tr class="odd">
+<td>EMSCC</td>
+<td>Employer Sub Cost Center</td>
+</tr>
+<tr class="even">
+<td>MSCL01 - MSCL99</td>
+<td>Client Miscellaneous GL Codes 01-99</td>
+</tr>
+<tr class="odd">
+<td>EEMDP01 - EEMDP99</td>
+<td>Employee Department Miscellaneous GL Codes 01-99</td>
+</tr>
+<tr class="even">
+<td>EEMDV01 - EEMDV99</td>
+<td>Employee Division Miscellaneous GL Codes 01-99</td>
+</tr>
+<tr class="odd">
+<td>EEMJB01 - EEMJB99</td>
+<td>Employee Position Miscellaneous GL Codes 01-99</td>
+</tr>
+<tr class="even">
+<td>EEMLPJ01 - EEMLPJ99</td>
+<td>Employee Project Miscellaneous GL Codes 01-99</td>
+</tr>
+<tr class="odd">
+<td>EEMLC01 - EEMLC99</td>
+<td>Employee Worksite Location Miscellaneous GL Codes 01-99</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> Note that the following information only
+applies to the wildcards indicated above with an asterisk (*) in its
+Description column:</p>
+</blockquote>
+<ul>
+<li><p>External Journal Post (located on Operations|Action menu): After
+applying the wildcard values within the G/L Setup, the system presents
+the substituted variable on the External Journal Post.</p></li>
+<li><p>External Invoice Post (located on Operations|Action menu): After
+applying the wildcard values within the G/L Setup, the system presents
+the substituted variable on the External Invoice Post.</p></li>
+<li><p>External Third Party Checks Journal Post (located on
+Operations|Action menu): After applying the wildcard values within the
+G/L Setup, the system presents the substituted variable on the External
+Third Party Checks Journal Post.</p></li>
+<li><p>Regenerate Payroll Cost Accounting (located on Operations|Action
+menu): After adding or changing the wildcards within the G/L Setup, the
+system applies them during the regenerate cost accounting
+process.</p></li>
+<li><p>Regenerate Invoice Accounting (located on Operations|Action
+menu): After adding or changing the wildcards within the G/L Setup, the
+system applies them during the regenerate invoice accounting
+process.</p></li>
+</ul>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p>========================================================================</p>
+<h1 id="gl-chart-of-account-maintenance">G/L Chart of Account
+Maintenance</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/GL_Chart_Maintenance.htm
+Path: <code>PD/Accounting/Setup/GL_Chart_Maintenance.htm</code></p>
+<h1 id="gl-chart-of-account-maintenance-1">G/L Chart of Account
+Maintenance</h1>
+<p>Use G/L Chart of Account Maintenance to add, maintain, or delete
+accounts from your general ledger chart of accounts.</p>
+<p>What you might need to do with this form depends on whether your
+system is set to build account numbers; see also <a
+href="Global_Accounting_Parameters.htm">Setting Global Accounting
+Parameters</a>.</p>
+<ul>
+<li><p>If the Accounting Interface Type in System Parameters includes
+“Build Account #s”, then the chart of accounts is in the auto-build
+mode. This means that if a G/L number is added into the system in one of
+the G/L code file setup menus, then at the time the payroll is
+initialized it will create that number within the chart of accounts. If
+it is not a valid account, use this form to delete it.</p></li>
+<li><p>If “Build Account #s” is not indicated and the G/L number is not
+in the G/L chart of accounts, then the system will give the payroll
+processor an error during initialization telling the user that it has
+not been set up. You would then need to use the G/L Chart of Account
+Maintenance form to add the G/L number.</p></li>
+</ul>
+<p>The G/L Chart of Account Maintenance form is found in the Back Office
+menu under System|Change.</p>
+<p>To set up the G/L chart of accounts:</p>
+<ol type="1">
+<li><p>Enter the Account Number. This is the chart of account number
+that the system uses for validation of accounts that will be sent to
+your third-party accounting system.</p></li>
+<li><p>If appropriate, enter the Account Description.</p></li>
+</ol>
+<ul>
+<li><p>To create the account in your chart of accounts because it was
+missing, click Save.</p></li>
+<li><p>To remove the account from the chart of accounts because it is
+not valid, click Delete.</p></li>
+</ul>
+<p>Related Topic</p>
+<p><a href="../Front_Matter/PHR_Acct_Setup.htm">PrismHR Accounting
+Setup</a></p>
+<p>========================================================================</p>
+<h1 id="gl-template-account-number-swap">G/L Template Account Number
+Swap</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/GL_Template_Acct_Number_Swap.htm
+Path:
+<code>PD/Accounting/Setup/GL_Template_Acct_Number_Swap.htm</code></p>
+<h1 id="gl-template-account-number-swap-1">G/L Template Account Number
+Swap</h1>
+<p>The G/L Template Account Number Swap is only for internal accounting.
+It is for organizations that use QuickBooks and would like to use the
+Account Description instead of the Account Number for the service
+provider’s general ledger.</p>
+<p>[Image: Example of the G/L Template Account Number Swap form, showing
+Template ID field and on-screen instructions. See the form for details
+about these instructions.]</p>
+<p>To run the G/L Template Account Number Swap utility:</p>
+<ol type="1">
+<li><p>Make sure that you have the file ready as described in the
+form.</p></li>
+<li><p>Enter the G/L Template ID.</p></li>
+<li><p>Click Run Update.</p></li>
+<li><p>Click Yes in the confirmation message to proceed.</p></li>
+</ol>
+<p>========================================================================</p>
+<h1 id="gl-template-copy">G/L Template Copy</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/GL_Template_Copy.htm
+Path: <code>PD/Accounting/Setup/GL_Template_Copy.htm</code></p>
+<h1 id="gl-template-copy-1">G/L Template Copy</h1>
+<p>Use the G/L Template Copy feature to copy the account codes from an
+existing template to another template that you have created. For
+information about setting up G/L templates, <a
+href="GL_Template_Maintenance.htm">see Creating Multiple G/L
+Templates</a>.</p>
+<p>To copy G/L account codes from one template to another:</p>
+<ol type="1">
+<li><p>Locate the G/L Template Copy form in the Back Office menu under
+System|Change.</p></li>
+<li><p>In the Copy From field, enter the ID of the existing template,
+which contains the account codes to use as the basis for the newer
+template.</p></li>
+<li><p>In the To field, enter the ID of the newer template, which
+receives the copied account codes.</p></li>
+</ol>
+<p>The Template Types table populates with the existing types.</p>
+<ol start="4" type="1">
+<li>If you do not need to copy a type, remove it from the list by
+clicking the x at the left-hand side of the row.</li>
+</ol>
+<p>[Image: Example of the G/L Template Copy utility. This copy starts
+from the ‘ASO’ template ID and includes the following template types:
+Benefit Plans, Deduction Codes, Billing Codes, Pay Codes, Retirement
+Codes, Tax Codes, and W/C Codes.]</p>
+<ol start="5" type="1">
+<li><p>Click Save.</p></li>
+<li><p>Click Yes to confirm that you want to copy the template
+information.</p></li>
+</ol>
+<p>The system copies the files; this can take a moment.</p>
+<ol start="7" type="1">
+<li>When prompted, click the OK button.</li>
+</ol>
+<p>The G/L Template Copy form clears.</p>
+<p>Related Topic</p>
+<p><a href="../Front_Matter/PHR_Acct_Setup.htm">PrismHR Accounting
+Setup</a></p>
+<p>========================================================================</p>
+<h1 id="creating-multiple-gl-templates">Creating Multiple G/L
+Templates</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/GL_Template_Maintenance.htm
+Path: <code>PD/Accounting/Setup/GL_Template_Maintenance.htm</code></p>
+<h1 id="creating-multiple-gl-templates-1">Creating Multiple G/L
+Templates</h1>
+<p>Use the G/L Template Maintenance form to create multiple templates
+for use in the system. These different templates allow you to assign
+different G/L account numbers to the same codes (benefit codes, pay
+codes, deduction codes, and so on). Your organization assigns G/L
+templates to the clients in the system.</p>
+<p>To set up G/L templates:</p>
+<ol type="1">
+<li><p>Locate the G/L Template Maintenance form in the Back Office menu
+under System|Change.</p></li>
+<li><p>In the Template ID field, enter the unique identifier for the
+template.</p></li>
+<li><p>Enter a Description of the template as needed.</p></li>
+<li><p>For this template, enter the value of the Natural Account Number
+Position in the G/L account definition format.</p></li>
+<li><p>If you are using a multi-part G/L account number, select the
+account number Position Delimiter.</p></li>
+<li><p>Select Obsolete to prevent the template from being used.</p></li>
+</ol>
+<p><strong>Note</strong>: Obsolete G/L template IDs display Y in the
+Obsolete column on the Select GL Template list when you select Template
+ID.</p>
+<ol start="7" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Related Topic</p>
+<p><a href="../Front_Matter/PHR_Acct_Setup.htm">PrismHR Accounting
+Setup</a></p>
+<p>========================================================================</p>
+<h1 id="global-codes-setup-for-accounting">Global Codes Setup for
+Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Global-Codes-Setup.htm
+Path: <code>PD/Accounting/Setup/Global-Codes-Setup.htm</code></p>
+<h1 id="global-codes-setup-for-accounting-1">Global Codes Setup for
+Accounting</h1>
+<p>During payroll processing, the system checks the Global Codes Setup
+in System Parameters. Each code must be associated with a G/L account
+number in the appropriate G/L account set up screen. If not, payroll
+processors will encounter errors informing them that the G/L account
+number is not defined.</p>
+<p>To set up the global codes:</p>
+<ol type="1">
+<li><p>Open System Parameters (found in the Back Office menu under
+System|Change).</p></li>
+<li><p>Scroll down to the Global Codes Setup panel.</p></li>
+</ol>
+<p>[Image: Global Codes Setup panel on the System Parameters form,
+showing global deduction codes assigned to over a dozen deduction types
+including 401(k), Tip Credit, FSA, HSSA, and Group Term Life.]</p>
+<ol start="3" type="1">
+<li><p>Enter the 401(k) Pre-Tax Deduction Code used for 401(k) elective
+contributions deducted before taxes.</p></li>
+<li><p>Enter the 401(k) Loan Deduction Code used for 401(k) loan
+payments.</p></li>
+<li><p>Enter the 401(k) Post-Tax Deduction Code used for 401(k) elective
+contributions deducted after taxes.</p></li>
+<li><p>Enter the Garnishment Fee Deduction Code used for deducting
+garnishment fees. It must be set up as a voluntary type deduction
+code.</p></li>
+<li><p>Enter the Automatic Loan Deduction Code used to automatically
+convert deductions entered on the Other Deductions form to employee loan
+deductions.</p></li>
+<li><p>Enter the Employee Loan Deduction code used to automatically
+create employee loan deductions.</p></li>
+<li><p>Enter the Tip Credit Make Up Pay Code used to pay tip credit
+make-up wages.</p></li>
+<li><p>Enter the ACH To Deduction Code used when an ACH transaction is
+set up to create a payroll deduction rather than an ACH direct deposit
+transaction.</p></li>
+<li><p>Enter the Group Term Life Fringe Pay Code used for life over 50K
+taxable fringe benefits.</p></li>
+<li><p>Enter the Dependents GTL Fringe Pay Code used for group term life
+for employees’ dependents.</p></li>
+<li><p>Enter the Auto Term Employee Status Code to use in employee
+records when employees are automatically terminated because a client was
+terminated.</p></li>
+<li><p>Enter the Auto Term Reason Code to use in employee records when
+employees are automatically terminated because a client was
+terminated.</p></li>
+<li><p>Enter the Transfer Term Reason Code to use when an employee is
+terminated after being transferred to a different client.</p></li>
+<li><p>Enter the FSA Match Bill Code used for billing client
+contributions to employees’ flexible savings account.</p></li>
+<li><p>Enter the HSA Match Bill Code used for billing client
+contributions to employees’ health savings account.</p></li>
+<li><p>Enter the Refund Tax Pay Code to use when refunding a tax amount
+over-withheld from an employee.</p></li>
+<li><p>Enter the Code Test Employer ID used to validate items (such as
+billing codes) that do not have a particular employer tied to them. This
+ID must exist in Employer Details.</p></li>
+</ol>
+<p>The system validates accounts, sub-accounts, cost centers, and
+sub-cost centers against the accounting master file. Since this
+accounting validation requires employer information, PrismHR uses the
+employer in this field when no other is available.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Since the system
+performs the validation only for this client, other client flows might
+be incorrect. The PrismHR Customer Support Team strongly recommends that
+you test any new code you add for each employer that uses the code.</p>
+</blockquote>
+<ol start="20" type="1">
+<li>Click Save.</li>
+</ol>
+<p>========================================================================</p>
+<h1 id="setting-global-accounting-parameters">Setting Global Accounting
+Parameters</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Global_Accounting_Parameters.htm
+Path:
+<code>PD/Accounting/Setup/Global_Accounting_Parameters.htm</code></p>
+<h1 id="setting-global-accounting-parameters-1">Setting Global
+Accounting Parameters</h1>
+<p>Before setting up your general ledger accounts, configure the
+accounting parameters that your organization plans to use throughout the
+system.</p>
+<p>To set up the global accounting information:</p>
+<ol type="1">
+<li><p>Open System Parameters (found in the Back Office menu under
+System|Change).</p></li>
+<li><p>Scroll down to the Global Accounting panel.</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li>Select the Accounting Interface Type, which represents the type of
+accounting program you use with PrismHR.</li>
+</ol>
+<ul>
+<li><p>No Accounting: No accounting interface.</p></li>
+<li><p>Great Plains/Dynamics: Use Great Plains/Dynamics.</p></li>
+<li><p>Great Plains/Dynamics - Build Account #s: Automatically create
+accounts for your Great Plains/Dynamics chart of accounts.</p></li>
+<li><p>Intacct: Use Intacct.</p></li>
+<li><p>Intacct - Build Account #s: Automatically create accounts for
+your Intacct chart of accounts.</p></li>
+<li><p>Peach Tree/Sage: Use Peach Tree/Sage.</p></li>
+<li><p>Peach Tree/Sage- Build Account #s: Automatically create accounts
+for your Peach Tree/Sage chart of accounts.</p></li>
+<li><p>QuickBooks: Use QuickBooks.</p></li>
+<li><p>QuickBooks - Build Account #s: Automatically create accounts for
+your QuickBooks chart of accounts.</p></li>
+<li><p>Custom Layout: Create a custom layout.</p></li>
+<li><p>Custom Layout - Build Account #s: Automatically create accounts
+for the chart of accounts for your custom accounting layout.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> <strong>Note:</strong> Automatically building
+the chart of accounts can be useful. If a G/L account is not in the
+Chart of Accounts, it does not stop payroll processing; it simply adds
+the G/L number to the chart. However, the system can also add “bad” G/L
+numbers, and not all accounting programs can handle these errors. You
+can remove account numbers that were added in error.</p>
+</blockquote>
+<ol start="4" type="1">
+<li><p>Enter the complete Export Path For Cash Receipts.</p></li>
+<li><p>Enter the complete Export Path For Receivables data.</p></li>
+<li><p>Enter the Export Path For Journals, which is the complete export
+path for general journal data.</p></li>
+<li><p>Enter the Export Path For CustMast, which is the complete export
+path for customer data.</p></li>
+<li><p>Enter the Export Path For CompanyAcctng, which is the complete
+export path for download files produced by client accounting.</p></li>
+<li><p>Enter the Import Path For Chart, which is the complete import
+path for chart of accounts data.</p></li>
+<li><p>Select Consolidate Cost Accounting to consolidate costs by
+date.</p></li>
+<li><p>Select Use PrismHR Accounts Receivable if your organization is
+using PrismHR Accounts Receivable and you want it to be the primary
+accounts receivable. (If you select this option, the system will not
+track accounts receivable information in your accounting
+software.)</p></li>
+<li><p>Select Suppress File Transfer Message to suppress the dialog that
+appears when accounting files are successfully transferred to your
+computer.</p></li>
+<li><p>From the W/C General Ledger by State/Policy drop-down, select
+whether to set up workers’ compensation general ledger accounts by State
+or Policy. If you do not specify, the system assumes state.</p></li>
+<li><p>Using the Require Prepay Benefit Account No.field, determine how
+PrismHR handles prepaid benefits:</p></li>
+</ol>
+<ul>
+<li><p>Yes: Send liability amounts for prepaid benefit plans to another
+account. This forces the use of the prepaid account; appropriate fields
+display in the Group Benefit Plans form.</p></li>
+<li><p>No: Use the same account for all benefit plans.</p></li>
+<li><p>Setup: Allow setup transition.</p></li>
+</ul>
+<p>For example, if a single plan has clients prepaying, you would put
+the current clients into the liability and prepaid clients into a
+prepaid account that you would manually “sweep” at the end of the month
+into the liability account for the next month.</p>
+<ol start="15" type="1">
+<li><p>Click Save.</p></li>
+<li><p>Click Yes to confirm that you want to save the system
+parameters.</p></li>
+</ol>
+<p>Related Topics</p>
+<p><a href="../Front_Matter/PHR_Acct_Setup.htm">PrismHR Accounting
+Setup</a></p>
+<p><a href="../../Maintenance/System/System_Parameters.htm">Maintaining
+System Parameters</a></p>
+<p>========================================================================</p>
+<h1 id="hsa-plan-accounting">HSA Plan Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/HSA_Plan_Accounting.htm
+Path: <code>PD/Accounting/Setup/HSA_Plan_Accounting.htm</code></p>
+<h1 id="hsa-plan-accounting-1">HSA Plan Accounting</h1>
+<p>If you have created HSA (Health Savings Account) plans, you must
+create the association of each HSA plan ID with a general ledger
+account.</p>
+<p>To set up the HSA plan code/general ledger account associations:</p>
+<ol type="1">
+<li><p>Enter the G/L Template for the general ledger distribution
+template. This template was previously defined.</p></li>
+<li><p>From the G/L Type drop-down, select HSA Match. The form lists
+each HSA Plan and Description in the system.</p></li>
+</ol>
+<p>[Image: G/L Setup Maintenance form, showing GL Type “HSA Match” along
+with HSA plans, match debit accounts, match credit accounts, and debit
+ACH accounts.]</p>
+<ol start="3" type="1">
+<li>For each HSA plan, enter information as necessary for your
+organization’s accounting:</li>
+</ol>
+<ul>
+<li><p>Enter the Match Debit Account.</p></li>
+<li><p>Enter the Match Credit Account.</p></li>
+<li><p>Enter the Debit ACH Account, which is the account to debit for
+any HSA amounts deposited via direct deposit.</p></li>
+</ul>
+<p>You can enter simple account segments or full account numbers with
+wildcards.</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="miscellaneous-gl-accounting">Miscellaneous G/L Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Miscellaneous_GL_Accounting.htm
+Path:
+<code>PD/Accounting/Setup/Miscellaneous_GL_Accounting.htm</code></p>
+<h1 id="miscellaneous-gl-accounting-1">Miscellaneous G/L Accounting</h1>
+<p>Use the GL Interface Setup form to enter the account numbers for each
+of the listed codes. If you do not want to use a G/L account number for
+any of the codes, you can leave the field blank.</p>
+<p>To set up the miscellaneous codes/general ledger account
+associations:</p>
+<ol type="1">
+<li><p>Enter GL in the G/L Template field to open the default G/L
+template. (Miscellaneous codes only apply to this template.)</p></li>
+<li><p>From the G/L Type drop-down, select Miscellaneous. The form lists
+each Billing Code and Description in the system.</p></li>
+</ol>
+<p>[Image: G/L Setup Maintenance form with GL Type set to Miscellaneous.
+Miscellaneous items are listed in the grid, with one editable column
+called G/L Account.]</p>
+<ol start="3" type="1">
+<li><p>For the items that need it, enter the G/L Account. You can enter
+a simple account segment or a full account number with
+wildcards.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="overview-of-gl-account-number-usage">Overview of G/L Account
+Number Usage</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Overview_GL_Account_Numbers.htm
+Path:
+<code>PD/Accounting/Setup/Overview_GL_Account_Numbers.htm</code></p>
+<h1 id="overview-of-gl-account-number-usage-1">Overview of G/L Account
+Number Usage</h1>
+<p>This section describes how G/L account number coding affects the
+accounting for your organization and how these numbers are used in the
+system’s payroll process.</p>
+<p>Parent Topic</p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p>========================================================================</p>
+<h1 id="benefit-plans">Benefit Plans</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Overview_GL_Benefit_Plans.htm
+Path: <code>PD/Accounting/Setup/Overview_GL_Benefit_Plans.htm</code></p>
+<h1 id="benefit-plans-1">Benefit Plans</h1>
+<p>When a user sets up a benefit plan, there are four items that affect
+the accounting process. Each item has a G/L account number assigned to
+it, so your organization should ensure that they are coordinated
+together. The four items are:</p>
+<ul>
+<li><p>Benefit Plan ID</p></li>
+<li><p>Deduction Code</p></li>
+<li><p>125 Deduction Code</p></li>
+<li><p>Bill Code</p></li>
+</ul>
+<p>[Image: Group Benefit Plans form with the following fields
+highlighted and assigned: Benefit Plan ID, Deduction Code, 125 Deduction
+Code, and Bill Code.]</p>
+<p>To set up the G/L account codes for the benefit plan, ensure the
+accounting information is set up for the benefit plan and each of the
+codes referenced on the plan:</p>
+<ol type="1">
+<li><p><a href="Benefit_Plan_Accounting.htm">Benefit Plan
+Accounting</a></p></li>
+<li><p><a href="Deduction_Code_Accounting.htm">Deduction Code
+Accounting</a></p></li>
+<li><p><a href="Revenue-Sales.htm">Billing, Revenue, and Sales
+Accounting</a></p></li>
+</ol>
+<h2 id="payroll-processing-examples">Payroll Processing Examples</h2>
+<p>The following is an example of what the system generates during
+payroll processing.</p>
+<p>If the pay period amount for the total premium is $200, then the
+system creates entries:</p>
+<p>Benefit Plan Debit</p>
+<p>$200.00</p>
+<table>
+<thead>
+<tr class="header">
+<th>Benefit Plan Credit</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$200.00</td>
+</tr>
+</tbody>
+</table>
+<p>If in this example the premium was split equally between the employee
+and the employer, then the entries for the deduction from the employee
+would be:</p>
+<p>Deduction Code Debit</p>
+<p>$100.00</p>
+<table>
+<thead>
+<tr class="header">
+<th>Cash Account Credit</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$100.00</td>
+</tr>
+</tbody>
+</table>
+<p>The entries for the billing to the client would be:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Bill Code Credit</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$100.00</td>
+</tr>
+</tbody>
+</table>
+<p>Accounts Receivable Debit</p>
+<p>$100.00</p>
+<p>If this was a plan paid by the PEO (either PEO- or client-sponsored),
+then the PEO would have a liability of $200, which is owed to the plan
+provider.</p>
+<p>Depending on how your organization wants to set up accounting, the
+debits and credits will offset each other in different ways. Here are
+some options.</p>
+<h3 id="liability-cost-and-income">Liability, Cost, and Income</h3>
+<p>If you want to record the entries to show a liability, cost, and
+income, the accounting entry would be like those shown in Table 50.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Payroll Cash (portion of net pay credit)</td>
+<td>$100.00</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>A/R</td>
+<td>$100.00</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Liability</td>
+<td></td>
+<td>$200.00</td>
+</tr>
+<tr class="even">
+<td>Income</td>
+<td></td>
+<td>$100.00</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>$100.00</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="liability-only">Liability Only</h3>
+<p>If you want to net all of the entries and not show cost or income but
+only the liability, then the accounting entry would be like those shown
+in Table 51.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Payroll Cash (portion of net pay credit)</td>
+<td>$100.00</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>A/R</td>
+<td>$100.00</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Liability</td>
+<td></td>
+<td>$200.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="zero-liability">Zero Liability</h3>
+<p>If you have a plan that is sponsored and paid by the client, your
+organization would have a liability of zero (Table 52).</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Payroll Cash (net pay paid from client’s account)</td>
+<td>$0.00</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>A/R (nothing due from client because it is offset to zero)</td>
+<td></td>
+<td>$0.00</td>
+</tr>
+<tr class="odd">
+<td>Liability (net amount between the liability and deduction code)</td>
+<td></td>
+<td>$0.00</td>
+</tr>
+</tbody>
+</table>
+<p>Parent Topic</p>
+<p><a href="Overview_GL_Account_Numbers.htm">Overview of G/L Account
+Number Usage</a></p>
+<p>========================================================================</p>
+<h1 id="retirement-plans">Retirement Plans</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Overview_GL_Retirement_Plans.htm
+Path:
+<code>PD/Accounting/Setup/Overview_GL_Retirement_Plans.htm</code></p>
+<h1 id="retirement-plans-1">Retirement Plans</h1>
+<p>Various retirement plan setup fields can affect the accounting
+process. Each accounting-related field has a G/L account number assigned
+to it, so your organization should ensure that they are coordinated. The
+items are the retirement Plan ID, deduction codes, and billing code.</p>
+<p>[Image: Retirement Plans form with Plan ID highlighted]</p>
+<p>[Image: Deduction/Bill Code Setup panel, with various codes
+assigned.]</p>
+<p>To set up the G/L account codes for the retirement plan, ensure that
+the accounting information is set up for the retirement plan and each of
+the codes referenced on the plan:</p>
+<ol type="1">
+<li><p><a href="Retirement_Plan_Accounting.htm">Retirement Plan
+Accounting</a></p></li>
+<li><p><a href="Deduction_Code_Accounting.htm">Deduction Code
+Accounting</a></p></li>
+<li><p><a href="Revenue-Sales.htm">Billing, Revenue, and Sales
+Accounting</a></p></li>
+</ol>
+<p>Parent Topic</p>
+<p><a href="Overview_GL_Account_Numbers.htm">Overview of G/L Account
+Number Usage</a></p>
+<p>========================================================================</p>
+<h1 id="payroll-accounting">Payroll Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Payroll_Accounting.htm
+Path: <code>PD/Accounting/Setup/Payroll_Accounting.htm</code></p>
+<h1 id="payroll-accounting-1">Payroll Accounting</h1>
+<p>If you have created global pay codes, you must associate each pay
+code with a general ledger account.</p>
+<p>To set up the pay code/general ledger account associations:</p>
+<ol type="1">
+<li>Enter the G/L Template for the general ledger distribution template.
+This template was defined previously.</li>
+</ol>
+<p>Your organization would have different templates for PEOs and ASOs.
+You can assign different account numbers to each template.</p>
+<ol start="2" type="1">
+<li>From the G/L Type drop-down, select Pay Codes. The form lists each
+Pay Code and Description in the system.</li>
+</ol>
+<p>[Image: G/L Setup Maintenance form for GL Type “Pay Codes”, showing
+pay code list along with debit and premium debit account fields.]</p>
+<ol start="3" type="1">
+<li>For each code that requires account information, enter the full
+Debit Account or Premium Debit Account number of the associated general
+ledger account. You can enter a simple account segment or a full account
+number with wildcards.</li>
+</ol>
+<ul>
+<li><p>You will enter a debit account for each pay code you use. The
+first and probably most frequently used will be some form of your
+Regular pay code.</p></li>
+<li><p>The premium debit account is rarely used; it is for sending the
+premium portion of an overtime calculation to a separate account. Leave
+this column blank if you do not separate the amounts.</p></li>
+</ul>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Examples</p>
+<p><a href="Payroll_Cost_Liabilities_Reg_Payroll.htm">Regular Client
+Payroll</a></p>
+<p><a href="Payroll_Cost_Liabilities_Internal_Payroll.htm">Internal
+Payroll</a></p>
+<p><a href="Payroll_Cost_Liabilities_Overtime_Pay.htm">Overtime
+Pay</a></p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="payroll-cost-and-liabilities">Payroll Cost and Liabilities</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Payroll_Cost_and_Liabilities.htm
+Path:
+<code>PD/Accounting/Setup/Payroll_Cost_and_Liabilities.htm</code></p>
+<h1 id="payroll-cost-and-liabilities-1">Payroll Cost and
+Liabilities</h1>
+<p>You must set up an association between the codes of several code
+types and various general ledger accounts for the cost/liability portion
+of payroll accounting.</p>
+<p>========================================================================</p>
+<h1 id="internal-payroll">Internal Payroll</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Payroll_Cost_Liabilities_Internal_Payroll.htm
+Path:
+<code>PD/Accounting/Setup/Payroll_Cost_Liabilities_Internal_Payroll.htm</code></p>
+<h1 id="internal-payroll-1">Internal Payroll</h1>
+<p>This example covers accounting for pay to your own staff using the
+system.</p>
+<p>Since the PEO internal payroll is run separate from client payroll,
+the PrismHR Customer Support Team recommends creating a separate
+account. PrismHR does not recommend creating a special pay code, such as
+REGINT (Regular Internal) or anything similar.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Cash 1010</th>
+<th></th>
+<th>MyPEO Wage Expense 7100</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$100.00</td>
+<td></td>
+<td>$100.00</td>
+</tr>
+</tbody>
+</table>
+<p>Within the separate account, you would enter your organization’s Wage
+Expense account in the Debit Account field of the REG pay code. (This
+would likely be something in the 6000+ range of accounts.)</p>
+<p>Parent Topic</p>
+<p><a href="Payroll_Accounting.htm">Payroll Accounting</a></p>
+<p>========================================================================</p>
+<h1 id="overtime-pay">Overtime Pay</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Payroll_Cost_Liabilities_Overtime_Pay.htm
+Path:
+<code>PD/Accounting/Setup/Payroll_Cost_Liabilities_Overtime_Pay.htm</code></p>
+<h1 id="overtime-pay-1">Overtime Pay</h1>
+<p>If the premium portion goes into a different general ledger account
+than the standard pay portion of the payroll, you can use the Premium
+Debit Account field of the GL Interface Codes for Pay Codes form, as
+well.</p>
+<p>For example, Table 59 shows the cash amount as $150.00 with $100.00
+going into the Debit account and $50.00 going into the Premium Debit
+account:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Cash 1010</th>
+<th></th>
+<th>Cost of Sales - Wages 5100</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$150.00</td>
+<td></td>
+<td>$100.00</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>Cost of Sales - O/T Wages 5150</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>$50.00</td>
+</tr>
+</tbody>
+</table>
+<p>This categorization is rarely an issue with PEOs, however, therefore
+the overtime pay accounting would typically resemble the REG pay setup
+shown in Table 60.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Cash 1010</th>
+<th></th>
+<th>Cost of Sales - Wages 5100</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$150.00</td>
+<td></td>
+<td>$150.00</td>
+</tr>
+</tbody>
+</table>
+<p>Parent Topic</p>
+<p><a href="Payroll_Accounting.htm">Payroll Accounting</a></p>
+<p>========================================================================</p>
+<h1 id="regular-client-payroll">Regular Client Payroll</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Payroll_Cost_Liabilities_Reg_Payroll.htm
+Path:
+<code>PD/Accounting/Setup/Payroll_Cost_Liabilities_Reg_Payroll.htm</code></p>
+<h1 id="regular-client-payroll-1">Regular Client Payroll</h1>
+<p>This example covers accounting for straight pay. Typically, you debit
+your Cost of Sales account and credit your Cash account.</p>
+<p>The cash side of the transaction is implied through the Payroll
+checking account, so the only thing to enter is the debit side, Cost of
+Sales. This would be true for regular wages paid to client
+companies.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Cash 1010</th>
+<th></th>
+<th>Cost of Sales - Wages 5100</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>$100.00</td>
+<td></td>
+<td>$100.00</td>
+</tr>
+</tbody>
+</table>
+<p>Parent Topic</p>
+<p><a href="Payroll_Accounting.htm">Payroll Accounting</a></p>
+<p>========================================================================</p>
+<h1 id="retirement-plan-accounting">Retirement Plan Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Retirement_Plan_Accounting.htm
+Path:
+<code>PD/Accounting/Setup/Retirement_Plan_Accounting.htm</code></p>
+<h1 id="retirement-plan-accounting-1">Retirement Plan Accounting</h1>
+<p>If you have created global retirement plans, you must create the
+association of each retirement plan ID with a general ledger
+account.</p>
+<p>To set up the retirement plan code/general ledger account
+associations:</p>
+<ol type="1">
+<li><p>Enter the G/L Template for the general ledger distribution
+template. This template was previously defined.</p></li>
+<li><p>From the G/L Type drop-down, select Retirement Plans. The form
+lists each Retirement Plan and Description in the system.</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li>For each code that requires account information:</li>
+</ol>
+<ol type="a">
+<li><p>— Enter the full Match Debit Account and/or Match Credit Account
+numbers, which are used for accounting for the clients’ match
+accounts.</p></li>
+<li><p>— If your organization matches contribution amounts, enter the
+partial or full account number in the PEO Match Debit Account and/or the
+PEO Match Credit fields.</p></li>
+</ol>
+<p>You can enter simple account segments or full account numbers with
+wildcards.</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Retirement plans follow the same general rules as benefit plans. <a
+href="Benefit_Plan_Accounting.htm">See Benefit Plan Accounting</a> for
+accounting guidelines.</p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="billing-revenue-and-sales-accounting">Billing, Revenue, and
+Sales Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Revenue-Sales.htm
+Path: <code>PD/Accounting/Setup/Revenue-Sales.htm</code></p>
+<h1 id="billing-revenue-and-sales-accounting-1">Billing, Revenue, and
+Sales Accounting</h1>
+<p>You must set up an association between billing codes and general
+ledger accounts for the billing, revenue, and sales portion of
+accounting.</p>
+<p>To set up an association, do the following:</p>
+<ol type="1">
+<li>Enter the G/L Template for the general ledger distribution template.
+This template was previously defined.</li>
+</ol>
+<p>Your organization would have different templates for PEOs and ASOs.
+You can assign different account numbers to each template.</p>
+<ol start="2" type="1">
+<li>From the G/L Type drop-down, select Billing Code. The form lists
+each Billing Code and Description in the system.</li>
+</ol>
+<p>[Image: G/L Setup Maintenance form, with GL Type set to “Billing
+Code”. In the panel below, a list of bill codes displays with each
+corresponding account number.]</p>
+<ol start="3" type="1">
+<li>For each code that requires account information, enter the full
+Account number of the associated general ledger account. You can enter a
+simple account segment or a full account number with wildcards.</li>
+</ol>
+<p>When payroll is processed for a client, the system generates the
+accounting based on the setup of the different plans, the client, and
+the employees. In the case of benefit plans, for example, generating the
+employee payroll voucher creates the entries for the benefits plans,
+retirement plans, workers’ compensation, miscellaneous deductions, and
+so on. Once the voucher process is complete, the system then generates
+the billing vouchers and those in turn generate income entries, accounts
+receivable entries, and the invoice to the client.</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="taxes">Taxes</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Taxes_GL_Codes.htm
+Path: <code>PD/Accounting/Setup/Taxes_GL_Codes.htm</code></p>
+<h1 id="taxes-1">Taxes</h1>
+<p>If you have created global tax codes, you must create the association
+of each tax code with a general ledger account. Tax G/L accounts are
+entered into the system based on state code and tax ID.</p>
+<p>To set up the tax code/general ledger account associations:</p>
+<ol type="1">
+<li><p>Enter the G/L Template for the general ledger distribution
+template. This template was previously defined.</p></li>
+<li><p>From the G/L Type drop-down, select Tax.</p></li>
+<li><p>In the State Code field, enter FG for federal government or the
+two-character state code (second example below). The system lists each
+Tax ID and Description in the first two columns. These taxes are either
+at the federal level (federal income tax), state level (state income
+tax, SUTA, and so on), or lower (county and local taxes).</p></li>
+</ol>
+<p>For employer-paid taxes, you need both a credit (liability) account
+and debit (expense) account.</p>
+<p>For employee-paid taxes, you need only a credit account because there
+is no expense to an employee-paid tax.</p>
+<p>When a tax is computed, the system looks at the state record to find
+the G/L codes. If they are not found there, it looks at FG (federal
+government). Therefore, you should only enter general ledger numbers at
+the state level if they are different from the ones used for the federal
+government.</p>
+<p>If you want to use only state-level accounting, then leave the FG
+record entirely blank. That way, the system will inform you if the state
+is missing codes rather than accepting the federal-level defaults.</p>
+<p>[Image: screenshot]</p>
+<p>[Image: screenshot]</p>
+<ol start="4" type="1">
+<li>For each code that requires account information, enter the full
+Debit Account and/or Credit Account numbers of the associated general
+ledger accounts. You can enter a simple account segment or a full
+account number with wildcards.</li>
+</ol>
+<p>For a state, the FG? column indicates how the system uses G/L account
+numbers for each tax ID. (This column does not apply to FG.)</p>
+<ul>
+<li><p>No FG: There is no number entered on the FG template.</p></li>
+<li><p>UseFG: The state template uses the value from the FG
+template.</p></li>
+<li><p>OvrFG: The template uses the number indicated in the Debit
+Account or Credit Account column.</p></li>
+</ul>
+<ol start="5" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+<p>========================================================================</p>
+<h1 id="workers-compensation-accounting">Workers’ Compensation
+Accounting</h1>
+<p>Source:
+https://tech-docs.prismhr.com/SP_help/Content/PD/Accounting/Setup/Workers_Comp_GL_Codes.htm
+Path: <code>PD/Accounting/Setup/Workers_Comp_GL_Codes.htm</code></p>
+<h1 id="workers-compensation-accounting-1">Workers’ Compensation
+Accounting</h1>
+<p>If you have set up workers’ compensation, you must create the
+association of each state code with a general ledger account. Depending
+on your system setup, this is either set for the state or the
+policy.</p>
+<p>State-Based Accounts</p>
+<p>To set up the workers’ compensation/general ledger account
+associations when your system bases workers’ compensation on the
+state:</p>
+<ol type="1">
+<li><p>Enter the G/L Template for the general ledger distribution
+template. This template was previously defined.</p></li>
+<li><p>From the G/L Type drop-down, select Workers’ Comp (State Based).
+The form lists each State Code and Description in the system.</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li>For each state that requires account information, enter the full
+Debit Account and/or Credit Account numbers of the associated general
+ledger accounts. You can enter a simple account segment or a full
+account number with wildcards.</li>
+</ol>
+<p>You have two options for entering the G/L account numbers for
+state-based accounts. You can either enter the accounts for each state
+or you can use the State Code FG (federal government) and enter one G/L
+account number for all states. This means that each state uses the debit
+and credit accounts for FG. States not using their own accounts display
+UseFg in the FG? column.</p>
+<p>If you want to use a different number for one or more states, you can
+enter the account numbers in the respective state code. The FG? column
+displays OvrFG.</p>
+<ol start="4" type="1">
+<li>Click Save.</li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Policy-Based Accounts</p>
+<p>To set up the workers’ compensation/general ledger account
+associations when your system bases workers’ compensation on the
+policy:</p>
+<ol type="1">
+<li><p>Enter the G/L Template for the general ledger distribution
+template. This template was previously defined.</p></li>
+<li><p>From the G/L Type drop-down, select Workers’ Comp (Policy Based).
+The form lists each Policy ID and Description in the system.</p></li>
+</ol>
+<p>[Image: screenshot]</p>
+<ol start="3" type="1">
+<li><p>For each workers’ compensation policy that requires account
+information, enter the full Debit Account and/or Credit Account numbers
+of the associated general ledger accounts.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+<p>Repeat the procedure for each general ledger template you need to
+edit.</p>
+<p>Related Topics</p>
+<p><a
+href="../Front_Matter/General_Ledger_Account_Associations.htm">Setting
+Up the Billing Code and G/L Account Associations</a></p>
+<p><a href="GL_Account_Numbers_Setup.htm">G/L Account Numbers in
+PrismHR</a></p>
+<p><a href="GL_Account_Wildcards.htm">Using G/L Account
+Wildcards</a></p>
+</body>
+</html>
