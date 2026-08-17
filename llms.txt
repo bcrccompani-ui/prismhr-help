@@ -1,0 +1,84 @@
+# PrismHR Help — Complete Documentation
+
+> Public, crawlable copy of PrismHR product documentation for payroll, benefits, HR, billing, compliance, and system administration.  
+> Source: https://tech-docs.prismhr.com/SP_help/Default.htm  
+> Build date: August 5, 2026 (PrismHR 26.07)
+
+## About
+
+This site contains the complete PrismHR product help documentation in plain HTML, suitable for use by AI agents and search engines. All pages are static HTML with no JavaScript dependency.
+
+## Sections
+
+### Core Operations
+
+- **Payroll** — Process payroll, pay groups, deductions, taxes, vouchers, and payroll reporting  
+  https://bcrccompani-ui.github.io/prismhr-help/payroll.html
+
+- **Benefits Administration** — Group benefit plans, COBRA, ACA, enrollment, carrier files  
+  https://bcrccompani-ui.github.io/prismhr-help/benefits.html
+
+- **Human Resources** — Employee records, positions, I-9, workers' comp, training  
+  https://bcrccompani-ui.github.io/prismhr-help/human-resources.html
+
+- **Time Off and PTO** — Vacation, sick leave, PTO accruals, time-off requests  
+  https://bcrccompani-ui.github.io/prismhr-help/time-off.html
+
+### System & Client Configuration
+
+- **System Administration** — System setup, security, users, roles, permissions  
+  https://bcrccompani-ui.github.io/prismhr-help/system-admin.html
+
+- **Client Administration** — Client setup, worksites, billing groups  
+  https://bcrccompani-ui.github.io/prismhr-help/client-admin.html
+
+- **Overview, SSO, and Work Centers** — Platform overview, single sign-on, navigation  
+  https://bcrccompani-ui.github.io/prismhr-help/overview.html
+
+### Compliance & Reporting
+
+- **Compliance** — ACA, COBRA, HIPAA, EEO, state reporting  
+  https://bcrccompani-ui.github.io/prismhr-help/compliance.html
+
+- **Onboarding and Benefits Enrollment** — New hire onboarding, open enrollment  
+  https://bcrccompani-ui.github.io/prismhr-help/onboarding.html
+
+### Financial Operations
+
+- **Accounting** — General ledger, journal entries, account codes  
+  https://bcrccompani-ui.github.io/prismhr-help/accounting.html
+
+- **ACH** — ACH processing, bank accounts, direct deposit  
+  https://bcrccompani-ui.github.io/prismhr-help/ach.html
+
+- **Billing** — Invoice generation, bill codes, client billing  
+  https://bcrccompani-ui.github.io/prismhr-help/billing.html
+
+### Tasks & Imports
+
+- **Task Sheets** — Step-by-step procedures for common tasks  
+  https://bcrccompani-ui.github.io/prismhr-help/task-sheets.html
+
+- **Import Processing** — Data imports, file formats, scheduling  
+  https://bcrccompani-ui.github.io/prismhr-help/imports.html
+
+### Employee Experience
+
+- **Employee Experience** — Employee self-service, PrismONE, portal  
+  https://bcrccompani-ui.github.io/prismhr-help/employee-experience.html
+
+### Release Notes
+
+- **Release Notes 2024-2026** — What's new, enhancements, fixes  
+  https://bcrccompani-ui.github.io/prismhr-help/release-notes.html
+
+### Full User Guides (from PDFs)
+
+- **Payroll, Accounting, ACH Guides**  
+  https://bcrccompani-ui.github.io/prismhr-help/guides-payroll.html
+
+- **Benefits, HR, Client Guides**  
+  https://bcrccompani-ui.github.io/prismhr-help/guides-benefits-hr.html
+
+- **Admin, Compliance, Reports Guides**  
+  https://bcrccompani-ui.github.io/prismhr-help/guides-admin.html
